@@ -1,9 +1,21 @@
 import { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import data from '../../content/councils.json'
 import PageHero from '../components/blocks/PageHero'
 import SectionIntro from '../components/blocks/SectionIntro'
 import CtaBanner from '../components/blocks/CtaBanner'
 import SectionHeading from '../components/ui/SectionHeading'
+
+function CouncilLink({ council }) {
+  return (
+    <Link
+      to={`/councils/${council.slug}`}
+      className="block border border-border bg-white px-3 py-2.5 text-sm text-navy-deep transition-colors duration-200 hover:border-royal hover:text-royal"
+    >
+      {council.name}
+    </Link>
+  )
+}
 
 export default function Councils() {
   const [query, setQuery] = useState('')
@@ -11,7 +23,7 @@ export default function Councils() {
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
     if (!q) return data.sectorCouncils.items
-    return data.sectorCouncils.items.filter((c) => c.toLowerCase().includes(q))
+    return data.sectorCouncils.items.filter((c) => c.name.toLowerCase().includes(q))
   }, [query])
 
   return (
@@ -38,10 +50,8 @@ export default function Councils() {
           />
           <p className="mb-4 text-sm text-muted-fg">{filtered.length} council{filtered.length !== 1 ? 's' : ''}</p>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
-            {filtered.map((name) => (
-              <div key={name} className="border border-border bg-white px-3 py-2.5 text-sm text-navy-deep">
-                {name}
-              </div>
+            {filtered.map((council) => (
+              <CouncilLink key={council.slug} council={council} />
             ))}
           </div>
         </div>
@@ -51,16 +61,30 @@ export default function Councils() {
           <div>
             <h2 className="mb-4 font-serif text-xl font-bold text-navy-deep">{data.parliamentarianCouncils.heading}</h2>
             <ul className="space-y-2">
-              {data.parliamentarianCouncils.items.map((item) => (
-                <li key={item} className="border-l-2 border-saffron pl-3 text-sm text-muted-fg">{item}</li>
+              {data.parliamentarianCouncils.items.map((council) => (
+                <li key={council.slug}>
+                  <Link
+                    to={`/councils/${council.slug}`}
+                    className="block border-l-2 border-saffron pl-3 text-sm text-muted-fg transition-colors duration-200 hover:text-royal"
+                  >
+                    {council.name}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
           <div>
             <h2 className="mb-4 font-serif text-xl font-bold text-navy-deep">{data.internationalBusinessCouncils.heading}</h2>
             <ul className="space-y-2">
-              {data.internationalBusinessCouncils.items.map((item) => (
-                <li key={item} className="border-l-2 border-green pl-3 text-sm text-muted-fg">{item}</li>
+              {data.internationalBusinessCouncils.items.map((council) => (
+                <li key={council.slug}>
+                  <Link
+                    to={`/councils/${council.slug}`}
+                    className="block border-l-2 border-green pl-3 text-sm text-muted-fg transition-colors duration-200 hover:text-royal"
+                  >
+                    {council.name}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>

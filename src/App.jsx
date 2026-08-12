@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Councils from './pages/Councils'
+import CouncilDetail from './pages/CouncilDetail'
 import Membership from './pages/Membership'
 import StatesInvestment from './pages/StatesInvestment'
 import MarketEntry from './pages/MarketEntry'
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/councils" element={<Councils />} />
+          <Route path="/councils/:slug" element={<CouncilDetail />} />
           <Route path="/membership" element={<Membership />} />
           <Route path="/states-investment" element={<StatesInvestment />} />
           <Route path="/market-entry" element={<MarketEntry />} />

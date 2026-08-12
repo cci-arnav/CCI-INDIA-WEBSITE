@@ -3,6 +3,7 @@ import PageHero from '../components/blocks/PageHero'
 import SectionIntro from '../components/blocks/SectionIntro'
 import CtaBanner from '../components/blocks/CtaBanner'
 import Card from '../components/ui/Card'
+import LeadershipPhoto from '../components/ui/LeadershipPhoto'
 
 export default function About() {
   return (
@@ -33,9 +34,14 @@ export default function About() {
         <div className="container-main">
           <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-saffron">{data.leadership.eyebrow}</p>
           <h2 className="mb-8 font-serif text-2xl font-bold text-navy-deep">{data.leadership.heading}</h2>
-          <div className="grid gap-4 sm:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-3">
             {data.leadership.members.map((m) => (
-              <Card key={m.name}>
+              <Card key={m.name} className="text-center">
+                <LeadershipPhoto
+                  src={m.image}
+                  alt={m.name}
+                  className="mx-auto mb-4 h-36 w-36 rounded-sm"
+                />
                 <h3 className="font-serif text-lg font-bold text-navy-deep">
                   {m.link ? (
                     <a href={m.link} target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-royal">

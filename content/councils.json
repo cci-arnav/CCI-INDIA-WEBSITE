@@ -3,8 +3,13 @@
     "eyebrow": "Councils",
     "title": "CCI INDIA is the voice of India's business and industry",
     "breadcrumb": [
-      { "label": "Home", "href": "/" },
-      { "label": "Councils" }
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Councils"
+      }
     ]
   },
   "intro": {
@@ -20,133 +25,1360 @@
     "heading": "90+ sector & regional councils",
     "description": "Search across CCI INDIA's full network of sector and regional councils.",
     "items": [
-      "Agriculture",
-      "Ayurveda and Herbal AYUSH",
-      "Aromatic and Medicinal Council",
-      "Banking and Finance",
-      "Bio and Nano Technology",
-      "Brand, Fashion & Design",
-      "Brand Promotion",
-      "Business Aircraft Operators",
-      "Capital Markets",
-      "Civil Aviation",
-      "Coal",
-      "Company Law and Corporate Affairs",
-      "Corporate Governance and CSR",
-      "Computers & Electronic Committee",
-      "Corporate Fraud & Internal Audit",
-      "Cultural",
-      "Cyber Law & IT Act",
-      "Defence",
-      "Direct Taxes",
-      "Diaspora",
-      "Drugs & Pharmaceuticals",
-      "e-commerce",
-      "e-Governance",
-      "Eastern Region Development Council",
-      "Economic Affairs",
-      "Education",
-      "Entertainment",
-      "Entrepreneurship Development",
-      "Environment & Climate Change",
-      "Export and Import",
-      "Food Processing and Value Addition",
-      "Foreign Trade",
-      "Gems & Jewellery",
-      "Government Procurement",
-      "Healthcare",
-      "Highway",
-      "HRD",
-      "Hydro Power",
-      "Indirect Taxes including GST",
-      "Infrastructure",
-      "Insurance",
-      "International Tax",
-      "Investment & Investors Protection",
-      "Iron & Steel",
-      "IT & ITEs",
-      "Knowledge Millennium Council",
-      "Leadership Development Council",
-      "Legal Affairs & IPR",
-      "Luxury and Lifestyle",
-      "Manufacturing",
-      "Media",
-      "Membership Development",
-      "Mergers & Acquisition",
-      "Micro Finance and NBFC",
-      "Mines & Minerals",
-      "New & Renewable Energy",
-      "Non-Government Organization",
-      "Northern Region Development Council",
-      "North Eastern Region Development Council",
-      "Nuclear Energy",
-      "Packaging",
-      "Petroleum & Petrochemicals",
-      "Port",
-      "Private Security",
-      "Public Sector Enterprises",
-      "Publishing",
-      "Railways",
-      "Real Estate",
-      "Retail",
-      "Rural Development",
-      "Seaplane",
-      "Shipping & Logistics",
-      "Skill Development Centre",
-      "Southern Region Development Council",
-      "Smart Cities",
-      "MSME",
-      "Special Task Force on SEZ",
-      "Spiritual",
-      "Telecom",
-      "Textile",
-      "Thermal Power",
-      "Tourism and Hospitality",
-      "Urban Development",
-      "Venture Capital and Private Equity",
-      "Wellness",
-      "Western Region Development Council",
-      "Women Entrepreneurship",
-      "Women Foundation",
-      "WTO",
-      "Yoga"
+      {
+        "name": "Agriculture",
+        "slug": "agriculture",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Agriculture at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the agriculture space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Ayurveda and Herbal AYUSH",
+        "slug": "ayurveda-and-herbal-ayush",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Ayurveda and Herbal AYUSH at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the ayurveda and herbal ayush space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Aromatic and Medicinal Council",
+        "slug": "aromatic-and-medicinal-council",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Aromatic and Medicinal Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the aromatic and medicinal space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Banking and Finance",
+        "slug": "banking-and-finance",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Banking and Finance at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the banking and finance space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Bio and Nano Technology",
+        "slug": "bio-and-nano-technology",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Bio and Nano Technology at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the bio and nano technology space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Brand, Fashion & Design",
+        "slug": "brand-fashion-and-design",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Brand, Fashion & Design at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the brand, fashion & design space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Brand Promotion",
+        "slug": "brand-promotion",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Brand Promotion at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the brand promotion space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Business Aircraft Operators",
+        "slug": "business-aircraft-operators",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Business Aircraft Operators at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the business aircraft operators space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Capital Markets",
+        "slug": "capital-markets",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Capital Markets at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the capital markets space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Civil Aviation",
+        "slug": "civil-aviation",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Civil Aviation at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the civil aviation space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Coal",
+        "slug": "coal",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Coal at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the coal space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Company Law and Corporate Affairs",
+        "slug": "company-law-and-corporate-affairs",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Company Law and Corporate Affairs at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the company law and corporate affairs space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Corporate Governance and CSR",
+        "slug": "corporate-governance-and-csr",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Corporate Governance and CSR at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the corporate governance and csr space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Computers & Electronic Committee",
+        "slug": "computers-and-electronic-committee",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Computers & Electronic Committee at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the computers & electronic committee space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Corporate Fraud & Internal Audit",
+        "slug": "corporate-fraud-and-internal-audit",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Corporate Fraud & Internal Audit at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the corporate fraud & internal audit space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Cultural",
+        "slug": "cultural",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Cultural at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the cultural space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Cyber Law & IT Act",
+        "slug": "cyber-law-and-it-act",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Cyber Law & IT Act at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the cyber law & it act space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Defence",
+        "slug": "defence",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Defence at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the defence space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Direct Taxes",
+        "slug": "direct-taxes",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Direct Taxes at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the direct taxes space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Diaspora",
+        "slug": "diaspora",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Diaspora at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the diaspora space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Drugs & Pharmaceuticals",
+        "slug": "drugs-and-pharmaceuticals",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Drugs & Pharmaceuticals at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the drugs & pharmaceuticals space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "e-commerce",
+        "slug": "e-commerce",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The e-commerce at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the e-commerce space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "e-Governance",
+        "slug": "e-governance",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The e-Governance at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the e-governance space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Eastern Region Development Council",
+        "slug": "eastern-region-development-council",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Eastern Region Development Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the eastern region development space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Economic Affairs",
+        "slug": "economic-affairs",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Economic Affairs at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the economic affairs space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Education",
+        "slug": "education",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Education at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the education space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Entertainment",
+        "slug": "entertainment",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Entertainment at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the entertainment space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Entrepreneurship Development",
+        "slug": "entrepreneurship-development",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Entrepreneurship Development at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the entrepreneurship development space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Environment & Climate Change",
+        "slug": "environment-and-climate-change",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Environment & Climate Change at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the environment & climate change space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Export and Import",
+        "slug": "export-and-import",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Export and Import at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the export and import space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Food Processing and Value Addition",
+        "slug": "food-processing-and-value-addition",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Food Processing and Value Addition at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the food processing and value addition space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Foreign Trade",
+        "slug": "foreign-trade",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Foreign Trade at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the foreign trade space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Gems & Jewellery",
+        "slug": "gems-and-jewellery",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Gems & Jewellery at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the gems & jewellery space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Government Procurement",
+        "slug": "government-procurement",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Government Procurement at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the government procurement space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Healthcare",
+        "slug": "healthcare",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Healthcare at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the healthcare space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Highway",
+        "slug": "highway",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Highway at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the highway space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "HRD",
+        "slug": "hrd",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The HRD at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the hrd space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Hydro Power",
+        "slug": "hydro-power",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Hydro Power at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the hydro power space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Indirect Taxes including GST",
+        "slug": "indirect-taxes-including-gst",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Indirect Taxes including GST at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the indirect taxes including gst space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Infrastructure",
+        "slug": "infrastructure",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Infrastructure at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the infrastructure space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Insurance",
+        "slug": "insurance",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Insurance at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the insurance space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "International Tax",
+        "slug": "international-tax",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The International Tax at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the international tax space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Investment & Investors Protection",
+        "slug": "investment-and-investors-protection",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Investment & Investors Protection at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the investment & investors protection space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Iron & Steel",
+        "slug": "iron-and-steel",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Iron & Steel at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the iron & steel space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "IT & ITEs",
+        "slug": "it-and-ites",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The IT & ITEs at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the it & ites space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Knowledge Millennium Council",
+        "slug": "knowledge-millennium-council",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Knowledge Millennium Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the knowledge millennium space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Leadership Development Council",
+        "slug": "leadership-development-council",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Leadership Development Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the leadership development space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Legal Affairs & IPR",
+        "slug": "legal-affairs-and-ipr",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Legal Affairs & IPR at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the legal affairs & ipr space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Luxury and Lifestyle",
+        "slug": "luxury-and-lifestyle",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Luxury and Lifestyle at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the luxury and lifestyle space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Manufacturing",
+        "slug": "manufacturing",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Manufacturing at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the manufacturing space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Media",
+        "slug": "media",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Media at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the media space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Membership Development",
+        "slug": "membership-development",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Membership Development at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the membership development space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Mergers & Acquisition",
+        "slug": "mergers-and-acquisition",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Mergers & Acquisition at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the mergers & acquisition space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Micro Finance and NBFC",
+        "slug": "micro-finance-and-nbfc",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Micro Finance and NBFC at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the micro finance and nbfc space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Mines & Minerals",
+        "slug": "mines-and-minerals",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Mines & Minerals at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the mines & minerals space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "New & Renewable Energy",
+        "slug": "new-and-renewable-energy",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The New & Renewable Energy at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the new & renewable energy space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Non-Government Organization",
+        "slug": "non-government-organization",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Non-Government Organization at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the non-government organization space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Northern Region Development Council",
+        "slug": "northern-region-development-council",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Northern Region Development Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the northern region development space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "North Eastern Region Development Council",
+        "slug": "north-eastern-region-development-council",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The North Eastern Region Development Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the north eastern region development space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Nuclear Energy",
+        "slug": "nuclear-energy",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Nuclear Energy at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the nuclear energy space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Packaging",
+        "slug": "packaging",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Packaging at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the packaging space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Petroleum & Petrochemicals",
+        "slug": "petroleum-and-petrochemicals",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Petroleum & Petrochemicals at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the petroleum & petrochemicals space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Port",
+        "slug": "port",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Port at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the port space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Private Security",
+        "slug": "private-security",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Private Security at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the private security space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Public Sector Enterprises",
+        "slug": "public-sector-enterprises",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Public Sector Enterprises at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the public sector enterprises space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Publishing",
+        "slug": "publishing",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Publishing at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the publishing space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Railways",
+        "slug": "railways",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Railways at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the railways space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Real Estate",
+        "slug": "real-estate",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Real Estate at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the real estate space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Retail",
+        "slug": "retail",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Retail at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the retail space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Rural Development",
+        "slug": "rural-development",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Rural Development at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the rural development space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Seaplane",
+        "slug": "seaplane",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Seaplane at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the seaplane space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Shipping & Logistics",
+        "slug": "shipping-and-logistics",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Shipping & Logistics at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the shipping & logistics space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Skill Development Centre",
+        "slug": "skill-development-centre",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Skill Development Centre at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the skill development centre space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Southern Region Development Council",
+        "slug": "southern-region-development-council",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Southern Region Development Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the southern region development space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Smart Cities",
+        "slug": "smart-cities",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Smart Cities at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the smart cities space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "MSME",
+        "slug": "msme",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The MSME at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the msme space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Special Task Force on SEZ",
+        "slug": "special-task-force-on-sez",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Special Task Force on SEZ at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the special task force on sez space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Spiritual",
+        "slug": "spiritual",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Spiritual at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the spiritual space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Telecom",
+        "slug": "telecom",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Telecom at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the telecom space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Textile",
+        "slug": "textile",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Textile at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the textile space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Thermal Power",
+        "slug": "thermal-power",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Thermal Power at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the thermal power space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Tourism and Hospitality",
+        "slug": "tourism-and-hospitality",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Tourism and Hospitality at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the tourism and hospitality space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Urban Development",
+        "slug": "urban-development",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Urban Development at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the urban development space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Venture Capital and Private Equity",
+        "slug": "venture-capital-and-private-equity",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Venture Capital and Private Equity at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the venture capital and private equity space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Wellness",
+        "slug": "wellness",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Wellness at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the wellness space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Western Region Development Council",
+        "slug": "western-region-development-council",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Western Region Development Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the western region development space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Women Entrepreneurship",
+        "slug": "women-entrepreneurship",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Women Entrepreneurship at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the women entrepreneurship space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Women Foundation",
+        "slug": "women-foundation",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Women Foundation at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the women foundation space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "WTO",
+        "slug": "wto",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The WTO at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the wto space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "Yoga",
+        "slug": "yoga",
+        "type": "sector",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The Yoga at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the yoga space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      }
     ]
   },
   "parliamentarianCouncils": {
     "heading": "Parliamentarian Councils",
     "items": [
-      "India Japan Parliamentarian Council",
-      "India US Parliamentarian Council",
-      "India EU Parliamentarian Council",
-      "India Canada Parliamentarian Council",
-      "India Russia Parliamentarian Council",
-      "India Vietnam Parliamentarian Council",
-      "India SAARC Parliamentarian Council",
-      "India BRICS Parliamentarian Council",
-      "India ASEAN Parliamentarian Council",
-      "India Latin America Parliamentarian Council",
-      "India Caribbean Parliamentarian Council"
+      {
+        "name": "India Japan Parliamentarian Council",
+        "slug": "india-japan-parliamentarian-council",
+        "type": "parliamentarian",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India Japan Parliamentarian Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india japan parliamentarian space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India US Parliamentarian Council",
+        "slug": "india-us-parliamentarian-council",
+        "type": "parliamentarian",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India US Parliamentarian Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india us parliamentarian space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India EU Parliamentarian Council",
+        "slug": "india-eu-parliamentarian-council",
+        "type": "parliamentarian",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India EU Parliamentarian Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india eu parliamentarian space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India Canada Parliamentarian Council",
+        "slug": "india-canada-parliamentarian-council",
+        "type": "parliamentarian",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India Canada Parliamentarian Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india canada parliamentarian space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India Russia Parliamentarian Council",
+        "slug": "india-russia-parliamentarian-council",
+        "type": "parliamentarian",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India Russia Parliamentarian Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india russia parliamentarian space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India Vietnam Parliamentarian Council",
+        "slug": "india-vietnam-parliamentarian-council",
+        "type": "parliamentarian",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India Vietnam Parliamentarian Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india vietnam parliamentarian space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India SAARC Parliamentarian Council",
+        "slug": "india-saarc-parliamentarian-council",
+        "type": "parliamentarian",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India SAARC Parliamentarian Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india saarc parliamentarian space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India BRICS Parliamentarian Council",
+        "slug": "india-brics-parliamentarian-council",
+        "type": "parliamentarian",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India BRICS Parliamentarian Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india brics parliamentarian space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India ASEAN Parliamentarian Council",
+        "slug": "india-asean-parliamentarian-council",
+        "type": "parliamentarian",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India ASEAN Parliamentarian Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india asean parliamentarian space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India Latin America Parliamentarian Council",
+        "slug": "india-latin-america-parliamentarian-council",
+        "type": "parliamentarian",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India Latin America Parliamentarian Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india latin america parliamentarian space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India Caribbean Parliamentarian Council",
+        "slug": "india-caribbean-parliamentarian-council",
+        "type": "parliamentarian",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India Caribbean Parliamentarian Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india caribbean parliamentarian space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      }
     ]
   },
   "internationalBusinessCouncils": {
     "heading": "International Business Councils",
     "items": [
-      "India-Africa & Business Council",
-      "BRICS Business Council",
-      "India-EU Business Council",
-      "India-USA Business Council",
-      "India-Russia & CIS Business Council",
-      "India-France Business Council",
-      "India-Germany Business Council",
-      "India-UK Business Council",
-      "India-SAARC Business Council",
-      "India-Latin American Countries and Caribbean Business Council"
+      {
+        "name": "India-Africa & Business Council",
+        "slug": "india-africa-and-business-council",
+        "type": "international",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India-Africa & Business Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india-africa & business space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "BRICS Business Council",
+        "slug": "brics-business-council",
+        "type": "international",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The BRICS Business Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the brics business space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India-EU Business Council",
+        "slug": "india-eu-business-council",
+        "type": "international",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India-EU Business Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india-eu business space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India-USA Business Council",
+        "slug": "india-usa-business-council",
+        "type": "international",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India-USA Business Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india-usa business space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India-Russia & CIS Business Council",
+        "slug": "india-russia-and-cis-business-council",
+        "type": "international",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India-Russia & CIS Business Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india-russia & cis business space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India-France Business Council",
+        "slug": "india-france-business-council",
+        "type": "international",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India-France Business Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india-france business space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India-Germany Business Council",
+        "slug": "india-germany-business-council",
+        "type": "international",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India-Germany Business Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india-germany business space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India-UK Business Council",
+        "slug": "india-uk-business-council",
+        "type": "international",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India-UK Business Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india-uk business space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India-SAARC Business Council",
+        "slug": "india-saarc-business-council",
+        "type": "international",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India-SAARC Business Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india-saarc business space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      },
+      {
+        "name": "India-Latin American Countries and Caribbean Business Council",
+        "slug": "india-latin-american-countries-and-caribbean-business-council",
+        "type": "international",
+        "categoryTag": "Business Intelligence, Policy Advocacy, Networking, Business Expansion",
+        "description": [
+          "The India-Latin American Countries and Caribbean Business Council at CCI India works on policy advocacy, business expansion and networking opportunities for stakeholders in the india-latin american countries and caribbean business space.",
+          "The council engages with government, industry and international partners to represent member interests, facilitate dialogue and support sustainable growth across the sector.",
+          "Detailed council-specific content will be published here soon."
+        ],
+        "keyObjectives": []
+      }
     ]
   },
   "cta": {
     "title": "Find the right council for your business",
     "description": "Whichever sector or region you operate in, CCI INDIA has a council working to represent your interests.",
-    "primary": { "label": "Become a Member", "href": "/membership" },
-    "secondary": { "label": "Contact Us", "href": "/contact" }
+    "primary": {
+      "label": "Become a Member",
+      "href": "/membership"
+    },
+    "secondary": {
+      "label": "Contact Us",
+      "href": "/contact"
+    }
   }
 }

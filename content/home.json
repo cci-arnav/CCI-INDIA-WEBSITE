@@ -172,10 +172,11 @@
     ],
     "languages": ["English"],
     "social": [
-      { "label": "LinkedIn", "href": "https://www.linkedin.com/company/cci-india", "icon": "linkedin" },
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/company/cci-india-chamber-of-commerce-industry-of-india/", "icon": "linkedin" },
       { "label": "Twitter", "href": "https://twitter.com/cciindia", "icon": "twitter" },
       { "label": "YouTube", "href": "https://www.youtube.com/@cciindia", "icon": "youtube" },
-      { "label": "Facebook", "href": "https://www.facebook.com/cciindia", "icon": "facebook" }
+      { "label": "Facebook", "href": "https://www.facebook.com/cciindia", "icon": "facebook" },
+      { "label": "Instagram", "href": "https://www.instagram.com/cci.india_?igsh=MTJtc3RndnltMjFp", "icon": "instagram" }
     ]
   },
   "footer": {

@@ -36,9 +36,9 @@
     "eyebrow": "Leadership",
     "heading": "The people leading CCI India",
     "members": [
-      { "name": "Dr. Mahin B", "title": "Senior Vice President" },
-      { "name": "Dev R", "title": "Vice President" },
-      { "name": "Munindra Kumar", "title": "Director General", "link": "https://in.linkedin.com/in/munindra-kumar-62a3a971" }
+      { "name": "Dr. Mahin B", "title": "Senior Vice President", "image": "/images/leadership/mahin-b.png" },
+      { "name": "Dev R", "title": "Vice President", "image": "/images/leadership/dev-r.png" },
+      { "name": "Munindra Kumar", "title": "Director General", "image": "/images/leadership/munindra-kumar.png", "link": "https://in.linkedin.com/in/munindra-kumar-62a3a971" }
     ]
   },
   "cta": {

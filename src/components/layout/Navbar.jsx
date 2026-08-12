@@ -38,14 +38,14 @@ export default function Navbar() {
 
   return (
     <header className="border-b border-border bg-white">
-      <div className="container-main flex items-center justify-between gap-4 py-3">
+      <div className="container-main flex items-center justify-between gap-3 py-3">
         <Link to="/" className="flex shrink-0 items-center gap-2.5">
           <img
             src="/brand/cci-logo.png"
             alt="CCI India"
-            width={961}
-            height={442}
-            className="h-8 w-auto sm:h-9"
+            width={1161}
+            height={1042}
+            className="h-16 w-auto sm:h-16"
           />
           <span className="hidden text-[10px] uppercase tracking-[0.18em] text-muted-fg sm:inline-block">
             Chamber of Commerce <br /> &amp; Industry of India

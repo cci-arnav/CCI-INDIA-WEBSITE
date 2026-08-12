@@ -70,9 +70,17 @@ export default function Contact() {
       <section className="section-padding border-b border-border bg-off-white">
         <div className="container-main">
           <SectionHeading eyebrow="Departments" title="Contact by department" />
-          <div className="flex flex-wrap gap-2">
-            {data.departments.map((d) => (
-              <span key={d} className="border border-border bg-white px-3 py-2 text-sm text-navy-deep">{d}</span>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {data.departments.map((dept) => (
+              <div key={dept.name} className="border border-border bg-white px-4 py-3">
+                <p className="text-sm font-medium text-navy-deep">{dept.name}</p>
+                <a
+                  href={`mailto:${dept.email}`}
+                  className="text-xs text-royal transition-colors duration-200 hover:text-navy-deep"
+                >
+                  {dept.email}
+                </a>
+              </div>
             ))}
           </div>
         </div>

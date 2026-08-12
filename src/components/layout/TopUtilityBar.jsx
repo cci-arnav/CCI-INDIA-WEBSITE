@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Contact, X } from 'lucide-react'
-import { FacebookIcon, LinkedinIcon, YoutubeIcon } from '../ui/SocialIcons'
+import { FacebookIcon, LinkedinIcon, YoutubeIcon , InstagramIcon } from '../ui/SocialIcons'
 import home from '../../../content/home.json'
 
 const TICKER_INTERVAL_MS = 4500
@@ -11,6 +11,7 @@ const socialIcons = {
   twitter: ({ size, className }) => <X size={size} strokeWidth={1.75} className={className} />,
   youtube: YoutubeIcon,
   facebook: FacebookIcon,
+  instagram: InstagramIcon,
 }
 
 function AnnouncementTicker({ items }) {
@@ -40,7 +41,7 @@ function AnnouncementTicker({ items }) {
             aria-hidden={index !== active}
           >
             {item.href ? (
-              <Link to={item.href} className="min-w-0 transition-colors duration-200 hover:text-royal">
+              <Link to={item.href} className="min-w-0 transition-colors duration-200 hover:text-white">
                 {content}
               </Link>
             ) : (
@@ -70,17 +71,17 @@ export default function TopUtilityBar() {
   }, [langOpen])
 
   return (
-    <div className="border-b border-border bg-[oklch(0.97_0.01_255)] text-muted-fg">
+    <div className="border-b border-border bg-gradient-to-r from-[#fc4a1a] to-[#f7b733] text-muted-fg">
       <div className="container-main flex h-9 items-center justify-between gap-4">
         <div className="flex min-w-0 flex-1 items-center gap-2.5 pr-4">
-          <span className="hidden shrink-0 border-r border-border pr-2.5 text-[10px] font-semibold uppercase tracking-wider text-saffron sm:inline">
+          <span className="hidden shrink-0 border-r border-border pr-2.5 text-[10px] font-semibold uppercase tracking-wider text-white sm:inline">
             News
           </span>
           <AnnouncementTicker items={utilityBar.tickerItems} />
         </div>
 
         <div className="flex shrink-0 items-center gap-3 sm:gap-4">
-          <span className="hidden whitespace-nowrap text-[12px] text-muted-fg lg:inline">
+          <span className="hidden whitespace-nowrap text-[12px] text-black lg:inline">
             Toll Free: {footer.tollFree}
           </span>
 
@@ -88,7 +89,7 @@ export default function TopUtilityBar() {
 
           <Link
             to="/contact"
-            className="flex items-center gap-1 text-[12px] text-muted-fg transition-colors duration-200 hover:text-royal"
+            className="flex items-center gap-1 text-[12px] text-black transition-colors duration-200 hover:text-white"  
           >
             <Contact size={16} strokeWidth={1.75} aria-hidden="true" />
             <span className="hidden sm:inline">Contact</span>
@@ -98,7 +99,7 @@ export default function TopUtilityBar() {
             <button
               type="button"
               onClick={() => setLangOpen((open) => !open)}
-              className="flex items-center gap-1 border border-border bg-white px-2 py-0.5 text-[12px] text-muted-fg transition-colors duration-200 hover:text-royal"
+              className="flex items-center gap-1 border rounded-2xl border-border bg-white px-2 py-0.5 text-[12px] text-black transition-colors duration-200 hover:text-blue-deep hover:bg-blue-deep/10" 
               aria-expanded={langOpen}
               aria-haspopup="listbox"
             >
@@ -138,7 +139,7 @@ export default function TopUtilityBar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={item.label}
-                  className="text-muted-fg transition-colors duration-200 hover:text-royal"
+                  className="text-black transition-colors duration-200 hover:text-white"
                 >
                   <Icon size={16} />
                 </a>

@@ -5,20 +5,13 @@ import Button from '../components/ui/Button'
 import Card from '../components/ui/Card'
 import SectionHeading from '../components/ui/SectionHeading'
 
-const accentBorder = {
-  royal: 'border-t-royal',
-  cyan: 'border-t-cyan',
-  saffron: 'border-t-saffron',
-  green: 'border-t-green',
-}
-
 const heroSlides = [
   { background: 'linear-gradient(135deg, oklch(0.28 0.05 255) 0%, oklch(0.34 0.05 255) 60%, oklch(0.5 0.16 258 / 0.4) 100%)' },
   { background: 'linear-gradient(135deg, oklch(0.34 0.05 255) 0%, oklch(0.28 0.05 255) 50%, oklch(0.58 0.15 152 / 0.25) 100%)' },
 ]
 
 export default function Home() {
-  const { hero, about, pillars, councils, whatWeDo, centers, news, impact } = home
+  const { hero, about, councils, whatWeDo, centers, news, impact } = home
 
   return (
     <>
@@ -84,20 +77,11 @@ export default function Home() {
       <section id="pillars" className="section-padding border-b border-border bg-off-white">
         <div className="container-main">
           <SectionHeading eyebrow="Our Pillars" title="Four pillars of CCI India's work" />
-          <div className="grid gap-4 md:grid-cols-2">
-            {pillars.map((p) => (
-              <div key={p.id} className={`border border-border border-t-4 bg-white p-5 ${accentBorder[p.accent]}`}>
-                <div className="mb-1 text-xs font-semibold text-muted-fg">{p.index} · {p.tag}</div>
-                <h3 className="mb-2 font-serif text-lg font-bold text-navy-deep">{p.title}</h3>
-                <p className="mb-4 text-sm text-muted-fg">{p.description}</p>
-                <ul className="grid grid-cols-2 gap-1">
-                  {p.points.map((pt) => (
-                    <li key={pt} className="text-xs text-muted-fg before:mr-1 before:text-saffron before:content-['•']">{pt}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          <img
+            src="/images/four-pillars.png"
+            alt="Four Pillars of CCI India's work"
+            className="h-auto w-full border border-border"
+          />
         </div>
       </section>
 
