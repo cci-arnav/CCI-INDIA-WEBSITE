@@ -37,7 +37,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="border-b border-border bg-white">
+    <header className="border-b border-border bg-white sticky top-0 z-50">
       <div className="container-main flex items-center justify-between gap-3 py-3">
         <Link to="/" className="flex shrink-0 items-center gap-2.5">
           <img
@@ -52,7 +52,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-0.5 lg:flex">
+        <nav className="hidden items-center gap-0.3 text-sm font-bold lg:flex whitespace-nowrap">
           {NAV_ITEMS.map((item) =>
             item.children ? (
               <div
