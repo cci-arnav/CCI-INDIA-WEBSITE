@@ -22,7 +22,16 @@ export default function Footer() {
       <div className="container-main section-padding">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <div className="mb-3 font-serif text-lg font-bold">CCI INDIA</div>
+            <div className="mb-3 flex items-center gap-3">
+              <img
+                src="/brand/cci-logo.png"
+                alt="CCI India"
+                width={961}
+                height={442}
+                className="h-9 w-auto"
+              />
+              <p className="text-xs text-white/60">Chamber of Commerce &amp; Industry of India</p>
+            </div>
             <p className="text-sm text-white/70">{footer.description}</p>
             <p className="mt-4 text-sm text-white/60">Toll Free: {footer.tollFree}</p>
           </div>

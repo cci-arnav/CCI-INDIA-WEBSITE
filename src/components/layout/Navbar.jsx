@@ -39,12 +39,17 @@ export default function Navbar() {
   return (
     <header className="border-b border-border bg-white">
       <div className="container-main flex items-center justify-between gap-4 py-3">
-        <Link to="/" className="flex items-center gap-2.5 shrink-0">
-          <img src="/logo.svg" alt="CCI India" className="h-9 w-9" onError={(e) => { e.target.style.display = 'none' }} />
-          <div>
-            <div className="font-serif text-base font-bold leading-tight text-navy-deep">CCI INDIA</div>
-            <div className="text-[10px] uppercase tracking-wider text-muted-fg">Chamber of Commerce</div>
-          </div>
+        <Link to="/" className="flex shrink-0 items-center gap-2.5">
+          <img
+            src="/brand/cci-logo.png"
+            alt="CCI India"
+            width={961}
+            height={442}
+            className="h-8 w-auto sm:h-9"
+          />
+          <span className="hidden text-[10px] uppercase tracking-[0.18em] text-muted-fg sm:inline-block">
+            Chamber of Commerce <br /> &amp; Industry of India
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-0.5 lg:flex">
