@@ -1,0 +1,181 @@
+{
+  "hero": {
+    "badge": "Facilitating India's growth engine",
+    "headlineLead": "The voice of ",
+    "headlineAccent": "India's business and industry",
+    "description": "CCI India connects businesses, investors, government and innovators into a single, living economic ecosystem — championing policy advocacy, business expansion, strategic partnerships and investment facilitation across the country.",
+    "primaryCta": { "label": "Explore what we do", "href": "#pillars" },
+    "secondaryCta": { "label": "See our national reach", "href": "#impact" },
+    "stats": [
+      { "value": "1997", "label": "Founded" },
+      { "value": "90+", "label": "Sector Councils" },
+      { "value": "7+", "label": "Global Offices" }
+    ]
+  },
+  "about": {
+    "eyebrow": "Who We Are",
+    "titleLead": "The knowledge architect of ",
+    "titleAccent": "Corporate India",
+    "description": "CCI India is an autonomous organization mandated for policy advocacy and diversified economic growth — drawing its strength from diverse regional chambers of commerce and industry across states, and serving members from India's private and public corporate sectors and multinational companies.",
+    "quickStats": [
+      { "value": "1997", "label": "Est. as a chamber for Corporate India" },
+      { "value": "90+", "label": "Sector & regional councils" }
+    ],
+    "items": [
+      {
+        "tag": "Our Mission",
+        "text": "As a representative organ of Corporate India, CCI India articulates the genuine needs and interests of its members, working to impact policy and legislation so as to foster balanced economic, industrial and social development."
+      },
+      {
+        "tag": "Our Vision",
+        "text": "To empower Indian enterprise with the knowledge that catalyses growth in a technology-driven global market — helping members upscale, align and emerge as formidable players in their respective business segments."
+      }
+    ],
+    "cta": { "label": "Read the full story, mission & leadership", "href": "/about" }
+  },
+  "pillars": [
+    {
+      "id": "advocacy",
+      "index": "01",
+      "title": "Policy Framework",
+      "tag": "Governance · Structured Guidance",
+      "description": "A structured set of guidelines and principles that helps organizations and government bodies guide decision-making and ensure consistency in action — the foundation for planning, implementing and evaluating policy.",
+      "points": ["Legislative representation", "Policy research & drafting", "Regulatory alignment", "Government–industry councils"],
+      "accent": "royal"
+    },
+    {
+      "id": "expansion",
+      "index": "02",
+      "title": "Tangible Business Expansion",
+      "tag": "Growth · GMV & GMT",
+      "description": "A clear, measurable strategy to grow business by doubling Gross Merchandise Value and Gross Merchandise Turnover — focused on increased sales and faster inventory turnover.",
+      "points": ["Market entry support", "Sales growth strategy", "Inventory turnover", "Industrial cluster access"],
+      "accent": "cyan"
+    },
+    {
+      "id": "partnerships",
+      "index": "03",
+      "title": "Strategic MoUs & Partnerships",
+      "tag": "Collaboration · Alliances",
+      "description": "Formalizing partnerships through Memorandums of Understanding with central and state governments, PSUs, ministries and departments — to collaborate on projects, share resources and align objectives for mutual benefit.",
+      "points": ["Central & state government MoUs", "PSU collaborations", "Ministry & department alignment", "Resource sharing"],
+      "accent": "saffron"
+    },
+    {
+      "id": "funding",
+      "index": "04",
+      "title": "Funding & Investment Facilitation",
+      "tag": "Capital · Impact",
+      "description": "Securing financial resources from Alternative Investment Funds, family offices, sovereign wealth funds and inter-governmental and government agencies — while exploring private debt and impact investing.",
+      "points": ["AIFs & family offices", "Sovereign & PSU funds", "Private debt options", "Impact investing"],
+      "accent": "green"
+    }
+  ],
+  "councils": {
+    "eyebrow": "CCI India Councils",
+    "titleLead": "One institution, ",
+    "titleAccent": "ninety sectors strong",
+    "description": "From agriculture to aviation, healthcare to hydro power — CCI India's councils bring together stakeholders from every corner of the Indian economy.",
+    "totalLabel": "90+ Councils",
+    "featured": [
+      { "name": "Agriculture" },
+      { "name": "Banking and Finance" },
+      { "name": "Healthcare" },
+      { "name": "Manufacturing" },
+      { "name": "IT & ITEs" },
+      { "name": "New & Renewable Energy" },
+      { "name": "MSME" },
+      { "name": "Entrepreneurship Development" },
+      { "name": "Infrastructure" }
+    ],
+    "cta": { "label": "View all councils", "href": "/councils" }
+  },
+  "whatWeDo": {
+    "eyebrow": "What We Do",
+    "titleLead": "At the center of India's ",
+    "titleAccent": "connected economy",
+    "description": "CCI India offers a bouquet of value-added services to its members and industry as a whole — building platforms for exchange, networking and new business generation. Hover a node to trace a connection.",
+    "flows": [
+      { "label": "Policy Advocacy", "text": "Carrying industry's voice into the halls of policy." },
+      { "label": "Trade Facilitation", "text": "A single window for business matchmaking, in India and abroad." },
+      { "label": "Investment Matchmaking", "text": "Connecting capital with promising enterprise." },
+      { "label": "Global Networking", "text": "Channels with regulators, governments and international agencies." }
+    ]
+  },
+  "centers": {
+    "eyebrow": "Initiatives & Centers",
+    "titleLead": "Ten centers, ",
+    "titleAccent": "one mission",
+    "description": "Specialized centers that focus CCI India's advocacy, investment and growth work on the areas that matter most to Indian enterprise.",
+    "items": [
+      { "name": "Center for Market Entry & Business Expansion", "focus": "Business Expansion", "blurb": "Guiding companies into the Indian market and helping them scale operations." },
+      { "name": "Center for Democracy, Political & Economy", "focus": "Governance", "blurb": "Tracking the political and economic forces shaping policy in India." },
+      { "name": "Center for Investor & Portfolios Growth", "focus": "Investment", "blurb": "Supporting investors in growing and diversifying their portfolios." },
+      { "name": "Center for State Investment", "focus": "States", "blurb": "Making the investment environment in the states more conducive to growth." },
+      { "name": "Center for Policy Advocacy", "focus": "Policy", "blurb": "Carrying industry's concerns directly to policymakers." },
+      { "name": "Center for Startups", "focus": "Startups", "blurb": "Backing India's founders from first idea to scale." },
+      { "name": "Center for Impact Investment", "focus": "Impact Investing", "blurb": "Aligning capital with positive social and environmental outcomes." },
+      { "name": "Center for SDG", "focus": "Sustainability", "blurb": "Advancing the UN Sustainable Development Goals through industry action." },
+      { "name": "Center for Family Office", "focus": "Family Office", "blurb": "Serving the investment and governance needs of family enterprises." },
+      { "name": "Center for Founder", "focus": "Founders", "blurb": "A dedicated network and resource base for company founders." }
+    ]
+  },
+  "news": {
+    "eyebrow": "News & Events",
+    "titleLead": "The latest from ",
+    "titleAccent": "CCI India",
+    "description": "Newsfeed and updates from across CCI India's national and international activity.",
+    "items": [
+      { "title": "Ethanol & Biofuel Conference inaugurated by the Hon. Minister of External Affairs & Minister of State for Culture", "type": "Event" },
+      { "title": "Devendra Fadnavis allotted bungalow in Delhi — any significance?", "type": "News" },
+      { "title": "Starbucks' new CEO won't relocate, will fly 1,600 km on private jet daily to work", "type": "News" },
+      { "title": "Refreshed bureaucracy to lead the Modi Government 3.0", "type": "News" },
+      { "title": "Russia halts rupee repatriation as India offers bouquet of investment options, say sources", "type": "News" }
+    ],
+    "cta": { "label": "More news", "href": "/events" }
+  },
+  "impact": {
+    "eyebrow": "CCI India at a Glance",
+    "title": "A national institution, built over decades",
+    "description": "The scale behind CCI India's work connecting business, government and industry across the country.",
+    "stats": [
+      { "label": "Founded", "value": 1997, "prefix": "", "suffix": "" },
+      { "label": "Sector & Regional Councils", "value": 90, "suffix": "+" },
+      { "label": "Specialized Centers", "value": 10, "suffix": "" },
+      { "label": "Global & Regional Offices", "value": 7, "suffix": "+" },
+      { "label": "Membership Tiers", "value": 5, "suffix": "" },
+      { "label": "States & UTs Covered", "value": 36, "suffix": "" }
+    ]
+  },
+  "footer": {
+    "description": "CCI India is the voice of India's business and industry. From influencing policy to encouraging debate, engaging with policy makers and civil society, CCI India articulates the views and concerns of industry.",
+    "ctaEyebrow": "Join the ecosystem",
+    "ctaTitle": "Be our member — grow with CCI India",
+    "ctaDescription": "Whether you are a business seeking expansion, an investor pursuing opportunity, or a policymaker shaping the future — CCI India is your bridge to the ecosystem.",
+    "ctaPrimary": { "label": "Become a Member", "href": "/membership" },
+    "ctaSecondary": { "label": "Contact Us", "href": "/contact" },
+    "linkColumns": [
+      {
+        "heading": "About",
+        "links": [
+          { "label": "Who We Are", "href": "/about" },
+          { "label": "What We Do", "href": "/services" },
+          { "label": "Councils", "href": "/councils" },
+          { "label": "Careers", "href": "/careers" }
+        ]
+      },
+      {
+        "heading": "Engagement",
+        "links": [
+          { "label": "Membership", "href": "/membership" },
+          { "label": "States Investment", "href": "/states-investment" },
+          { "label": "Gallery", "href": "/gallery" },
+          { "label": "News & Events", "href": "/events" },
+          { "label": "Contact", "href": "/contact" }
+        ]
+      }
+    ],
+    "tollFree": "1800 313 011 011",
+    "copyright": "CCI INDIA — all rights reserved."
+  }
+}

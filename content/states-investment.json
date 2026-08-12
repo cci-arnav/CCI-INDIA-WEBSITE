@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "eyebrow": "States Investment",
+    "title": "Making the environment conducive for investment in the states through policy advocacy",
+    "breadcrumb": [
+      { "label": "Home", "href": "/" },
+      { "label": "States Investment" }
+    ]
+  },
+  "intro": {
+    "eyebrow": "India's State Investment Chamber",
+    "heading": "The country's only dedicated State Investment Business Chamber",
+    "lead": "CCI INDIA has the distinction of being the country's only dedicated State Investment Business Chamber. CCI INDIA has helped global companies expand their business and smoothen operations in India through joint ventures and market intelligence.",
+    "paragraphs": [
+      "Through economic research and surveys, CCI INDIA brings out relevant investment profiles of States & Regions in the country, which go a long way in engaging with interested investors from across India and the globe. CCI INDIA's forte has been to correctly assess the current business scenario in India and the world, and to anticipate future economic trends, equipping industry to align itself to the dynamics of an integrated world economy.",
+      "CCI INDIA's work is organized across four Regional Development Councils — Eastern & North Eastern, Western, Northern and Southern — each engaging directly with State Governments on policy advocacy, ease-of-doing-business reforms and investment facilitation."
+    ]
+  },
+  "regions": [
+    {
+      "id": "eastern",
+      "name": "Eastern & North Eastern Region Development Council",
+      "states": ["Arunachal Pradesh", "Assam", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Sikkim", "Tripura"],
+      "description": "The Eastern and North Eastern Region council focuses on the overall development of the economy of eastern and north eastern India. The council regularly engages with policy makers, conducts relevant studies and recommendations, and arranges conferences with the objective of bringing key issues to the table, analyzing the performance of government and industry, and suggesting the way forward. Its objective is to strengthen the economy of the region through effective participation of the private sector in the development effort, working alongside the Ministry of Development of North Eastern Region to accelerate the pace of socio-economic development so the region enjoys growth parity with the rest of the country."
+    },
+    {
+      "id": "western",
+      "name": "Western Region Development Council",
+      "states": ["Goa", "Gujarat", "Madhya Pradesh", "Maharashtra"],
+      "description": "The Western region comprises Goa, Gujarat, Madhya Pradesh and Maharashtra. Each state, with its distinctive niche, potential and capabilities, has contributed significantly to India's growth story — abundant natural resources, industrial strength, sound connectivity, an investor-friendly ambience and skilled manpower make the region attractive to investors. Gujarat, Madhya Pradesh and Maharashtra rank among the top 10 states in India for ease of doing business. The region's major industries span iron & steel, auto & auto components, engineering, chemicals & petrochemicals, gems & jewellery, textiles, food processing, cement and pharmaceuticals, alongside a thriving services sector that includes the Reserve Bank of India, the Bombay Stock Exchange, the National Stock Exchange and SEBI. Western Region serves a membership base of over 2,258 direct members across 33 regional and local member associations."
+    },
+    {
+      "id": "northern",
+      "name": "Northern Region Development Council",
+      "states": ["Delhi", "Haryana", "Himachal Pradesh", "Jammu and Kashmir", "Punjab", "Rajasthan", "Uttarakhand", "Uttar Pradesh", "Chandigarh"],
+      "description": "Headquartered at Chandigarh, the Northern Region works to create and sustain an environment conducive to development by partnering industry, government and civil society through advisory and consultative processes. Comprising eight states plus the Union Territory of Chandigarh, the region accounts for around 30.7%, 32% and 27% of India's total area, population and contribution to national GDP respectively. Uttar Pradesh, Rajasthan and Delhi are the region's largest economies, while six states — Chandigarh, Delhi, Haryana, Himachal Pradesh, Punjab and Uttarakhand — have per capita income above the national average. Under the theme 'Building a Competitive North — Sustainable, Inclusive and Equitable', the region works around six key enablers: policy framework & ease of doing business, competitiveness, physical & social infrastructure, entrepreneurship & startups, engaging society, and expanding reach to new markets."
+    },
+    {
+      "id": "southern",
+      "name": "Southern Region Development Council",
+      "states": ["Andhra Pradesh", "Karnataka", "Kerala", "Tamil Nadu", "Telangana", "Puducherry"],
+      "description": "The Southern Region comprises Andhra Pradesh, Karnataka, Kerala, Tamil Nadu, Telangana and Puducherry — states that have consistently scored high on key economic and social indicators. Tamil Nadu has a strong manufacturing base especially in auto & auto components, Karnataka is globally recognized as India's IT hub, Andhra Pradesh's strength lies in biotechnology and pharmaceuticals, Telangana hosts major manufacturing and services operations, tourism is a key advantage for Kerala, and Puducherry is emerging as a centre for general engineering, auto ancillary and IT-ITeS. The region works closely with state governments on policy issues impacting industry, and supports members through networking, business missions, trade fairs, exhibitions and buyer-seller forums."
+    }
+  ],
+  "cta": {
+    "title": "Bring your investment to the states that are ready",
+    "description": "Connect with CCI INDIA's regional development councils for investment profiles, policy advocacy and on-the-ground facilitation across every region of India.",
+    "primary": { "label": "Become a Member", "href": "/membership" },
+    "secondary": { "label": "Contact Us", "href": "/contact" }
+  }
+}

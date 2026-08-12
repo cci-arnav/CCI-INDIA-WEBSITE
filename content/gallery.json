@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "eyebrow": "Gallery",
+    "title": "Great & Awesome Works",
+    "breadcrumb": [
+      { "label": "Home", "href": "/" },
+      { "label": "Gallery" }
+    ]
+  },
+  "intro": {
+    "eyebrow": "Gallery",
+    "heading": "Our Event Gallery",
+    "lead": "A look back at CCI INDIA's conferences, summits and delegations — captured in moments."
+  },
+  "videos": {
+    "eyebrow": "Event Highlights",
+    "heading": "Watch our recent events",
+    "items": [
+      {
+        "title": "Ethanol & Biofuel Conference",
+        "youtubeId": "QCETr3G42eQ"
+      },
+      {
+        "title": "Ethanol & Biofuel Conference — Session 2",
+        "youtubeId": "fwfs697SetQ"
+      },
+      {
+        "title": "\"Money Game\" — CCI India's special show",
+        "youtubeId": "15AHHI4DUwo"
+      }
+    ]
+  },
+  "note": "Photo galleries from our conferences, summits and delegations are being curated for this section. Check back soon for the full collection.",
+  "photos": {
+    "caption": "Real event photography is being added to this gallery. The cards below will pick up each photo automatically once it's placed in public/gallery — see public/gallery/README.txt.",
+    "items": [
+      { "id": 1, "image": "/gallery/event-01.jpg", "badge": "Summit", "title": "India Investment Summit", "location": "New Delhi" },
+      { "id": 2, "image": "/gallery/event-02.jpg", "badge": "Conference", "title": "Ethanol & Biofuel Conference", "location": "Mumbai" },
+      { "id": 3, "image": "/gallery/event-03.jpg", "badge": "Delegation", "title": "Trade Delegation Visit", "location": "Singapore" },
+      { "id": 4, "image": "/gallery/event-04.jpg", "badge": "Awards", "title": "Excellence in Trade Awards", "location": "New Delhi" },
+      { "id": 5, "image": "/gallery/event-05.jpg", "badge": "Council Meet", "title": "Sectoral Council Meeting", "location": "Gurugram" },
+      { "id": 6, "image": "/gallery/event-06.jpg", "badge": "Cultural", "title": "Cultural Exchange Evening", "location": "Chennai" }
+    ]
+  },
+  "cta": {
+    "title": "Be part of the next CCI India story",
+    "description": "Join our network of members and partners at conferences, summits and delegations across India and abroad.",
+    "primary": { "label": "Become a Member", "href": "/membership" },
+    "secondary": { "label": "News & Events", "href": "/events" }
+  }
+}

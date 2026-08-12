@@ -1,0 +1,94 @@
+{
+  "hero": {
+    "eyebrow": "Contact",
+    "title": "Contact Us",
+    "breadcrumb": [
+      { "label": "Home", "href": "/" },
+      { "label": "Contact Us" }
+    ]
+  },
+  "headquarters": {
+    "name": "CCI India — New Delhi Office",
+    "address": "13, Institutional Area, Lodhi Road, New Delhi - 110 003",
+    "phone": "011 - 44 101 999"
+  },
+  "indiaOffices": [
+    {
+      "name": "North-East Regional Office",
+      "contactPerson": "Mr. Prasanth Baruah",
+      "address": "7 Survey, Beltola, Guwahati - 700 028",
+      "phone": "+91 - 9957999367"
+    },
+    {
+      "name": "Arunachal Pradesh",
+      "contactPerson": "Mr. Techi Nikum Tara",
+      "address": "M/S North East Engineering & Construction, A Sector, Naharlagun, Papum Pare - 791110, Arunachal Pradesh"
+    },
+    {
+      "name": "Mumbai Office",
+      "contactPerson": "Mr. Sujeet Katiyar",
+      "address": "S-206, Shyam Gokul Garden, Thakur Complex, Kandivali East, Near St. Lawrence School, Mumbai - 400101 (Maharashtra)"
+    }
+  ],
+  "overseasOffices": [
+    {
+      "name": "Switzerland",
+      "contactPerson": "Dr. Mahin A Bafghi (President)",
+      "address": "Rute de la Paix 8, 1820 Montreux, Switzerland",
+      "phone": "+41 (0) 787854244"
+    },
+    {
+      "name": "Turkey",
+      "contactPerson": "Mr. Gokhan Aydogdu",
+      "address": "4. Levent Konaklar Mh. Akcam Cd. No.3, Kat.2, Da.8, 34330 Besiktas Istanbul, Turkey",
+      "phone": "+90 212 278 4411, +90 532 233 4516"
+    },
+    {
+      "name": "France / Switzerland",
+      "contactPerson": "Ivan Bohler",
+      "address": "Rue Voltaire 26, 1201 Geneva, Switzerland",
+      "phone": "+41 (0) 79 216 88 70"
+    },
+    {
+      "name": "China / Hong Kong / South Korea",
+      "contactPerson": "Ms. Lauren Nan",
+      "address": "Höschgasse 66, 8008 Zürich, Switzerland",
+      "phone": "+41 (0) 789409500"
+    },
+    {
+      "name": "Thailand",
+      "contactPerson": "Mr. Alireza Bisadi",
+      "address": "No. 42/10, Pattanakarn Kukwang 55, Pattanakarn Kukwang Road, Nakhon Sri Thammarat Province, Thailand, 80000"
+    },
+    {
+      "name": "Mexico",
+      "contactPerson": "Ms. Corinne Favre (Regional Director)",
+      "address": "Route de Prélaz 8a, 1807 Blonay, Switzerland",
+      "phone": "+41 (0) 799460470"
+    },
+    {
+      "name": "Bulgaria & Macedonia",
+      "contactPerson": "Dr. Igor Stoyanoski",
+      "address": "Boulevard Gotsé Delchev 253, Sofia, Bulgaria · Mishe Eftim 8a, Krushevo, Macedonia"
+    }
+  ],
+  "departments": [
+    "Director General",
+    "Admin",
+    "Events and Sponsorship",
+    "Membership",
+    "General Information",
+    "Careers",
+    "Joint Venture and Business Expansions"
+  ],
+  "form": {
+    "eyebrow": "Get in Touch",
+    "heading": "Send us a message",
+    "description": "Tell us a little about your enquiry and the right CCI INDIA team will get back to you."
+  },
+  "upcomingHq": {
+    "title": "Our upcoming Headquarter near Jewar Airport",
+    "subtitle": "4th largest airport in the world, and the 2nd largest in Asia",
+    "tollFree": "1800 313 011 011"
+  }
+}

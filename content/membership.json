@@ -1,0 +1,126 @@
+{
+  "hero": {
+    "eyebrow": "Membership",
+    "title": "Be Our Member",
+    "breadcrumb": [
+      { "label": "Home", "href": "/" },
+      { "label": "Membership" }
+    ]
+  },
+  "intro": {
+    "eyebrow": "Join CCI India",
+    "heading": "Be Our Member",
+    "lead": "CCI INDIA has also been identified as the \"Knowledge Chamber\" and has been focusing on providing knowledge-based technologies and business opportunities to our members. CCI INDIA represents the interest of Chambers and Trade Associations from all over India, encompassing all sectors of India's trade, industry and commerce."
+  },
+  "eligibility": {
+    "eyebrow": "Membership Rules",
+    "heading": "Eligibility",
+    "items": [
+      {
+        "text": "Merchants, bankers, ship-owners, representatives of commercial, transport or insurance companies, brokers and persons engaged in commerce, agriculture, mining or manufacture and persons engaged in or connected with Art, science or literature shall be eligible for election as members of the CCI INDIA.",
+        "emphasis": false
+      },
+      {
+        "text": "There shall be three classes of members of the CCI INDIA, namely (i) Associates Member (ii) Corporate Member (iii) Patron Member & (iv) Exclusive Membership.",
+        "emphasis": true
+      },
+      {
+        "text": "Any undertaking including a foreign company or the undertaking together with its associates, not exceeding four in number, actually engaged in industry, trade or services, which, in the opinion of the Committee of the CCI INDIA have been enjoying good standing and contributing to economic activities, shall be eligible to become a Corporate Group Member of the CCI INDIA.",
+        "emphasis": false
+      },
+      {
+        "text": "Any individual, firm, company or corporation being a candidate for election as a member of the CCI INDIA shall send with the proposal form, provided for by Article 9 of the Articles of Association, a declaration that he or it is eligible for election as a member of this CCI INDIA.",
+        "emphasis": false
+      },
+      {
+        "text": "An undertaking desirous of becoming a Corporate Group Member shall send an application to the Director-General or Director in the prescribed Form, complete with all supporting documents as specified in the form.",
+        "emphasis": false
+      },
+      {
+        "text": "The Committee shall decide any question which may arise as to the eligibility or otherwise of a candidate for admission as a member of the CCI INDIA, and their decision shall be final; they shall not be bound to assign any reason for their action.",
+        "emphasis": false
+      },
+      {
+        "text": "A firm, joint stock company or other corporation shall not cease to be a member of the CCI INDIA upon any change being made in the conventional or corporate name of the firm, company or corporation. In the case of a merger or other form of amalgamation, the old membership may be continued under the new name with the approval of the Committee of the CCI INDIA.",
+        "emphasis": false
+      },
+      {
+        "text": "A member does not cease to be a member by reason only of a change in the constitution of the firm occasioned by the admission, retirement or death of a partner, provided the business of the firm is continued in the conventional name in which such firm was elected as a member.",
+        "emphasis": false
+      },
+      {
+        "text": "Any member may withdraw from the CCI INDIA by giving two months' notice in writing to the Director-General or Director of the intention of such member to do so, and upon the expiration of the notice, such member shall cease to be a member of the CCI INDIA.",
+        "emphasis": false
+      },
+      {
+        "text": "A member shall cease to be a member of the CCI INDIA: (a) in case a member is an individual, if he is an un-discharged insolvent, adjudged by a competent court to be of unsound mind, or convicted of an offence involving moral turpitude; (b) in case of a firm, if it is dissolved or adjudged insolvent or the partners are convicted of any offence involving moral turpitude; (c) in case of a company, if it is wound up.",
+        "emphasis": false
+      },
+      {
+        "text": "An Admission fee of Rs. 5,000/- and annual fee of Rs. 25,000/- shall be paid by all firms or companies admitted to Ordinary membership of the CCI INDIA after 1st January, 2004. The Annual subscription payable by each member shall be as per the schedule described in the membership form.",
+        "emphasis": false
+      },
+      {
+        "text": "Each Corporate Group Member shall pay a subscription of Rs. 3 lakhs for each financial year or part thereof, and can nominate one representative on the Committee of the CCI INDIA, subject to the Committee's approval. Such nomination can be sent only if the subscription for that financial year has been paid on or before the 30th day of the Financial Year.",
+        "emphasis": false
+      },
+      {
+        "text": "The Admission Fee for each ordinary member shall be payable on election along with the first Annual subscription. All subsequent Annual subscriptions shall be payable on the first day of the Financial Year, in one installment. The Committee may levy a surcharge by way of additional subscription on any member or class of members as it deems fit, provided that no surcharge shall be levied on Associate Members.",
+        "emphasis": false
+      },
+      {
+        "text": "CCI INDIA has numerous Expert Committees / National Councils on different business interests, which regularly take up national and global issues of prime importance to its members, and continuously interacts with the Central and State Governments, playing an important role in shaping India's Economic, Trade, Fiscal and Social policies.",
+        "emphasis": false
+      },
+      {
+        "text": "For Exclusive Membership it is through Invitation only, and meant primarily for big companies / corporates for expansion into Indian markets. Each Exclusive Member has a dedicated Relationship Manager directly under the Director General to ensure the benefits of the huge market — backed by a research team to guide on policy matters of the sector, facilitating set up or expansion into Indian markets, policy analysis, advocacy, business matchmaking and timely completion of projects from acquiring land to final production, expansion or joint venture.",
+        "emphasis": true
+      }
+    ]
+  },
+  "tiers": {
+    "eyebrow": "Membership Tiers",
+    "heading": "Choose the membership that fits you",
+    "items": [
+      {
+        "name": "Associates Member",
+        "formHref": "https://www.cciindia.org/pdf/CCI%20India%20ASSOCIATES%20MEMBERSHIP.pdf"
+      },
+      {
+        "name": "Corporate Member",
+        "formHref": "https://www.cciindia.org/pdf/CCI%20India%20Corporate%20Membership%20Form.pdf"
+      },
+      {
+        "name": "Patron Member",
+        "formHref": "https://www.cciindia.org/pdf/CCI%20India%20PATRON%20MEMBERSHIP.pdf"
+      },
+      {
+        "name": "Exclusive Member",
+        "formHref": "https://www.cciindia.org/pdf/CCI%20India%20EXCLUSIVE%20MEMBERSHIP.pdf"
+      },
+      {
+        "name": "Privilege Member",
+        "fee": "Fees: 5 Lakhs",
+        "formHref": "https://www.cciindia.org/pdf/CCI%20India%20Privilege%20Membership.pdf"
+      }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Member Benefits",
+    "heading": "What you get as a member",
+    "items": [
+      "Invited to Interview or Panel Discussion",
+      "Connecting with Venture Capital and Private Equity for Funding",
+      "Massive online promotion and branding for one year",
+      "Digital version of Interview and panel discussion also on Android App for wider viewership",
+      "Handholding for business growth",
+      "Hand holding for members' business growth during crises such as Covid-19"
+    ]
+  },
+  "cta": {
+    "title": "Ready to become a member?",
+    "description": "Download the membership form for your chosen tier, or get in touch with our team to find the right fit for your business.",
+    "primary": { "label": "Contact Us", "href": "/contact" },
+    "secondary": { "label": "Explore Councils", "href": "/councils" }
+  }
+}

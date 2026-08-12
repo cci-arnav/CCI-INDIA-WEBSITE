@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "eyebrow": "About Us",
+    "title": "CCI INDIA is the voice of India's business and industry",
+    "breadcrumb": [
+      { "label": "Home", "href": "/" },
+      { "label": "About Us" }
+    ]
+  },
+  "intro": {
+    "eyebrow": "Who We Are",
+    "heading": "All About Us",
+    "lead": "We at CCI India strive to make the world a better place for co-existence and prosperity through economic and socio development.",
+    "paragraphs": [
+      "From influencing policy to encouraging debate, engaging with policy makers and civil society, CCI INDIA articulates the views and concerns of industry. It serves its members from the Indian private and public corporate sectors and multinational companies, drawing its strength from diverse regional chambers of commerce and industry across states, reaching out to companies.",
+      "CCI INDIA also provides a platform for its members to project their policies and programmes to the concerned authorities. It also organizes important workshops, seminars, conferences and coordinates interactive sessions with the policy makers. CCI INDIA also regularly mounts delegations to many important countries.",
+      "CCI INDIA has the distinction of being the country's only dedicated State Investment Business Chamber. CCI INDIA has helped global companies expand their business and smoothen operations in India through joint ventures and market intelligence."
+    ]
+  },
+  "mission": {
+    "heading": "Our Mission",
+    "paragraphs": [
+      "As a representative organ of Corporate India, CCI INDIA articulates the genuine, legitimate needs and interests of its members.",
+      "Its mission is to impact the policy and legislative environment so as to foster balanced economic, industrial and social development.",
+      "We believe education, IT, BT, Health, Corporate Social Responsibility and environment to be the critical success factors."
+    ]
+  },
+  "vision": {
+    "heading": "Our Vision",
+    "paragraphs": [
+      "Empower Indian enterprise by inculcating knowledge that will be the catalyst of growth in the barrierless, technology-driven global market and help them upscale, align and emerge as formidable players in their respective business segments.",
+      "CCI INDIA derives its strength from its Promoter Chambers and other Industry/Regional Chambers/Associations spread all over the country."
+    ]
+  },
+  "leadership": {
+    "eyebrow": "Leadership",
+    "heading": "The people leading CCI India",
+    "members": [
+      { "name": "Dr. Mahin B", "title": "Senior Vice President" },
+      { "name": "Dev R", "title": "Vice President" },
+      { "name": "Munindra Kumar", "title": "Director General", "link": "https://in.linkedin.com/in/munindra-kumar-62a3a971" }
+    ]
+  },
+  "cta": {
+    "title": "CCI INDIA: A leading catalyst for the growth",
+    "description": "Empower Indian Industry by inculcating knowledge that will be the catalyst for growth.",
+    "primary": { "label": "Become a Member", "href": "/membership" },
+    "secondary": { "label": "Contact Us", "href": "/contact" }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "eyebrow": "What We Do",
+    "title": "CCI INDIA offers a bouquet of value-added services to Industry",
+    "breadcrumb": [
+      { "label": "Home", "href": "/" },
+      { "label": "Services" }
+    ]
+  },
+  "intro": {
+    "eyebrow": "What We Do?",
+    "heading": "Our Services",
+    "lead": "CCI INDIA is the voice of India's business and industry. From influencing policy to encouraging debate, engaging with policy makers and civil society, CCI INDIA articulates the views and concerns of Industry.",
+    "paragraphs": [
+      "CCI INDIA offers a bouquet of value-added services to its Members & Industry as a whole, ranging from Policy Advocacy, Trade Facilitation, Investment Matchmaking, Arbitration, to creating networking channels with Regulators, Governments, National & International Agencies of repute.",
+      "CCI INDIA reaches out to Members with prominent and meaningful sectoral initiatives at regular intervals, and thus builds platforms for exchange, networking and new business generation by bringing stakeholders together. Through economic research and surveys, CCI INDIA also brings out relevant Investment profiles of States & Regions in the country, which go a long way in engaging with interested Investors from all across India and the globe. CCI INDIA's forte has been to correctly assess the current business scenario in India and the world, and also to anticipate the future economic trends, which equip Industry to align itself to the dynamics of an integrated world economy."
+    ]
+  },
+  "jointVenture": {
+    "heading": "Joint Venture and Business Promotion",
+    "paragraphs": [
+      "CCI India plays a very active role with its vast network of members and associates in identifying the right organisation for joint venture in the country. No matter if you are a billion dollar company or a start up, looking to tap the vast Indian market you are at absolutely the right place, as we do focussed work to ensure that your business grows and you reap the benefit of our 130+ billion people market.",
+      "As a forward-looking company, CCI INDIA strives to create awareness and opportunities for Indian Industry in order to make, and keep it competitive and adaptive to global economic changes."
+    ]
+  },
+  "coreServices": {
+    "eyebrow": "What We Do",
+    "heading": "Our core services",
+    "items": [
+      {
+        "title": "Business Information",
+        "text": "CCI INDIA has launched a Trade Facilitation Desk to facilitate trade & business between India and the rest of the world. The Desk caters to enquiries from both members and non-members of CCI INDIA and acts as the single window for business matchmaking."
+      },
+      {
+        "title": "Certificate of Origin",
+        "text": "CCI INDIA issues non-preferential certificates of origin to both member and non-member companies. This document certifies that export products are wholly obtained, produced or manufactured in India, and is generally an integral part of export documents."
+      },
+      {
+        "title": "Council of Arbitration",
+        "text": "A body within the fold of CCI INDIA dedicated to the mission of extending institutional service for the Alternative Dispute Resolution (ADR) of commercial disputes. It administers, oversees and conducts arbitration and conciliation proceedings according to institutional rules."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Partner with CCI INDIA for your business growth",
+    "description": "From market entry to dispute resolution, connect with our services and become part of India's business ecosystem.",
+    "primary": { "label": "Become a Member", "href": "/membership" },
+    "secondary": { "label": "Contact Us", "href": "/contact" }
+  }
+}

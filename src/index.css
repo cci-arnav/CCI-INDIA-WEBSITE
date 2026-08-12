@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Merriweather", Georgia, "Times New Roman", serif;
+
+  --color-navy-deep: oklch(0.28 0.05 255);
+  --color-navy: oklch(0.34 0.05 255);
+  --color-royal: oklch(0.5 0.16 258);
+  --color-cyan: oklch(0.58 0.13 210);
+  --color-saffron: oklch(0.72 0.18 52);
+  --color-green: oklch(0.58 0.15 152);
+  --color-silver: oklch(0.46 0.02 255);
+  --color-muted: oklch(0.965 0.008 95);
+  --color-muted-fg: oklch(0.5 0.02 258);
+  --color-border: oklch(0.32 0.045 255 / 26%);
+  --color-off-white: #f8f9fa;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-[oklch(0.2_0.03_258)] font-sans text-[15px] antialiased;
+    line-height: 1.65;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif tracking-tight text-navy-deep;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-12 md:py-16;
+  }
+  .container-main {
+    @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+  .accent-royal { @apply border-royal text-royal; }
+  .accent-cyan { @apply border-cyan text-cyan; }
+  .accent-saffron { @apply border-saffron text-saffron; }
+  .accent-green { @apply border-green text-green; }
+}
+
+/* Simple carousel fade */
+.carousel-slide {
+  transition: opacity 0.4s ease;
+}
+.carousel-slide.hidden-slide {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}

@@ -1,0 +1,96 @@
+{
+  "hero": {
+    "eyebrow": "Careers",
+    "title": "Careers @ CCI India",
+    "breadcrumb": [
+      { "label": "Home", "href": "/" },
+      { "label": "Careers" }
+    ]
+  },
+  "intro": {
+    "eyebrow": "Internship Opportunity at CCI India",
+    "heading": "Where business meets global impact",
+    "lead": "Warm greetings from CCI India! At CCI India, we are redefining what it means to be a Chamber of Commerce. Our mission is to shape a growth-driven, innovation-focused business environment that connects India with the world.",
+    "paragraphs": [
+      "We are the first and most proactive organisation for enterprises looking to enter the Indian market, scale operations, or explore international business opportunities. By blending people, policy and purpose, we help build the future of cross-border commerce.",
+      "Our initiatives span across industries and continents — empowering companies, influencing policy, and unlocking new economic possibilities."
+    ]
+  },
+  "overview": {
+    "eyebrow": "Internship Overview",
+    "heading": "The essentials",
+    "items": [
+      { "label": "Type", "value": "On-site (Work from Office)" },
+      { "label": "Duration", "value": "Minimum 2 months" },
+      { "label": "Start Date", "value": "Immediate after selection" },
+      { "label": "Location", "value": "CCI India, 13 Institutional Area, Lodhi Road, New Delhi – 110003 (Nearest Metro: JLN Metro Station, Gate No. 4, Violet Line)" },
+      { "label": "Working Hours", "value": "10:00 AM – 6:00 PM (Monday to Saturday)" },
+      { "label": "Selection", "value": "Personal Interview" },
+      { "label": "Eligibility", "value": "Open to all years and academic backgrounds" }
+    ]
+  },
+  "whyApply": {
+    "eyebrow": "Why Should You Apply?",
+    "heading": "This internship is your gateway to",
+    "items": [
+      { "title": "Real-World Exposure", "text": "Work on live projects with national and global impact." },
+      { "title": "Professional Development", "text": "Learn directly from industry experts and policy influencers." },
+      { "title": "Diverse Experience", "text": "Contribute to events, research, media, marketing and more." },
+      { "title": "Global Networking", "text": "Connect with thought leaders, entrepreneurs and changemakers." },
+      { "title": "Career Boost", "text": "Build a powerful resume that stands out in any industry." }
+    ]
+  },
+  "tracks": {
+    "eyebrow": "Choose Your Track",
+    "heading": "Dynamic roles to suit your interests and strengths",
+    "items": [
+      "Research & Development",
+      "Marketing & Promotion",
+      "Digital Transformation",
+      "Media Documentation",
+      "Event Coordination",
+      "Public Relations",
+      "Human Resource (HR)",
+      "Data Analytics"
+    ]
+  },
+  "responsibilities": {
+    "eyebrow": "What You'll Do",
+    "heading": "As an intern, you may",
+    "items": [
+      "Conduct deep-dive research on market trends, industries and policy shifts",
+      "Create compelling content for campaigns and digital channels",
+      "Assist in social media strategy, branding and digital outreach",
+      "Document major events, workshops and media initiatives",
+      "Coordinate impactful business events with national and international stakeholders",
+      "Collaborate with cross-functional teams on strategic projects",
+      "Take on special assignments and grow through hands-on learning",
+      "Engage directly with ministers, senior bureaucrats and top-level executives from prestigious institutions, government bodies and multinational corporations"
+    ]
+  },
+  "formRoles": [
+    "Marketing & Promotion",
+    "Digital Transformation",
+    "Event Coordination",
+    "Public Relations",
+    "Human Resource (HR)",
+    "Data Analytics",
+    "Social Media"
+  ],
+  "form": {
+    "eyebrow": "Apply Now",
+    "heading": "Send us your application",
+    "description": "Be a changemaker, a creator, a connector. Step into a future of unlimited possibilities with CCI India."
+  },
+  "contactNote": {
+    "heading": "Got Questions?",
+    "text": "Our HR Team is happy to help!",
+    "phone": "93113 84063"
+  },
+  "cta": {
+    "title": "Warm regards, HR Department — CCI India",
+    "description": "Whether you're exploring career paths, building your network, or looking for purpose-driven work — this is the opportunity to make your mark.",
+    "primary": { "label": "Contact Us", "href": "/contact" },
+    "secondary": { "label": "Explore Membership", "href": "/membership" }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "eyebrow": "Initiatives",
+    "breadcrumb": [
+      { "label": "Home", "href": "/" },
+      { "label": "Initiatives", "href": "/#initiatives" },
+      { "label": "Market Entry & Business Expansion" }
+    ],
+    "lead": "Guiding global business into",
+    "accent": "strategic market entry.",
+    "subheading": "CCI India's Center for Market Entry & Business Expansion helps companies of every size enter the Indian market, scale their operations, and turn early traction into lasting growth.",
+    "tag": "Market Entry \u00b7 Scale-Up \u00b7 Partnerships",
+    "primaryCta": { "label": "Become a Member", "href": "/membership" },
+    "secondaryCta": { "label": "Explore Focus Areas", "href": "#focus" },
+    "videoUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260403_050628_c4e32401-fab4-4a27-b7a8-6e9291cd5959.mp4"
+  },
+  "intro": {
+    "eyebrow": "Who We Help",
+    "heading": "A single window into the Indian market",
+    "lead": "Whether you're a billion-dollar company or a first-time entrant, CCI India's vast network of members and associates helps you find the right structure, the right partners, and the right pace for growth.",
+    "paragraphs": [
+      "The Center for Market Entry & Business Expansion plays an active role in identifying the right organisation for joint ventures in the country, and in creating awareness and opportunities for Indian industry to stay competitive and adaptive to global economic change.",
+      "From first market assessment to full-scale operations, our team works alongside you — connecting you with regulators, state governments, PSUs and international agencies of repute along the way."
+    ]
+  },
+  "focusAreas": {
+    "eyebrow": "What We Do",
+    "heading": "Focus areas",
+    "items": [
+      {
+        "title": "Market Entry Strategy",
+        "text": "Assessing regulatory, tax and operational pathways to identify the right state, sector and structure for your first setup in India."
+      },
+      {
+        "title": "Joint Venture & Partner Matchmaking",
+        "text": "Connecting international companies with vetted Indian partners, distributors and manufacturers across CCI India's member network."
+      },
+      {
+        "title": "Business Expansion & Scale-Up",
+        "text": "Helping companies already operating in India expand into new states, verticals and sales channels."
+      },
+      {
+        "title": "Regulatory & Compliance Navigation",
+        "text": "Guiding companies through company registration, licensing, FDI norms and sector-specific approvals."
+      },
+      {
+        "title": "Government & PSU Liaison",
+        "text": "Facilitating introductions to central and state government departments, PSUs and investment promotion boards."
+      },
+      {
+        "title": "Market Intelligence",
+        "text": "Sector research, competitive landscape analysis and demand assessments that de-risk entry decisions."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "How We Help",
+    "heading": "From first contact to full-scale operations",
+    "steps": [
+      {
+        "title": "Discovery & Fit Assessment",
+        "text": "We understand your business, your goals and the sectors and states best suited to your entry or expansion."
+      },
+      {
+        "title": "Structuring & Introductions",
+        "text": "We recommend the right entry structure and introduce you to vetted partners, distributors or manufacturers."
+      },
+      {
+        "title": "Regulatory Setup",
+        "text": "We guide you through registration, licensing and compliance, liaising with regulators and government bodies as needed."
+      },
+      {
+        "title": "Scale & Ongoing Support",
+        "text": "As you grow, we continue facilitating new state entries, sectoral councils and partnership opportunities."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to bring your business into India?",
+    "description": "Connect with the Center for Market Entry & Business Expansion to find the right structure, partners and path for your growth.",
+    "primary": { "label": "Become a Member", "href": "/membership" },
+    "secondary": { "label": "Contact Us", "href": "/contact" }
+  }
+}

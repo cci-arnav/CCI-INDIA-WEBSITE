@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "eyebrow": "News & Events",
+    "title": "The latest from CCI India",
+    "breadcrumb": [
+      { "label": "Home", "href": "/" },
+      { "label": "News & Events" }
+    ]
+  },
+  "intro": {
+    "eyebrow": "What's New",
+    "heading": "Find the latest newsfeed from CCI INDIA",
+    "lead": "Newsfeed and updates from across CCI India's national and international activity — from policy conferences and delegations to the stories shaping Indian business."
+  },
+  "highlights": {
+    "eyebrow": "Event Highlights",
+    "heading": "Featured events",
+    "items": [
+      {
+        "title": "Ethanol & Biofuel Conference",
+        "description": "Inaugurated by the Hon. Minister of External Affairs & Minister of State for Culture — bringing farmers, industry and policymakers together to explore ethanol and biofuel's role in sustainable agriculture and rural prosperity.",
+        "youtubeId": "QCETr3G42eQ"
+      },
+      {
+        "title": "\"Money Game\" — CCI India's special show",
+        "description": "A show about startups: their journey, funding and the way ahead — featuring some of the greatest founders, investors and policymakers who matter.",
+        "youtubeId": "15AHHI4DUwo"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Stay connected with CCI India",
+    "description": "Follow our news and events to keep up with policy developments, conferences and delegations across India and abroad.",
+    "primary": { "label": "Become a Member", "href": "/membership" },
+    "secondary": { "label": "Contact Us", "href": "/contact" }
+  }
+}
