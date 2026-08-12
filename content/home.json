@@ -147,6 +147,37 @@
       { "label": "States & UTs Covered", "value": 36, "suffix": "" }
     ]
   },
+  "utilityBar": {
+    "tickerItems": [
+      {
+        "text": "Ethanol & Biofuel Conference inaugurated by Hon. Minister of External Affairs — watch highlights",
+        "href": "/events"
+      },
+      {
+        "text": "\"Money Game\" — CCI India's special show on startups, funding and the way ahead",
+        "href": "/events"
+      },
+      {
+        "text": "Internship opportunities now open at CCI India, New Delhi — apply today",
+        "href": "/careers"
+      },
+      {
+        "text": "Become a member and join 90+ sector councils across India",
+        "href": "/membership"
+      },
+      {
+        "text": "CCI India delegations and conferences — latest news and updates",
+        "href": "/events"
+      }
+    ],
+    "languages": ["English"],
+    "social": [
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/company/cci-india", "icon": "linkedin" },
+      { "label": "Twitter", "href": "https://twitter.com/cciindia", "icon": "twitter" },
+      { "label": "YouTube", "href": "https://www.youtube.com/@cciindia", "icon": "youtube" },
+      { "label": "Facebook", "href": "https://www.facebook.com/cciindia", "icon": "facebook" }
+    ]
+  },
   "footer": {
     "description": "CCI India is the voice of India's business and industry. From influencing policy to encouraging debate, engaging with policy makers and civil society, CCI India articulates the views and concerns of industry.",
     "ctaEyebrow": "Join the ecosystem",
