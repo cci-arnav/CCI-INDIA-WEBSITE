@@ -71,7 +71,7 @@ export default function TopUtilityBar() {
   }, [langOpen])
 
   return (
-    <div className="border-b border-border bg-gradient-to-r from-[#fc4a1a] to-[#f7b733] text-muted-fg">
+    <div className="sticky top-0 z-50 border-b border-border bg-gradient-to-r from-[#fc4a1a] to-[#f7b733] text-muted-fg">
       <div className="container-main flex h-9 items-center justify-between gap-4">
         <div className="flex min-w-0 flex-1 items-center gap-2.5 pr-4">
           <span className="hidden shrink-0 border-r border-border pr-2.5 text-[10px] font-semibold uppercase tracking-wider text-white sm:inline">
@@ -109,7 +109,7 @@ export default function TopUtilityBar() {
             {langOpen && (
               <ul
                 role="listbox"
-                className="absolute right-0 top-full z-50 mt-0.5 min-w-[6rem] border border-border bg-white py-1 shadow-sm"
+                className="absolute right-0 top-full z-50 mt-0.5 min-w-[6rem] max-h-64 overflow-y-auto border border-border bg-white py-1 shadow-sm"
               >
                 {utilityBar.languages.map((lang) => (
                   <li key={lang} role="option" aria-selected={lang === utilityBar.languages[0]}>

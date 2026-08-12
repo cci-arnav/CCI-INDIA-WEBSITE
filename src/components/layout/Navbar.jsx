@@ -37,7 +37,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="border-b border-border bg-white sticky top-0 z-50">
+    <header className="sticky top-9 z-40 border-b border-border bg-white">
       <div className="container-main flex items-center justify-between gap-3 py-3">
         <Link to="/" className="flex shrink-0 items-center gap-2.5">
           <img
@@ -52,7 +52,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-0.3 text-sm font-bold lg:flex whitespace-nowrap">
+        <nav className="hidden items-center gap-0.3 text-sm font-bold lg:flex lg:flex-wrap lg:items-center lg:flex-1">
           {NAV_ITEMS.map((item) =>
             item.children ? (
               <div
@@ -97,8 +97,8 @@ export default function Navbar() {
           )}
         </nav>
 
-        <div className="hidden lg:block">
-          <Button to="/membership" variant="primary" size="sm">
+        <div className="hidden lg:block lg:ml-4 flex-shrink-0">
+          <Button to="/membership" variant="primary" size="sm" className="whitespace-nowrap">
             Join the Network
           </Button>
         </div>

@@ -73,13 +73,13 @@
     }
   ],
   "departments": [
-    { "name": "Director General", "email": "directorgeneral@cciindia.org" },
+    { "name": "Director General", "email": "dg@cciindia.org" },
     { "name": "Admin", "email": "admin@cciindia.org" },
     { "name": "Events and Sponsorship", "email": "events@cciindia.org" },
     { "name": "Membership", "email": "membership@cciindia.org" },
     { "name": "General Information", "email": "info@cciindia.org" },
-    { "name": "Careers", "email": "careers@cciindia.org" },
-    { "name": "Joint Venture and Business Expansions", "email": "jointventure@cciindia.org" }
+    { "name": "Careers", "email": "jobs@cciindia.org" },
+    { "name": "Joint Venture and Business Expansions", "email": "business@cciindia.org" }
   ],
   "form": {
     "eyebrow": "Get in Touch",

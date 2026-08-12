@@ -170,7 +170,22 @@
         "href": "/events"
       }
     ],
-    "languages": ["English"],
+    "languages": [
+      "English",
+      "Hindi",
+      "Urdu",
+      "Tamil",
+      "Marathi",
+      "Bengali",
+      "Malayalam",
+      "Gujarati",
+      "Telugu",
+      "Kannada",
+      "Odia",
+      "Punjabi",
+      "Assamese",
+      "Manipuri"
+    ],
     "social": [
       { "label": "LinkedIn", "href": "https://www.linkedin.com/company/cci-india-chamber-of-commerce-industry-of-india/", "icon": "linkedin" },
       { "label": "Twitter", "href": "https://twitter.com/cciindia", "icon": "twitter" },
