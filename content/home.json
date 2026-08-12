@@ -11,6 +11,12 @@
       { "value": "90+", "label": "Sector Councils" },
       { "value": "7+", "label": "Global Offices" }
     ]
+    ,
+    "heroSlides": [
+      { "image": "/images/hero/slide-1.jpg", "alt": "CCI India conference" },
+      { "image": "/images/hero/slide-2.jfif", "alt": "CCI India delegation" },
+      { "image": "/images/hero/slide-3.jfif", "alt": "CCI India event" }
+    ]
   },
   "about": {
     "eyebrow": "Who We Are",

@@ -5,10 +5,6 @@ import Button from '../components/ui/Button'
 import Card from '../components/ui/Card'
 import SectionHeading from '../components/ui/SectionHeading'
 
-const heroSlides = [
-  { background: 'linear-gradient(135deg, oklch(0.28 0.05 255) 0%, oklch(0.34 0.05 255) 60%, oklch(0.5 0.16 258 / 0.4) 100%)' },
-  { background: 'linear-gradient(135deg, oklch(0.34 0.05 255) 0%, oklch(0.28 0.05 255) 50%, oklch(0.58 0.15 152 / 0.25) 100%)' },
-]
 
 export default function Home() {
   const { hero, about, councils, whatWeDo, centers, news, impact } = home
@@ -17,10 +13,11 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative min-h-[480px] border-b border-border bg-navy-deep text-white md:min-h-[520px]">
-        <div className="absolute inset-0 opacity-40">
-          <Carousel slides={heroSlides} />
+        <div className="absolute inset-0 z-0">
+          <Carousel slides={(hero && hero.heroSlides) || []} />
         </div>
-        <div className="container-main relative flex min-h-[480px] flex-col justify-center py-16 md:min-h-[520px]">
+        <div className="absolute inset-0 z-10 bg-black/40" aria-hidden="true" />
+        <div className="container-main relative z-20 flex min-h-[480px] flex-col justify-center py-16 md:min-h-[520px]">
           <span className="mb-4 inline-block w-fit border border-white/30 px-3 py-1 text-xs uppercase tracking-wider text-white/90">
             {hero.badge}
           </span>

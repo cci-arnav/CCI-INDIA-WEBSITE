@@ -59,6 +59,39 @@ export default function TopUtilityBar() {
   const [langOpen, setLangOpen] = useState(false)
   const langRef = useRef(null)
 
+  const languageCodeMap = {
+    English: 'en',
+    Hindi: 'hi',
+    Urdu: 'ur',
+    Tamil: 'ta',
+    Marathi: 'mr',
+    Bengali: 'bn',
+    Malayalam: 'ml',
+    Gujarati: 'gu',
+    Telugu: 'te',
+    Kannada: 'kn',
+    Odia: 'or',
+    Punjabi: 'pa',
+    Assamese: 'as',
+    Manipuri: 'mni',
+  }
+
+  const triggerGoogleTranslate = (code) => {
+    try {
+      const combo = document.querySelector('select.goog-te-combo')
+      if (!combo) {
+        // If the widget hasn't loaded yet, try again shortly
+        setTimeout(() => triggerGoogleTranslate(code), 500)
+        return
+      }
+      combo.value = code
+      combo.dispatchEvent(new Event('change'))
+    } catch (err) {
+      // silent
+      console.warn('Google Translate trigger failed', err)
+    }
+  }
+
   useEffect(() => {
     if (!langOpen) return undefined
     const onClickOutside = (e) => {
@@ -116,7 +149,16 @@ export default function TopUtilityBar() {
                     <button
                       type="button"
                       className="block w-full px-3 py-1 text-left text-[12px] text-navy-deep transition-colors duration-200 hover:bg-off-white"
-                      onClick={() => setLangOpen(false)}
+                      onClick={() => {
+                        const code = languageCodeMap[lang] || 'en'
+                        if (code === 'en') {
+                          // reset to English
+                          triggerGoogleTranslate('en')
+                        } else {
+                          triggerGoogleTranslate(code)
+                        }
+                        setLangOpen(false)
+                      }}
                     >
                       {lang}
                     </button>
