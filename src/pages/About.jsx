@@ -35,10 +35,11 @@ export default function About() {
           <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-saffron">{data.leadership.eyebrow}</p>
           <h2 className="mb-8 font-serif text-2xl font-bold text-navy-deep">{data.leadership.heading}</h2>
           <div className="mb-8 overflow-hidden rounded-lg border border-border">
-            <div className="bg-gradient-to-br from-navy-deep/10 to-saffron/10 p-12 text-center">
-              <p className="text-sm text-muted-fg italic">Leadership team imagery to be added</p>
-              <p className="mt-2 text-xs text-muted-fg/60">Placeholder for group photo of CCI India leadership team</p>
-            </div>
+            <img
+              src="/images/leadership/group-lead.jpg"
+              alt="CCI India Leadership Team - Senior Vice President, Vice President, and Director General"
+              className="h-auto w-full object-cover"
+            />
           </div>
           <div className="grid gap-6 sm:grid-cols-3">
             {data.leadership.members.map((m) => (

@@ -77,7 +77,7 @@ export default function Home() {
           <SectionHeading eyebrow="Our Pillars" title="Four pillars of CCI India's work" />
           <img
             src="/images/four-pillars.png"
-            alt="Four Pillars of CCI India's work"
+            alt="Four Pillars of CCI India's work - Policy Advocacy, Business Expansion, Networking, Business Intelligence"
             className="h-auto w-full border border-border"
           />
         </div>
@@ -93,10 +93,11 @@ export default function Home() {
             description={councils.description}
           />
           <div className="mb-8 overflow-hidden rounded-lg border border-border">
-            <div className="bg-gradient-to-br from-royal/10 to-cyan/10 p-12 text-center">
-              <p className="text-sm text-muted-fg italic">Councils sector imagery to be added</p>
-              <p className="mt-2 text-xs text-muted-fg/60">Placeholder for visual representation of CCI India's 90+ sector councils</p>
-            </div>
+            <img
+              src="/images/councils-visual.jpg"
+              alt="CCI India Councils - 90+ sector councils representing diverse industries and regions across India"
+              className="h-auto w-full object-cover"
+            />
           </div>
           <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-3">
             {councils.featured.map((c) => (
@@ -120,10 +121,11 @@ export default function Home() {
             description={whatWeDo.description.replace(' Hover a node to trace a connection.', '')}
           />
           <div className="mb-8 overflow-hidden rounded-lg border border-border bg-gradient-to-br from-navy-deep/5 to-royal/5 p-8 text-center">
-            <div className="mx-auto max-w-2xl">
-              <p className="text-sm text-muted-fg italic">Network visualization image to be added</p>
-              <p className="mt-2 text-xs text-muted-fg/60">Placeholder for interactive network diagram showing CCI India's connected economy services</p>
-            </div>
+            <img
+              src="/images/network-visual.jpg"
+              alt="CCI India Network Visualization - Connected economy services and member organizations"
+              className="mx-auto max-w-2xl object-contain"
+            />
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {whatWeDo.flows.map((f) => (
@@ -146,10 +148,11 @@ export default function Home() {
             description={centers.description}
           />
           <div className="mb-8 overflow-hidden rounded-lg border border-border">
-            <div className="bg-gradient-to-br from-saffron/10 to-green/10 p-12 text-center">
-              <p className="text-sm text-muted-fg italic">Centers and initiatives imagery to be added</p>
-              <p className="mt-2 text-xs text-muted-fg/60">Placeholder for visual representation of CCI India's specialized centers</p>
-            </div>
+            <img
+              src="/images/centers-visual.jpg"
+              alt="CCI India Centers and Initiatives - Specialized departments for market entry, business expansion, and sector-specific support"
+              className="h-auto w-full object-cover"
+            />
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {centers.items.map((c) => (
