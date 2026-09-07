@@ -5,6 +5,7 @@ const variants = {
   secondary: 'bg-white text-navy-deep border border-navy-deep hover:bg-off-white',
   accent: 'bg-saffron text-white border border-saffron hover:bg-saffron/90',
   'outline-light': 'bg-transparent text-white border border-white/40 hover:border-white hover:bg-white/10',
+  cta: 'bg-gradient-to-r from-saffron to-orange-500 text-white border border-transparent hover:from-orange-500 hover:to-saffron hover:shadow-lg hover:scale-105 focus:ring-2 focus:ring-saffron focus:ring-offset-2',
 }
 
 const sizes = {
@@ -13,7 +14,7 @@ const sizes = {
 }
 
 export default function Button({ to, href, variant = 'primary', size = 'md', className = '', children, type = 'button', ...props }) {
-  const classes = `inline-flex items-center justify-center font-medium transition-colors duration-200 ${variants[variant]} ${sizes[size]} ${className}`
+  const classes = `inline-flex items-center justify-center gap-2 font-medium transition-all duration-200 ${variants[variant]} ${sizes[size]} ${className}`
 
   if (to) {
     return (

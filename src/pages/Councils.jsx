@@ -1,18 +1,39 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { ArrowRight } from 'lucide-react'
 import data from '../../content/councils.json'
 import PageHero from '../components/blocks/PageHero'
 import SectionIntro from '../components/blocks/SectionIntro'
 import CtaBanner from '../components/blocks/CtaBanner'
 import SectionHeading from '../components/ui/SectionHeading'
+import Card from '../components/ui/Card'
 
-function CouncilLink({ council }) {
+function CouncilCard({ council }) {
   return (
     <Link
       to={`/councils/${council.slug}`}
-      className="block border border-border bg-white px-3 py-2.5 text-sm text-navy-deep transition-colors duration-200 hover:border-royal hover:text-royal"
+      className="group block border border-border bg-white p-5 transition-all duration-200 hover:border-royal hover:shadow-md"
     >
-      {council.name}
+      <div className="mb-3 flex flex-wrap gap-1.5">
+        {council.categoryTag && council.categoryTag.split(',').slice(0, 2).map((tag, idx) => (
+          <span
+            key={idx}
+            className="inline-block border border-saffron/30 bg-saffron/5 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-saffron"
+          >
+            {tag.trim()}
+          </span>
+        ))}
+      </div>
+      <h3 className="mb-2 font-serif text-base font-bold text-navy-deep group-hover:text-royal transition-colors duration-200">
+        {council.name}
+      </h3>
+      <p className="mb-4 text-sm text-muted-fg line-clamp-2">
+        {council.description && council.description[0]}
+      </p>
+      <div className="flex items-center gap-1 text-xs font-medium text-royal">
+        View Details
+        <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
+      </div>
     </Link>
   )
 }
@@ -46,12 +67,12 @@ export default function Councils() {
             placeholder="Search councils…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="mb-6 w-full max-w-md border border-border px-4 py-2.5 text-sm outline-none focus:border-royal"
+            className="mb-6 w-full max-w-md border border-border px-4 py-2.5 text-sm outline-none focus:border-royal focus:ring-1 focus:ring-royal"
           />
           <p className="mb-4 text-sm text-muted-fg">{filtered.length} council{filtered.length !== 1 ? 's' : ''}</p>
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {filtered.map((council) => (
-              <CouncilLink key={council.slug} council={council} />
+              <CouncilCard key={council.slug} council={council} />
             ))}
           </div>
         </div>
@@ -65,9 +86,10 @@ export default function Councils() {
                 <li key={council.slug}>
                   <Link
                     to={`/councils/${council.slug}`}
-                    className="block border-l-2 border-saffron pl-3 text-sm text-muted-fg transition-colors duration-200 hover:text-royal"
+                    className="group flex items-center justify-between border-l-2 border-saffron pl-3 text-sm text-muted-fg transition-colors duration-200 hover:text-royal hover:bg-saffron/5 py-2 pr-2"
                   >
-                    {council.name}
+                    <span>{council.name}</span>
+                    <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                   </Link>
                 </li>
               ))}
@@ -80,9 +102,10 @@ export default function Councils() {
                 <li key={council.slug}>
                   <Link
                     to={`/councils/${council.slug}`}
-                    className="block border-l-2 border-green pl-3 text-sm text-muted-fg transition-colors duration-200 hover:text-royal"
+                    className="group flex items-center justify-between border-l-2 border-green pl-3 text-sm text-muted-fg transition-colors duration-200 hover:text-royal hover:bg-green/5 py-2 pr-2"
                   >
-                    {council.name}
+                    <span>{council.name}</span>
+                    <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                   </Link>
                 </li>
               ))}

@@ -3,6 +3,7 @@ import home from '../../content/home.json'
 import Carousel from '../components/ui/Carousel'
 import Button from '../components/ui/Button'
 import Card from '../components/ui/Card'
+import GlassCard from '../components/ui/GlassCard'
 import SectionHeading from '../components/ui/SectionHeading'
 
 
@@ -52,10 +53,10 @@ export default function Home() {
           />
           <div className="mb-8 grid gap-6 md:grid-cols-2">
             {about.items.map((item) => (
-              <Card key={item.tag} accent="royal">
+              <GlassCard key={item.tag}>
                 <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-saffron">{item.tag}</p>
-                <p className="text-sm text-muted-fg">{item.text}</p>
-              </Card>
+                <p className="text-sm text-navy-deep font-medium">{item.text}</p>
+              </GlassCard>
             ))}
           </div>
           <div className="mb-6 flex flex-wrap gap-8">
@@ -91,6 +92,12 @@ export default function Home() {
             titleAccent={councils.titleAccent}
             description={councils.description}
           />
+          <div className="mb-8 overflow-hidden rounded-lg border border-border">
+            <div className="bg-gradient-to-br from-royal/10 to-cyan/10 p-12 text-center">
+              <p className="text-sm text-muted-fg italic">Councils sector imagery to be added</p>
+              <p className="mt-2 text-xs text-muted-fg/60">Placeholder for visual representation of CCI India's 90+ sector councils</p>
+            </div>
+          </div>
           <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-3">
             {councils.featured.map((c) => (
               <div key={c.name} className="border border-border px-4 py-3 text-center text-sm font-medium text-navy-deep">
@@ -112,6 +119,12 @@ export default function Home() {
             titleAccent={whatWeDo.titleAccent}
             description={whatWeDo.description.replace(' Hover a node to trace a connection.', '')}
           />
+          <div className="mb-8 overflow-hidden rounded-lg border border-border bg-gradient-to-br from-navy-deep/5 to-royal/5 p-8 text-center">
+            <div className="mx-auto max-w-2xl">
+              <p className="text-sm text-muted-fg italic">Network visualization image to be added</p>
+              <p className="mt-2 text-xs text-muted-fg/60">Placeholder for interactive network diagram showing CCI India's connected economy services</p>
+            </div>
+          </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {whatWeDo.flows.map((f) => (
               <Card key={f.label}>
@@ -132,6 +145,12 @@ export default function Home() {
             titleAccent={centers.titleAccent}
             description={centers.description}
           />
+          <div className="mb-8 overflow-hidden rounded-lg border border-border">
+            <div className="bg-gradient-to-br from-saffron/10 to-green/10 p-12 text-center">
+              <p className="text-sm text-muted-fg italic">Centers and initiatives imagery to be added</p>
+              <p className="mt-2 text-xs text-muted-fg/60">Placeholder for visual representation of CCI India's specialized centers</p>
+            </div>
+          </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {centers.items.map((c) => (
               <Card key={c.name}>

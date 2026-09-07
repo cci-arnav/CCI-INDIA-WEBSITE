@@ -76,6 +76,24 @@ export default function TopUtilityBar() {
     Manipuri: 'mni',
   }
 
+  // Enhanced language descriptions for accessibility
+  const languageDescriptions = {
+    English: 'English',
+    Hindi: 'हिन्दी (Hindi)',
+    Urdu: 'اردو (Urdu)',
+    Tamil: 'தமிழ் (Tamil)',
+    Marathi: 'मराठी (Marathi)',
+    Bengali: 'বাংলা (Bengali)',
+    Malayalam: 'മലയാളം (Malayalam)',
+    Gujarati: 'ગુજરાતી (Gujarati)',
+    Telugu: 'తెలుగు (Telugu)',
+    Kannada: 'ಕನ್ನಡ (Kannada)',
+    Odia: 'ଓଡ଼ିଆ (Odia)',
+    Punjabi: 'ਪੰਜਾਬੀ (Punjabi)',
+    Assamese: 'অসমীয়া (Assamese)',
+    Manipuri: 'মৈতৈলোন্ (Manipuri)',
+  }
+
   const triggerGoogleTranslate = (code) => {
     try {
       const combo = document.querySelector('select.goog-te-combo')
@@ -142,13 +160,13 @@ export default function TopUtilityBar() {
             {langOpen && (
               <ul
                 role="listbox"
-                className="absolute right-0 top-full z-50 mt-0.5 min-w-[6rem] max-h-64 overflow-y-auto border border-border bg-white py-1 shadow-sm"
+                className="absolute right-0 top-full z-50 mt-0.5 min-w-[8rem] max-h-64 overflow-y-auto border border-border bg-white py-1 shadow-sm"
               >
                 {utilityBar.languages.map((lang) => (
                   <li key={lang} role="option" aria-selected={lang === utilityBar.languages[0]}>
                     <button
                       type="button"
-                      className="block w-full px-3 py-1 text-left text-[12px] text-navy-deep transition-colors duration-200 hover:bg-off-white"
+                      className="block w-full px-3 py-1.5 text-left text-[12px] text-navy-deep transition-colors duration-200 hover:bg-off-white"
                       onClick={() => {
                         const code = languageCodeMap[lang] || 'en'
                         if (code === 'en') {
@@ -159,8 +177,9 @@ export default function TopUtilityBar() {
                         }
                         setLangOpen(false)
                       }}
+                      title={languageDescriptions[lang] || lang}
                     >
-                      {lang}
+                      {languageDescriptions[lang] || lang}
                     </button>
                   </li>
                 ))}

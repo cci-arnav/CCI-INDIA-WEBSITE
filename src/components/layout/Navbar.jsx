@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { Users } from 'lucide-react'
 import home from '../../../content/home.json'
 import Button from '../ui/Button'
 
@@ -39,20 +40,20 @@ export default function Navbar() {
   return (
     <header className="sticky top-9 z-40 border-b border-border bg-white">
       <div className="container-main flex items-center justify-between gap-3 py-3">
-        <Link to="/" className="flex shrink-0 items-center gap-2.5">
+        <Link to="/" className="flex shrink-0 flex-col items-center gap-1">
           <img
             src="/brand/cci-logo.png"
             alt="CCI India"
             width={1161}
             height={1042}
-            className="h-16 w-auto sm:h-16"
+            className="h-14 w-auto sm:h-16"
           />
-          <span className="hidden text-[10px] uppercase tracking-[0.18em] text-muted-fg sm:inline-block">
+          <span className="hidden text-[9px] uppercase tracking-[0.15em] text-muted-fg sm:inline-block text-center leading-tight">
             Chamber of Commerce <br /> &amp; Industry of India
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-0.3 text-sm font-bold lg:flex lg:flex-wrap lg:items-center lg:flex-1">
+        <nav className="hidden items-center gap-1 text-sm font-bold lg:flex lg:items-center lg:flex-1 lg:overflow-x-auto">
           {NAV_ITEMS.map((item) =>
             item.children ? (
               <div
@@ -63,7 +64,7 @@ export default function Navbar() {
               >
                 <button
                   type="button"
-                  className={`px-2.5 py-2 text-[13px] font-medium transition-colors duration-200 ${
+                  className={`px-2 py-2 text-[13px] font-medium transition-colors duration-200 whitespace-nowrap ${
                     isActive(item.href) ? 'text-royal' : 'text-navy-deep hover:text-royal'
                   }`}
                 >
@@ -87,7 +88,7 @@ export default function Navbar() {
               <Link
                 key={item.label}
                 to={item.href}
-                className={`px-2.5 py-2 text-[13px] font-medium transition-colors duration-200 ${
+                className={`px-2 py-2 text-[13px] font-medium transition-colors duration-200 whitespace-nowrap ${
                   isActive(item.href) ? 'text-royal' : 'text-navy-deep hover:text-royal'
                 }`}
               >
@@ -98,7 +99,8 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden lg:block lg:ml-4 flex-shrink-0">
-          <Button to="/membership" variant="primary" size="sm" className="whitespace-nowrap">
+          <Button to="/membership" variant="cta" size="sm" className="whitespace-nowrap">
+            <Users size={14} strokeWidth={2} />
             Join the Network
           </Button>
         </div>
