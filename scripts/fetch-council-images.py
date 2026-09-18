@@ -205,6 +205,86 @@ TOPICS = {
     "india-latin-american-countries-and-caribbean-business-council": "Panama Canal",
 }
 
+# Photo-forward replacements for topics whose lead media is a logo, flag, map,
+# chart, or locally hosted non-free file.
+TOPICS.update({
+    "agriculture": "Rice production in India", "brand-promotion": "Advertising in India",
+    "capital-markets": "Dalal Street", "cyber-law-and-it-act": "Data center",
+    "diaspora": "Little India, Singapore", "defence": "Aero India", "coal": "Dhanbad",
+    "entertainment": "Bollywood", "export-and-import": "Jawaharlal Nehru Port",
+    "education": "Indian Institute of Science", "e-governance": "Common Service Centres",
+    "entrepreneurship-development": "T-Hub", "highway": "Delhi–Mumbai Expressway",
+    "infrastructure": "Delhi Metro", "indirect-taxes-including-gst": "Accounting",
+    "legal-affairs-and-ipr": "Supreme Court of India building", "it-and-ites": "HITEC City",
+    "media": "Film City", "non-government-organization": "Self-help group (finance)",
+    "membership-development": "Business conference", "public-sector-enterprises": "Bhilai Steel Plant",
+    "packaging": "Cardboard box", "mines-and-minerals": "Kolar Gold Fields",
+    "shipping-and-logistics": "Container ship", "smart-cities": "GIFT City",
+    "msme": "Small business", "thermal-power": "Mundra Thermal Power Station",
+    "tourism-and-hospitality": "Taj Mahal", "wto": "Centre William Rappard",
+    "india-russia-parliamentarian-council": "Moscow Kremlin", "india-saarc-parliamentarian-council": "SAARC Secretariat",
+    "india-caribbean-parliamentarian-council": "CARICOM Secretariat", "india-brics-parliamentarian-council": "2019 BRICS summit",
+    "india-asean-parliamentarian-council": "ASEAN Secretariat", "india-latin-america-parliamentarian-council": "Latin American Parliament building",
+    "brics-business-council": "2019 BRICS summit", "india-eu-business-council": "Maasvlakte 2",
+    "india-latin-american-countries-and-caribbean-business-council": "Miraflores Locks",
+})
+
+FILE_OVERRIDES = {
+    "indirect-taxes-including-gst": "Aaykar Bhavan, Income Tax Department, Pune.jpg",
+    "direct-taxes": "Income Tax Office in Vijayawada.jpg",
+    "corporate-fraud-and-internal-audit": "Unidentified workers in Accounting and Bookkeeping, William O McKay Company, Seattle, approximately 1929 (SEATTLE 2866).jpg",
+    "port": "Allcargo CFS, JNPT, Mumbai.jpg",
+    "real-estate": "Mumbai night skyline.jpg",
+    "special-task-force-on-sez": "Rejinagar Industrial Estate - Indian National Highway 34 - Murshidabad 2013-03-23 7139.JPG",
+    "wellness": "Yoga Teacher Training Rishikesh India .jpg",
+    "wto": "Centre William-Rappard 1.jpg",
+}
+
+CURATED_SEARCHES = {
+    "brand-fashion-and-design": "India Fashion Week",
+    "brics-business-council": "BRICS business forum",
+    "civil-aviation": "Air India aircraft airport photograph",
+    "corporate-fraud-and-internal-audit": "financial auditor office documents photograph",
+    "defence": "HAL Tejas Aero India aircraft photograph",
+    "direct-taxes": "income tax office India building photograph",
+    "drugs-and-pharmaceuticals": "pharmaceutical laboratory",
+    "e-governance": "Common Service Centre India",
+    "economic-affairs": "Mumbai skyline",
+    "entrepreneurship-development": "Indian startup",
+    "gems-and-jewellery": "jewellery making India",
+    "government-procurement": "government office India building photograph",
+    "india-brics-parliamentarian-council": "BRICS summit leaders group photograph",
+    "india-latin-america-parliamentarian-council": "Panama City skyline",
+    "india-latin-american-countries-and-caribbean-business-council": "Panama Canal container ship photograph",
+    "international-tax": "Internal Revenue Service building Washington",
+    "knowledge-millennium-council": "library interior India photograph",
+    "manufacturing": "manufacturing factory India assembly line photograph",
+    "port": "Jawaharlal Nehru Port",
+    "public-sector-enterprises": "Bokaro Steel Plant",
+    "real-estate": "Mumbai buildings",
+    "skill-development-centre": "vocational training India workshop photograph",
+    "special-task-force-on-sez": "industrial park India factory photograph",
+    "spiritual": "meditation India temple photograph",
+    "telecom": "telecommunication tower India photograph",
+    "urban-development": "Delhi skyline metro photograph",
+    "venture-capital-and-private-equity": "startup meeting",
+    "wellness": "wellness yoga India photograph",
+    "women-entrepreneurship": "Kiran Mazumdar Shaw entrepreneur",
+    "wto": "World Trade Organization headquarters Geneva",
+}
+
+TOPICS.update({
+    "indirect-taxes-including-gst": "Aayakar Bhawan",
+    "public-sector-enterprises": "Chittaranjan Locomotive Works",
+    "legal-affairs-and-ipr": "Bombay High Court",
+    "smart-cities": "Ahmedabad skyline",
+    "india-saarc-parliamentarian-council": "Kathmandu",
+    "india-asean-parliamentarian-council": "Jakarta",
+    "india-latin-america-parliamentarian-council": "Panama City",
+    "india-caribbean-parliamentarian-council": "Georgetown, Guyana",
+    "brand-promotion": "Times Square",
+})
+
 
 def clean_text(value: str) -> str:
     value = html.unescape(re.sub(r"<[^>]+>", " ", value or ""))
@@ -229,12 +309,45 @@ def api_json(params: dict, api: str = API) -> dict:
 
 def candidate_for(council: dict) -> dict:
     topic = TOPICS[council["slug"]]
-    payload = api_json({
-        "action": "query", "format": "json", "redirects": 1, "titles": topic,
-        "prop": "pageimages", "piprop": "name", "pilicense": "free", "pithumbsize": 1600,
-    }, WIKIPEDIA_API)
-    pages = list(payload.get("query", {}).get("pages", {}).values())
-    filename = next((page.get("pageimage") for page in pages if page.get("pageimage")), None)
+    filename = FILE_OVERRIDES.get(council["slug"])
+    if not filename and council["slug"] in CURATED_SEARCHES:
+        search_query = CURATED_SEARCHES[council["slug"]]
+        payload = api_json({
+            "action": "query", "format": "json", "generator": "search",
+            "gsrnamespace": 6, "gsrsearch": f"{search_query} filetype:bitmap", "gsrlimit": 30,
+            "prop": "imageinfo", "iiprop": "url|size|mime|extmetadata", "iiurlwidth": 1280,
+        })
+        pages = sorted(payload.get("query", {}).get("pages", {}).values(), key=lambda page: page.get("index", 999))
+        for page in pages:
+            info = (page.get("imageinfo") or [{}])[0]
+            metadata = info.get("extmetadata") or {}
+            title = page.get("title", "")
+            license_name = clean_text((metadata.get("LicenseShortName") or {}).get("value", ""))
+            if any(word in title.lower() for word in REJECT_WORDS):
+                continue
+            if info.get("width", 0) < 800 or info.get("height", 0) < 450:
+                continue
+            if info.get("mime") not in {"image/jpeg", "image/png", "image/webp"}:
+                continue
+            if not any(allowed in license_name.lower() for allowed in ALLOWED_LICENSES):
+                continue
+            return {
+                "strategy": "commons-curated-search-v1", "topic": topic, "query": search_query,
+                "title": title.removeprefix("File:"), "downloadUrl": info.get("thumburl") or info["url"],
+                "sourcePage": info.get("descriptionurl"),
+                "creator": clean_text((metadata.get("Artist") or {}).get("value", "")) or "Wikimedia Commons contributor",
+                "license": license_name,
+                "licenseUrl": clean_text((metadata.get("LicenseUrl") or {}).get("value", "")),
+                "originalWidth": info.get("width"), "originalHeight": info.get("height"),
+            }
+        raise RuntimeError(f"No acceptable curated Commons photograph for {search_query}")
+    if not filename:
+        payload = api_json({
+            "action": "query", "format": "json", "redirects": 1, "titles": topic,
+            "prop": "pageimages", "piprop": "name", "pilicense": "free", "pithumbsize": 1600,
+        }, WIKIPEDIA_API)
+        pages = list(payload.get("query", {}).get("pages", {}).values())
+        filename = next((page.get("pageimage") for page in pages if page.get("pageimage")), None)
     if not filename:
         search = api_json({
             "action": "query", "format": "json", "generator": "search", "gsrsearch": topic,
@@ -280,14 +393,12 @@ def download(url: str) -> bytes:
 def optimize(raw: bytes, target: Path) -> tuple[int, int, int]:
     with Image.open(io.BytesIO(raw)) as source:
         source = ImageOps.exif_transpose(source).convert("RGB")
-        max_width = min(1280, source.width)
-        max_height = max(450, round(max_width * 9 / 16))
-        fitted = ImageOps.fit(source, (max_width, max_height), method=Image.Resampling.LANCZOS, centering=(0.5, 0.5))
+        fitted = ImageOps.fit(source, (1280, 720), method=Image.Resampling.LANCZOS, centering=(0.5, 0.5))
         quality = 82
         while True:
             buffer = io.BytesIO()
             fitted.save(buffer, format="WEBP", quality=quality, method=6)
-            if buffer.tell() <= 260_000 or quality <= 66:
+            if buffer.tell() <= 260_000 or quality <= 18:
                 target.write_bytes(buffer.getvalue())
                 return fitted.width, fitted.height, buffer.tell()
             quality -= 4
@@ -308,6 +419,19 @@ def process(council: dict) -> tuple[str, dict]:
     return council["slug"], selected
 
 
+def recompress_oversize(attributions: dict[str, dict]) -> None:
+    for slug, attribution in attributions.items():
+        target = OUTPUT_DIR / f"{slug}.webp"
+        if not target.exists():
+            continue
+        with Image.open(target) as existing:
+            needs_normalization = existing.size != (1280, 720)
+        if target.stat().st_size > 260_000 or needs_normalization:
+            width, height, byte_size = optimize(target.read_bytes(), target)
+            attribution.update({"width": width, "height": height, "bytes": byte_size})
+            print(f"Normalized {slug} ({byte_size // 1024} KB)")
+
+
 def main() -> None:
     data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     councils = [
@@ -321,7 +445,14 @@ def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     attributions: dict[str, dict] = json.loads(ATTRIBUTION_PATH.read_text(encoding="utf-8")) if ATTRIBUTION_PATH.exists() else {}
     failures: list[str] = []
-    pending = [council for council in councils if attributions.get(council["slug"], {}).get("strategy") != "wikipedia-lead-v1"]
+    pending = [
+        council for council in councils
+        if attributions.get(council["slug"], {}).get("strategy") != (
+            "commons-curated-search-v1"
+            if council["slug"] in CURATED_SEARCHES and council["slug"] not in FILE_OVERRIDES
+            else "wikipedia-lead-v1"
+        )
+    ]
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
         future_map = {pool.submit(process, council): council for council in pending}
         for index, future in enumerate(concurrent.futures.as_completed(future_map), 1):
@@ -335,6 +466,7 @@ def main() -> None:
             except Exception as exc:  # Continue to produce a useful retry list.
                 failures.append(council["slug"])
                 print(f"FAILED {council['slug']}: {exc}")
+    recompress_oversize(attributions)
     DATA_PATH.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     ATTRIBUTION_PATH.write_text(json.dumps(dict(sorted(attributions.items())), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Completed {len(attributions)} images; failures={failures}")
