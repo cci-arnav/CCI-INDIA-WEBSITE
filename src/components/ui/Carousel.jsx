@@ -4,17 +4,15 @@ export default function Carousel({ slides, interval = 6000 }) {
   const [current, setCurrent] = useState(0)
 
   useEffect(() => {
-    console.log('Carousel init - slides:', slides?.length, 'interval:', interval)
     if (!slides || slides.length <= 1) return
     const timer = setInterval(() => {
       setCurrent((c) => {
         const next = (c + 1) % slides.length
-        console.log('Carousel advancing to', next)
         return next
       })
     }, interval)
     return () => clearInterval(timer)
-  }, [slides.length, interval])
+  }, [slides, interval])
 
   return (
     <div className="relative h-full w-full overflow-hidden" data-current={current}>

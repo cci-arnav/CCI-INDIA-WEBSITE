@@ -13,6 +13,12 @@ import Careers from './pages/Careers'
 import Events from './pages/Events'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
+import CouncilCategory from './pages/CouncilCategory'
+import NewsDetail from './pages/NewsDetail'
+import AdminGuard from './components/admin/AdminGuard'
+import AdminLogin from './pages/admin/AdminLogin'
+import AdminNews from './pages/admin/AdminNews'
+import AdminNewsForm from './pages/admin/AdminNewsForm'
 
 const App = () => {
   return (
@@ -24,6 +30,8 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/councils" element={<Councils />} />
+          <Route path="/councils/parliamentarian" element={<CouncilCategory type="parliamentarian" />} />
+          <Route path="/councils/international" element={<CouncilCategory type="international" />} />
           <Route path="/councils/:slug" element={<CouncilDetail />} />
           <Route path="/membership" element={<Membership />} />
           <Route path="/states-investment" element={<StatesInvestment />} />
@@ -32,6 +40,13 @@ const App = () => {
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/news/:slug" element={<NewsDetail />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route element={<AdminGuard />}>
+            <Route path="/admin/news" element={<AdminNews />} />
+            <Route path="/admin/news/new" element={<AdminNewsForm />} />
+            <Route path="/admin/news/:id/edit" element={<AdminNewsForm />} />
+          </Route>
         </Routes>
       </Layout>
     </BrowserRouter>

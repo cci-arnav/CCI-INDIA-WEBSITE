@@ -5,6 +5,8 @@ import Button from '../components/ui/Button'
 import Card from '../components/ui/Card'
 import GlassCard from '../components/ui/GlassCard'
 import SectionHeading from '../components/ui/SectionHeading'
+import NewsFeed from '../components/news/NewsFeed'
+import HelpVideo from '../components/media/HelpVideo'
 
 
 export default function Home() {
@@ -179,19 +181,12 @@ export default function Home() {
             titleAccent={news.titleAccent}
             description={news.description}
           />
-          <div className="mb-6 divide-y divide-border border border-border bg-white">
-            {news.items.map((item) => (
-              <div key={item.title} className="flex items-start gap-4 px-5 py-4">
-                <span className="shrink-0 border border-border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-royal">
-                  {item.type}
-                </span>
-                <p className="text-sm text-navy-deep">{item.title}</p>
-              </div>
-            ))}
-          </div>
+          <div className="mb-6"><NewsFeed limit={3} /></div>
           <Button to={news.cta.href} variant="secondary">{news.cta.label}</Button>
         </div>
       </section>
+
+      <HelpVideo />
 
       {/* Impact Stats */}
       <section id="impact" className="section-padding border-b border-border bg-navy-deep text-white">

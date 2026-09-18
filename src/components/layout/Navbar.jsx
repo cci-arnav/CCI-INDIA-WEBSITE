@@ -1,293 +1,88 @@
-import { useState, useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { ChevronDown, Menu, Users, X } from 'lucide-react'
 import { Link, useLocation } from 'react-router-dom'
-import { Users } from 'lucide-react'
-import home from '../../../content/home.json'
+import { NAV_ITEMS } from '../../lib/navigation'
 import Button from '../ui/Button'
 
-const NAV_ITEMS = [
-  { label: 'Home', href: '/' },
-  { label: 'About Us', href: '/about' },
-  { label: 'Councils', href: '/councils' },
-  { label: 'Membership', href: '/membership' },
-  { label: 'States Investment', href: '/states-investment' },
-  {
-    label: 'Initiatives',
-    href: '/market-entry',
-    children: home.centers.items.map((c) => ({
-      label: c.name,
-      href:
-        c.name === 'Center for Market Entry & Business Expansion'
-          ? '/market-entry'
-          : '/#initiatives',
-    })),
-  },
-  { label: 'Careers', href: '/careers' },
-  { label: 'News & Events', href: '/events' },
-  { label: 'Contact', href: '/contact' },
-]
-
-// Links that should always be visible on smaller screens
-const PRIMARY_LINKS = ['Home', 'About Us', 'Councils', 'Membership', 'States Investment']
-// Links that can be moved to "More" dropdown
-const SECONDARY_LINKS = ['Initiatives', 'Careers', 'News & Events', 'Contact']
-
 export default function Navbar() {
-  const [open, setOpen] = useState(false)
-  const [dropdown, setDropdown] = useState(null)
-  const [showMoreMenu, setShowMoreMenu] = useState(false)
-  const [visibleLinks, setVisibleLinks] = useState([])
-  const [hiddenLinks, setHiddenLinks] = useState([])
-  const [moreMenuOpen, setMoreMenuOpen] = useState(false)
-  const moreMenuRef = useRef(null)
+  const [mobileOpen, setMobileOpen] = useState(false)
+  const [desktopMenu, setDesktopMenu] = useState(null)
+  const [mobileSection, setMobileSection] = useState(null)
+  const closeTimer = useRef(null)
+  const navRef = useRef(null)
   const location = useLocation()
-
-  const isActive = (href) => {
-    if (href === '/') return location.pathname === '/'
-    if (href.startsWith('/#')) return location.pathname === '/'
-    return location.pathname === href || location.pathname.startsWith(href + '/')
+  const isActive = (href) => href === '/' ? location.pathname === '/' : location.pathname === href || location.pathname.startsWith(`${href}/`)
+  const cancelClose = () => window.clearTimeout(closeTimer.current)
+  const scheduleClose = () => {
+    cancelClose()
+    closeTimer.current = window.setTimeout(() => setDesktopMenu(null), 140)
   }
 
-  // Handle responsive nav link visibility
   useEffect(() => {
-    const handleResize = () => {
-      const navElement = document.querySelector('.nav-container')
-      if (!navElement) return
-
-      const navWidth = navElement.offsetWidth
-      const navLinkWidth = 80 // Approximate width per nav link (including padding)
-      const ctaWidth = 150 // Approximate width for CTA button
-      const moreButtonWidth = 60 // Approximate width for More button
-      const logoWidth = 150 // Approximate width for logo
-      const padding = 40 // Padding for container
-
-      // Available width for nav links
-      const availableWidth = navWidth - logoWidth - ctaWidth - padding
-
-      // Calculate how many primary links can fit
-      const maxPrimaryLinks = Math.floor(availableWidth / navLinkWidth)
-
-      if (maxPrimaryLinks >= PRIMARY_LINKS.length) {
-        // All links fit
-        setVisibleLinks(NAV_ITEMS)
-        setHiddenLinks([])
-      } else {
-        // Calculate how many primary links we can show
-        const visiblePrimaryCount = Math.max(1, maxPrimaryLinks - 1) // Reserve space for More button
-        const visibleItems = NAV_ITEMS.slice(0, visiblePrimaryCount)
-        const hiddenItems = NAV_ITEMS.slice(visiblePrimaryCount)
-
-        // If we still have hidden items after primary links, move them to More
-        if (hiddenItems.length > 0) {
-          setVisibleLinks(visibleItems)
-          setHiddenLinks(hiddenItems)
-        } else {
-          setVisibleLinks(NAV_ITEMS)
-          setHiddenLinks([])
-        }
-      }
+    const onKeyDown = (event) => {
+      if (event.key !== 'Escape') return
+      const trigger = navRef.current?.querySelector('button[aria-expanded="true"]') || document.querySelector('#mobile-navigation button[aria-expanded="true"]')
+      setDesktopMenu(null)
+      setMobileSection(null)
+      setMobileOpen(false)
+      trigger?.focus()
     }
-
-    // Initial check
-    handleResize()
-
-    // Add resize listener
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-
-  // Close more menu on click outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (moreMenuRef.current && !moreMenuRef.current.contains(event.target)) {
-        setMoreMenuOpen(false)
-      }
+    const media = window.matchMedia('(min-width: 1100px)')
+    const onBreakpoint = () => media.matches ? setMobileOpen(false) : setDesktopMenu(null)
+    document.addEventListener('keydown', onKeyDown)
+    media.addEventListener('change', onBreakpoint)
+    return () => {
+      cancelClose()
+      document.removeEventListener('keydown', onKeyDown)
+      media.removeEventListener('change', onBreakpoint)
     }
-
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
-
-  const toggleMoreMenu = () => setMoreMenuOpen(!moreMenuOpen)
-  const closeMoreMenu = () => setMoreMenuOpen(false)
 
   return (
-    <header className="sticky top-9 z-40 border-b border-border bg-white">
-      <div className="container-main flex items-center justify-between gap-3 py-3">
-        <Link to="/" className="flex shrink-0 flex-col items-center gap-1">
-          <img
-            src="/brand/cci-logo.png"
-            alt="CCI India"
-            width={1161}
-            height={1042}
-            className="h-14 w-auto sm:h-16"
-          />
-          <span className="hidden text-[9px] uppercase tracking-[0.15em] text-muted-fg sm:inline-block text-center leading-tight">
-            Chamber of Commerce <br />&amp; Industry of India
-          </span>
+    <header className="sticky top-9 z-40 border-b border-border bg-white" onClick={(event) => { if (event.target.closest('a')) { setMobileOpen(false); setMobileSection(null); setDesktopMenu(null) } }}>
+      <div className="container-main flex min-h-[86px] items-center justify-between gap-3 py-2">
+        <Link to="/" className="flex shrink-0 flex-col items-center gap-0.5 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-royal">
+          <img src="/brand/cci-logo.png" alt="CCI India" width="1161" height="1042" className="h-14 w-auto sm:h-16" />
+          <span className="hidden text-center text-[8px] uppercase leading-tight tracking-[0.14em] text-muted-fg sm:inline-block">Chamber of Commerce <br />&amp; Industry of India</span>
         </Link>
-
-        {/* Mobile menu button */}
-        <button
-          type="button"
-          className="border border-border px-2.5 py-1.5 text-sm lg:hidden"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          {open ? '✕' : '☰'}
+        <button type="button" className="inline-flex min-h-11 min-w-11 items-center justify-center border border-border text-navy-deep min-[1100px]:hidden" onClick={() => setMobileOpen((value) => !value)} aria-expanded={mobileOpen} aria-controls="mobile-navigation" aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}>
+          {mobileOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
         </button>
 
-        {/* Desktop navigation */}
-        <nav className="hidden lg:flex nav-container items-center gap-1 flex-1 overflow-visible">
-          {visibleLinks.map((item) => {
-            if (item.children) {
-              return (
-                <div
-                  key={item.label}
-                  className="relative"
-                  onMouseEnter={() => setDropdown(item.label)}
-                  onMouseLeave={() => setDropdown(null)}
-                >
-                  <button
-                    type="button"
-                    className={`px-2 py-2 text-[13px] font-medium transition-colors duration-200 whitespace-nowrap ${
-                      isActive(item.href) ? 'text-royal' : 'text-navy-deep hover:text-royal'
-                    }`}
-                  >
-                    {item.label} ▾
-                  </button>
-                  {dropdown === item.label && (
-                    <div className="absolute left-0 top-full z-50 min-w-[280px] border border-border bg-white py-1 shadow-sm">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.label}
-                          to={child.href}
-                          className="block px-4 py-2 text-[13px] text-navy-deep transition-colors duration-200 hover:bg-off-white hover:text-royal"
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
+        <nav ref={navRef} aria-label="Primary navigation" className="hidden min-[1100px]:flex min-w-0 flex-1 items-center justify-end gap-0.5">
+          {NAV_ITEMS.map((item) => item.children ? (
+            <div key={item.label} className="relative" onMouseEnter={() => { cancelClose(); setDesktopMenu(item.label) }} onMouseLeave={scheduleClose} onFocusCapture={() => { cancelClose(); setDesktopMenu(item.label) }} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) scheduleClose() }}>
+              <div className={`flex items-center rounded-sm ${isActive(item.href) ? 'bg-royal/5 text-royal' : 'text-navy-deep'}`}>
+                <Link to={item.href} className="whitespace-nowrap px-2 py-3 text-[12px] font-semibold transition-colors hover:text-royal focus-visible:outline focus-visible:outline-2 focus-visible:outline-royal" aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</Link>
+                <button type="button" className="mr-1 inline-flex min-h-10 min-w-7 items-center justify-center rounded-sm hover:text-royal focus-visible:outline focus-visible:outline-2 focus-visible:outline-royal" aria-label={`Open ${item.label} menu`} aria-expanded={desktopMenu === item.label} onClick={() => setDesktopMenu((current) => current === item.label ? null : item.label)}>
+                  <ChevronDown size={14} aria-hidden="true" />
+                </button>
+              </div>
+              <div className={`absolute left-0 top-full z-50 w-[min(340px,calc(100vw-2rem))] pt-2 transition duration-150 ${desktopMenu === item.label ? 'visible translate-y-0 opacity-100' : 'invisible -translate-y-1 opacity-0'}`}>
+                <div className="border border-border bg-white p-2 shadow-xl">
+                  {item.children.map((child) => <Link key={child.label} to={child.href} className="block min-h-11 px-3 py-2.5 text-sm text-navy-deep transition-colors hover:bg-off-white hover:text-royal focus-visible:outline focus-visible:outline-2 focus-visible:outline-royal">{child.label}</Link>)}
                 </div>
-              )
-            }
-
-            return (
-              <Link
-                key={item.label}
-                to={item.href}
-                className={`px-2 py-2 text-[13px] font-medium transition-colors duration-200 whitespace-nowrap ${
-                  isActive(item.href) ? 'text-royal' : 'text-navy-deep hover:text-royal'
-                }`}
-              >
-                {item.label}
-              </Link>
-            )
-          })}
-
-          {/* More dropdown */}
-          {hiddenLinks.length > 0 && (
-            <div className="relative" ref={moreMenuRef}>
-              <button
-                type="button"
-                className={`px-2 py-2 text-[13px] font-medium transition-colors duration-200 whitespace-nowrap ${
-                  moreMenuOpen ? 'text-royal' : 'text-navy-deep hover:text-royal'
-                }`}
-                onClick={toggleMoreMenu}
-                aria-label="More navigation options"
-                aria-expanded={moreMenuOpen}
-              >
-                More ▾
-              </button>
-
-              {moreMenuOpen && (
-                <div className="absolute right-0 top-full z-50 min-w-[200px] border border-border bg-white py-1 shadow-lg">
-                  {hiddenLinks.map((item) => {
-                    if (item.children) {
-                      return (
-                        <div key={item.label}>
-                          <div className="px-4 py-2 text-[13px] text-navy-deep font-medium">
-                            {item.label} ▾
-                          </div>
-                          {item.children.map((child) => (
-                            <Link
-                              key={child.label}
-                              to={child.href}
-                              className="block px-4 py-2 text-[13px] text-navy-deep transition-colors duration-200 hover:bg-off-white hover:text-royal"
-                              onClick={closeMoreMenu}
-                            >
-                              {child.label}
-                            </Link>
-                          ))}
-                        </div>
-                      )
-                    }
-
-                    return (
-                      <Link
-                        key={item.label}
-                        to={item.href}
-                        className="block px-4 py-2 text-[13px] text-navy-deep transition-colors duration-200 hover:bg-off-white hover:text-royal"
-                        onClick={closeMoreMenu}
-                      >
-                        {item.label}
-                      </Link>
-                    )
-                  })}
-                </div>
-              )}
-            </div>
-          )}
-        </nav>
-
-        {/* Mobile nav - shown when menu is open */}
-        <div className={`lg:hidden ${open ? 'block' : 'hidden'}`}>
-          {open && (
-            <div className="absolute top-full left-0 w-full border-t border-border bg-white">
-              <div className="container-main flex flex-col py-2">
-                {NAV_ITEMS.map((item) => (
-                  <div key={item.label}>
-                    <Link
-                      to={item.href}
-                      className="block py-2.5 text-sm font-medium text-navy-deep"
-                      onClick={() => {
-                        setOpen(false)
-                        closeMoreMenu()
-                      }}
-                    >
-                      {item.label}
-                    </Link>
-                    {item.children?.map((child) => (
-                      <Link
-                        key={child.label}
-                        to={child.href}
-                        className="block py-1.5 pl-4 text-sm text-muted-fg"
-                        onClick={() => {
-                          setOpen(false)
-                          closeMoreMenu()
-                        }}
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
-                  </div>
-                ))}
-                <Button to="/membership" variant="primary" className="mt-3 w-full">
-                  Join the Network
-                </Button>
               </div>
             </div>
-          )}
-        </div>
-
-        {/* Desktop CTA */}
-        <div className="hidden lg:block lg:ml-4 flex-shrink-0">
-          <Button to="/membership" variant="cta" size="sm" className="whitespace-nowrap">
-            <Users size={14} strokeWidth={2} />
-            Join the Network
-          </Button>
-        </div>
+          ) : <Link key={item.label} to={item.href} aria-current={isActive(item.href) ? 'page' : undefined} className={`whitespace-nowrap rounded-sm px-2 py-3 text-[12px] font-semibold transition-colors hover:text-royal focus-visible:outline focus-visible:outline-2 focus-visible:outline-royal ${isActive(item.href) ? 'bg-royal/5 text-royal' : 'text-navy-deep'}`}>{item.label}</Link>)}
+        </nav>
+        <div className="hidden shrink-0 min-[1180px]:block"><Button to="/membership" variant="cta" size="sm"><Users size={14} aria-hidden="true" /> Join the Network</Button></div>
       </div>
+
+      <nav id="mobile-navigation" aria-label="Mobile navigation" className={`${mobileOpen ? 'block' : 'hidden'} max-h-[calc(100vh-7rem)] overflow-y-auto border-t border-border bg-white min-[1100px]:hidden`}>
+        <div className="container-main py-2">
+          {NAV_ITEMS.map((item) => <div key={item.label} className="border-b border-border/60 last:border-0">
+            {item.children ? <>
+              <div className="flex items-stretch">
+                <Link to={item.href} className={`flex min-h-11 flex-1 items-center py-2.5 text-sm font-semibold ${isActive(item.href) ? 'text-royal' : 'text-navy-deep'}`}>{item.label}</Link>
+                <button type="button" className="flex min-h-11 min-w-11 items-center justify-center text-navy-deep" aria-label={`Toggle ${item.label} links`} aria-expanded={mobileSection === item.label} onClick={() => setMobileSection((current) => current === item.label ? null : item.label)}><ChevronDown size={18} className={`transition-transform ${mobileSection === item.label ? 'rotate-180' : ''}`} aria-hidden="true" /></button>
+              </div>
+              {mobileSection === item.label && <div className="mb-2 border-l-2 border-saffron pl-3">{item.children.map((child) => <Link key={child.label} to={child.href} className="flex min-h-11 items-center py-2 text-sm text-muted-fg hover:text-royal">{child.label}</Link>)}</div>}
+            </> : <Link to={item.href} className={`flex min-h-11 items-center py-2.5 text-sm font-semibold ${isActive(item.href) ? 'text-royal' : 'text-navy-deep'}`}>{item.label}</Link>}
+          </div>)}
+          <Button to="/membership" variant="primary" className="my-3 w-full">Join the Network</Button>
+        </div>
+      </nav>
     </header>
   )
 }

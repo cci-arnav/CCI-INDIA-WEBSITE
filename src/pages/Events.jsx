@@ -3,6 +3,7 @@ import PageHero from '../components/blocks/PageHero'
 import SectionIntro from '../components/blocks/SectionIntro'
 import CtaBanner from '../components/blocks/CtaBanner'
 import SectionHeading from '../components/ui/SectionHeading'
+import NewsFeed from '../components/news/NewsFeed'
 
 export default function Events() {
   return (
@@ -35,6 +36,12 @@ export default function Events() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="section-padding border-b border-border">
+        <div className="container-main">
+          <SectionHeading eyebrow="Latest Updates" title="News from CCI India" description="Published news and updates, newest first." />
+          <NewsFeed showLoadMore />
         </div>
       </section>
       <CtaBanner {...data.cta} />

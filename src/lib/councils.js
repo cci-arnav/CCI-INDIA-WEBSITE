@@ -1,14 +1,9 @@
 import councilsData from '../../content/councils.json'
+import { toCouncilSlug } from './contentRules'
 
 const CATEGORY_TAG = 'Business Intelligence, Policy Advocacy, Networking, Business Expansion'
 
-export function toCouncilSlug(name) {
-  return name
-    .toLowerCase()
-    .replace(/&/g, 'and')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-}
+export { toCouncilSlug }
 
 function normalizeCouncil(item, type) {
   if (typeof item === 'string') {
