@@ -40,7 +40,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-9 z-40 border-b border-border bg-white" onClick={(event) => { if (event.target.closest('a')) { setMobileOpen(false); setMobileSection(null); setDesktopMenu(null) } }}>
-      <div className="container-main flex min-h-[86px] items-center justify-between gap-3 py-2">
+      <div className="container-main flex min-h-[86px] items-center justify-between gap-3 py-2 sm:gap-6">
         <Link to="/" className="flex shrink-0 flex-col items-center gap-0.5 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-royal">
           <img src="/brand/cci-logo.png" alt="CCI India" width="1161" height="1042" className="h-14 w-auto sm:h-16" />
           <span className="hidden text-center text-[8px] uppercase leading-tight tracking-[0.14em] text-muted-fg sm:inline-block">Chamber of Commerce <br />&amp; Industry of India</span>
