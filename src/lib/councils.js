@@ -1,7 +1,9 @@
 import councilsData from '../../content/councils.json'
+import councilProfiles from '../../content/council-profiles.json'
 import { toCouncilSlug } from './contentRules'
 
 const CATEGORY_TAG = 'Business Intelligence, Policy Advocacy, Networking, Business Expansion'
+const profileBySlug = new Map(councilProfiles.map((profile) => [profile.slug, profile]))
 
 export { toCouncilSlug }
 
@@ -22,7 +24,13 @@ function normalizeCouncil(item, type) {
       keyObjectives: [],
     }
   }
-  return item
+  const profile = profileBySlug.get(item.slug)
+  if (!profile) return item
+  return {
+    ...item,
+    ...profile,
+    sourceStatus: 'curated',
+  }
 }
 
 export const allCouncils = [
@@ -33,4 +41,8 @@ export const allCouncils = [
 
 export function getCouncilBySlug(slug) {
   return allCouncils.find((council) => council.slug === slug)
+}
+
+export function getCouncilsByType(type) {
+  return allCouncils.filter((council) => council.type === type)
 }

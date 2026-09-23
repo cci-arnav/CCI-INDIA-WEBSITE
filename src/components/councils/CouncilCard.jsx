@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import CouncilVisual from './CouncilVisual'
 
 export default function CouncilCard({ council }) {
-  const description = council.sourceStatus === 'available' ? (Array.isArray(council.description) ? council.description[0] : council.description) : null
+  const description = council.sourceStatus !== 'unavailable' ? (Array.isArray(council.description) ? council.description[0] : council.description) : null
   return (
     <Link to={`/councils/${council.slug}`} className="group flex h-full flex-col overflow-hidden border border-border bg-white transition-all duration-200 hover:-translate-y-0.5 hover:border-royal hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-royal">
       <CouncilVisual council={council} />

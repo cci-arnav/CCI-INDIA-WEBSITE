@@ -4,15 +4,18 @@ import councilsData from '../../content/councils.json'
 import CtaBanner from '../components/blocks/CtaBanner'
 import PageHero from '../components/blocks/PageHero'
 import CouncilCard from '../components/councils/CouncilCard'
+import { getCouncilsByType } from '../lib/councils'
 
 const categories = {
   parliamentarian: {
     data: councilsData.parliamentarianCouncils,
+    items: getCouncilsByType('parliamentarian'),
     title: 'Parliamentarian Councils',
     lead: 'CCI India’s parliamentarian councils provide a platform for dialogue, networking and stronger engagement between India and partner regions. Council details are published only where verified source information is available.',
   },
   international: {
     data: councilsData.internationalBusinessCouncils,
+    items: getCouncilsByType('international'),
     title: 'International Business Councils',
     lead: 'CCI India’s international business councils support business dialogue, market connections and cooperation between Indian enterprise and global partners.',
   },
@@ -21,7 +24,7 @@ const categories = {
 export default function CouncilCategory({ type }) {
   const [query, setQuery] = useState('')
   const category = categories[type]
-  const filtered = useMemo(() => category.data.items.filter((item) => item.name.toLowerCase().includes(query.trim().toLowerCase())), [category.data.items, query])
+  const filtered = useMemo(() => category.items.filter((item) => item.name.toLowerCase().includes(query.trim().toLowerCase())), [category.items, query])
   return <>
     <PageHero eyebrow="Councils" title={category.title} lead={category.lead} breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Councils', href: '/councils' }, { label: category.title }]} />
     <section className="section-padding border-b border-border bg-off-white">
