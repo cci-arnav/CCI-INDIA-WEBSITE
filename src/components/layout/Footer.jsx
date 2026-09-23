@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
+import { MapPin } from 'lucide-react'
 import home from '../../../content/home.json'
+import contact from '../../../content/contact.json'
 import Button from '../ui/Button'
 
 export default function Footer() {
@@ -20,7 +22,7 @@ export default function Footer() {
       </div>
 
       <div className="container-main section-padding">
-        <div className="grid gap-8 sm:gap-10 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-4">
           <div>
             <div className="mb-3 flex items-center gap-3">
               <img
@@ -49,6 +51,19 @@ export default function Footer() {
               </ul>
             </div>
           ))}
+          <div>
+            <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-saffron">Office Address</h3>
+            <div className="flex items-start gap-3">
+              <MapPin className="mt-0.5 shrink-0 text-saffron" size={18} aria-hidden="true" />
+              <address className="max-w-xs text-xs not-italic leading-relaxed text-white/70 sm:text-sm">
+                <span className="block font-medium text-white/90">{contact.headquarters.name}</span>
+                <span className="mt-1 block">{contact.headquarters.address}</span>
+                <a className="mt-2 inline-flex min-h-11 items-center text-white/70 underline decoration-white/30 underline-offset-4 transition-colors hover:text-white" href={`tel:${contact.headquarters.phone.replace(/[^\d+]/g, '')}`}>
+                  {contact.headquarters.phone}
+                </a>
+              </address>
+            </div>
+          </div>
         </div>
       </div>
 

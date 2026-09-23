@@ -10,6 +10,7 @@ import Membership from './pages/Membership'
 import StatesInvestment from './pages/StatesInvestment'
 import MarketEntry from './pages/MarketEntry'
 import Careers from './pages/Careers'
+import KnowledgePapers from './pages/KnowledgePapers'
 import Events from './pages/Events'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/states-investment" element={<StatesInvestment />} />
           <Route path="/market-entry" element={<MarketEntry />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/knowledge-papers" element={<KnowledgePapers />} />
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />

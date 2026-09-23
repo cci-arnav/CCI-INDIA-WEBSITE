@@ -20,6 +20,7 @@ export const NAV_ITEMS = [
     })),
   },
   { label: 'Careers', href: '/careers' },
+  { label: 'Knowledge Papers', href: '/knowledge-papers' },
   { label: 'News & Events', href: '/events' },
   { label: 'Contact', href: '/contact' },
 ]
