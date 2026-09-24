@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import ScrollToTop from './components/layout/ScrollToTop'
@@ -21,6 +22,11 @@ import AdminLogin from './pages/admin/AdminLogin'
 import AdminNews from './pages/admin/AdminNews'
 import AdminNewsForm from './pages/admin/AdminNewsForm'
 
+const BharatInvestmentGrid = lazy(() => import('./pages/BharatInvestmentGrid'))
+const BIGStateDetail = lazy(() => import('./pages/BIGStateDetail'))
+const BIGOpportunityDetail = lazy(() => import('./pages/BIGOpportunityDetail'))
+const bigRouteFallback = <div className="container-main section-padding" role="status">Loading Bharat Investment Grid…</div>
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -36,6 +42,9 @@ const App = () => {
           <Route path="/councils/:slug" element={<CouncilDetail />} />
           <Route path="/membership" element={<Membership />} />
           <Route path="/states-investment" element={<StatesInvestment />} />
+          <Route path="/bharat-investment-grid" element={<Suspense fallback={bigRouteFallback}><BharatInvestmentGrid /></Suspense>} />
+          <Route path="/bharat-investment-grid/state/:stateSlug" element={<Suspense fallback={bigRouteFallback}><BIGStateDetail /></Suspense>} />
+          <Route path="/bharat-investment-grid/opportunity/:opportunitySlug" element={<Suspense fallback={bigRouteFallback}><BIGOpportunityDetail /></Suspense>} />
           <Route path="/market-entry" element={<MarketEntry />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/knowledge-papers" element={<KnowledgePapers />} />

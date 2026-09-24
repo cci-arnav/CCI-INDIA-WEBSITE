@@ -84,6 +84,10 @@
   .utility-ticker__item {
     transition: none;
   }
+  .big-map-path,
+  .big-floating-tab {
+    transition: none;
+  }
 }
 
 /* Glassmorphism card styles */
@@ -147,5 +151,43 @@
 @media (max-width: 640px) {
   .line-clamp-2 {
     -webkit-line-clamp: 3;
+  }
+}
+
+/* Bharat Investment Grid: initiative-scoped styles. */
+.big-map-path {
+  fill: #dbe8f8;
+  stroke: #ffffff;
+  stroke-width: 0.9;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  transition: fill 150ms ease, filter 150ms ease;
+}
+.big-map-path:hover,
+.big-map-path:focus,
+.big-map-path.is-active {
+  fill: var(--color-saffron);
+  stroke: var(--color-navy-deep);
+  filter: drop-shadow(0 2px 3px rgb(27 51 83 / 28%));
+  outline: none;
+}
+.big-map-path:focus-visible {
+  stroke: var(--color-navy-deep);
+  stroke-width: 2.5;
+}
+.big-floating-tab {
+  transition: max-width 180ms ease, transform 180ms ease;
+}
+.big-page button,
+.big-page a {
+  border-radius: 2px;
+}
+
+@media (max-width: 639px) {
+  .big-floating-tab {
+    top: auto;
+    right: max(0px, env(safe-area-inset-right));
+    bottom: calc(5.5rem + env(safe-area-inset-bottom));
+    transform: none;
   }
 }
