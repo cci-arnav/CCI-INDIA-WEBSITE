@@ -15,27 +15,27 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[400px] border-b border-border bg-navy-deep text-white sm:min-h-[480px] md:min-h-[520px]">
+      <section className="home-hero relative min-h-[560px] border-b border-border bg-navy-deep text-white sm:min-h-[590px] md:min-h-[620px]">
         <div className="absolute inset-0 z-0">
           <Carousel slides={(hero && hero.heroSlides) || []} />
         </div>
-        <div className="absolute inset-0 z-10 bg-black/40" aria-hidden="true" />
-        <div className="container-main relative z-20 flex min-h-[400px] flex-col justify-center py-12 sm:min-h-[480px] sm:py-16 md:min-h-[520px]">
-          <span className="mb-3 inline-block w-fit border border-white/30 px-3 py-1 text-xs uppercase tracking-wider text-white/90 sm:mb-4">
+        <div className="container-main home-hero__content relative z-20 flex min-h-[560px] flex-col justify-center py-12 pb-28 sm:min-h-[590px] sm:py-16 sm:pb-28 md:min-h-[620px] md:pb-20">
+          <span className="home-hero__eyebrow mb-3 inline-flex w-fit items-center gap-2 border border-white/30 bg-white/[0.06] px-3 py-1.5 text-xs uppercase tracking-[0.18em] text-white/90 backdrop-blur-sm sm:mb-4">
+            <i className="h-1.5 w-1.5 rounded-full bg-saffron" aria-hidden="true" />
             {hero.badge}
           </span>
-          <h1 className="mb-3 max-w-3xl font-serif text-2xl font-bold leading-tight text-white sm:text-3xl md:text-[42px] sm:mb-4">
+          <h1 className="home-hero__title mb-3 max-w-3xl font-serif text-3xl font-bold leading-[1.08] text-white sm:text-4xl md:text-[50px] sm:mb-4">
             {hero.headlineLead}
             <span className="text-saffron">{hero.headlineAccent}</span>
           </h1>
-          <p className="mb-6 max-w-2xl text-sm text-white/80 md:text-base sm:mb-8">{hero.description}</p>
-          <div className="mb-8 flex flex-wrap gap-3 sm:mb-10">
+          <p className="home-hero__description mb-6 max-w-2xl text-sm leading-7 text-white/80 md:text-base sm:mb-8">{hero.description}</p>
+          <div className="home-hero__actions mb-8 flex flex-wrap gap-3 sm:mb-10">
             <Button href={hero.primaryCta.href} variant="accent">{hero.primaryCta.label}</Button>
             <Button href={hero.secondaryCta.href} variant="outline-light">{hero.secondaryCta.label}</Button>
           </div>
-          <div className="flex flex-wrap gap-4 border-t border-white/20 pt-6 sm:gap-8 sm:pt-8">
-            {hero.stats.map((s) => (
-              <div key={s.label} className="min-w-[120px]">
+          <div className="home-hero__stats flex flex-wrap gap-4 border-t border-white/20 pt-6 sm:gap-8 sm:pt-8">
+            {hero.stats.map((s, index) => (
+              <div key={s.label} className="home-hero__stat min-w-[110px]" style={{ '--stat-index': index }}>
                 <div className="font-serif text-2xl font-bold text-white sm:text-3xl">{s.value}</div>
                 <div className="text-xs uppercase tracking-wider text-white/60">{s.label}</div>
               </div>

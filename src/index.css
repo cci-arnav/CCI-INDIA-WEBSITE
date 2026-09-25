@@ -47,15 +47,189 @@
   .accent-green { @apply border-green text-green; }
 }
 
-/* Simple carousel fade */
-.carousel-slide {
-  transition: opacity 0.4s ease;
+/* Homepage cinematic hero carousel */
+.home-carousel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  touch-action: pan-y;
 }
-.carousel-slide.hidden-slide {
-  opacity: 0;
-  pointer-events: none;
+.home-carousel__slides,
+.home-carousel__slide,
+.home-carousel__wash,
+.home-carousel__glow {
   position: absolute;
   inset: 0;
+}
+.home-carousel__slide {
+  opacity: 0;
+  transform: scale(1.035);
+  transition: opacity 1.15s cubic-bezier(.22, .61, .36, 1), transform 1.15s cubic-bezier(.22, .61, .36, 1);
+  pointer-events: none;
+}
+.home-carousel__slide.is-active {
+  z-index: 1;
+  opacity: 1;
+  transform: scale(1);
+}
+.home-carousel__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.045);
+  filter: saturate(.9) contrast(1.03);
+  will-change: transform;
+}
+.home-carousel[data-direction='next'] .home-carousel__slide.is-active .home-carousel__image {
+  animation: home-hero-drift-next 7.2s ease-out both;
+}
+.home-carousel[data-direction='previous'] .home-carousel__slide.is-active .home-carousel__image {
+  animation: home-hero-drift-previous 7.2s ease-out both;
+}
+.home-carousel__wash {
+  z-index: 2;
+  background:
+    linear-gradient(90deg, rgb(7 21 40 / 94%) 0%, rgb(7 21 40 / 81%) 42%, rgb(7 21 40 / 45%) 72%, rgb(7 21 40 / 64%) 100%),
+    linear-gradient(0deg, rgb(7 21 40 / 75%) 0%, transparent 50%);
+  pointer-events: none;
+}
+.home-carousel__glow {
+  z-index: 3;
+  background:
+    radial-gradient(circle at 84% 16%, rgb(255 126 29 / 19%), transparent 31%),
+    radial-gradient(circle at 72% 92%, rgb(24 153 96 / 15%), transparent 27%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+.home-carousel__controls {
+  position: absolute;
+  z-index: 5;
+  right: max(8.75rem, calc((100vw - 72rem) / 2 + 8.75rem));
+  bottom: 2rem;
+  display: grid;
+  grid-template-columns: auto minmax(5rem, 9rem) auto;
+  align-items: center;
+  gap: .85rem;
+  color: white;
+}
+.home-carousel__counter {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+.home-carousel__counter i {
+  display: block;
+  width: 1.25rem;
+  height: 1px;
+  background: rgb(255 255 255 / 45%);
+}
+.home-carousel__counter span:last-child { color: rgb(255 255 255 / 55%); }
+.home-carousel__progress {
+  height: 2px;
+  overflow: hidden;
+  background: rgb(255 255 255 / 25%);
+}
+.home-carousel__progress span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(90deg, var(--color-saffron), #ffc15d);
+  animation: home-carousel-progress var(--carousel-interval) linear forwards;
+}
+.home-carousel__progress span.is-paused { animation-play-state: paused; }
+.home-carousel__buttons {
+  display: flex;
+  border: 1px solid rgb(255 255 255 / 28%);
+  background: rgb(7 21 40 / 35%);
+  backdrop-filter: blur(12px);
+}
+.home-carousel__buttons button {
+  display: grid;
+  width: 2.6rem;
+  height: 2.6rem;
+  place-items: center;
+  color: white;
+  transition: background-color .25s ease, color .25s ease;
+}
+.home-carousel__buttons button + button { border-left: 1px solid rgb(255 255 255 / 20%); }
+.home-carousel__buttons button:hover { background: var(--color-saffron); color: var(--color-navy-deep); }
+.home-carousel__buttons svg { width: 1rem; height: 1rem; }
+.home-carousel__dots {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: .3rem;
+}
+.home-carousel__dots button {
+  display: grid;
+  width: 1.5rem;
+  height: 1rem;
+  place-items: center;
+}
+.home-carousel__dots span {
+  width: .35rem;
+  height: .35rem;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 45%);
+  transition: width .3s ease, background-color .3s ease;
+}
+.home-carousel__dots button[aria-current='true'] span {
+  width: 1.25rem;
+  background: var(--color-saffron);
+}
+.home-hero__content { pointer-events: none; }
+.home-hero__content a,
+.home-hero__content button { pointer-events: auto; }
+.home-hero__eyebrow,
+.home-hero__title,
+.home-hero__description,
+.home-hero__actions,
+.home-hero__stats {
+  opacity: 0;
+  animation: home-hero-rise .72s cubic-bezier(.2, .7, .2, 1) forwards;
+}
+.home-hero__eyebrow { animation-delay: .12s; }
+.home-hero__title { animation-delay: .22s; }
+.home-hero__description { animation-delay: .32s; }
+.home-hero__actions { animation-delay: .42s; }
+.home-hero__stats { animation-delay: .52s; }
+.home-hero__stat { transition: transform .25s ease; }
+.home-hero__stat:hover { transform: translateY(-3px); }
+
+@keyframes home-hero-drift-next {
+  from { transform: scale(1.045) translate3d(-.6%, 0, 0); }
+  to { transform: scale(1.105) translate3d(.7%, -.4%, 0); }
+}
+@keyframes home-hero-drift-previous {
+  from { transform: scale(1.045) translate3d(.6%, 0, 0); }
+  to { transform: scale(1.105) translate3d(-.7%, -.4%, 0); }
+}
+@keyframes home-carousel-progress {
+  to { transform: scaleX(1); }
+}
+@keyframes home-hero-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 767px) {
+  .home-carousel__wash {
+    background: linear-gradient(90deg, rgb(7 21 40 / 91%), rgb(7 21 40 / 66%)), linear-gradient(0deg, rgb(7 21 40 / 78%), transparent 55%);
+  }
+  .home-carousel__controls {
+    right: 5.75rem;
+    bottom: 1rem;
+    left: 1rem;
+    grid-template-columns: auto minmax(4rem, 1fr) auto;
+  }
+  .home-carousel__dots { justify-content: center; }
 }
 
 /* Utility bar announcement ticker */
