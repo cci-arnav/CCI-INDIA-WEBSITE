@@ -35,7 +35,7 @@ test('published knowledge paper records resolve to local PDF and cover assets', 
   const content = JSON.parse(readFileSync(fileURLToPath(new URL('../content/knowledge-papers.json', import.meta.url)), 'utf8'))
   const published = getPublishedKnowledgePapers(content)
 
-  assert.equal(published.length, 22)
+  assert.equal(published.length, 23)
   assert.equal(new Set(published.map((paper) => paper.id)).size, published.length)
   assert.equal(new Set(published.map((paper) => paper.pdfUrl)).size, published.length)
 

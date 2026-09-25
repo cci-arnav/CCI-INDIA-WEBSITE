@@ -83,14 +83,14 @@ export default function DemoModal({ open, onClose, mode = 'interest', opportunit
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-navy-deep/80 p-3 sm:p-6" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose() }}>
       <section ref={dialogRef} role="dialog" aria-modal="true" aria-labelledby={`big-${mode}-title`} className="max-h-[calc(100vh-1.5rem)] w-full max-w-2xl overflow-y-auto bg-white shadow-2xl">
         <div className="sticky top-0 z-10 flex items-start justify-between border-b border-border bg-white px-4 py-3 sm:px-6">
-          <div><p className="text-[10px] font-bold uppercase tracking-wider text-saffron">Frontend demonstration</p><h2 id={`big-${mode}-title`} className="text-xl font-bold">{title}</h2></div>
+          <div><p className="text-[10px] font-bold uppercase tracking-wider text-saffron">Bharat Investment Grid</p><h2 id={`big-${mode}-title`} className="text-xl font-bold">{title}</h2></div>
           <button type="button" onClick={onClose} className="flex min-h-11 min-w-11 items-center justify-center text-navy-deep" aria-label={`Close ${title}`}><X aria-hidden="true" /></button>
         </div>
         <div className="p-4 sm:p-6">
           {success ? (
             <div role="status" tabIndex="-1" className="border-l-4 border-green bg-green/10 p-5 text-sm text-navy-deep">
-              <h3 className="text-lg font-bold">Demonstration completed</h3>
-              <p className="mt-2">{interest ? 'Thank you. Your expression of interest has been completed in this demonstration interface. No information has been stored or transmitted.' : 'Thank you. This demonstration form has been completed successfully. No information has been stored or transmitted.'}</p>
+              <h3 className="text-lg font-bold">Form completed</h3>
+              <p className="mt-2">Thank you. No information has been stored or transmitted.</p>
               <button type="button" onClick={onClose} className="mt-5 min-h-11 bg-navy-deep px-5 py-2 font-bold text-white">Close</button>
             </div>
           ) : (
@@ -110,9 +110,9 @@ export default function DemoModal({ open, onClose, mode = 'interest', opportunit
                   <label className="block text-sm font-semibold text-navy-deep sm:col-span-2">Short project description <span className="text-red-700">*</span><textarea name="description" rows="4" required className="field" />{errors.description && <span className="text-xs text-red-700">{errors.description}</span>}</label>
                 </>}
               </div>
-              <label className="mt-5 flex items-start gap-3 text-sm text-navy-deep"><input name="consent" type="checkbox" value="acknowledged" className="mt-1 h-5 w-5 shrink-0" /> <span>I understand this is a demonstration form and no information will be stored or transmitted.</span></label>
+              <label className="mt-5 flex items-start gap-3 text-sm text-navy-deep"><input name="consent" type="checkbox" value="acknowledged" className="mt-1 h-5 w-5 shrink-0" /> <span>I understand that information entered here will not be stored or transmitted.</span></label>
               {errors.consent && <p className="ml-8 text-xs text-red-700">{errors.consent}</p>}
-              <button type="submit" className="mt-6 min-h-11 bg-navy-deep px-5 py-2.5 font-bold text-white hover:bg-royal">{interest ? 'Submit Interest' : 'Complete Demonstration'}</button>
+              <button type="submit" className="mt-6 min-h-11 bg-navy-deep px-5 py-2.5 font-bold text-white hover:bg-royal">{interest ? 'Submit Interest' : 'Complete Form'}</button>
             </form>
           )}
         </div>

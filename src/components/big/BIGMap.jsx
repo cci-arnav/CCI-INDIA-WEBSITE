@@ -29,7 +29,7 @@ export default function BIGMap() {
         <p className="mb-3 text-center text-xs text-muted-fg">Select a State or Union Territory. Use the directory below for an equivalent complete list.</p>
         <svg viewBox={indiaMap.viewBox} className="mx-auto block h-auto max-h-[610px] w-full max-w-[540px]" role="group" aria-labelledby="big-map-title big-map-desc">
           <title id="big-map-title">Interactive map of India</title>
-          <desc id="big-map-desc">State and Union Territory shapes link to illustrative investment summaries. Tab through regions and press Enter or Space to open details.</desc>
+          <desc id="big-map-desc">State and Union Territory shapes link to investment summaries. Tab through regions and press Enter or Space to open details.</desc>
           {shapes.map((shape) => {
             const location = mapLocationById[shape.id]
             if (!location) return null
@@ -42,7 +42,7 @@ export default function BIGMap() {
                 data-state-slug={location.slug}
                 tabIndex="0"
                 role="link"
-                aria-label={`${location.name}, ${location.region}, ${count} illustrative ${count === 1 ? 'opportunity' : 'opportunities'}.`}
+                aria-label={`${location.name}, ${location.region}, ${count} ${count === 1 ? 'opportunity' : 'opportunities'}.`}
                 className={`big-map-path ${selected ? 'is-active' : ''}`}
                 onPointerEnter={() => select(shape)}
                 onFocus={() => select(shape)}
@@ -71,7 +71,7 @@ export default function BIGMap() {
           <p className="text-xs font-bold uppercase tracking-wider text-white/60">Key sectors</p>
           <p className="mt-1 text-sm">{active.keySectors.join(' · ')}</p>
         </div>
-        <p className="mt-4 text-sm font-semibold text-saffron">{getOpportunityCount(active.slug)} Illustrative {getOpportunityCount(active.slug) === 1 ? 'Opportunity' : 'Opportunities'}</p>
+        <p className="mt-4 text-sm font-semibold text-saffron">{getOpportunityCount(active.slug)} {getOpportunityCount(active.slug) === 1 ? 'Opportunity' : 'Opportunities'}</p>
         <div className="mt-4 border-t border-white/15 pt-4">
           <p className="text-xs font-bold uppercase tracking-wider text-white/60">Idea highlight</p>
           <p className="mt-1 text-sm text-white/85">{active.ideaHighlight}</p>

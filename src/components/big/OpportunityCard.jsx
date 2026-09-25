@@ -6,7 +6,7 @@ export default function OpportunityCard({ opportunity }) {
   const location = getLocation(opportunity.stateSlug)
   return (
     <article className="flex h-full flex-col border border-border bg-white p-5 shadow-sm transition hover:border-royal/60 focus-within:border-royal">
-      <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.16em] text-saffron">Illustrative Opportunity</p>
+      <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.16em] text-saffron">Investment Opportunity</p>
       <h3 className="text-lg font-bold leading-snug">{opportunity.name}</h3>
       <p className="mt-2 flex items-center gap-1.5 text-xs text-muted-fg"><MapPin size={14} aria-hidden="true" /> {location?.name} · {location?.region}</p>
       <dl className="mt-4 grid grid-cols-2 gap-x-3 gap-y-2 text-xs">

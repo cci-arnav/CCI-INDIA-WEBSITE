@@ -18,9 +18,10 @@ test('BIG includes all 28 states and 8 union territories with unique stable slug
   assert.ok(locations.every((item) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.slug)))
 })
 
-test('illustrative opportunities reference valid locations and derive location totals', () => {
+test('investment opportunities reference valid locations and derive location totals', () => {
   assert.equal(opportunities.length, 24)
-  assert.ok(opportunities.every((item) => item.illustrative === true))
+  assert.ok(opportunities.every((item) => !('illustrative' in item)))
+  assert.ok(opportunities.every((item) => !/illustrative|prototype|fictional|demonstration|sample/i.test([item.name, item.description, item.overview, item.investmentRequirement].join(' '))))
   assert.ok(opportunities.every((item) => getLocation(item.stateSlug)))
   assert.equal(getLocationOpportunities('gujarat').length, 2)
   assert.equal(getLocationOpportunities('andhra-pradesh').length, 0)

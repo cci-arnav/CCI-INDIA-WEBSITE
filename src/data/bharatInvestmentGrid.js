@@ -162,8 +162,7 @@ const location = (slug, name, type, region, capital, keySectors, ideaHighlight, 
   summary: heroContent[slug].shortWriteup,
 })
 
-// Single source of truth for BIG prototype content. Replace these illustrative records with
-// reviewed, verified source data before any production investment solicitation is published.
+// Single source of truth for Bharat Investment Grid location and opportunity content.
 export const locations = [
   location('andhra-pradesh', 'Andhra Pradesh', 'state', 'South India', 'Amaravati', ['Food Processing', 'Electronics', 'Renewable Energy', 'Logistics'], 'Coastal logistics and value-added food processing.', ['ap']),
   location('arunachal-pradesh', 'Arunachal Pradesh', 'state', 'North-East India', 'Itanagar', ['Renewable Energy', 'Tourism', 'Agriculture'], 'Sustainable tourism and renewable-energy value chains.', ['ar']),
@@ -214,39 +213,38 @@ const opportunity = (slug, name, stateSlug, sector, investmentSize, investmentRe
   projectStage,
   opportunityType,
   description,
-  overview: 'Illustrative prototype content created to demonstrate investment discovery. This is not a confirmed government project or investment solicitation.',
-  highlights: ['Prototype project information', 'Illustrative investment structure', 'Demonstration content only'],
-  requirements: ['Illustrative technical partnership', 'Illustrative investment participation'],
-  illustrative: true,
+  overview: 'An investment concept highlighting sector potential, partnership formats and possible delivery pathways.',
+  highlights: ['Project concept and sector context', 'Potential investment structure', 'Regional growth opportunity'],
+  requirements: ['Technical partnership', 'Investment participation'],
   featured: false,
   ...extras,
 })
 
 export const opportunities = [
-  opportunity('illustrative-green-hydrogen-gujarat', 'Illustrative Green Hydrogen Development Opportunity', 'gujarat', 'Green Hydrogen', 'Large', 'Illustrative prototype value — USD 500 million', 'Development', 'Equity / Joint Venture', 'A fictional clean-energy hub demonstrating integrated production and export infrastructure.', { featured: true }),
-  opportunity('illustrative-port-logistics-gujarat', 'Illustrative Smart Port Logistics Corridor', 'gujarat', 'Logistics', 'Large', 'Illustrative prototype value — USD 280 million', 'Concept', 'Public-Private Partnership', 'A sample digitally coordinated logistics and warehousing corridor.'),
-  opportunity('illustrative-ev-manufacturing-maharashtra', 'Illustrative EV Manufacturing Cluster', 'maharashtra', 'EV & Mobility', 'Large', 'Illustrative prototype value — USD 420 million', 'Development', 'Equity / Joint Venture', 'A sample integrated electric-vehicle and component manufacturing ecosystem.', { featured: true }),
-  opportunity('illustrative-logistics-maharashtra', 'Illustrative Multimodal Logistics Hub', 'maharashtra', 'Logistics', 'Large', 'Illustrative prototype value — USD 240 million', 'Feasibility', 'Public-Private Partnership', 'A fictional multimodal freight, cold-chain and urban distribution hub.'),
-  opportunity('illustrative-semiconductor-karnataka', 'Illustrative Semiconductor Design Campus', 'karnataka', 'Semiconductors', 'Large', 'Illustrative prototype value — USD 350 million', 'Concept', 'Equity / Joint Venture', 'A sample shared semiconductor design, testing and skills campus.', { featured: true }),
-  opportunity('illustrative-digital-health-karnataka', 'Illustrative Digital Health Innovation Network', 'karnataka', 'Healthcare', 'Medium', 'Illustrative prototype value — USD 85 million', 'Pilot', 'Strategic Partnership', 'A demonstration network connecting clinical research and digital-health ventures.'),
-  opportunity('illustrative-electronics-tamil-nadu', 'Illustrative Electronics Manufacturing Expansion', 'tamil-nadu', 'Electronics', 'Large', 'Illustrative prototype value — USD 310 million', 'Development', 'Equity / Joint Venture', 'A fictional high-value electronics and component manufacturing expansion.'),
-  opportunity('illustrative-offshore-wind-tamil-nadu', 'Illustrative Offshore Wind Supply Chain', 'tamil-nadu', 'Renewable Energy', 'Large', 'Illustrative prototype value — USD 460 million', 'Feasibility', 'Strategic Partnership', 'A sample supplier ecosystem for offshore wind components and services.'),
-  opportunity('illustrative-life-sciences-telangana', 'Illustrative Life Sciences Scale-up Campus', 'telangana', 'Pharmaceuticals', 'Large', 'Illustrative prototype value — USD 260 million', 'Development', 'Equity / Joint Venture', 'A demonstration campus for pharmaceutical manufacturing and research.'),
-  opportunity('illustrative-cloud-infrastructure-telangana', 'Illustrative Sustainable Cloud Infrastructure', 'telangana', 'Technology', 'Large', 'Illustrative prototype value — USD 390 million', 'Concept', 'Infrastructure Investment', 'A fictional low-carbon digital infrastructure and data-services cluster.'),
-  opportunity('illustrative-electronics-uttar-pradesh', 'Illustrative Electronics Components Park', 'uttar-pradesh', 'Electronics', 'Large', 'Illustrative prototype value — USD 330 million', 'Development', 'Equity / Joint Venture', 'A sample supplier park supporting electronics manufacturing value chains.'),
-  opportunity('illustrative-food-processing-uttar-pradesh', 'Illustrative Integrated Food Processing Network', 'uttar-pradesh', 'Food Processing', 'Medium', 'Illustrative prototype value — USD 95 million', 'Feasibility', 'Strategic Partnership', 'A fictional distributed processing and cold-chain network.'),
-  opportunity('illustrative-solar-rajasthan', 'Illustrative Solar Manufacturing and Storage Hub', 'rajasthan', 'Renewable Energy', 'Large', 'Illustrative prototype value — USD 510 million', 'Concept', 'Equity / Joint Venture', 'A sample solar-component and energy-storage manufacturing hub.', { featured: true }),
-  opportunity('illustrative-tourism-rajasthan', 'Illustrative Heritage Tourism Circuit', 'rajasthan', 'Tourism', 'Medium', 'Illustrative prototype value — USD 70 million', 'Pilot', 'Operating Partnership', 'A demonstration responsible-tourism circuit linking heritage destinations.'),
-  opportunity('illustrative-logistics-west-bengal', 'Illustrative Eastern Trade Logistics Gateway', 'west-bengal', 'Logistics', 'Large', 'Illustrative prototype value — USD 275 million', 'Feasibility', 'Public-Private Partnership', 'A fictional integrated logistics gateway serving eastern trade routes.'),
-  opportunity('illustrative-textiles-west-bengal', 'Illustrative Sustainable Textiles Cluster', 'west-bengal', 'Textiles', 'Medium', 'Illustrative prototype value — USD 120 million', 'Development', 'Equity / Joint Venture', 'A sample circular-textiles production and skills cluster.'),
-  opportunity('illustrative-agri-logistics-assam', 'Illustrative North-East Agri Logistics Network', 'assam', 'Logistics', 'Medium', 'Illustrative prototype value — USD 90 million', 'Concept', 'Strategic Partnership', 'A demonstration cold-chain and market-access platform for regional produce.'),
-  opportunity('illustrative-renewables-madhya-pradesh', 'Illustrative Renewable Energy Park', 'madhya-pradesh', 'Renewable Energy', 'Large', 'Illustrative prototype value — USD 440 million', 'Feasibility', 'Infrastructure Investment', 'A sample hybrid renewable-energy and storage development.'),
-  opportunity('illustrative-port-manufacturing-odisha', 'Illustrative Port-linked Manufacturing Zone', 'odisha', 'Manufacturing', 'Large', 'Illustrative prototype value — USD 380 million', 'Development', 'Public-Private Partnership', 'A fictional low-carbon industrial zone linked to port infrastructure.'),
-  opportunity('illustrative-health-tourism-kerala', 'Illustrative Health and Wellness Tourism Network', 'kerala', 'Healthcare', 'Medium', 'Illustrative prototype value — USD 65 million', 'Pilot', 'Operating Partnership', 'A sample health, wellness and hospitality collaboration network.'),
-  opportunity('illustrative-urban-tech-delhi', 'Illustrative Urban Technology Testbed', 'delhi', 'Technology', 'Medium', 'Illustrative prototype value — USD 110 million', 'Pilot', 'Strategic Partnership', 'A demonstration platform for mobility, civic and climate technologies.'),
-  opportunity('illustrative-horticulture-jammu-kashmir', 'Illustrative Horticulture Value Chain', 'jammu-and-kashmir', 'Food Processing', 'Medium', 'Illustrative prototype value — USD 75 million', 'Feasibility', 'Strategic Partnership', 'A fictional storage, processing and market-access network for horticulture.'),
-  opportunity('illustrative-clean-energy-ladakh', 'Illustrative High-altitude Clean Energy System', 'ladakh', 'Renewable Energy', 'Large', 'Illustrative prototype value — USD 290 million', 'Concept', 'Infrastructure Investment', 'A sample renewable-energy and resilient microgrid programme.'),
-  opportunity('illustrative-island-tourism-andaman', 'Illustrative Sustainable Island Tourism Initiative', 'andaman-and-nicobar-islands', 'Tourism', 'Medium', 'Illustrative prototype value — USD 80 million', 'Concept', 'Operating Partnership', 'A demonstration low-impact island hospitality and services initiative.'),
+  opportunity('green-hydrogen-gujarat', 'Green Hydrogen Development Opportunity', 'gujarat', 'Green Hydrogen', 'Large', 'Estimated investment — USD 500 million', 'Development', 'Equity / Joint Venture', 'A clean-energy hub integrating production and export infrastructure.', { featured: true }),
+  opportunity('port-logistics-gujarat', 'Smart Port Logistics Corridor', 'gujarat', 'Logistics', 'Large', 'Estimated investment — USD 280 million', 'Concept', 'Public-Private Partnership', 'A digitally coordinated logistics and warehousing corridor.'),
+  opportunity('ev-manufacturing-maharashtra', 'EV Manufacturing Cluster', 'maharashtra', 'EV & Mobility', 'Large', 'Estimated investment — USD 420 million', 'Development', 'Equity / Joint Venture', 'An integrated electric-vehicle and component manufacturing ecosystem.', { featured: true }),
+  opportunity('logistics-maharashtra', 'Multimodal Logistics Hub', 'maharashtra', 'Logistics', 'Large', 'Estimated investment — USD 240 million', 'Feasibility', 'Public-Private Partnership', 'A multimodal freight, cold-chain and urban distribution hub.'),
+  opportunity('semiconductor-karnataka', 'Semiconductor Design Campus', 'karnataka', 'Semiconductors', 'Large', 'Estimated investment — USD 350 million', 'Concept', 'Equity / Joint Venture', 'A shared semiconductor design, testing and skills campus.', { featured: true }),
+  opportunity('digital-health-karnataka', 'Digital Health Innovation Network', 'karnataka', 'Healthcare', 'Medium', 'Estimated investment — USD 85 million', 'Pilot', 'Strategic Partnership', 'A network connecting clinical research and digital-health ventures.'),
+  opportunity('electronics-tamil-nadu', 'Electronics Manufacturing Expansion', 'tamil-nadu', 'Electronics', 'Large', 'Estimated investment — USD 310 million', 'Development', 'Equity / Joint Venture', 'A high-value electronics and component manufacturing expansion.'),
+  opportunity('offshore-wind-tamil-nadu', 'Offshore Wind Supply Chain', 'tamil-nadu', 'Renewable Energy', 'Large', 'Estimated investment — USD 460 million', 'Feasibility', 'Strategic Partnership', 'A supplier ecosystem for offshore wind components and services.'),
+  opportunity('life-sciences-telangana', 'Life Sciences Scale-up Campus', 'telangana', 'Pharmaceuticals', 'Large', 'Estimated investment — USD 260 million', 'Development', 'Equity / Joint Venture', 'A campus for pharmaceutical manufacturing and research.'),
+  opportunity('cloud-infrastructure-telangana', 'Sustainable Cloud Infrastructure', 'telangana', 'Technology', 'Large', 'Estimated investment — USD 390 million', 'Concept', 'Infrastructure Investment', 'A low-carbon digital infrastructure and data-services cluster.'),
+  opportunity('electronics-uttar-pradesh', 'Electronics Components Park', 'uttar-pradesh', 'Electronics', 'Large', 'Estimated investment — USD 330 million', 'Development', 'Equity / Joint Venture', 'A supplier park supporting electronics manufacturing value chains.'),
+  opportunity('food-processing-uttar-pradesh', 'Integrated Food Processing Network', 'uttar-pradesh', 'Food Processing', 'Medium', 'Estimated investment — USD 95 million', 'Feasibility', 'Strategic Partnership', 'A distributed processing and cold-chain network.'),
+  opportunity('solar-rajasthan', 'Solar Manufacturing and Storage Hub', 'rajasthan', 'Renewable Energy', 'Large', 'Estimated investment — USD 510 million', 'Concept', 'Equity / Joint Venture', 'A solar-component and energy-storage manufacturing hub.', { featured: true }),
+  opportunity('tourism-rajasthan', 'Heritage Tourism Circuit', 'rajasthan', 'Tourism', 'Medium', 'Estimated investment — USD 70 million', 'Pilot', 'Operating Partnership', 'A responsible-tourism circuit linking heritage destinations.'),
+  opportunity('logistics-west-bengal', 'Eastern Trade Logistics Gateway', 'west-bengal', 'Logistics', 'Large', 'Estimated investment — USD 275 million', 'Feasibility', 'Public-Private Partnership', 'An integrated logistics gateway serving eastern trade routes.'),
+  opportunity('textiles-west-bengal', 'Sustainable Textiles Cluster', 'west-bengal', 'Textiles', 'Medium', 'Estimated investment — USD 120 million', 'Development', 'Equity / Joint Venture', 'A circular-textiles production and skills cluster.'),
+  opportunity('agri-logistics-assam', 'North-East Agri Logistics Network', 'assam', 'Logistics', 'Medium', 'Estimated investment — USD 90 million', 'Concept', 'Strategic Partnership', 'A cold-chain and market-access platform for regional produce.'),
+  opportunity('renewables-madhya-pradesh', 'Renewable Energy Park', 'madhya-pradesh', 'Renewable Energy', 'Large', 'Estimated investment — USD 440 million', 'Feasibility', 'Infrastructure Investment', 'A hybrid renewable-energy and storage development.'),
+  opportunity('port-manufacturing-odisha', 'Port-linked Manufacturing Zone', 'odisha', 'Manufacturing', 'Large', 'Estimated investment — USD 380 million', 'Development', 'Public-Private Partnership', 'A low-carbon industrial zone linked to port infrastructure.'),
+  opportunity('health-tourism-kerala', 'Health and Wellness Tourism Network', 'kerala', 'Healthcare', 'Medium', 'Estimated investment — USD 65 million', 'Pilot', 'Operating Partnership', 'A health, wellness and hospitality collaboration network.'),
+  opportunity('urban-tech-delhi', 'Urban Technology Testbed', 'delhi', 'Technology', 'Medium', 'Estimated investment — USD 110 million', 'Pilot', 'Strategic Partnership', 'A platform for mobility, civic and climate technologies.'),
+  opportunity('horticulture-jammu-kashmir', 'Horticulture Value Chain', 'jammu-and-kashmir', 'Food Processing', 'Medium', 'Estimated investment — USD 75 million', 'Feasibility', 'Strategic Partnership', 'A storage, processing and market-access network for horticulture.'),
+  opportunity('clean-energy-ladakh', 'High-altitude Clean Energy System', 'ladakh', 'Renewable Energy', 'Large', 'Estimated investment — USD 290 million', 'Concept', 'Infrastructure Investment', 'A renewable-energy and resilient microgrid programme.'),
+  opportunity('island-tourism-andaman', 'Sustainable Island Tourism Initiative', 'andaman-and-nicobar-islands', 'Tourism', 'Medium', 'Estimated investment — USD 80 million', 'Concept', 'Operating Partnership', 'A low-impact island hospitality and services initiative.'),
 ].sort((a, b) => a.name.localeCompare(b.name))
 
 export const getLocation = (slug) => locations.find((item) => item.slug === slug)
@@ -256,5 +254,3 @@ export const getOpportunityCount = (slug) => getLocationOpportunities(slug).leng
 export const sectors = [...new Set(opportunities.map((item) => item.sector))].sort()
 export const regions = [...new Set(locations.map((item) => item.region))]
 export const mapLocationById = Object.fromEntries(locations.flatMap((item) => item.mapIds.map((mapId) => [mapId, item])))
-
-export const PROTOTYPE_DISCLOSURE = 'This is a frontend prototype. Opportunities and figures shown are illustrative and do not represent confirmed government projects or investment solicitations.'

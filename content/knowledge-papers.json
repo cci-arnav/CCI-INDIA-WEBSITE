@@ -1,5 +1,21 @@
 [
   {
+    "id": "india-chad-opportunities-2026",
+    "title": "India & Chad: Partnering for Opportunities, Building a Brighter Tomorrow",
+    "country": "Chad",
+    "countryCode": "TD",
+    "region": "Central Africa",
+    "description": "An evidence-based overview of Chad's economy, priority sectors, and the opportunities and constraints shaping India-Chad economic engagement.",
+    "publishedAt": "2026-09-01",
+    "year": 2026,
+    "pdfUrl": "/knowledge-papers/india-chad.pdf",
+    "coverImage": "/images/knowledge-papers/india-chad.jpg",
+    "fileSize": "9.9 MB",
+    "tags": ["Trade", "Investment", "Market Intelligence"],
+    "featured": false,
+    "published": true
+  },
+  {
     "id": "india-tajikistan-shared-growth-2026",
     "title": "India & Tajikistan: Strengthening Partnership, Shaping Shared Growth",
     "country": "Tajikistan",
