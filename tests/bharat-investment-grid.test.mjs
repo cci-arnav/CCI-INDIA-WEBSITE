@@ -1,4 +1,6 @@
 import assert from 'node:assert/strict'
+import { existsSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
 import test from 'node:test'
 import {
   getLocation,
@@ -29,4 +31,23 @@ test('map identifiers resolve through the shared location dataset', () => {
   assert.equal(mapLocationById.dn.slug, 'dadra-and-nagar-haveli-and-daman-and-diu')
   assert.equal(mapLocationById.dd.slug, 'dadra-and-nagar-haveli-and-daman-and-diu')
   assert.equal(mapLocationById.ld.slug, 'lakshadweep')
+})
+
+test('every location has unique, complete hero content and a local image asset', () => {
+  assert.equal(new Set(locations.map((item) => item.heroImage)).size, 36)
+
+  for (const item of locations) {
+    const wordCount = item.shortWriteup.trim().split(/\s+/).length
+    assert.ok(wordCount >= 35 && wordCount <= 65, `${item.name} write-up has ${wordCount} words`)
+    assert.ok(item.heroImageAlt.length >= 20, `${item.name} is missing descriptive alt text`)
+    assert.match(item.heroImagePosition, /^(left|center|right|\d+%) (top|center|bottom|\d+%)$/)
+    assert.ok(item.imageSubject)
+    assert.ok(item.imageCredit)
+    assert.match(item.imageCreditUrl, /^https:\/\/commons\.wikimedia\.org\/wiki\/File:/)
+    assert.ok(item.imageLicense)
+    assert.match(item.imageLicenseUrl, /^https:\/\//)
+
+    const assetUrl = new URL(`../public${item.heroImage}`, import.meta.url)
+    assert.ok(existsSync(fileURLToPath(assetUrl)), `${item.name} hero asset is missing`)
+  }
 })

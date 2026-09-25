@@ -1,6 +1,7 @@
 import { ArrowLeft, Building2, MapPin } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
 import BIGDisclosure from '../components/big/BIGDisclosure'
+import BIGStateHero from '../components/big/BIGStateHero'
 import OpportunityCard from '../components/big/OpportunityCard'
 import { getLocation, getLocationOpportunities } from '../data/bharatInvestmentGrid'
 
@@ -15,7 +16,7 @@ export default function BIGStateDetail() {
   const items = getLocationOpportunities(location.slug)
   return (
     <>
-      <header className="bg-navy-deep text-white"><div className="container-main py-10 md:py-14"><nav aria-label="Breadcrumb" className="text-xs text-white/65"><Link to="/">Home</Link> / <Link to="/bharat-investment-grid">Bharat Investment Grid</Link> / <span aria-current="page">{location.name}</span></nav><p className="mt-7 text-xs font-bold uppercase tracking-[0.18em] text-saffron">{location.type === 'state' ? 'State' : 'Union Territory'} · {location.region}</p><h1 className="mt-2 text-4xl font-bold text-white">{location.name}</h1><p className="mt-3 max-w-2xl text-white/75">{location.summary}</p></div></header>
+      <BIGStateHero location={location} />
       <div className="container-main py-5"><BIGDisclosure /></div>
       <main>
         <section className="section-padding border-y border-border bg-off-white"><div className="container-main grid grid-cols-1 gap-6 lg:grid-cols-[.72fr_1.28fr]">

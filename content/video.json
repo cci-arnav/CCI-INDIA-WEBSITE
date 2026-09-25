@@ -1,8 +1,38 @@
 {
   "heading": "HOW CCI CAN HELP YOU",
   "title": "Discover how CCI India connects enterprise, policy and opportunity",
-  "caption": "Watch how CCI India supports enterprise, policy engagement and opportunity.",
-  "url": "/videos/how-cci-can-help-you.mp4",
-  "poster": "",
-  "provider": "local"
+  "items": [
+    {
+      "id": "how-cci-can-help-you",
+      "title": "How CCI Can Help You",
+      "caption": "How CCI India supports enterprise, policy engagement and opportunity.",
+      "url": "/videos/how-cci-can-help-you.mp4",
+      "poster": "",
+      "provider": "local"
+    },
+    {
+      "id": "cci-india-video",
+      "title": "CCI India Video",
+      "caption": "Discover CCI India's work connecting business, policy and opportunity.",
+      "url": "/videos/cci-india-video.mp4",
+      "poster": "",
+      "provider": "local"
+    },
+    {
+      "id": "cci-india-agenda",
+      "title": "CCI India Agenda",
+      "caption": "Explore CCI India's agenda for enterprise engagement and national growth.",
+      "url": "/videos/cci-india-agenda-video.mp4",
+      "poster": "",
+      "provider": "local"
+    },
+    {
+      "id": "cci-new-video",
+      "title": "CCI New Video",
+      "caption": "A new look at CCI India's expanding network and initiatives.",
+      "url": "/videos/cci-new-video.mp4",
+      "poster": "",
+      "provider": "local"
+    }
+  ]
 }

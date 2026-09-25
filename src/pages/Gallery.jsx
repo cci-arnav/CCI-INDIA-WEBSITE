@@ -49,12 +49,19 @@ export default function Gallery() {
             {data.videos.items.map((v) => (
               <div key={v.title} className="border border-border bg-white">
                 <div className="aspect-video">
-                  <iframe
-                    title={v.title}
-                    src={`https://www.youtube.com/embed/${v.youtubeId}`}
-                    className="h-full w-full"
-                    allowFullScreen
-                  />
+                  {v.youtubeId ? (
+                    <iframe
+                      title={v.title}
+                      src={`https://www.youtube.com/embed/${v.youtubeId}`}
+                      className="h-full w-full"
+                      allowFullScreen
+                    />
+                  ) : (
+                    <video className="h-full w-full bg-black object-contain" controls playsInline preload="metadata" aria-label={v.title}>
+                      <source src={v.url} type="video/mp4" />
+                      Your browser does not support HTML video.
+                    </video>
+                  )}
                 </div>
                 <p className="p-4 text-sm font-medium text-navy-deep">{v.title}</p>
               </div>

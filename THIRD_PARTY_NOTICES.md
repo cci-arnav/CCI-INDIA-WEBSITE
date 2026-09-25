@@ -23,3 +23,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Bharat Investment Grid State and Union Territory hero photography
+
+The 36 locally hosted hero images in
+`public/images/bharat-investment-grid/states/` are resized and recompressed
+derivatives of photographs published on Wikimedia Commons. The authoritative
+per-image attribution is kept alongside the corresponding location record in
+`src/data/bharatInvestmentGrid.js` and is rendered beneath each photograph.
+
+Each record identifies the depicted subject, photographer or source account,
+original Wikimedia Commons file page, licence name, and licence URL. The files
+remain available under their respective CC0, Creative Commons, GNU Free
+Documentation License, or Free Art License terms; no ownership of the original
+photography is claimed by this project.
