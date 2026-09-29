@@ -56,7 +56,10 @@ export default function BharatInvestmentGrid() {
         <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-saffron via-white to-green" aria-hidden="true" />
         <div className="container-main relative z-[1] grid grid-cols-1 gap-9 py-12 md:py-16 lg:grid-cols-[1.15fr_.85fr] lg:items-center">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-saffron">A Flagship CCI India Initiative</p>
+            <div className="mb-5 flex items-center gap-3">
+              <img src="/images/bharat-investment-grid/big-mark.svg" alt="" width="70" height="70" className="h-16 w-16 rounded-full bg-white shadow-lg sm:h-[70px] sm:w-[70px]" aria-hidden="true" />
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-saffron">A Flagship CCI India Initiative</p>
+            </div>
             <h1 className="mt-3 max-w-3xl text-4xl font-bold leading-tight text-white sm:text-5xl">BHARAT INVESTMENT GRID</h1>
             <p className="mt-3 text-xl font-semibold text-white/95 sm:text-2xl">Discover Investment Opportunities Across India</p>
             <p className="mt-4 max-w-2xl text-sm text-white/75 sm:text-base">Explore investment opportunities across States and Union Territories, sectors and regions through a unified national discovery platform.</p>

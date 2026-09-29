@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { CalendarDays, Download, ExternalLink, FileText, MapPin } from 'lucide-react'
-import { validDate } from '../../lib/knowledgePapers'
+import { CalendarDays, FileText, LockKeyhole, MapPin } from 'lucide-react'
+import { getKnowledgePaperRequestUrl, validDate } from '../../lib/knowledgePapers'
 
 const formatDate = (value, fallbackYear) => {
   const date = validDate(value)
@@ -32,6 +32,7 @@ export default function KnowledgePaperCard({ paper, featured = false }) {
       </div>
       <div className="flex flex-1 flex-col p-5">
         <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-fg">
+          {paper.collection && <span className="border border-saffron/40 bg-amber-50 px-2 py-0.5 font-semibold uppercase tracking-wide text-saffron">{paper.collection}</span>}
           <span className="inline-flex items-center gap-1.5 font-semibold text-navy-deep">
             {flag && <span aria-hidden="true">{flag}</span>}
             {paper.country}
@@ -47,16 +48,11 @@ export default function KnowledgePaperCard({ paper, featured = false }) {
           </div>
         )}
         {paper.tags.length > 0 && <ul className="mt-4 flex flex-wrap gap-2" aria-label="Topics">{paper.tags.map((tag) => <li key={tag} className="border border-border bg-off-white px-2 py-1 text-[11px] font-medium text-navy-deep">{tag}</li>)}</ul>}
-        {paper.pdfUrl && (
-          <div className="mt-auto flex flex-wrap gap-3 pt-6">
-            <a href={paper.pdfUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 bg-navy-deep px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-navy">
-              View Paper <ExternalLink size={15} aria-hidden="true" /><span className="sr-only">(PDF, opens in a new tab)</span>
-            </a>
-            <a href={paper.pdfUrl} download className="inline-flex min-h-11 items-center justify-center gap-2 border border-navy-deep px-4 py-2 text-sm font-medium text-navy-deep transition-colors hover:bg-off-white">
-              Download PDF <Download size={15} aria-hidden="true" />
-            </a>
-          </div>
-        )}
+        <div className="mt-auto pt-6">
+          <a href={getKnowledgePaperRequestUrl(paper)} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 bg-navy-deep px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-navy">
+            Request Access <LockKeyhole size={15} aria-hidden="true" />
+          </a>
+        </div>
       </div>
     </article>
   )

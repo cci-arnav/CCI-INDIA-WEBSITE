@@ -8,12 +8,17 @@
     "description": "An evidence-based overview of Chad's economy, priority sectors, and the opportunities and constraints shaping India-Chad economic engagement.",
     "publishedAt": "2026-09-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-chad.pdf",
     "coverImage": "/images/knowledge-papers/india-chad.jpg",
     "fileSize": "9.9 MB",
-    "tags": ["Trade", "Investment", "Market Intelligence"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Market Intelligence"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-tajikistan-shared-growth-2026",
@@ -24,11 +29,16 @@
     "description": "An evidence-based overview of Tajikistan's economy, priority sectors, and the opportunities and constraints shaping India-Tajikistan economic engagement.",
     "publishedAt": "2026-09-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-tajikistan.pdf",
     "fileSize": "9.5 MB",
-    "tags": ["Trade", "Investment", "Market Intelligence"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Market Intelligence"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-spain-shared-growth-2026",
@@ -39,11 +49,16 @@
     "description": "A structured assessment of Spain's economy, major sectors, and the opportunities and constraints shaping India-Spain economic engagement.",
     "publishedAt": "2026-09-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-spain.pdf",
     "fileSize": "15.2 MB",
-    "tags": ["Trade", "Investment", "Market Intelligence"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Market Intelligence"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-cyprus-shared-growth-2026",
@@ -54,11 +69,16 @@
     "description": "A practical reference on Cyprus as an EU-facing business and investment base and on opportunities for deeper India-Cyprus cooperation.",
     "publishedAt": "2026-09-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-cyprus.pdf",
     "fileSize": "15.4 MB",
-    "tags": ["Trade", "Investment", "European Union"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "European Union"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-indonesia-shared-prosperity-2026",
@@ -69,11 +89,16 @@
     "description": "An evidence-based review of Indonesia's economy, major sectors, and the opportunities and constraints shaping India-Indonesia economic engagement.",
     "publishedAt": "2026-09-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-indonesia.pdf",
     "fileSize": "14.2 MB",
-    "tags": ["Trade", "Investment", "Market Intelligence"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Market Intelligence"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-laos-shared-future-2026",
@@ -84,11 +109,16 @@
     "description": "A country and trade overview focused on India-Laos relations, bilateral commerce, and practical sector opportunities for Indian businesses.",
     "publishedAt": "",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-laos.pdf",
     "fileSize": "9.9 MB",
-    "tags": ["Trade", "Bilateral Relations", "Market Intelligence"],
+    "tags": [
+      "Trade",
+      "Bilateral Relations",
+      "Market Intelligence"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-tunisia-shared-future-2026",
@@ -99,12 +129,17 @@
     "description": "A strategic cooperation report on practical trade, investment, sectoral, and institutional opportunities between India and Tunisia.",
     "publishedAt": "2026-08-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-tunisia.pdf",
     "coverImage": "/images/knowledge-papers/india-tunisia.jpg",
     "fileSize": "15.3 MB",
-    "tags": ["Trade", "Investment", "Strategic Cooperation"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Strategic Cooperation"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-sudan-shared-future-2026",
@@ -115,11 +150,16 @@
     "description": "An evidence-based assessment of Sudan's economy, major sectors, and the opportunities and constraints shaping India-Sudan engagement.",
     "publishedAt": "2026-08-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-sudan.pdf",
     "fileSize": "15.4 MB",
-    "tags": ["Trade", "Investment", "Market Intelligence"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Market Intelligence"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-georgia-opportunity-2026",
@@ -130,12 +170,17 @@
     "description": "A country and partnership assessment covering Georgia's trade corridors, investment environment and opportunities for deeper India-Georgia commercial engagement.",
     "publishedAt": "2026-07-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-georgia.pdf",
     "coverImage": "/images/knowledge-papers/india-georgia.jpg",
     "fileSize": "11.5 MB",
-    "tags": ["Trade", "Investment", "Market Intelligence"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Market Intelligence"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-malawi-sustainable-prosperity-2026",
@@ -146,12 +191,17 @@
     "description": "An overview of Malawi's economy and opportunities for cooperation in agriculture, healthcare, infrastructure, energy, manufacturing and digital transformation.",
     "publishedAt": "2026-07-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-malawi.pdf",
     "coverImage": "/images/knowledge-papers/india-malawi.jpg",
     "fileSize": "16.4 MB",
-    "tags": ["Trade", "Investment", "Sustainable Development"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Sustainable Development"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-armenia-partnership-2026",
@@ -162,12 +212,17 @@
     "description": "A comprehensive assessment of Armenia's economy, investment climate and new avenues for India-Armenia trade, technology and institutional cooperation.",
     "publishedAt": "2026-08-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-armenia.pdf",
     "coverImage": "/images/knowledge-papers/india-armenia.jpg",
     "fileSize": "20.1 MB",
-    "tags": ["Trade", "Investment", "Bilateral Relations"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Bilateral Relations"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-tea-industry-growth-2026",
@@ -178,12 +233,17 @@
     "description": "A sector paper examining India's tea industry, its contribution to rural livelihoods and exports, and the role of innovation, sustainability and market development.",
     "publishedAt": "2026-07-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-tea-industry.pdf",
     "coverImage": "/images/knowledge-papers/india-tea-industry.jpg",
     "fileSize": "7.4 MB",
-    "tags": ["Tea", "Agriculture", "Exports"],
+    "tags": [
+      "Tea",
+      "Agriculture",
+      "Exports"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-dominican-republic-prosperity-2026",
@@ -194,12 +254,17 @@
     "description": "A working paper on complementary strengths and opportunities across tourism, pharmaceuticals, technology, manufacturing, energy and trade facilitation.",
     "publishedAt": "2026-08-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-dominican-republic.pdf",
     "coverImage": "/images/knowledge-papers/india-dominican-republic.jpg",
     "fileSize": "17.5 MB",
-    "tags": ["Trade", "Investment", "Caribbean"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Caribbean"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-ecuador-partnership-2026",
@@ -210,12 +275,17 @@
     "description": "A strategic overview of Ecuador's economic landscape and opportunities for Indian exporters, investors and institutional partnerships.",
     "publishedAt": "2026-08-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-ecuador.pdf",
     "coverImage": "/images/knowledge-papers/india-ecuador.jpg",
     "fileSize": "24.4 MB",
-    "tags": ["Trade", "Investment", "Latin America"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Latin America"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-belarus-partnership-2026",
@@ -226,12 +296,17 @@
     "description": "A bilateral relations paper identifying opportunities across industry, science, pharmaceuticals, engineering, agriculture and resilient supply chains.",
     "publishedAt": "2026-08-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-belarus.pdf",
     "coverImage": "/images/knowledge-papers/india-belarus.jpg",
     "fileSize": "15.1 MB",
-    "tags": ["Trade", "Industry", "Bilateral Relations"],
+    "tags": [
+      "Trade",
+      "Industry",
+      "Bilateral Relations"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-iraq-shared-prosperity-2026",
@@ -242,12 +317,17 @@
     "description": "An assessment of India-Iraq economic ties and practical opportunities in reconstruction, healthcare, agriculture, energy, trade and investment.",
     "publishedAt": "2026-08-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-iraq.pdf",
     "coverImage": "/images/knowledge-papers/india-iraq.jpg",
     "fileSize": "16.2 MB",
-    "tags": ["Trade", "Energy", "Reconstruction"],
+    "tags": [
+      "Trade",
+      "Energy",
+      "Reconstruction"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-kenya-strengthening-ties-2026",
@@ -258,12 +338,17 @@
     "description": "A cooperation paper spanning trade, investment, agriculture, healthcare, infrastructure, technology, education and sustainable development.",
     "publishedAt": "2026-08-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-kenya.pdf",
     "coverImage": "/images/knowledge-papers/india-kenya.jpg",
     "fileSize": "14.8 MB",
-    "tags": ["Trade", "Investment", "East Africa"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "East Africa"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-namibia-collaboration-2026",
@@ -274,12 +359,17 @@
     "description": "A market and partnership study focused on trade, industry, natural resources, renewable energy and structured India-Namibia engagement.",
     "publishedAt": "2026-07-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-namibia.pdf",
     "coverImage": "/images/knowledge-papers/india-namibia.jpg",
     "fileSize": "19.9 MB",
-    "tags": ["Trade", "Investment", "Natural Resources"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Natural Resources"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-nicaragua-shared-future-2026",
@@ -290,12 +380,17 @@
     "description": "A country overview identifying opportunities in agriculture, healthcare, pharmaceuticals, technology, renewable energy, infrastructure and logistics.",
     "publishedAt": "2026-08-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-nicaragua.pdf",
     "coverImage": "/images/knowledge-papers/india-nicaragua.jpg",
     "fileSize": "11.2 MB",
-    "tags": ["Trade", "Investment", "Central America"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Central America"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-russia-bilateral-growth-2026",
@@ -306,12 +401,17 @@
     "description": "A policy-oriented report on diversifying India-Russia trade and expanding cooperation across commerce, industry, technology and investment.",
     "publishedAt": "2026-08-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-russia.pdf",
     "coverImage": "/images/knowledge-papers/india-russia.jpg",
     "fileSize": "13.1 MB",
-    "tags": ["Trade", "Investment", "Innovation"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Innovation"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-senegal-growth-opportunities-2026",
@@ -322,12 +422,17 @@
     "description": "A strategic paper on Senegal's role as an Atlantic gateway and the opportunities for deeper trade, investment and institutional engagement with India.",
     "publishedAt": "2026-08-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-senegal.pdf",
     "coverImage": "/images/knowledge-papers/india-senegal.jpg",
     "fileSize": "9.8 MB",
-    "tags": ["Trade", "Investment", "West Africa"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "West Africa"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-singapore-shaping-tomorrow-2026",
@@ -338,12 +443,17 @@
     "description": "A review of the strategic partnership and opportunities across investment, digitalisation, manufacturing, skills, sustainability and connectivity.",
     "publishedAt": "2026-08-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-singapore.pdf",
     "coverImage": "/images/knowledge-papers/india-singapore.jpg",
     "fileSize": "13.5 MB",
-    "tags": ["Trade", "Investment", "Digital Economy"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Digital Economy"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
   },
   {
     "id": "india-suriname-shared-future-2026",
@@ -354,11 +464,1736 @@
     "description": "A bilateral paper connecting cultural ties with opportunities in energy, mining, agriculture, forestry, fisheries, tourism and emerging services.",
     "publishedAt": "2026-08-01",
     "year": 2026,
-    "pdfUrl": "/knowledge-papers/india-suriname.pdf",
     "coverImage": "/images/knowledge-papers/india-suriname.jpg",
     "fileSize": "10.5 MB",
-    "tags": ["Trade", "Investment", "Cultural Relations"],
+    "tags": [
+      "Trade",
+      "Investment",
+      "Cultural Relations"
+    ],
     "featured": false,
-    "published": true
+    "published": true,
+    "collection": "International & Sectoral",
+    "accessMode": "request"
+  },
+  {
+    "id": "state-andaman-and-nicobar-islands-knowledge-paper-2026",
+    "title": "Andaman and Nicobar Islands: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Andaman and Nicobar Islands",
+    "description": "A strategic profile of Andaman and Nicobar Islands, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-andhra-pradesh-knowledge-paper-2026",
+    "title": "Andhra Pradesh: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Andhra Pradesh",
+    "description": "A strategic profile of Andhra Pradesh, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-arunachal-pradesh-knowledge-paper-2026",
+    "title": "Arunachal Pradesh: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Arunachal Pradesh",
+    "description": "A strategic profile of Arunachal Pradesh, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-assam-knowledge-paper-2026",
+    "title": "Assam: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Assam",
+    "description": "A strategic profile of Assam, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-bihar-knowledge-paper-2026",
+    "title": "Bihar: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Bihar",
+    "description": "A strategic profile of Bihar, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-chandigarh-knowledge-paper-2026",
+    "title": "Chandigarh: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Chandigarh",
+    "description": "A strategic profile of Chandigarh, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-chhattisgarh-knowledge-paper-2026",
+    "title": "Chhattisgarh: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Chhattisgarh",
+    "description": "A strategic profile of Chhattisgarh, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-dadra-and-nagar-haveli-and-daman-and-diu-knowledge-paper-2026",
+    "title": "Dadra and Nagar Haveli and Daman and Diu: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Dadra and Nagar Haveli and Daman and Diu",
+    "description": "A strategic profile of Dadra and Nagar Haveli and Daman and Diu, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-delhi-knowledge-paper-2026",
+    "title": "Delhi: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Delhi",
+    "description": "A strategic profile of Delhi, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-goa-knowledge-paper-2026",
+    "title": "Goa: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Goa",
+    "description": "A strategic profile of Goa, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-gujarat-knowledge-paper-2026",
+    "title": "Gujarat: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Gujarat",
+    "description": "A strategic profile of Gujarat, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-haryana-knowledge-paper-2026",
+    "title": "Haryana: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Haryana",
+    "description": "A strategic profile of Haryana, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-himachal-pradesh-knowledge-paper-2026",
+    "title": "Himachal Pradesh: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Himachal Pradesh",
+    "description": "A strategic profile of Himachal Pradesh, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-jammu-and-kashmir-knowledge-paper-2026",
+    "title": "Jammu and Kashmir: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Jammu and Kashmir",
+    "description": "A strategic profile of Jammu and Kashmir, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-jharkhand-knowledge-paper-2026",
+    "title": "Jharkhand: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Jharkhand",
+    "description": "A strategic profile of Jharkhand, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-karnataka-knowledge-paper-2026",
+    "title": "Karnataka: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Karnataka",
+    "description": "A strategic profile of Karnataka, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-kerala-knowledge-paper-2026",
+    "title": "Kerala: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Kerala",
+    "description": "A strategic profile of Kerala, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-ladakh-knowledge-paper-2026",
+    "title": "Ladakh: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Ladakh",
+    "description": "A strategic profile of Ladakh, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-lakshadweep-knowledge-paper-2026",
+    "title": "Lakshadweep: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Lakshadweep",
+    "description": "A strategic profile of Lakshadweep, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-madhya-pradesh-knowledge-paper-2026",
+    "title": "Madhya Pradesh: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Madhya Pradesh",
+    "description": "A strategic profile of Madhya Pradesh, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-maharashtra-knowledge-paper-2026",
+    "title": "Maharashtra: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Maharashtra",
+    "description": "A strategic profile of Maharashtra, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-manipur-knowledge-paper-2026",
+    "title": "Manipur: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Manipur",
+    "description": "A strategic profile of Manipur, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-meghalaya-knowledge-paper-2026",
+    "title": "Meghalaya: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Meghalaya",
+    "description": "A strategic profile of Meghalaya, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-mizoram-knowledge-paper-2026",
+    "title": "Mizoram: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Mizoram",
+    "description": "A strategic profile of Mizoram, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-nagaland-knowledge-paper-2026",
+    "title": "Nagaland: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Nagaland",
+    "description": "A strategic profile of Nagaland, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-odisha-knowledge-paper-2026",
+    "title": "Odisha: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Odisha",
+    "description": "A strategic profile of Odisha, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-puducherry-knowledge-paper-2026",
+    "title": "Puducherry: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Puducherry",
+    "description": "A strategic profile of Puducherry, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-punjab-knowledge-paper-2026",
+    "title": "Punjab: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Punjab",
+    "description": "A strategic profile of Punjab, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-rajasthan-knowledge-paper-2026",
+    "title": "Rajasthan: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Rajasthan",
+    "description": "A strategic profile of Rajasthan, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-sikkim-knowledge-paper-2026",
+    "title": "Sikkim: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Sikkim",
+    "description": "A strategic profile of Sikkim, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-tamil-nadu-knowledge-paper-2026",
+    "title": "Tamil Nadu: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Tamil Nadu",
+    "description": "A strategic profile of Tamil Nadu, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-telangana-knowledge-paper-2026",
+    "title": "Telangana: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Telangana",
+    "description": "A strategic profile of Telangana, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-tripura-knowledge-paper-2026",
+    "title": "Tripura: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Tripura",
+    "description": "A strategic profile of Tripura, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-uttar-pradesh-knowledge-paper-2026",
+    "title": "Uttar Pradesh: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Uttar Pradesh",
+    "description": "A strategic profile of Uttar Pradesh, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-uttarakhand-knowledge-paper-2026",
+    "title": "Uttarakhand: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "Uttarakhand",
+    "description": "A strategic profile of Uttarakhand, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "state-west-bengal-knowledge-paper-2026",
+    "title": "West Bengal: State Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "States & Union Territories",
+    "collection": "State & UT",
+    "subject": "West Bengal",
+    "description": "A strategic profile of West Bengal, covering its economy, policy landscape, priority sectors, investment potential and opportunities for public-private collaboration.",
+    "publishedAt": "2026-06-01",
+    "year": 2026,
+    "tags": [
+      "State Profile",
+      "Investment",
+      "Economic Development"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-agriculture-and-farmers-welfare-knowledge-paper-2026",
+    "title": "Ministry of Agriculture and Farmers Welfare: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Agriculture and Farmers Welfare",
+    "description": "A focused assessment of the Ministry of Agriculture and Farmers Welfare, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-ayush-knowledge-paper-2026",
+    "title": "Ministry of AYUSH: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "AYUSH",
+    "description": "A focused assessment of the Ministry of AYUSH, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-chemicals-and-fertilizers-knowledge-paper-2026",
+    "title": "Ministry of Chemicals and Fertilizers: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Chemicals and Fertilizers",
+    "description": "A focused assessment of the Ministry of Chemicals and Fertilizers, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-civil-aviation-knowledge-paper-2026",
+    "title": "Ministry of Civil Aviation: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Civil Aviation",
+    "description": "A focused assessment of the Ministry of Civil Aviation, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-coal-knowledge-paper-2026",
+    "title": "Ministry of Coal: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Coal",
+    "description": "A focused assessment of the Ministry of Coal, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-commerce-and-industry-knowledge-paper-2026",
+    "title": "Ministry of Commerce and Industry: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Commerce and Industry",
+    "description": "A focused assessment of the Ministry of Commerce and Industry, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-communications-knowledge-paper-2026",
+    "title": "Ministry of Communications: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Communications",
+    "description": "A focused assessment of the Ministry of Communications, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-consumer-affairs-food-and-public-distribution-knowledge-paper-2026",
+    "title": "Ministry of Consumer Affairs, Food and Public Distribution: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Consumer Affairs, Food and Public Distribution",
+    "description": "A focused assessment of the Ministry of Consumer Affairs, Food and Public Distribution, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-cooperation-knowledge-paper-2026",
+    "title": "Ministry of Cooperation: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Cooperation",
+    "description": "A focused assessment of the Ministry of Cooperation, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-corporate-affairs-knowledge-paper-2026",
+    "title": "Ministry of Corporate Affairs: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Corporate Affairs",
+    "description": "A focused assessment of the Ministry of Corporate Affairs, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-culture-knowledge-paper-2026",
+    "title": "Ministry of Culture: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Culture",
+    "description": "A focused assessment of the Ministry of Culture, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-defence-knowledge-paper-2026",
+    "title": "Ministry of Defence: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Defence",
+    "description": "A focused assessment of the Ministry of Defence, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-development-of-north-eastern-region-knowledge-paper-2026",
+    "title": "Ministry of Development of North Eastern Region: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Development of North Eastern Region",
+    "description": "A focused assessment of the Ministry of Development of North Eastern Region, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-earth-sciences-knowledge-paper-2026",
+    "title": "Ministry of Earth Sciences: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Earth Sciences",
+    "description": "A focused assessment of the Ministry of Earth Sciences, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-education-knowledge-paper-2026",
+    "title": "Ministry of Education: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Education",
+    "description": "A focused assessment of the Ministry of Education, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-electronics-and-information-technology-knowledge-paper-2026",
+    "title": "Ministry of Electronics and Information Technology: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Electronics and Information Technology",
+    "description": "A focused assessment of the Ministry of Electronics and Information Technology, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-environment-forest-and-climate-change-knowledge-paper-2026",
+    "title": "Ministry of Environment, Forest and Climate Change: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Environment, Forest and Climate Change",
+    "description": "A focused assessment of the Ministry of Environment, Forest and Climate Change, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-external-affairs-knowledge-paper-2026",
+    "title": "Ministry of External Affairs: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "External Affairs",
+    "description": "A focused assessment of the Ministry of External Affairs, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-finance-knowledge-paper-2026",
+    "title": "Ministry of Finance: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Finance",
+    "description": "A focused assessment of the Ministry of Finance, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-fisheries-animal-husbandry-and-dairying-knowledge-paper-2026",
+    "title": "Ministry of Fisheries, Animal Husbandry and Dairying: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Fisheries, Animal Husbandry and Dairying",
+    "description": "A focused assessment of the Ministry of Fisheries, Animal Husbandry and Dairying, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-food-processing-industries-knowledge-paper-2026",
+    "title": "Ministry of Food Processing Industries: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Food Processing Industries",
+    "description": "A focused assessment of the Ministry of Food Processing Industries, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-health-and-family-welfare-knowledge-paper-2026",
+    "title": "Ministry of Health and Family Welfare: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Health and Family Welfare",
+    "description": "A focused assessment of the Ministry of Health and Family Welfare, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-heavy-industries-knowledge-paper-2026",
+    "title": "Ministry of Heavy Industries: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Heavy Industries",
+    "description": "A focused assessment of the Ministry of Heavy Industries, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-home-affairs-knowledge-paper-2026",
+    "title": "Ministry of Home Affairs: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Home Affairs",
+    "description": "A focused assessment of the Ministry of Home Affairs, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-housing-and-urban-affairs-knowledge-paper-2026",
+    "title": "Ministry of Housing and Urban Affairs: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Housing and Urban Affairs",
+    "description": "A focused assessment of the Ministry of Housing and Urban Affairs, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-information-and-broadcasting-knowledge-paper-2026",
+    "title": "Ministry of Information and Broadcasting: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Information and Broadcasting",
+    "description": "A focused assessment of the Ministry of Information and Broadcasting, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-jal-shakti-knowledge-paper-2026",
+    "title": "Ministry of Jal Shakti: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Jal Shakti",
+    "description": "A focused assessment of the Ministry of Jal Shakti, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-labour-and-employment-knowledge-paper-2026",
+    "title": "Ministry of Labour and Employment: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Labour and Employment",
+    "description": "A focused assessment of the Ministry of Labour and Employment, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-law-and-justice-knowledge-paper-2026",
+    "title": "Ministry of Law and Justice: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Law and Justice",
+    "description": "A focused assessment of the Ministry of Law and Justice, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-micro-small-and-medium-enterprises-knowledge-paper-2026",
+    "title": "Ministry of Micro, Small and Medium Enterprises: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Micro, Small and Medium Enterprises",
+    "description": "A focused assessment of the Ministry of Micro, Small and Medium Enterprises, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-mines-knowledge-paper-2026",
+    "title": "Ministry of Mines: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Mines",
+    "description": "A focused assessment of the Ministry of Mines, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-minority-affairs-knowledge-paper-2026",
+    "title": "Ministry of Minority Affairs: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Minority Affairs",
+    "description": "A focused assessment of the Ministry of Minority Affairs, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-new-and-renewable-energy-knowledge-paper-2026",
+    "title": "Ministry of New and Renewable Energy: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "New and Renewable Energy",
+    "description": "A focused assessment of the Ministry of New and Renewable Energy, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-panchayati-raj-knowledge-paper-2026",
+    "title": "Ministry of Panchayati Raj: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Panchayati Raj",
+    "description": "A focused assessment of the Ministry of Panchayati Raj, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-parliamentary-affairs-knowledge-paper-2026",
+    "title": "Ministry of Parliamentary Affairs: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Parliamentary Affairs",
+    "description": "A focused assessment of the Ministry of Parliamentary Affairs, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-personnel-public-grievances-and-pensions-knowledge-paper-2026",
+    "title": "Ministry of Personnel, Public Grievances and Pensions: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Personnel, Public Grievances and Pensions",
+    "description": "A focused assessment of the Ministry of Personnel, Public Grievances and Pensions, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-petroleum-and-natural-gas-knowledge-paper-2026",
+    "title": "Ministry of Petroleum and Natural Gas: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Petroleum and Natural Gas",
+    "description": "A focused assessment of the Ministry of Petroleum and Natural Gas, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-ports-shipping-and-waterways-knowledge-paper-2026",
+    "title": "Ministry of Ports, Shipping and Waterways: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Ports, Shipping and Waterways",
+    "description": "A focused assessment of the Ministry of Ports, Shipping and Waterways, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-power-knowledge-paper-2026",
+    "title": "Ministry of Power: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Power",
+    "description": "A focused assessment of the Ministry of Power, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-railways-knowledge-paper-2026",
+    "title": "Ministry of Railways: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Railways",
+    "description": "A focused assessment of the Ministry of Railways, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-road-transport-and-highways-knowledge-paper-2026",
+    "title": "Ministry of Road Transport and Highways: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Road Transport and Highways",
+    "description": "A focused assessment of the Ministry of Road Transport and Highways, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-rural-development-knowledge-paper-2026",
+    "title": "Ministry of Rural Development: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Rural Development",
+    "description": "A focused assessment of the Ministry of Rural Development, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-science-and-technology-knowledge-paper-2026",
+    "title": "Ministry of Science and Technology: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Science and Technology",
+    "description": "A focused assessment of the Ministry of Science and Technology, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-skill-development-and-entrepreneurship-knowledge-paper-2026",
+    "title": "Ministry of Skill Development and Entrepreneurship: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Skill Development and Entrepreneurship",
+    "description": "A focused assessment of the Ministry of Skill Development and Entrepreneurship, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-social-justice-and-empowerment-knowledge-paper-2026",
+    "title": "Ministry of Social Justice and Empowerment: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Social Justice and Empowerment",
+    "description": "A focused assessment of the Ministry of Social Justice and Empowerment, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-statistics-and-programme-implementation-knowledge-paper-2026",
+    "title": "Ministry of Statistics and Programme Implementation: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Statistics and Programme Implementation",
+    "description": "A focused assessment of the Ministry of Statistics and Programme Implementation, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-steel-knowledge-paper-2026",
+    "title": "Ministry of Steel: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Steel",
+    "description": "A focused assessment of the Ministry of Steel, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-textiles-knowledge-paper-2026",
+    "title": "Ministry of Textiles: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Textiles",
+    "description": "A focused assessment of the Ministry of Textiles, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-tourism-knowledge-paper-2026",
+    "title": "Ministry of Tourism: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Tourism",
+    "description": "A focused assessment of the Ministry of Tourism, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
+  },
+  {
+    "id": "ministry-tribal-affairs-knowledge-paper-2026",
+    "title": "Ministry of Tribal Affairs: Knowledge Paper",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Government of India",
+    "collection": "Ministry",
+    "subject": "Tribal Affairs",
+    "description": "A focused assessment of the Ministry of Tribal Affairs, including its mandate, policy priorities, flagship initiatives, sector opportunities and avenues for strategic collaboration.",
+    "publishedAt": "2026-08-01",
+    "year": 2026,
+    "tags": [
+      "Government of India",
+      "Policy",
+      "Public-Private Collaboration"
+    ],
+    "featured": false,
+    "published": true,
+    "accessMode": "request"
   }
 ]

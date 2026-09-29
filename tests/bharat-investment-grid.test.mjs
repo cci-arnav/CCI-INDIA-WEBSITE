@@ -52,3 +52,10 @@ test('every location has unique, complete hero content and a local image asset',
     assert.ok(existsSync(fileURLToPath(assetUrl)), `${item.name} hero asset is missing`)
   }
 })
+
+test('BIG brand logo and compact mark are available as scalable SVG assets', () => {
+  for (const filename of ['big-logo.svg', 'big-mark.svg']) {
+    const asset = new URL(`../public/images/bharat-investment-grid/${filename}`, import.meta.url)
+    assert.ok(existsSync(fileURLToPath(asset)), `${filename} is missing`)
+  }
+})

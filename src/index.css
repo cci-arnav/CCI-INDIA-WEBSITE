@@ -544,11 +544,7 @@
   pointer-events: none;
 }
 .big-floating-tab__mark { display: flex; flex-direction: column; align-items: center; }
-.big-floating-tab__monogram { display: block; font-size: 1.35rem; font-weight: 800; letter-spacing: .09em; line-height: 1; }
-.big-floating-tab__flag { display: flex; width: 37px; margin-top: .4rem; gap: 2px; }
-.big-floating-tab__flag i { display: block; width: 11px; height: 2px; background: var(--color-saffron); }
-.big-floating-tab__flag i:nth-child(2) { background: white; }
-.big-floating-tab__flag i:nth-child(3) { background: var(--color-green); }
+.big-floating-tab__mark img { width: 54px; height: 54px; filter: drop-shadow(0 3px 8px rgb(0 0 0 / 20%)); }
 .big-floating-tab__action { display: flex; margin-top: .55rem; align-items: center; gap: .2rem; color: rgb(255 255 255 / 86%); font-size: .58rem; font-weight: 700; letter-spacing: .04em; line-height: 1; }
 .big-floating-tab__action svg { flex: none; }
 .big-page button,
@@ -580,9 +576,7 @@
   }
   .big-floating-tab:hover,
   .big-floating-tab:focus-visible { transform: translateY(-2px) scale(1.03); }
-  .big-floating-tab__monogram { font-size: 1.05rem; }
-  .big-floating-tab__flag { width: 30px; margin-top: .3rem; }
-  .big-floating-tab__flag i { width: 9px; }
+  .big-floating-tab__mark img { width: 42px; height: 42px; }
   .big-floating-tab__action { margin-top: .38rem; font-size: .48rem; }
   .big-floating-tab__action svg { width: 10px; height: 10px; }
 }

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 200" role="img" aria-labelledby="title desc">
+  <title id="title">Bharat Investment Grid</title>
+  <desc id="desc">A connected investment network rising within saffron and green arcs beside the Bharat Investment Grid wordmark.</desc>
+  <defs>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#315fc0"/>
+      <stop offset="1" stop-color="#15294a"/>
+    </linearGradient>
+    <linearGradient id="growth" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#138808"/>
+      <stop offset="1" stop-color="#ff9933"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#0c1f38" flood-opacity=".18"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(18 10)" filter="url(#shadow)">
+    <circle cx="90" cy="90" r="75" fill="#fff" stroke="#dbe4ef" stroke-width="2"/>
+    <path d="M31 64a70 70 0 0 1 118-25" fill="none" stroke="#ff9933" stroke-width="12" stroke-linecap="round"/>
+    <path d="M149 116a70 70 0 0 1-118 25" fill="none" stroke="#138808" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="90" cy="90" r="52" fill="url(#core)"/>
+    <path d="M55 116 76 93l18 12 30-40" fill="none" stroke="url(#growth)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="m113 66 13-3-1 14" fill="none" stroke="#ff9933" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#fff" stroke="#315fc0" stroke-width="3">
+      <circle cx="55" cy="116" r="8"/>
+      <circle cx="76" cy="93" r="8"/>
+      <circle cx="94" cy="105" r="8"/>
+      <circle cx="124" cy="65" r="8"/>
+    </g>
+    <circle cx="90" cy="90" r="59" fill="none" stroke="#fff" stroke-opacity=".18"/>
+  </g>
+
+  <g transform="translate(208 42)">
+    <text x="0" y="52" fill="#15294a" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="800" letter-spacing="1">BHARAT</text>
+    <text x="2" y="92" fill="#315fc0" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="6">INVESTMENT GRID</text>
+    <rect x="2" y="110" width="112" height="5" rx="2.5" fill="#ff9933"/>
+    <rect x="120" y="110" width="112" height="5" rx="2.5" fill="#e2e8f0"/>
+    <rect x="238" y="110" width="112" height="5" rx="2.5" fill="#138808"/>
+    <text x="2" y="142" fill="#526277" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="2">ONE INDIA. MANY OPPORTUNITIES.</text>
+  </g>
+</svg>

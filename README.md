@@ -15,7 +15,7 @@ The website builds without Supabase credentials. In that mode it displays the pr
 ## Supabase setup
 
 1. Create a Supabase project.
-2. Run `supabase/migrations/202609170001_news_admin.sql` in the Supabase SQL editor. It creates the `news` and `admins` tables, the public `news-images` bucket, timestamp trigger, indexes, and Row Level Security policies.
+2. Run the SQL files in `supabase/migrations/` in filename order to create the news administration tables and policies.
 3. Copy the project URL and publishable key into `.env.local` as `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY`. The legacy `VITE_SUPABASE_ANON_KEY` name remains supported as a fallback. Never add a secret or service-role key to this frontend.
 4. In Supabase Authentication, create the first user with an email and a strong password. Copy that user’s UUID.
 5. In the SQL editor authorize exactly that user:
@@ -34,6 +34,7 @@ For Vercel, add `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` to the p
 - Council legacy importer: `npm run import:councils`
 - Homepage help video: `content/video.json` (set `provider` to `youtube` or `local`, then update `url`, `poster`, `title`, and `caption`)
 - Council images: set the `image` and `imageAlt` fields on one council entry; a branded placeholder is shown while `image` is empty.
+- Knowledge papers: maintain catalogue metadata in `content/knowledge-papers.json`. Do not place PDFs or provider URLs in `public/`; each request opens the published CCI India Google Form with the selected paper title and collection prefilled.
 
 ## Verification
 
