@@ -12,6 +12,12 @@ const countryFlag = (code) => /^[A-Z]{2}$/.test(code)
   ? String.fromCodePoint(...code.split('').map((letter) => 127397 + letter.charCodeAt()))
   : ''
 
+const fallbackGradient = {
+  Ministry: 'from-[#132f4f] via-[#1e4ca0] to-[#387fc4]',
+  'State & UT': 'from-[#173b34] via-[#16745c] to-[#36a579]',
+  'International & Sectoral': 'from-[#51275f] via-[#74448a] to-[#b05c73]',
+}
+
 export default function KnowledgePaperCard({ paper, featured = false }) {
   const [coverFailed, setCoverFailed] = useState(false)
   const publicationDate = formatDate(paper.publishedAt, paper.year)
@@ -24,9 +30,18 @@ export default function KnowledgePaperCard({ paper, featured = false }) {
         {hasCover ? (
           <img src={paper.coverImage} alt="" width="640" height="480" loading="lazy" className="h-full w-full object-cover" onError={() => setCoverFailed(true)} />
         ) : (
-          <div className="flex flex-col items-center gap-3 px-6 text-center text-white/80">
-            <FileText size={48} strokeWidth={1.5} aria-hidden="true" />
-            <span className="text-xs font-semibold uppercase tracking-[0.18em]">CCI India Research</span>
+          <div className={`relative flex h-full w-full flex-col justify-between overflow-hidden bg-gradient-to-br ${fallbackGradient[paper.collection] || 'from-navy-deep via-royal to-[#3d83c8]'} p-5 text-white sm:p-6`}>
+            <div className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full border-[24px] border-white/10" aria-hidden="true" />
+            <div className="pointer-events-none absolute -bottom-20 -left-16 h-48 w-48 rounded-full bg-saffron/20 blur-2xl" aria-hidden="true" />
+            <div className="relative flex items-center justify-between gap-4">
+              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/80">CCI India Knowledge Paper</span>
+              <FileText size={28} strokeWidth={1.5} className="shrink-0 text-white/70" aria-hidden="true" />
+            </div>
+            <h3 className="relative my-5 line-clamp-4 font-serif text-xl font-bold leading-snug text-white sm:text-2xl">{paper.title}</h3>
+            <div className="relative flex items-end justify-between gap-4 border-t border-white/25 pt-3">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-white/80">{paper.collection || 'Research'}</span>
+              <img src="/brand/cci-logo.png" alt="" width="96" height="42" className="h-8 w-auto rounded-sm bg-white/95 px-2 py-1 object-contain" />
+            </div>
           </div>
         )}
       </div>
