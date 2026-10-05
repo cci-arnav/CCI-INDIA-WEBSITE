@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin } from 'lucide-react'
+import { Download, MapPin, Smartphone } from 'lucide-react'
 import home from '../../../content/home.json'
 import contact from '../../../content/contact.json'
 import Button from '../ui/Button'
@@ -36,6 +36,18 @@ export default function Footer() {
             </div>
             <p className="text-xs text-white/70 sm:text-sm">{footer.description}</p>
             <p className="mt-4 text-xs text-white/60 sm:text-sm">Toll Free: {footer.tollFree}</p>
+            <div className="mt-5 border-l-2 border-saffron/70 pl-3">
+              <p className="text-[10px] font-semibold uppercase tracking-wider text-white/55">CCI India mobile</p>
+              <a
+                href="/downloads/cci-india.apk"
+                download="CCI-India.apk"
+                className="mt-2 inline-flex min-h-11 items-center gap-2 border border-white/25 px-3 py-2 text-xs font-semibold text-white/85 transition-colors hover:border-white/50 hover:bg-white/10 hover:text-white"
+              >
+                <Smartphone size={15} aria-hidden="true" />
+                Android app
+                <Download size={14} className="text-saffron" aria-hidden="true" />
+              </a>
+            </div>
           </div>
           {footer.linkColumns.map((col) => (
             <div key={col.heading}>
