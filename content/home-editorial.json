@@ -1,0 +1,214 @@
+{
+  "modalReviewLabel": "Editorial expansion — review before publication",
+  "imagePlaceholderLabel": "Temporary image placeholder · replace with an approved image",
+  "whatWeDo": {
+    "Policy Advocacy": {
+      "eyebrow": "What We Do · Policy Advocacy",
+      "image": null,
+      "placeholderLabel": "Policy & industry engagement",
+      "intro": "Carrying industry's voice into the halls of policy.",
+      "sections": [
+        {
+          "heading": "Overview",
+          "paragraphs": ["CCI India describes its role as articulating the genuine needs and interests of its members and engaging with policymakers on the policy and legislative environment."]
+        },
+        {
+          "heading": "Why it matters",
+          "paragraphs": ["Constructive dialogue between industry and public institutions helps ensure that the practical perspectives of businesses are part of wider discussions on economic, industrial and social development."]
+        },
+        {
+          "heading": "Focus areas",
+          "points": ["Representing member perspectives", "Engaging with policymakers and public authorities", "Contributing industry views to policy discussions"]
+        },
+        {
+          "heading": "How it contributes",
+          "paragraphs": ["This work gives members a platform to raise shared concerns and participate in conversations relevant to their sectors. The wording here is an editorial expansion of CCI India's published mission and should be reviewed before publication."]
+        }
+      ],
+      "href": "/services",
+      "linkLabel": "Explore CCI India services"
+    },
+    "Trade Facilitation": {
+      "eyebrow": "What We Do · Trade Facilitation",
+      "image": null,
+      "placeholderLabel": "Trade & business connections",
+      "intro": "A single window for business matchmaking, in India and abroad.",
+      "sections": [
+        {
+          "heading": "Overview",
+          "paragraphs": ["CCI India's published services describe a Trade Facilitation Desk that responds to enquiries from members and non-members and acts as a single window for business matchmaking between India and the rest of the world."]
+        },
+        {
+          "heading": "Why it matters",
+          "paragraphs": ["Businesses exploring new markets often need relevant information and connections before they can assess a potential commercial relationship. The Desk is presented as a point of contact for these enquiries."]
+        },
+        {
+          "heading": "Focus areas",
+          "points": ["Trade and business enquiries", "Business matchmaking", "Connections between India and international markets"]
+        },
+        {
+          "heading": "How it contributes",
+          "paragraphs": ["The service helps route business enquiries and supports introductions relevant to trade and commercial engagement. Further programme details can be added here once approved by CCI India."]
+        }
+      ],
+      "href": "/services",
+      "linkLabel": "Explore CCI India services"
+    },
+    "Investment Matchmaking": {
+      "eyebrow": "What We Do · Investment Matchmaking",
+      "image": null,
+      "placeholderLabel": "Investment & enterprise",
+      "intro": "Connecting capital with promising enterprise.",
+      "sections": [
+        {
+          "heading": "Overview",
+          "paragraphs": ["CCI India's services describe investment profiles of states and regions, and its joint-venture and business-promotion work includes identifying suitable organisations through its network of members and associates."]
+        },
+        {
+          "heading": "Why it matters",
+          "paragraphs": ["Investors and businesses considering a new market or partnership need context and credible opportunities to explore. Market information and relevant introductions can help them assess possible next steps."]
+        },
+        {
+          "heading": "Focus areas",
+          "points": ["Investment information about states and regions", "Business and joint-venture introductions", "Connections between interested investors and enterprises"]
+        },
+        {
+          "heading": "How it contributes",
+          "paragraphs": ["This area brings together CCI India's published market-information and business-promotion activities. Specific matchmaking processes and outcomes should be added only when confirmed by CCI India."]
+        }
+      ],
+      "href": "/services",
+      "linkLabel": "Explore CCI India services"
+    },
+    "Global Networking": {
+      "eyebrow": "What We Do · Global Networking",
+      "image": null,
+      "placeholderLabel": "International business engagement",
+      "intro": "Channels with regulators, governments and international agencies.",
+      "sections": [
+        {
+          "heading": "Overview",
+          "paragraphs": ["CCI India's services describe networking channels with regulators, governments, and national and international agencies. The About page also notes policy-maker interactions, conferences, workshops and delegations."]
+        },
+        {
+          "heading": "Why it matters",
+          "paragraphs": ["Regular institutional dialogue can help businesses exchange perspectives, understand areas of shared interest, and engage with stakeholders across markets."]
+        },
+        {
+          "heading": "Focus areas",
+          "points": ["Engagement with public and institutional stakeholders", "Workshops, seminars and conferences", "National and international business dialogue"]
+        },
+        {
+          "heading": "How it contributes",
+          "paragraphs": ["These platforms create opportunities for members and industry stakeholders to meet, exchange information and discuss issues relevant to business engagement. This expanded description should be reviewed before publication."]
+        }
+      ],
+      "href": "/services",
+      "linkLabel": "Explore CCI India services"
+    }
+  },
+  "centers": {
+    "Center for Market Entry & Business Expansion": {
+      "eyebrow": "Business Expansion · CCI India Centre",
+      "image": null,
+      "placeholderLabel": "Market entry & business expansion",
+      "intro": "Guiding companies into the Indian market and helping them scale operations.",
+      "sections": [
+        { "heading": "Overview", "paragraphs": ["The current centre description focuses on helping companies enter the Indian market and scale their operations."] },
+        { "heading": "Information for the full profile", "points": ["Add confirmed services and programme details.", "Add the centre's approved process for engaging with businesses.", "Add verified outcomes or case studies, if approved."] }
+      ],
+      "href": "/market-entry",
+      "linkLabel": "Visit Market Entry & Business Expansion"
+    },
+    "Center for Democracy, Political & Economy": {
+      "eyebrow": "Governance · CCI India Centre", "image": null, "placeholderLabel": "Governance & economic context",
+      "intro": "Tracking the political and economic forces shaping policy in India.",
+      "sections": [
+        { "heading": "Overview", "paragraphs": ["The current centre description identifies policy-shaping political and economic developments as its area of attention."] },
+        { "heading": "Information for the full profile", "points": ["Add the centre's approved research and monitoring scope.", "Add confirmed publications, engagement formats and intended audiences.", "Add verified outputs or examples, if approved."] }
+      ]
+    },
+    "Center for Investor & Portfolios Growth": {
+      "eyebrow": "Investment · CCI India Centre", "image": null, "placeholderLabel": "Investor & portfolio growth",
+      "intro": "Supporting investors in growing and diversifying their portfolios.",
+      "sections": [
+        { "heading": "Overview", "paragraphs": ["The current centre description focuses on investor support for portfolio growth and diversification."] },
+        { "heading": "Information for the full profile", "points": ["Add confirmed investor services and eligibility, if applicable.", "Add approved information on the centre's areas of activity.", "Add verified outcomes or examples, if approved."] }
+      ]
+    },
+    "Center for State Investment": {
+      "eyebrow": "States · CCI India Centre", "image": null, "placeholderLabel": "State investment",
+      "intro": "Making the investment environment in the states more conducive to growth.",
+      "sections": [
+        { "heading": "Overview", "paragraphs": ["The current centre description identifies state investment environments and growth as its focus."] },
+        { "heading": "Information for the full profile", "points": ["Add the centre's approved work with state institutions and businesses.", "Add confirmed investment information or services.", "Add verified state-level outcomes or examples, if approved."] }
+      ]
+    },
+    "Center for Policy Advocacy": {
+      "eyebrow": "Policy · CCI India Centre", "image": null, "placeholderLabel": "Policy advocacy",
+      "intro": "Carrying industry's concerns directly to policymakers.",
+      "sections": [
+        { "heading": "Overview", "paragraphs": ["The current centre description focuses on bringing industry concerns to policymakers."] },
+        { "heading": "Information for the full profile", "points": ["Add the centre's approved policy-engagement process.", "Add confirmed sectors or topics within scope.", "Add verified examples of submissions or consultations, if approved."] }
+      ]
+    },
+    "Center for Startups": {
+      "eyebrow": "Startups · CCI India Centre", "image": null, "placeholderLabel": "Startup ecosystem",
+      "intro": "Backing India's founders from first idea to scale.",
+      "sections": [
+        { "heading": "Overview", "paragraphs": ["The current centre description identifies support for founders from early-stage ideas through business growth."] },
+        { "heading": "Information for the full profile", "points": ["Add confirmed founder services and programme details.", "Add approved information on the stages or sectors served.", "Add verified outcomes, partners or examples only when approved."] }
+      ]
+    },
+    "Center for Impact Investment": {
+      "eyebrow": "Impact Investing · CCI India Centre", "image": null, "placeholderLabel": "Impact investment",
+      "intro": "Aligning capital with positive social and environmental outcomes.",
+      "sections": [
+        { "heading": "Overview", "paragraphs": ["The current centre description focuses on investment approaches intended to align capital with social and environmental outcomes."] },
+        { "heading": "Information for the full profile", "points": ["Add the centre's approved definition and scope of impact investment.", "Add confirmed investor or enterprise services.", "Add verified impact measures or examples only when approved."] }
+      ]
+    },
+    "Center for SDG": {
+      "eyebrow": "Sustainability · CCI India Centre", "image": null, "placeholderLabel": "Sustainable development",
+      "intro": "Advancing the UN Sustainable Development Goals through industry action.",
+      "sections": [
+        { "heading": "Overview", "paragraphs": ["The current centre description connects industry action with the UN Sustainable Development Goals."] },
+        { "heading": "Information for the full profile", "points": ["Add confirmed SDG themes and activities.", "Add approved information about engagement with industry.", "Add verified progress measures or examples only when approved."] }
+      ]
+    },
+    "Center for Family Office": {
+      "eyebrow": "Family Office · CCI India Centre", "image": null, "placeholderLabel": "Family enterprise",
+      "intro": "Serving the investment and governance needs of family enterprises.",
+      "sections": [
+        { "heading": "Overview", "paragraphs": ["The current centre description identifies investment and governance needs of family enterprises as its focus."] },
+        { "heading": "Information for the full profile", "points": ["Add confirmed services for family enterprises.", "Add approved details about investment or governance topics in scope.", "Add verified examples or outcomes only when approved."] }
+      ]
+    },
+    "Center for Founder": {
+      "eyebrow": "Founders · CCI India Centre", "image": null, "placeholderLabel": "Founder network",
+      "intro": "A dedicated network and resource base for company founders.",
+      "sections": [
+        { "heading": "Overview", "paragraphs": ["The current centre description focuses on a network and resource base for company founders."] },
+        { "heading": "Information for the full profile", "points": ["Add confirmed resources and founder engagement formats.", "Add approved details about the centre's audience and scope.", "Add verified examples or outcomes only when approved."] }
+      ]
+    }
+  },
+  "dgNote": {
+    "eyebrow": "Leadership · Draft for review",
+    "title": "A Note from DG",
+    "name": "Munindra Kumar",
+    "designation": "Director General, CCI India",
+    "image": "/images/leadership/munindra-kumar.png",
+    "imageAlt": "Munindra Kumar, Director General, CCI India",
+    "reviewNotice": "Editable draft — this message is not an approved statement and requires review before publication.",
+    "paragraphs": [
+      "Welcome to CCI India. Our purpose is to serve as a platform for India's business and industry, bringing members together to share perspectives, engage with policymakers and explore opportunities for collaboration.",
+      "A strong business environment is shaped through dialogue and informed participation. CCI India works to articulate the concerns and interests of its members and to create opportunities for exchange through discussions, workshops, conferences and engagement with institutions. These efforts are intended to help businesses connect with relevant knowledge, stakeholders and markets.",
+      "India's enterprises are diverse in their size, sector and stage of growth. Supporting that diversity calls for an open environment in which established businesses, emerging founders, investors and regional organisations can meet and learn from one another. CCI India's work across policy advocacy, business facilitation, investment information and networking reflects this broad institutional role.",
+      "For this work to be meaningful, it depends on listening to the experience of member organisations and regional voices. Different sectors encounter different conditions, and respectful exchange can help surface shared concerns while keeping those differences in view. We welcome businesses and institutions to learn more about CCI India's work and explore ways to participate.",
+      "We look forward to continuing this work with our members and partners, and to contributing constructively to an inclusive and forward-looking business community."
+    ],
+    "href": "/about",
+    "linkLabel": "About CCI India"
+  }
+}

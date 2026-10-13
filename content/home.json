@@ -10,12 +10,33 @@
       { "value": "1997", "label": "Founded" },
       { "value": "90+", "label": "Sector Councils" },
       { "value": "7+", "label": "Global Offices" }
-    ]
-    ,
+    ],
     "heroSlides": [
-      { "image": "/images/hero/slide-1.jpg", "alt": "CCI India conference" },
-      { "image": "/images/hero/slide-2.jfif", "alt": "CCI India delegation" },
-      { "image": "/images/hero/slide-3.jfif", "alt": "CCI India event" }
+      {
+        "image": "/assets/councils/foreign-trade.webp",
+        "alt": "Visitors and exhibitors on a trade fair floor",
+        "objectPosition": "center 52%"
+      },
+      {
+        "image": "/assets/councils/infrastructure.webp",
+        "alt": "Metro train at an urban station, representing public transport infrastructure",
+        "objectPosition": "center 50%"
+      },
+      {
+        "image": "/assets/councils/new-and-renewable-energy.webp",
+        "alt": "Aerial view of a large solar energy installation",
+        "objectPosition": "center 52%"
+      },
+      {
+        "image": "/assets/councils/port.webp",
+        "alt": "Freight containers and a gantry crane at a port",
+        "objectPosition": "center 55%"
+      },
+      {
+        "image": "/images/hero/slide-1.jpg",
+        "alt": "Indian and Chinese leaders greeting at an official bilateral meeting",
+        "objectPosition": "center 45%"
+      }
     ]
   },
   "about": {

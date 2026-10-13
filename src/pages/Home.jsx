@@ -1,117 +1,183 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { ArrowUpRight, Globe2, MapPin } from 'lucide-react'
 import home from '../../content/home.json'
+import contact from '../../content/contact.json'
 import Carousel from '../components/ui/Carousel'
 import Button from '../components/ui/Button'
-import Card from '../components/ui/Card'
-import GlassCard from '../components/ui/GlassCard'
 import SectionHeading from '../components/ui/SectionHeading'
 import NewsFeed from '../components/news/NewsFeed'
 import HelpVideo from '../components/media/HelpVideo'
+import DetailDialog from '../components/ui/DetailDialog'
+import DGNote from '../components/home/DGNote'
+import { allCouncils } from '../lib/councils'
+import editorial from '../../content/home-editorial.json'
 
+const FEATURED_COUNCIL_SLUGS = [
+  'agriculture',
+  'banking-and-finance',
+  'healthcare',
+  'manufacturing',
+  'it-and-ites',
+  'infrastructure',
+]
+
+const featuredCouncils = FEATURED_COUNCIL_SLUGS
+  .map((slug) => allCouncils.find((council) => council.slug === slug))
+  .filter((council) => council?.image)
 
 export default function Home() {
+  const [selectedDetail, setSelectedDetail] = useState(null)
   const { hero, about, councils, whatWeDo, centers, news, impact } = home
+  const indiaPresence = [
+    { name: contact.headquarters.name, location: 'New Delhi · Headquarters' },
+    ...contact.indiaOffices.map((office) => ({ name: office.name, location: office.address.split(',').slice(-2).join(',').trim() })),
+  ]
 
   return (
     <>
-      {/* Hero */}
-      <section className="home-hero relative min-h-[560px] border-b border-border bg-navy-deep text-white sm:min-h-[590px] md:min-h-[620px]">
-        <div className="absolute inset-0 z-0">
-          <Carousel slides={(hero && hero.heroSlides) || []} />
-        </div>
-        <div className="container-main home-hero__content relative z-20 flex min-h-[560px] flex-col justify-center py-12 pb-28 sm:min-h-[590px] sm:py-16 sm:pb-28 md:min-h-[620px] md:pb-20">
-          <span className="home-hero__eyebrow mb-3 inline-flex w-fit items-center gap-2 border border-white/30 bg-white/[0.06] px-3 py-1.5 text-xs uppercase tracking-[0.18em] text-white/90 backdrop-blur-sm sm:mb-4">
-            <i className="h-1.5 w-1.5 rounded-full bg-saffron" aria-hidden="true" />
-            {hero.badge}
-          </span>
-          <h1 className="home-hero__title mb-3 max-w-3xl font-serif text-3xl font-bold leading-[1.08] text-white sm:text-4xl md:text-[50px] sm:mb-4">
-            {hero.headlineLead}
-            <span className="text-saffron">{hero.headlineAccent}</span>
-          </h1>
-          <p className="home-hero__description mb-6 max-w-2xl text-sm leading-7 text-white/80 md:text-base sm:mb-8">{hero.description}</p>
-          <div className="home-hero__actions mb-8 flex flex-wrap gap-3 sm:mb-10">
-            <Button href={hero.primaryCta.href} variant="accent">{hero.primaryCta.label}</Button>
-            <Button href={hero.secondaryCta.href} variant="outline-light">{hero.secondaryCta.label}</Button>
+      <section className="home-hero" aria-label="Business, industry and international engagement">
+        <Carousel slides={(hero && hero.heroSlides) || []} />
+      </section>
+
+      <section className="section-padding border-b border-border bg-white" aria-labelledby="home-intro-title">
+        <div className="container-main grid gap-10 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:gap-16">
+          <div>
+            <p className="section-heading__eyebrow">{about.eyebrow} · CCI India</p>
+            <h1 id="home-intro-title" className="max-w-2xl font-serif text-3xl font-bold leading-tight text-navy-deep md:text-4xl">
+              Connecting Indian enterprise with <span className="text-royal">global opportunity</span>
+            </h1>
+            <p className="mt-5 max-w-2xl text-base leading-8 text-muted-fg">{about.description}</p>
+            <div className="mt-7">
+              <Button to={about.cta.href} variant="secondary">{about.cta.label}</Button>
+            </div>
           </div>
-          <div className="home-hero__stats flex flex-wrap gap-4 border-t border-white/20 pt-6 sm:gap-8 sm:pt-8">
-            {hero.stats.map((s, index) => (
-              <div key={s.label} className="home-hero__stat min-w-[110px]" style={{ '--stat-index': index }}>
-                <div className="font-serif text-2xl font-bold text-white sm:text-3xl">{s.value}</div>
-                <div className="text-xs uppercase tracking-wider text-white/60">{s.label}</div>
-              </div>
+
+          <div className="divide-y divide-border border-y border-border">
+            {about.items.map((item, index) => (
+              <article key={item.tag} className="mission-panel grid gap-2 py-5 sm:grid-cols-[8rem_1fr] sm:gap-5 sm:px-4 sm:py-6">
+                <p className="mission-panel__label text-xs font-semibold text-royal">0{index + 1} / {item.tag}</p>
+                <p className="text-sm leading-7 text-navy-deep">{item.text}</p>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Who We Are */}
-      <section className="section-padding border-b border-border">
+      <section id="impact" className="section-padding border-b border-border bg-off-white" aria-labelledby="home-milestones-title">
         <div className="container-main">
-          <SectionHeading
-            eyebrow={about.eyebrow}
-            titleLead={about.titleLead}
-            titleAccent={about.titleAccent}
-            description={about.description}
-          />
-          <div className="mb-6 grid gap-4 sm:mb-8 sm:gap-6 md:grid-cols-2">
-            {about.items.map((item) => (
-              <GlassCard key={item.tag}>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-saffron">{item.tag}</p>
-                <p className="text-sm text-navy-deep font-medium">{item.text}</p>
-              </GlassCard>
-            ))}
+          <div className="mb-8 max-w-2xl">
+            <p className="section-heading__eyebrow">{impact.eyebrow}</p>
+            <h2 id="home-milestones-title" className="font-serif text-2xl font-bold text-navy-deep md:text-3xl">{impact.title}</h2>
+            <p className="mt-3 text-sm leading-7 text-muted-fg">{impact.description}</p>
           </div>
-          <div className="mb-4 flex flex-wrap gap-4 sm:mb-6 sm:gap-8">
-            {about.quickStats.map((s) => (
-              <div key={s.label} className="min-w-[100px]">
-                <div className="font-serif text-xl font-bold text-navy-deep sm:text-2xl">{s.value}</div>
-                <div className="text-xs text-muted-fg">{s.label}</div>
-              </div>
-            ))}
+          <div className="grid border-y border-border md:grid-cols-3 md:divide-x md:divide-border">
+            <div className="py-5 md:px-6 md:py-6 md:first:pl-0">
+              <p className="font-serif text-4xl font-bold tracking-tight text-navy-deep">1997</p>
+              <p className="mt-2 text-sm font-semibold text-navy-deep">Established</p>
+              <p className="mt-1 text-xs leading-6 text-muted-fg">A chamber for Corporate India, building a platform for industry and enterprise.</p>
+            </div>
+            <div className="border-t border-border py-5 md:border-t-0 md:px-6 md:py-6">
+              <p className="font-serif text-4xl font-bold tracking-tight text-navy-deep">90<span className="text-royal">+</span></p>
+              <p className="mt-2 text-sm font-semibold text-navy-deep">Sector and regional councils</p>
+              <p className="mt-1 text-xs leading-6 text-muted-fg">A broad network engaging businesses across India's industries and regions.</p>
+            </div>
+            <div className="border-t border-border py-5 md:border-t-0 md:px-6 md:py-6 md:last:pr-0">
+              <p className="font-serif text-3xl font-bold tracking-tight text-navy-deep">India <span className="text-royal">&amp;</span> the world</p>
+              <p className="mt-2 text-sm font-semibold text-navy-deep">National and international presence</p>
+              <p className="mt-1 text-xs leading-6 text-muted-fg">Offices and regional representation connect CCI India to business communities at home and abroad.</p>
+            </div>
           </div>
-          <Button to={about.cta.href} variant="secondary">{about.cta.label}</Button>
         </div>
       </section>
 
       {/* Four Pillars */}
-      <section id="pillars" className="section-padding border-b border-border bg-off-white">
+      <section id="pillars" className="section-padding border-b border-border bg-white">
         <div className="container-main">
           <SectionHeading eyebrow="Our Pillars" title="Four pillars of CCI India's work" />
-          <div className="overflow-hidden rounded-lg border border-border">
+          <div className="overflow-hidden border border-border">
             <img
               src="/images/four-pillars.png"
               alt="Four Pillars of CCI India's work - Policy Advocacy, Business Expansion, Networking, Business Intelligence"
               className="h-auto w-full object-cover"
+              loading="lazy"
             />
           </div>
         </div>
       </section>
 
       {/* Councils Preview */}
-      <section className="section-padding border-b border-border">
+      <section className="section-padding border-b border-border" aria-labelledby="home-councils-title">
         <div className="container-main">
-          <SectionHeading
-            eyebrow={councils.eyebrow}
-            titleLead={councils.titleLead}
-            titleAccent={councils.titleAccent}
-            description={councils.description}
-          />
-          <div className="mb-6 overflow-hidden rounded-lg border border-border sm:mb-8">
-            <img
-              src="/images/councils-visual.jpg"
-              alt="CCI India Councils - 90+ sector councils representing diverse industries and regions across India"
-              className="h-auto w-full object-cover"
-            />
+          <div className="mb-8 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+            <div className="max-w-2xl">
+              <p className="section-heading__eyebrow">{councils.eyebrow}</p>
+              <h2 id="home-councils-title" className="font-serif text-2xl font-bold text-navy-deep md:text-3xl">
+                {councils.titleLead}<span className="text-royal">{councils.titleAccent}</span>
+              </h2>
+              <p className="mt-3 text-sm leading-7 text-muted-fg">{councils.description}</p>
+            </div>
+            <Link to={councils.cta.href} className="inline-flex w-fit items-center gap-2 border-b border-royal pb-1 text-sm font-semibold text-royal transition-colors hover:border-saffron hover:text-saffron focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-royal">
+              {councils.cta.label}<ArrowUpRight size={16} aria-hidden="true" />
+            </Link>
           </div>
-          <div className="mb-4 grid grid-cols-2 gap-2 sm:mb-6 sm:gap-3 sm:grid-cols-3 md:grid-cols-3">
-            {councils.featured.map((c) => (
-              <div key={c.name} className="border border-border px-3 py-2 text-center text-xs font-medium text-navy-deep sm:px-4 sm:py-3 sm:text-sm">
-                {c.name}
-              </div>
+          <div className="grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+            {featuredCouncils.map((council) => (
+              <Link key={council.slug} to={`/councils/${council.slug}`} className="group flex min-w-0 flex-col bg-white focus-visible:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-royal">
+                <div className="aspect-[16/9] overflow-hidden bg-off-white">
+                  <img src={council.image} alt={council.imageAlt || ''} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.035]" loading="lazy" />
+                </div>
+                <div className="flex min-h-14 items-center justify-between gap-3 px-4 py-3">
+                  <span className="text-sm font-semibold text-navy-deep transition-colors group-hover:text-royal">{council.name}</span>
+                  <ArrowUpRight size={16} className="shrink-0 text-muted-fg transition-colors group-hover:text-royal" aria-hidden="true" />
+                </div>
+              </Link>
             ))}
           </div>
-          <p className="mb-3 text-sm text-muted-fg sm:mb-4">{councils.totalLabel}</p>
-          <Button to={councils.cta.href} variant="secondary">{councils.cta.label}</Button>
+          <p className="mt-4 text-xs text-muted-fg">{councils.totalLabel}</p>
+        </div>
+      </section>
+
+      <section className="section-padding border-b border-border bg-off-white" aria-labelledby="home-global-title">
+        <div className="container-main">
+          <div className="mb-8 max-w-2xl">
+            <p className="section-heading__eyebrow">Connected across markets</p>
+            <h2 id="home-global-title" className="font-serif text-2xl font-bold text-navy-deep md:text-3xl">A presence in India and beyond</h2>
+            <p className="mt-3 text-sm leading-7 text-muted-fg">CCI India's listed offices and regional representation support business engagement across domestic and international markets.</p>
+          </div>
+          <div className="grid gap-8 border-t border-border pt-6 md:grid-cols-2 md:gap-12">
+            <div>
+              <div className="mb-4 flex items-center gap-3">
+                <span className="grid h-10 w-10 place-items-center border border-border bg-white text-royal"><MapPin size={18} aria-hidden="true" /></span>
+                <h3 className="font-serif text-lg font-bold text-navy-deep">Headquarters &amp; India offices</h3>
+              </div>
+              <ul className="grid gap-3 sm:grid-cols-2">
+                {indiaPresence.map((office) => (
+                  <li key={office.name} className="border-l-2 border-royal/40 py-1 pl-3">
+                    <p className="text-sm font-semibold text-navy-deep">{office.name}</p>
+                    <p className="mt-1 text-xs text-muted-fg">{office.location}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <div className="mb-4 flex items-center gap-3">
+                <span className="grid h-10 w-10 place-items-center border border-border bg-white text-royal"><Globe2 size={18} aria-hidden="true" /></span>
+                <h3 className="font-serif text-lg font-bold text-navy-deep">Overseas offices</h3>
+              </div>
+              <ul className="grid gap-x-6 gap-y-3 sm:grid-cols-2">
+                {contact.overseasOffices.map((office) => (
+                  <li key={office.name} className="flex items-start gap-2 text-sm text-navy-deep">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-saffron" aria-hidden="true" />
+                    {office.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="mt-7">
+            <Button to="/contact" variant="secondary">View office details</Button>
+          </div>
         </div>
       </section>
 
@@ -132,11 +198,13 @@ export default function Home() {
             />
           </div>
           <div className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {whatWeDo.flows.map((f) => (
-              <Card key={f.label}>
-                <h3 className="mb-2 font-serif text-sm font-bold text-navy-deep sm:text-base">{f.label}</h3>
-                <p className="text-xs text-muted-fg sm:text-sm">{f.text}</p>
-              </Card>
+            {whatWeDo.flows.map((flow, index) => (
+              <button key={flow.label} type="button" className="showcase-card group text-left" onClick={() => setSelectedDetail({ ...editorial.whatWeDo[flow.label], title: flow.label, intro: flow.text })}>
+                <span className="showcase-card__number">0{index + 1}</span>
+                <h3 className="mb-2 font-serif text-base font-bold text-navy-deep transition-colors group-hover:text-royal sm:text-lg">{flow.label}</h3>
+                <p className="text-sm leading-6 text-muted-fg">{flow.text}</p>
+                <span className="showcase-card__action">Explore <ArrowUpRight size={15} aria-hidden="true" /></span>
+              </button>
             ))}
           </div>
         </div>
@@ -151,25 +219,28 @@ export default function Home() {
             titleAccent={centers.titleAccent}
             description={centers.description}
           />
-          <div className="mb-6 overflow-hidden rounded-lg border border-border sm:mb-8">
-            <img
-              src="/images/centers-visual.jpg"
-              alt="CCI India Centers and Initiatives - Specialized departments for market entry, business expansion, and sector-specific support"
-              className="h-auto w-full object-cover"
-            />
-          </div>
-          <div className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {centers.items.map((c) => (
-              <Card key={c.name}>
-                <span className="mb-1 block text-[10px] font-semibold uppercase tracking-wider text-green sm:text-xs">{c.focus}</span>
-                <h3 className="mb-2 text-xs font-bold text-navy-deep sm:text-sm">
-                  {c.name === 'Center for Market Entry & Business Expansion' ? (
-                    <Link to="/market-entry" className="transition-colors duration-200 hover:text-royal">{c.name}</Link>
-                  ) : c.name}
-                </h3>
-                <p className="text-[11px] text-muted-fg sm:text-xs">{c.blurb}</p>
-              </Card>
-            ))}
+          <div className="initiative-marquee">
+            <div className="initiative-marquee__track">
+              {[false, true].map((isDuplicate) => (
+                <div className="initiative-marquee__group" key={String(isDuplicate)} aria-hidden={isDuplicate || undefined}>
+                  {centers.items.map((center, index) => (
+                    <button
+                      key={center.name}
+                      type="button"
+                      tabIndex={isDuplicate ? -1 : 0}
+                      className="initiative-card group"
+                      onPointerDown={(event) => { if (isDuplicate) event.preventDefault() }}
+                      onClick={() => setSelectedDetail({ ...editorial.centers[center.name], title: center.name, intro: center.blurb })}
+                    >
+                      <span className="initiative-card__index">{String(index + 1).padStart(2, '0')} <span>{center.focus}</span></span>
+                      <h3 className="font-serif text-lg font-bold leading-snug text-navy-deep transition-colors group-hover:text-royal">{center.name}</h3>
+                      <p className="mt-3 text-sm leading-6 text-muted-fg">{center.blurb}</p>
+                      <span className="showcase-card__action">View details <ArrowUpRight size={15} aria-hidden="true" /></span>
+                    </button>
+                  ))}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -189,25 +260,8 @@ export default function Home() {
       </section>
 
       <HelpVideo />
-
-      {/* Impact Stats */}
-      <section id="impact" className="section-padding border-b border-border bg-navy-deep text-white">
-        <div className="container-main">
-          <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-saffron">{impact.eyebrow}</p>
-          <h2 className="mb-3 font-serif text-xl font-bold text-white sm:text-2xl md:text-3xl">{impact.title}</h2>
-          <p className="mb-6 max-w-3xl text-sm text-white/70 sm:mb-8">{impact.description}</p>
-          <div className="grid grid-cols-2 gap-3 sm:gap-4 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6">
-            {impact.stats.map((s) => (
-              <div key={s.label} className="border border-white/15 p-3 text-center sm:p-4">
-                <div className="font-serif text-lg font-bold text-saffron sm:text-2xl">
-                  {s.prefix}{s.value}{s.suffix}
-                </div>
-                <div className="mt-1 text-[10px] text-white/60 sm:text-xs">{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <DGNote />
+      <DetailDialog item={selectedDetail} onClose={() => setSelectedDetail(null)} />
     </>
   )
 }
