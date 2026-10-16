@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 import process from 'node:process'
 import { Buffer } from 'node:buffer'
-import { createPrivatePdfPreview, PrivatePdfRangeError } from '../../src/lib/knowledgePaperRangePreview.js'
+import { createPrivatePdfPreview, getPreviewFailureDiagnostic, PrivatePdfRangeError } from '../../src/lib/knowledgePaperRangePreview.js'
 import { isPublicPreviewMode } from '../../src/lib/knowledgePaperPdfDelivery.js'
 
 const json = (res, status, body) => res.status(status).setHeader('Content-Type', 'application/json').send(JSON.stringify(body))
@@ -71,9 +71,14 @@ export default async function handler(req, res) {
     })
   } catch (deliveryError) {
     const code = deliveryError instanceof PrivatePdfRangeError ? deliveryError.code : 'PRIVATE_STORAGE_UNAVAILABLE'
+    // Keep production diagnostics useful without ever logging a key, URL, path,
+    // response body, or provider error message.
+    console.error(JSON.stringify(getPreviewFailureDiagnostic(deliveryError, { supabaseUrl: url, serviceRoleKey: service })))
+    if (code === 'SUPABASE_CONFIGURATION_INVALID') return error(res, 503, code, 'Secure paper delivery is not configured correctly.')
     if (code === 'PRIVATE_OBJECT_MISSING') return error(res, 404, code, 'The registered private PDF is missing.')
     if (code === 'PRIVATE_STORAGE_ACCESS_DENIED') return error(res, 503, code, 'The server cannot access the private paper storage object.')
     if (code === 'INVALID_PDF_SOURCE') return error(res, 422, code, 'The registered file is not a readable PDF.')
+    if (code === 'PREVIEW_GENERATION_FAILED') return error(res, 500, code, 'The paper preview could not be generated.')
     if (code === 'PRIVATE_STORAGE_TIMEOUT' || code === 'PREVIEW_GENERATION_TIMEOUT') return error(res, 504, code, 'The preview could not be generated within the processing limit.')
     if (code === 'PREVIEW_RANGE_BUDGET_EXCEEDED') return error(res, 422, code, 'This paper requires more data than the safe preview limit allows.')
     if (code === 'PRIVATE_STORAGE_RANGE_UNSUPPORTED' || code === 'PRIVATE_STORAGE_RANGE_INVALID' || code === 'PRIVATE_STORAGE_RANGE_RESPONSE_INVALID' || code === 'PRIVATE_STORAGE_RANGE_TOO_LARGE') return error(res, 503, code, 'The private paper could not be read safely for preview.')
