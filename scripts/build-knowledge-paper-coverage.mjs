@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
 
@@ -8,6 +8,17 @@ const catalogue = readJson('content/knowledge-papers.json')
 const sourceManifest = readJson('scripts/knowledge-paper-source-manifest.json')
 const driveListings = readJson('scripts/knowledge-paper-drive-listings.json')
 const embassyAudit = readJson('scripts/knowledge-paper-embassy-pdf-audit.json')
+const privateRoot = resolve(root, 'private-knowledge-papers')
+const readPrivateJson = (name) => {
+  const file = resolve(privateRoot, name)
+  return existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : null
+}
+const archiveComparison = readPrivateJson('knowledge-paper-catalogue-comparison.json')
+const archiveInventory = readPrivateJson('knowledge-paper-source-inventory.json')
+const archivePreviewReport = readPrivateJson('preview-generation-report.json')
+const archiveSourcesById = new Map(Object.entries(archiveComparison?.sourceByPaperId || {}))
+const archiveRevisionsById = new Map((archiveComparison?.revisionsRequiringReview || []).map((item) => [item.paperId, item]))
+const archiveInventoryByHash = new Map((archiveInventory?.files || []).map((file) => [file.sha256, file]))
 
 const knownAliases = {
   'Jammu and Kashmir': ['j&k'],
@@ -129,15 +140,45 @@ function candidateListings(paper) {
 const verifiedLocal = new Map(sourceManifest.localVerifiedSources.map((source) => [source.catalogueId, source]))
 const missingSourceIds = new Set(['india-tea-industry-growth-2026'])
 const rows = catalogue.map((paper) => {
-  const local = verifiedLocal.get(paper.id)
-  const candidates = candidateListings(paper)
+  const manifestLocal = verifiedLocal.get(paper.id)
+  const archiveSource = archiveSourcesById.get(paper.id)
+  const archiveFile = archiveSource && archiveInventoryByHash.get(archiveSource.sha256)
+  const archivePreview = archiveSource && archivePreviewReport?.files?.[archiveSource.sha256]
+  const archiveRevision = archiveRevisionsById.get(paper.id)
+  const local = manifestLocal || (archiveFile ? {
+    catalogueId: paper.id,
+    catalogueTitle: paper.title,
+    sourceFile: archiveFile.fileName,
+    sizeBytes: archiveFile.sizeBytes,
+    sha256: archiveFile.sha256,
+    pageCount: archiveFile.pageCount,
+    matchConfidence: 'visually-confirmed',
+    status: 'verified-local-not-uploaded',
+  } : null)
+  const revisionCandidates = (archiveRevision?.sources || []).map((sourcePath) => {
+    const source = archiveInventory?.files.find((file) => file.relativePath === sourcePath)
+    return source ? {
+      sourceFile: source.fileName,
+      fileType: 'PDF (private archive)',
+      contentVerified: true,
+      matchConfidence: 'alternate-edition-review-required',
+      pageCount: source.pageCount,
+      sizeBytes: source.sizeBytes,
+      sha256: source.sha256,
+      localPreviewGenerated: archivePreviewReport?.files?.[source.sha256]?.validationStatus === 'passed',
+    } : null
+  }).filter(Boolean)
+  const candidates = [...candidateListings(paper), ...revisionCandidates]
+  const archivePreviewPassed = archivePreview?.validationStatus === 'passed'
   const existingSourceMetadata = {
     pdfUrl: paper.pdfUrl || null,
     storagePath: paper.storagePath || null,
     fileSize: paper.fileSize || null,
     coverImage: paper.coverImage || null,
   }
-  const status = local
+  const status = archiveRevision && !archiveSource
+    ? 'source-pdf-found-match-needs-review'
+    : local
     ? 'source-pdf-ready-private-storage-upload-mapping-pending'
     : candidates.length
       ? 'source-pdf-found-match-needs-review'
@@ -154,13 +195,15 @@ const rows = catalogue.map((paper) => {
     subject: paper.subject || null,
     existingSourceMetadata,
     status,
-    confidentlyMatchedLocalSource: Boolean(local),
-    previewGeneratorTested: Boolean(local || candidates.some((source) => source.contentVerified)),
+    confidentlyMatchedLocalSource: Boolean(manifestLocal || archiveSource),
+    previewGeneratorTested: Boolean(manifestLocal || archivePreviewPassed || candidates.some((source) => source.contentVerified)),
     privateStoragePath: null,
     actualApiPreviewVerified: false,
     sourceCandidates: candidates,
     verifiedLocalSource: local || null,
-    sourceSearchNote: candidates.length ? null : 'No matching filename in the locally inspected files or accessible Drive listings. The fifth shared folder was not inspectable, so absence is not conclusive.',
+    sourceSearchNote: candidates.length || archiveFile ? null : 'No matching filename in the locally inspected files or accessible Drive listings. The fifth shared folder was not inspectable, so absence is not conclusive.',
+    ...(archiveFile ? { sourcePageCount: archiveFile.pageCount, localPreviewGenerated: archivePreviewPassed } : {}),
+    ...(archiveRevision ? { revisionCandidateCount: archiveRevision.sources.length } : {}),
   }
 })
 
@@ -170,7 +213,7 @@ const report = {
   statusCounts: Object.fromEntries([...new Set(rows.map((row) => row.status))].map((status) => [status, rows.filter((row) => row.status === status).length])),
   actualApiPreviewVerifiedCount: rows.filter((row) => row.actualApiPreviewVerified).length,
   privateMappingsConfiguredCount: rows.filter((row) => row.privateStoragePath).length,
-  sourceFilesAuditedLocally: sourceManifest.localVerifiedSources.length + embassyAudit.files.length,
+  sourceFilesAuditedLocally: sourceManifest.localVerifiedSources.length + embassyAudit.files.length + (archiveInventory?.pdfCount || 0),
   previewGenerator: {
     testedPdfCount: sourceManifest.localVerifiedSources.length + embassyAudit.files.length,
     passedPdfCount: sourceManifest.localVerifiedSources.length + embassyAudit.files.length,
@@ -178,6 +221,14 @@ const report = {
     maximumPreviewPages: 5,
     note: 'All currently available local source PDFs were loaded, passed through createPdfDelivery, and re-opened to verify the output page count and PDF signature.',
   },
+  archivePreviewGeneration: archivePreviewReport?.summary ? {
+    attemptedCount: archivePreviewReport.summary.attempted,
+    passedCount: archivePreviewReport.summary.passed,
+    failedCount: archivePreviewReport.summary.failed,
+    revisionCandidateCount: archivePreviewReport.summary.revisionCandidates,
+    maximumPreviewPages: archivePreviewReport.previewPageLimit,
+    uploadedCount: archivePreviewReport.summary.uploaded,
+  } : null,
   sourcePdfMetadata: {
     localVerifiedSources: sourceManifest.localVerifiedSources,
     additionalArchiveAudit: embassyAudit,
@@ -194,15 +245,15 @@ const report = {
   driveFolderListings: driveListings.folders,
   caveats: [
     'Drive UI file listings establish only filenames and PDF type labels; the State/UT and Ministry file bytes were not downloaded locally during this audit.',
-    'The Embassy archive PDFs passed parsing and the preview generator, but catalogue matches remain subject to content/title review.',
+    'Archive PDF cover identities were visually reviewed; Kenya, Iraq, and Tunisia contain alternate editions that remain intentionally unmapped to a newly selected canonical source.',
     'The older fifth Drive folder could not be inspected; its historical count in the prior manifest is unverified.',
-    'No Supabase bucket, registry schema, object mapping, server credential, or live API preview was verified.',
+    'The dedicated pre-generated-preview bucket and metadata migration are manual setup steps; live API serving has not been verified.',
   ],
   papers: rows,
 }
 
-if (rows.length !== 109 || new Set(rows.map((row) => row.id)).size !== 109) {
-  throw new Error(`Expected 109 unique catalogue IDs, received ${rows.length}`)
+if (rows.length !== catalogue.length || new Set(rows.map((row) => row.id)).size !== catalogue.length) {
+  throw new Error(`Expected ${catalogue.length} unique catalogue IDs, received ${rows.length}`)
 }
 
 writeFileSync(resolve(root, 'content/knowledge-paper-coverage.json'), `${JSON.stringify(report, null, 2)}\n`)

@@ -31,7 +31,7 @@ export default function KnowledgePapers() {
       <PageHero
         eyebrow="Research & Insights"
         title="Knowledge Papers"
-        lead="Explore country, State, Union Territory and Ministry-focused research from CCI India. Read up to five pages free, then request the complete paper through the enquiry form."
+        lead="Explore country, State, Union Territory and Ministry-focused research from CCI India. Read up to ten pages free, then request the complete paper through the enquiry form."
         breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Knowledge Papers' }]}
       />
       <section className="section-padding bg-white">

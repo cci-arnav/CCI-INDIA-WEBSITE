@@ -1,9 +1,11 @@
 import { createClient } from '@supabase/supabase-js'
 import process from 'node:process'
 import { Buffer } from 'node:buffer'
-import { createPrivatePdfPreview, getPreviewFailureDiagnostic, PrivatePdfRangeError } from '../../src/lib/knowledgePaperRangePreview.js'
+import { PDFDocument } from 'pdf-lib'
+import { createPrivatePdfPreview, getPreviewFailureDiagnostic, PREVIEW_PAGE_LIMIT, PrivatePdfRangeError } from '../../src/lib/knowledgePaperRangePreview.js'
 import { isPublicPreviewMode } from '../../src/lib/knowledgePaperPdfDelivery.js'
 
+const MAX_STORED_PREVIEW_BYTES = 50 * 1024 * 1024
 const json = (res, status, body) => res.status(status).setHeader('Content-Type', 'application/json').send(JSON.stringify(body))
 const boundedFetch = (timeoutMs) => (input, init = {}) => {
   const timeout = AbortSignal.timeout(timeoutMs)
@@ -13,6 +15,7 @@ const boundedFetch = (timeoutMs) => (input, init = {}) => {
 const config = () => ({
   url: process.env.SUPABASE_URL,
   service: process.env.SUPABASE_SERVICE_ROLE_KEY,
+  previewBucket: process.env.KNOWLEDGE_PAPER_PREVIEW_BUCKET,
 })
 const error = (res, status, code, message, extra = {}) => json(res, status, { error: message, code, ...extra })
 export const isMissingStorageObject = (storageError) => String(storageError?.status ?? storageError?.statusCode ?? '') === '404'
@@ -35,9 +38,12 @@ export default async function handler(req, res) {
   const mode = String(req.query.mode || 'preview')
   // The endpoint serves public previews only. No full-PDF route exists here.
   if (!isPublicPreviewMode(mode)) return error(res, 404, 'PREVIEW_ONLY', 'Only public previews are available on this endpoint.')
-  const { url, service } = config()
+  const { url, service, previewBucket } = config()
   const missing = [!url && 'SUPABASE_URL', !service && 'SUPABASE_SERVICE_ROLE_KEY'].filter(Boolean)
   if (missing.length) return error(res, 503, 'SERVER_CONFIGURATION_MISSING', 'Secure paper delivery is not configured.', { missing })
+  if (previewBucket && !/^[a-z0-9][a-z0-9-]{0,62}$/.test(previewBucket)) {
+    return error(res, 503, 'SUPABASE_CONFIGURATION_INVALID', 'Secure paper delivery is not configured correctly.')
+  }
 
   let admin
   try {
@@ -46,47 +52,109 @@ export default async function handler(req, res) {
     return error(res, 503, 'SUPABASE_CONFIGURATION_INVALID', 'Secure paper delivery is not configured correctly.')
   }
 
-  let paperResult
-  try {
-    paperResult = await admin.from('knowledge_papers_private').select('paper_id, storage_path, active').eq('paper_id', id).maybeSingle()
-  } catch {
-    return error(res, 503, 'REGISTRY_UNAVAILABLE', 'The private paper registry is unavailable.')
+  let paper = null
+  if (previewBucket) {
+    let previewMapping
+    try {
+      previewMapping = await admin.from('knowledge_paper_previews_private')
+        .select('paper_id, preview_storage_path, source_sha256, source_page_count, active')
+        .eq('paper_id', id)
+        .maybeSingle()
+    } catch {
+      return error(res, 503, 'PREVIEW_REGISTRY_UNAVAILABLE', 'The private preview registry is unavailable.')
+    }
+    if (previewMapping.error) {
+      if (isMissingRegistrySchema(previewMapping.error)) return error(res, 503, 'PREVIEW_REGISTRY_SCHEMA_MISSING', 'The private preview registry schema is not available.')
+      if (isRegistryPermissionError(previewMapping.error)) return error(res, 503, 'PREVIEW_REGISTRY_ACCESS_DENIED', 'The server cannot read the private preview registry.')
+      return error(res, 503, 'PREVIEW_REGISTRY_UNAVAILABLE', 'The private preview registry is unavailable.')
+    }
+    paper = previewMapping.data
   }
-  if (paperResult.error) {
-    if (isMissingRegistrySchema(paperResult.error)) return error(res, 503, 'REGISTRY_SCHEMA_MISSING', 'The private paper registry schema is not available.')
-    if (isRegistryPermissionError(paperResult.error)) return error(res, 503, 'REGISTRY_ACCESS_DENIED', 'The server cannot read the private paper registry.')
-    return error(res, 503, 'REGISTRY_UNAVAILABLE', 'The private paper registry is unavailable.')
+
+  if (!paper) {
+    let paperResult
+    try {
+      paperResult = await admin.from('knowledge_papers_private').select('paper_id, storage_path, active').eq('paper_id', id).maybeSingle()
+    } catch {
+      return error(res, 503, 'REGISTRY_UNAVAILABLE', 'The private paper registry is unavailable.')
+    }
+    if (paperResult.error) {
+      if (isMissingRegistrySchema(paperResult.error)) return error(res, 503, 'REGISTRY_SCHEMA_MISSING', 'The private paper registry schema is not available.')
+      if (isRegistryPermissionError(paperResult.error)) return error(res, 503, 'REGISTRY_ACCESS_DENIED', 'The server cannot read the private paper registry.')
+      return error(res, 503, 'REGISTRY_UNAVAILABLE', 'The private paper registry is unavailable.')
+    }
+    paper = paperResult.data
   }
-  const paper = paperResult.data
   if (!paper) return error(res, 404, 'REGISTRY_MAPPING_MISSING', 'No preview source is registered for this paper.')
   if (!paper.active) return error(res, 404, 'PAPER_INACTIVE', 'This paper is not available for online reading.')
 
   let preview
-  try {
-    preview = await createPrivatePdfPreview({
-      supabaseUrl: url,
-      serviceRoleKey: service,
-      bucket: 'knowledge-papers-private',
-      storagePath: paper.storage_path,
-    })
-  } catch (deliveryError) {
-    const code = deliveryError instanceof PrivatePdfRangeError ? deliveryError.code : 'PRIVATE_STORAGE_UNAVAILABLE'
-    // Keep production diagnostics useful without ever logging a key, URL, path,
-    // response body, or provider error message.
-    console.error(JSON.stringify(getPreviewFailureDiagnostic(deliveryError, { supabaseUrl: url, serviceRoleKey: service })))
-    if (code === 'SUPABASE_CONFIGURATION_INVALID') return error(res, 503, code, 'Secure paper delivery is not configured correctly.')
-    if (code === 'PRIVATE_OBJECT_MISSING') return error(res, 404, code, 'The registered private PDF is missing.')
-    if (code === 'PRIVATE_STORAGE_ACCESS_DENIED') return error(res, 503, code, 'The server cannot access the private paper storage object.')
-    if (code === 'INVALID_PDF_SOURCE') return error(res, 422, code, 'The registered file is not a readable PDF.')
-    if (code === 'PREVIEW_GENERATION_FAILED') return error(res, 500, code, 'The paper preview could not be generated.')
-    if (code === 'PRIVATE_STORAGE_TIMEOUT' || code === 'PREVIEW_GENERATION_TIMEOUT') return error(res, 504, code, 'The preview could not be generated within the processing limit.')
-    if (code === 'PREVIEW_RANGE_BUDGET_EXCEEDED') return error(res, 422, code, 'This paper requires more data than the safe preview limit allows.')
-    if (code === 'PRIVATE_STORAGE_RANGE_UNSUPPORTED' || code === 'PRIVATE_STORAGE_RANGE_INVALID' || code === 'PRIVATE_STORAGE_RANGE_RESPONSE_INVALID' || code === 'PRIVATE_STORAGE_RANGE_TOO_LARGE') return error(res, 503, code, 'The private paper could not be read safely for preview.')
-    return error(res, 503, 'PRIVATE_STORAGE_UNAVAILABLE', 'The private paper storage service is unavailable.')
+  if (previewBucket && paper.preview_storage_path) {
+    const sourcePageCount = Number(paper.source_page_count)
+    const expectedPath = new RegExp(`^previews/${id}/[a-f0-9]{64}\\.pdf$`)
+    if (!Number.isSafeInteger(sourcePageCount) || sourcePageCount < 1
+      || !expectedPath.test(paper.preview_storage_path)) {
+      return error(res, 503, 'PREVIEW_METADATA_INVALID', 'The private preview metadata is incomplete.')
+    }
+    let storedPreview
+    try {
+      storedPreview = await admin.storage.from(previewBucket).download(paper.preview_storage_path)
+    } catch (cause) {
+      console.error(JSON.stringify(getPreviewFailureDiagnostic(cause, { supabaseUrl: url, serviceRoleKey: service })))
+      return error(res, 503, 'PREVIEW_STORAGE_UNAVAILABLE', 'The private preview storage service is unavailable.')
+    }
+    if (storedPreview.error) {
+      if (isMissingStorageObject(storedPreview.error)) return error(res, 404, 'PREGENERATED_PREVIEW_MISSING', 'The prepared paper preview is missing.')
+      if (isStoragePermissionError(storedPreview.error)) return error(res, 503, 'PREVIEW_STORAGE_ACCESS_DENIED', 'The server cannot access the private paper preview.')
+      console.error(JSON.stringify(getPreviewFailureDiagnostic(storedPreview.error, { supabaseUrl: url, serviceRoleKey: service })))
+      return error(res, 503, 'PREVIEW_STORAGE_UNAVAILABLE', 'The private preview storage service is unavailable.')
+    }
+    if (!storedPreview.data || !Number.isSafeInteger(storedPreview.data.size)
+      || storedPreview.data.size < 8 || storedPreview.data.size > MAX_STORED_PREVIEW_BYTES) {
+      return error(res, 422, 'PREVIEW_OBJECT_INVALID', 'The prepared paper preview is not valid.')
+    }
+    try {
+      const bytes = new Uint8Array(await storedPreview.data.arrayBuffer())
+      if (new TextDecoder().decode(bytes.subarray(0, 5)) !== '%PDF-') {
+        return error(res, 422, 'PREVIEW_OBJECT_INVALID', 'The prepared paper preview is not valid.')
+      }
+      const document = await PDFDocument.load(bytes, { updateMetadata: false })
+      const deliveredPages = document.getPageCount()
+      if (deliveredPages !== Math.min(PREVIEW_PAGE_LIMIT, sourcePageCount)) {
+        return error(res, 422, 'PREVIEW_OBJECT_INVALID', 'The prepared paper preview is not valid.')
+      }
+      preview = { bytes, pageCount: sourcePageCount, deliveredPages }
+    } catch {
+      return error(res, 422, 'PREVIEW_OBJECT_INVALID', 'The prepared paper preview is not valid.')
+    }
+  } else {
+    try {
+      preview = await createPrivatePdfPreview({
+        supabaseUrl: url,
+        serviceRoleKey: service,
+        bucket: 'knowledge-papers-private',
+        storagePath: paper.storage_path,
+      })
+    } catch (deliveryError) {
+      const code = deliveryError instanceof PrivatePdfRangeError ? deliveryError.code : 'PRIVATE_STORAGE_UNAVAILABLE'
+      // Keep production diagnostics useful without ever logging a key, URL, path,
+      // response body, or provider error message.
+      console.error(JSON.stringify(getPreviewFailureDiagnostic(deliveryError, { supabaseUrl: url, serviceRoleKey: service })))
+      if (code === 'SUPABASE_CONFIGURATION_INVALID') return error(res, 503, code, 'Secure paper delivery is not configured correctly.')
+      if (code === 'PRIVATE_OBJECT_MISSING') return error(res, 404, code, 'The registered private PDF is missing.')
+      if (code === 'PRIVATE_STORAGE_ACCESS_DENIED') return error(res, 503, code, 'The server cannot access the private paper storage object.')
+      if (code === 'INVALID_PDF_SOURCE') return error(res, 422, code, 'The registered file is not a readable PDF.')
+      if (code === 'PREVIEW_GENERATION_FAILED') return error(res, 500, code, 'The paper preview could not be generated.')
+      if (code === 'PRIVATE_STORAGE_TIMEOUT' || code === 'PREVIEW_GENERATION_TIMEOUT') return error(res, 504, code, 'The preview could not be generated within the processing limit.')
+      if (code === 'PREVIEW_RANGE_BUDGET_EXCEEDED') return error(res, 422, code, 'This paper requires more data than the safe preview limit allows.')
+      if (code === 'PRIVATE_STORAGE_RANGE_UNSUPPORTED' || code === 'PRIVATE_STORAGE_RANGE_INVALID' || code === 'PRIVATE_STORAGE_RANGE_RESPONSE_INVALID' || code === 'PRIVATE_STORAGE_RANGE_TOO_LARGE') return error(res, 503, code, 'The private paper could not be read safely for preview.')
+      return error(res, 503, 'PRIVATE_STORAGE_UNAVAILABLE', 'The private paper storage service is unavailable.')
+    }
   }
   const { bytes, pageCount, deliveredPages } = preview
   res.setHeader('Content-Type', 'application/pdf')
   res.setHeader('Content-Disposition', 'inline; filename="knowledge-paper-preview.pdf"')
+  res.setHeader('X-Paper-Id', id)
   res.setHeader('X-Paper-Page-Count', String(pageCount))
   res.setHeader('X-Paper-Preview-Pages', String(deliveredPages))
   return res.status(200).send(Buffer.from(bytes))

@@ -9,7 +9,7 @@ const projectRoot = fileURLToPath(new URL('../', import.meta.url))
 const assetExists = (publicPath) => existsSync(`${projectRoot}/public${publicPath}`)
 
 test('all Knowledge Papers have a stable image-registry entry', () => {
-  assert.equal(papers.length, 109)
+  assert.equal(papers.length, 128)
   assert.equal(Object.keys(imageRegistry.knowledgePapers).length, papers.length)
   for (const paper of papers) assert.ok(imageRegistry.knowledgePapers[paper.id], `Missing artwork entry for ${paper.id}`)
 })

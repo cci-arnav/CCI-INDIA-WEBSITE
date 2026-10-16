@@ -1,20 +1,27 @@
 {
-  "generatedAt": "2026-10-15T08:02:49.366Z",
-  "catalogueCount": 109,
+  "generatedAt": "2026-10-16T11:12:39.169Z",
+  "catalogueCount": 128,
   "statusCounts": {
-    "source-pdf-found-match-needs-review": 101,
-    "source-pdf-ready-private-storage-upload-mapping-pending": 7,
-    "source-pdf-not-found-in-accessible-sources": 1
+    "source-pdf-ready-private-storage-upload-mapping-pending": 125,
+    "source-pdf-found-match-needs-review": 3
   },
   "actualApiPreviewVerifiedCount": 0,
   "privateMappingsConfiguredCount": 0,
-  "sourceFilesAuditedLocally": 23,
+  "sourceFilesAuditedLocally": 167,
   "previewGenerator": {
     "testedPdfCount": 23,
     "passedPdfCount": 23,
     "failedPdfCount": 0,
     "maximumPreviewPages": 5,
     "note": "All currently available local source PDFs were loaded, passed through createPdfDelivery, and re-opened to verify the output page count and PDF signature."
+  },
+  "archivePreviewGeneration": {
+    "attemptedCount": 131,
+    "passedCount": 131,
+    "failedCount": 0,
+    "revisionCandidateCount": 6,
+    "maximumPreviewPages": 10,
+    "uploadedCount": 0
   },
   "sourcePdfMetadata": {
     "localVerifiedSources": [
@@ -526,9 +533,9 @@
   ],
   "caveats": [
     "Drive UI file listings establish only filenames and PDF type labels; the State/UT and Ministry file bytes were not downloaded locally during this audit.",
-    "The Embassy archive PDFs passed parsing and the preview generator, but catalogue matches remain subject to content/title review.",
+    "Archive PDF cover identities were visually reviewed; Kenya, Iraq, and Tunisia contain alternate editions that remain intentionally unmapped to a newly selected canonical source.",
     "The older fifth Drive folder could not be inspected; its historical count in the prior manifest is unverified.",
-    "No Supabase bucket, registry schema, object mapping, server credential, or live API preview was verified."
+    "The dedicated pre-generated-preview bucket and metadata migration are manual setup steps; live API serving has not been verified."
   ],
   "papers": [
     {
@@ -542,11 +549,11 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "9.9 MB",
-        "coverImage": "/images/knowledge-papers/india-chad.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -562,8 +569,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "india-chad-opportunities-2026",
+        "catalogueTitle": "India & Chad: Partnering for Opportunities, Building a Brighter Tomorrow",
+        "sourceFile": "Chad Knowledge Paper.pdf",
+        "sizeBytes": 10361812,
+        "sha256": "d9053621f9c88a5e2b0e995f1edcf22188b42adcbe1f1fea9ca386945fe95d10",
+        "pageCount": 52,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-tajikistan-shared-growth-2026",
@@ -608,7 +626,9 @@
         "titlePageConfidentialMark": true,
         "status": "verified-local-not-uploaded"
       },
-      "sourceSearchNote": null
+      "sourceSearchNote": null,
+      "sourcePageCount": 60,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-spain-shared-growth-2026",
@@ -653,7 +673,9 @@
         "titlePageConfidentialMark": true,
         "status": "verified-local-not-uploaded"
       },
-      "sourceSearchNote": null
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-cyprus-shared-growth-2026",
@@ -698,7 +720,9 @@
         "titlePageConfidentialMark": true,
         "status": "verified-local-not-uploaded"
       },
-      "sourceSearchNote": null
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-indonesia-shared-prosperity-2026",
@@ -743,7 +767,9 @@
         "titlePageConfidentialMark": true,
         "status": "verified-local-not-uploaded"
       },
-      "sourceSearchNote": null
+      "sourceSearchNote": null,
+      "sourcePageCount": 60,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-laos-shared-future-2026",
@@ -788,7 +814,9 @@
         "titlePageConfidentialMark": false,
         "status": "verified-local-not-uploaded"
       },
-      "sourceSearchNote": null
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-tunisia-shared-future-2026",
@@ -801,9 +829,9 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "15.3 MB",
-        "coverImage": "/images/knowledge-papers/india-tunisia.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "status": "source-pdf-found-match-needs-review",
       "confidentlyMatchedLocalSource": true,
       "previewGeneratorTested": true,
       "privateStoragePath": null,
@@ -831,6 +859,26 @@
           "sizeBytes": 16009911,
           "sha256": "dcc15db396ee0b5ceae9ef90d700d2e55236fae7f5841dc6ff7c15c43d125e0e",
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        },
+        {
+          "sourceFile": "Tunisia.pdf",
+          "fileType": "PDF (private archive)",
+          "contentVerified": true,
+          "matchConfidence": "alternate-edition-review-required",
+          "pageCount": 48,
+          "sizeBytes": 16009911,
+          "sha256": "dcc15db396ee0b5ceae9ef90d700d2e55236fae7f5841dc6ff7c15c43d125e0e",
+          "localPreviewGenerated": true
+        },
+        {
+          "sourceFile": "Tunisia Knowledge Paper.pdf",
+          "fileType": "PDF (private archive)",
+          "contentVerified": true,
+          "matchConfidence": "alternate-edition-review-required",
+          "pageCount": 48,
+          "sizeBytes": 16052815,
+          "sha256": "be7f3705e387ab74b66f7bd574cb75a64fee6d25c058ad0a58ef8350ad04e110",
+          "localPreviewGenerated": true
         }
       ],
       "verifiedLocalSource": {
@@ -845,7 +893,8 @@
         "titlePageConfidentialMark": true,
         "status": "verified-local-not-uploaded"
       },
-      "sourceSearchNote": null
+      "sourceSearchNote": null,
+      "revisionCandidateCount": 2
     },
     {
       "id": "india-sudan-shared-future-2026",
@@ -890,7 +939,9 @@
         "titlePageConfidentialMark": true,
         "status": "verified-local-not-uploaded"
       },
-      "sourceSearchNote": null
+      "sourceSearchNote": null,
+      "sourcePageCount": 56,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-georgia-opportunity-2026",
@@ -903,10 +954,10 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "11.5 MB",
-        "coverImage": "/images/knowledge-papers/india-georgia.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
       "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
@@ -935,8 +986,19 @@
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "india-georgia-opportunity-2026",
+        "catalogueTitle": "India & Georgia: Heritage, Trade and Opportunity",
+        "sourceFile": "Georgia.pdf",
+        "sizeBytes": 12084598,
+        "sha256": "49a97fb8b7433ab6ded7f70c7c268ebdda806f43a747847926a5178386d8721d",
+        "pageCount": 56,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 56,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-malawi-sustainable-prosperity-2026",
@@ -949,10 +1011,10 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "16.4 MB",
-        "coverImage": "/images/knowledge-papers/india-malawi.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
       "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
@@ -981,8 +1043,19 @@
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "india-malawi-sustainable-prosperity-2026",
+        "catalogueTitle": "India & Malawi: Partnerships for Sustainable Prosperity",
+        "sourceFile": "Malawi.pdf",
+        "sizeBytes": 17226130,
+        "sha256": "35b948a7b71f16b84c08170ec9952564b0a6273a44a18a937326ac8bdcb6f2db",
+        "pageCount": 64,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 64,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-armenia-partnership-2026",
@@ -995,10 +1068,10 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "20.1 MB",
-        "coverImage": "/images/knowledge-papers/india-armenia.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
       "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
@@ -1027,8 +1100,19 @@
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "india-armenia-partnership-2026",
+        "catalogueTitle": "India & Armenia: Building Bridges of Partnership",
+        "sourceFile": "armenia .pdf",
+        "sizeBytes": 21062342,
+        "sha256": "52bfc16cf6ec743a7300c20cbd013dfe0b43e2052bffb5d59f56f73ee2a64fef",
+        "pageCount": 64,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 64,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-tea-industry-growth-2026",
@@ -1041,16 +1125,27 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "7.4 MB",
-        "coverImage": "/images/knowledge-papers/india-tea-industry.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-not-found-in-accessible-sources",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": "No matching filename in the locally inspected files or accessible Drive listings. The fifth shared folder was not inspectable, so absence is not conclusive."
+      "verifiedLocalSource": {
+        "catalogueId": "india-tea-industry-growth-2026",
+        "catalogueTitle": "Growing Prosperity, One Cup at a Time",
+        "sourceFile": "cote de voire.pdf",
+        "sizeBytes": 7743150,
+        "sha256": "3fa79846491b0c90f0e4f50d9cc47c0508440af4d7a906e505f24039b51778c4",
+        "pageCount": 60,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 60,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-dominican-republic-prosperity-2026",
@@ -1063,10 +1158,10 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "17.5 MB",
-        "coverImage": "/images/knowledge-papers/india-dominican-republic.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
       "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
@@ -1095,8 +1190,19 @@
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "india-dominican-republic-prosperity-2026",
+        "catalogueTitle": "India & Dominican Republic: Bridging Continents for Shared Prosperity",
+        "sourceFile": "dominican republic .pdf",
+        "sizeBytes": 18306172,
+        "sha256": "508ffd5c1a0e2eec9cb7694b3de8d898506ae424918ee072886014f38c5d6af4",
+        "pageCount": 64,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 64,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-ecuador-partnership-2026",
@@ -1109,10 +1215,10 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "24.4 MB",
-        "coverImage": "/images/knowledge-papers/india-ecuador.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
       "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
@@ -1141,8 +1247,19 @@
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "india-ecuador-partnership-2026",
+        "catalogueTitle": "India & Ecuador: Bridging Continents Through Knowledge",
+        "sourceFile": "equador.pdf",
+        "sizeBytes": 25355422,
+        "sha256": "c5cae802506b4e24ae49f42f54e4ce8017ba52acb59ae5744e1509eac5c60e6e",
+        "pageCount": 64,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 64,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-belarus-partnership-2026",
@@ -1155,10 +1272,10 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "15.1 MB",
-        "coverImage": "/images/knowledge-papers/india-belarus.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
       "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
@@ -1187,8 +1304,19 @@
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "india-belarus-partnership-2026",
+        "catalogueTitle": "India & Belarus: Building Bridges of Partnership",
+        "sourceFile": "belarus .pdf",
+        "sizeBytes": 15861642,
+        "sha256": "00487b613a61555f5f9afcb614cc15717a83e2274c32916af4aa56dce3174437",
+        "pageCount": 56,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 56,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-iraq-shared-prosperity-2026",
@@ -1201,7 +1329,7 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "16.2 MB",
-        "coverImage": "/images/knowledge-papers/india-iraq.jpg"
+        "coverImage": null
       },
       "status": "source-pdf-found-match-needs-review",
       "confidentlyMatchedLocalSource": false,
@@ -1231,10 +1359,31 @@
           "sizeBytes": 16987043,
           "sha256": "423d8aa5690d1c730a071af14b81ae2b48a0d72b92c96211fbd8f762ff8f83cc",
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        },
+        {
+          "sourceFile": "iraq and india.pdf",
+          "fileType": "PDF (private archive)",
+          "contentVerified": true,
+          "matchConfidence": "alternate-edition-review-required",
+          "pageCount": 60,
+          "sizeBytes": 16987043,
+          "sha256": "423d8aa5690d1c730a071af14b81ae2b48a0d72b92c96211fbd8f762ff8f83cc",
+          "localPreviewGenerated": true
+        },
+        {
+          "sourceFile": "Iraq .pdf",
+          "fileType": "PDF (private archive)",
+          "contentVerified": true,
+          "matchConfidence": "alternate-edition-review-required",
+          "pageCount": 60,
+          "sizeBytes": 30779080,
+          "sha256": "207cc103a3c990259f37049fa8bb58f3d6ba1cfcfb5ec7ab51ca893d61717b1e",
+          "localPreviewGenerated": true
         }
       ],
       "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "sourceSearchNote": null,
+      "revisionCandidateCount": 2
     },
     {
       "id": "india-kenya-strengthening-ties-2026",
@@ -1247,7 +1396,7 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "14.8 MB",
-        "coverImage": "/images/knowledge-papers/india-kenya.jpg"
+        "coverImage": null
       },
       "status": "source-pdf-found-match-needs-review",
       "confidentlyMatchedLocalSource": false,
@@ -1277,10 +1426,31 @@
           "sizeBytes": 15528910,
           "sha256": "6c21aaba9fd41b8a3a9fa2e8e58f195808a6852ebed0148bb3b2db8f75eeca83",
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        },
+        {
+          "sourceFile": "kenya and india_.pdf",
+          "fileType": "PDF (private archive)",
+          "contentVerified": true,
+          "matchConfidence": "alternate-edition-review-required",
+          "pageCount": 64,
+          "sizeBytes": 15528910,
+          "sha256": "6c21aaba9fd41b8a3a9fa2e8e58f195808a6852ebed0148bb3b2db8f75eeca83",
+          "localPreviewGenerated": true
+        },
+        {
+          "sourceFile": "kenya.pdf",
+          "fileType": "PDF (private archive)",
+          "contentVerified": true,
+          "matchConfidence": "alternate-edition-review-required",
+          "pageCount": 64,
+          "sizeBytes": 62727737,
+          "sha256": "32529cf3a07fb47e658a47c79fbca0fe76d877224404e1f70206a2f7c4887476",
+          "localPreviewGenerated": true
         }
       ],
       "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "sourceSearchNote": null,
+      "revisionCandidateCount": 2
     },
     {
       "id": "india-namibia-collaboration-2026",
@@ -1293,10 +1463,10 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "19.9 MB",
-        "coverImage": "/images/knowledge-papers/india-namibia.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
       "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
@@ -1325,8 +1495,19 @@
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "india-namibia-collaboration-2026",
+        "catalogueTitle": "India & Namibia: Unlocking Potential Through Collaboration",
+        "sourceFile": "Namibia.pdf",
+        "sizeBytes": 20833112,
+        "sha256": "4b65ad19caaf73676f8bca0997066ee20133703622cb3920371e75e444316ee6",
+        "pageCount": 72,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 72,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-nicaragua-shared-future-2026",
@@ -1339,10 +1520,10 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "11.2 MB",
-        "coverImage": "/images/knowledge-papers/india-nicaragua.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
       "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
@@ -1371,8 +1552,19 @@
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "india-nicaragua-shared-future-2026",
+        "catalogueTitle": "India & Nicaragua: Building Bridges, Shaping a Shared Future",
+        "sourceFile": "NICARAGUA.pdf",
+        "sizeBytes": 11763522,
+        "sha256": "2ede20b71a844b7387d40196a14cb5e3784864ed5012f487072b00ef51469caa",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-russia-bilateral-growth-2026",
@@ -1385,10 +1577,10 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "13.1 MB",
-        "coverImage": "/images/knowledge-papers/india-russia.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
       "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
@@ -1417,8 +1609,19 @@
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "india-russia-bilateral-growth-2026",
+        "catalogueTitle": "India & Russia: Driving Bilateral Growth Through Commerce and Innovation",
+        "sourceFile": "russia.pdf",
+        "sizeBytes": 13748563,
+        "sha256": "80cc5599e1e5f8ccf044b5b99e201e5fa67c99968f7a2fd4e30cf3b47f3d5a6d",
+        "pageCount": 60,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 60,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-senegal-growth-opportunities-2026",
@@ -1431,10 +1634,10 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "9.8 MB",
-        "coverImage": "/images/knowledge-papers/india-senegal.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
       "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
@@ -1463,8 +1666,19 @@
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "india-senegal-growth-opportunities-2026",
+        "catalogueTitle": "India & Senegal: Partnership, Growth and Prosperity",
+        "sourceFile": "senegal nd india.pdf",
+        "sizeBytes": 10327685,
+        "sha256": "fddd8634cd439e63aa3df78b088cd43d9c009ef180aaa8bdc33d730924b5737b",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-singapore-shaping-tomorrow-2026",
@@ -1477,10 +1691,10 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "13.5 MB",
-        "coverImage": "/images/knowledge-papers/india-singapore.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
       "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
@@ -1509,8 +1723,19 @@
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "india-singapore-shaping-tomorrow-2026",
+        "catalogueTitle": "India & Singapore: Building Bridges, Shaping Tomorrow",
+        "sourceFile": "SINGAPORE.pdf",
+        "sizeBytes": 14150398,
+        "sha256": "7cd27623ce72bee72c19947855011ffaa1a7454de2009b1aa5049eb753d5cf03",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "india-suriname-shared-future-2026",
@@ -1523,10 +1748,10 @@
         "pdfUrl": null,
         "storagePath": null,
         "fileSize": "10.5 MB",
-        "coverImage": "/images/knowledge-papers/india-suriname.jpg"
+        "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
       "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
@@ -1555,8 +1780,754 @@
           "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "india-suriname-shared-future-2026",
+        "catalogueTitle": "India & Suriname: Connecting Heritage, Expanding Opportunity",
+        "sourceFile": "SURINAME.pdf",
+        "sizeBytes": 10948200,
+        "sha256": "67717f53d3c4c254590d2760abd4f647e4f96fba9b675783319a4b90e89511aa",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-mozambique-shaping-futures-2026",
+      "title": "India–Mozambique: Building Bridges, Shaping Futures",
+      "collection": "International & Sectoral",
+      "country": "Mozambique",
+      "countryCode": "MZ",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [],
+      "verifiedLocalSource": {
+        "catalogueId": "india-mozambique-shaping-futures-2026",
+        "catalogueTitle": "India–Mozambique: Building Bridges, Shaping Futures",
+        "sourceFile": "Mozambique.pdf",
+        "sizeBytes": 10624340,
+        "sha256": "74105e1d521221de6fc800e12ce1c905cf5b4bfe54d845901fe531571120c593",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-maldives-strengthening-ties-2026",
+      "title": "India–Maldives: Strengthening Ties, Unlocking Potential",
+      "collection": "International & Sectoral",
+      "country": "Maldives",
+      "countryCode": "MV",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Maldives KP.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-maldives-strengthening-ties-2026",
+        "catalogueTitle": "India–Maldives: Strengthening Ties, Unlocking Potential",
+        "sourceFile": "Maldives KP.pdf",
+        "sizeBytes": 13601765,
+        "sha256": "a914adab2d34fca795eb6129f5df95a00e98baf7e5e3f5058184be36d9cbb3e8",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-cabo-verde-shared-growth-2026",
+      "title": "India & Cabo Verde: Strengthening Partnership, Shaping Shared Growth",
+      "collection": "International & Sectoral",
+      "country": "Cabo Verde",
+      "countryCode": "CV",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Cabo Verde",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-cabo-verde-shared-growth-2026",
+        "catalogueTitle": "India & Cabo Verde: Strengthening Partnership, Shaping Shared Growth",
+        "sourceFile": "Cape verde.pdf",
+        "sizeBytes": 11079297,
+        "sha256": "d920cd47aded4494617c8bd9d0cc074d5cc1b940c4e3734fd5473d72082c49c9",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-cuba-bridging-prosperity-2026",
+      "title": "India & Cuba: Bridging Nations, Building Prosperity",
+      "collection": "International & Sectoral",
+      "country": "Cuba",
+      "countryCode": "CU",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Cuba Knowledge paper.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-cuba-bridging-prosperity-2026",
+        "catalogueTitle": "India & Cuba: Bridging Nations, Building Prosperity",
+        "sourceFile": "Cuba Knowledge paper.pdf",
+        "sizeBytes": 10182659,
+        "sha256": "e492d1cc1458f4160cf0f8a99766f39d2658bf190f70d43b156870d2c5a6178b",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-ghana-shared-prosperity-2026",
+      "title": "India & Ghana: Building Nations, Creating Shared Prosperity",
+      "collection": "International & Sectoral",
+      "country": "Ghana",
+      "countryCode": "GH",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Ghana Knowledge paper.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-ghana-shared-prosperity-2026",
+        "catalogueTitle": "India & Ghana: Building Nations, Creating Shared Prosperity",
+        "sourceFile": "Ghana Knowledge paper.pdf",
+        "sizeBytes": 9576253,
+        "sha256": "e8a65a3b16cd0e871346d16395530a6bf51d105b8fa91644f242c552b390dd3b",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-south-africa-shared-prosperity-2026",
+      "title": "India & South Africa: Building Nations, Creating Shared Prosperity",
+      "collection": "International & Sectoral",
+      "country": "South Africa",
+      "countryCode": "ZA",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [],
+      "verifiedLocalSource": {
+        "catalogueId": "india-south-africa-shared-prosperity-2026",
+        "catalogueTitle": "India & South Africa: Building Nations, Creating Shared Prosperity",
+        "sourceFile": "SOUTH AFRICA.pdf",
+        "sizeBytes": 11936619,
+        "sha256": "644fbfe6075b949b28b271475c480fae2d3a0ccf3e5850bee794e0a5deb7c90a",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-slovakia-shaping-futures-2026",
+      "title": "India–Slovakia: Building Bridges, Shaping Futures",
+      "collection": "International & Sectoral",
+      "country": "Slovakia",
+      "countryCode": "SK",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [],
+      "verifiedLocalSource": {
+        "catalogueId": "india-slovakia-shaping-futures-2026",
+        "catalogueTitle": "India–Slovakia: Building Bridges, Shaping Futures",
+        "sourceFile": "SLOVAK REPUBLIC.pdf",
+        "sizeBytes": 11211059,
+        "sha256": "90754f083056485bb5668703adc37ecc78594b58dcf75ddd302e342e87fd1eaa",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-lebanon-shaping-futures-2026",
+      "title": "India–Lebanon: Building Bridges, Shaping Futures",
+      "collection": "International & Sectoral",
+      "country": "Lebanon",
+      "countryCode": "LB",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [],
+      "verifiedLocalSource": {
+        "catalogueId": "india-lebanon-shaping-futures-2026",
+        "catalogueTitle": "India–Lebanon: Building Bridges, Shaping Futures",
+        "sourceFile": "LEBANON.pdf",
+        "sizeBytes": 11890646,
+        "sha256": "9f32138441f5953a44ea746a55c09f278a2659f4b4f79e6adb58284c0ed2426f",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-uruguay-shared-growth-2026",
+      "title": "India & Uruguay: Strengthening Partnership, Shaping Shared Growth",
+      "collection": "International & Sectoral",
+      "country": "Uruguay",
+      "countryCode": "UY",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Uruguay",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-uruguay-shared-growth-2026",
+        "catalogueTitle": "India & Uruguay: Strengthening Partnership, Shaping Shared Growth",
+        "sourceFile": "URUGUAY.pdf",
+        "sizeBytes": 13853214,
+        "sha256": "873d8eb3dc328271dcfac1f548db3b90c694727ef854bc6215a1b1d8eb06244d",
+        "pageCount": 36,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 36,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-mauritius-shaping-futures-2026",
+      "title": "India–Mauritius: Building Bridges, Shaping Futures",
+      "collection": "International & Sectoral",
+      "country": "Mauritius",
+      "countryCode": "MU",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [],
+      "verifiedLocalSource": {
+        "catalogueId": "india-mauritius-shaping-futures-2026",
+        "catalogueTitle": "India–Mauritius: Building Bridges, Shaping Futures",
+        "sourceFile": "mauritius knowledge paper.pdf",
+        "sizeBytes": 11674313,
+        "sha256": "2d3ef74aabefafe526eed1f96b08111eb3b3719bed93c7fca40dfa3e0b6860c6",
+        "pageCount": 36,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 36,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-palestine-shared-growth-2026",
+      "title": "India & Palestine: Strengthening Partnership, Shaping Shared Growth",
+      "collection": "International & Sectoral",
+      "country": "Palestine",
+      "countryCode": "PS",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Palestine",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-palestine-shared-growth-2026",
+        "catalogueTitle": "India & Palestine: Strengthening Partnership, Shaping Shared Growth",
+        "sourceFile": "Palestine.pdf",
+        "sizeBytes": 14499311,
+        "sha256": "c21332f346fc6d9899250a0b1af926490ad345105ed9c5de8917c4b167f2d05f",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-niger-shared-growth-2026",
+      "title": "India & Niger: Strengthening Partnership, Shaping Shared Growth",
+      "collection": "International & Sectoral",
+      "country": "Niger",
+      "countryCode": "NE",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [],
+      "verifiedLocalSource": {
+        "catalogueId": "india-niger-shared-growth-2026",
+        "catalogueTitle": "India & Niger: Strengthening Partnership, Shaping Shared Growth",
+        "sourceFile": "NIGER.pdf",
+        "sizeBytes": 9553861,
+        "sha256": "b36afa04a42a0fa6197445a445445738cbe87e0b7a53f71106002f495c0434f7",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-djibouti-shared-growth-2026",
+      "title": "India & Djibouti: Strengthening Partnership, Shaping Shared Growth",
+      "collection": "International & Sectoral",
+      "country": "Djibouti",
+      "countryCode": "DJ",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [],
+      "verifiedLocalSource": {
+        "catalogueId": "india-djibouti-shared-growth-2026",
+        "catalogueTitle": "India & Djibouti: Strengthening Partnership, Shaping Shared Growth",
+        "sourceFile": "Djibouti.pdf",
+        "sizeBytes": 13019773,
+        "sha256": "d1fe8d12d7a0d96f1c451898ce00433f15fb2232fbcb589b1903fe8b8c6e5663",
+        "pageCount": 36,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 36,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-uzbekistan-shared-growth-2026",
+      "title": "India & Uzbekistan: Strengthening Partnership, Shaping Shared Growth",
+      "collection": "International & Sectoral",
+      "country": "Uzbekistan",
+      "countryCode": "UZ",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Uzbekistan",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-uzbekistan-shared-growth-2026",
+        "catalogueTitle": "India & Uzbekistan: Strengthening Partnership, Shaping Shared Growth",
+        "sourceFile": "Uzbekistan.pdf",
+        "sizeBytes": 14288570,
+        "sha256": "32a69a8b0e629287c4874793e1fb44fe670f4442ad34b20737461f71434e1c8d",
+        "pageCount": 36,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 36,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-romania-shared-prosperity-2026",
+      "title": "India & Romania: Bridging Nations, Building Prosperity",
+      "collection": "International & Sectoral",
+      "country": "Romania",
+      "countryCode": "RO",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Romania kp.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-romania-shared-prosperity-2026",
+        "catalogueTitle": "India & Romania: Bridging Nations, Building Prosperity",
+        "sourceFile": "Romania kp.pdf",
+        "sizeBytes": 16028488,
+        "sha256": "f83cc2c240fe3ff4122f6c6c57b6e45dc2af708034724d8fb9faa4194fda5415",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-brunei-shared-growth-2026",
+      "title": "India & Brunei: Strengthening Partnership, Shaping Shared Growth",
+      "collection": "International & Sectoral",
+      "country": "Brunei",
+      "countryCode": "BN",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [],
+      "verifiedLocalSource": {
+        "catalogueId": "india-brunei-shared-growth-2026",
+        "catalogueTitle": "India & Brunei: Strengthening Partnership, Shaping Shared Growth",
+        "sourceFile": "BRUNEI.pdf",
+        "sizeBytes": 13371179,
+        "sha256": "31bf2b6c9495af2cbdf6388c19aa0887559360094fa0d150228b0ad9f6270e3e",
+        "pageCount": 36,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 36,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-austria-shared-growth-2026",
+      "title": "India & Austria: Strengthening Partnership, Shaping Shared Growth",
+      "collection": "International & Sectoral",
+      "country": "Austria",
+      "countryCode": "AT",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [],
+      "verifiedLocalSource": {
+        "catalogueId": "india-austria-shared-growth-2026",
+        "catalogueTitle": "India & Austria: Strengthening Partnership, Shaping Shared Growth",
+        "sourceFile": "Austria.pdf",
+        "sizeBytes": 16809301,
+        "sha256": "067f5da341a4d7a24c1b89b5ea4a13b1be456f4508d3a7dbdc508997157d6cf7",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-angola-shared-growth-2026",
+      "title": "India & Angola: Strengthening Partnership, Shaping Shared Growth",
+      "collection": "International & Sectoral",
+      "country": "Angola",
+      "countryCode": "AO",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Angola",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-angola-shared-growth-2026",
+        "catalogueTitle": "India & Angola: Strengthening Partnership, Shaping Shared Growth",
+        "sourceFile": "ANGOLA.pdf",
+        "sizeBytes": 21921986,
+        "sha256": "8692fc12e30301be13675a22e86a5e741fa284c8a889c649c7dd778fe94daa9c",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
+    },
+    {
+      "id": "india-fiji-shaping-futures-2026",
+      "title": "India–Fiji: Building Bridges, Shaping Futures",
+      "collection": "International & Sectoral",
+      "country": "Fiji",
+      "countryCode": "FJ",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [],
+      "verifiedLocalSource": {
+        "catalogueId": "india-fiji-shaping-futures-2026",
+        "catalogueTitle": "India–Fiji: Building Bridges, Shaping Futures",
+        "sourceFile": "FIJI.pdf",
+        "sizeBytes": 19841041,
+        "sha256": "3cad851bd93a3c50f81e76d6e7e5c4cb0a37f83fdbf24d8f532596726ab2ed71",
+        "pageCount": 36,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 36,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-andaman-and-nicobar-islands-knowledge-paper-2026",
@@ -1571,9 +2542,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -1589,8 +2560,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-andaman-and-nicobar-islands-knowledge-paper-2026",
+        "catalogueTitle": "Andaman and Nicobar Islands: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Andaman and Nicobar Islands.pdf",
+        "sizeBytes": 7545537,
+        "sha256": "941ee25078b1580db7fce576ef8d1a947a3d289d6a12f64f66c35d026453df6c",
+        "pageCount": 84,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 84,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-andhra-pradesh-knowledge-paper-2026",
@@ -1605,9 +2587,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -1623,8 +2605,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-andhra-pradesh-knowledge-paper-2026",
+        "catalogueTitle": "Andhra Pradesh: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Andhra Pradesh.pdf",
+        "sizeBytes": 7733719,
+        "sha256": "e818cc0fce2d590a102c7715b341836a0065cc5f16221981d4e940c098363c47",
+        "pageCount": 88,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 88,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-arunachal-pradesh-knowledge-paper-2026",
@@ -1639,9 +2632,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -1657,8 +2650,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-arunachal-pradesh-knowledge-paper-2026",
+        "catalogueTitle": "Arunachal Pradesh: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Arunachal pradesh.pdf",
+        "sizeBytes": 5670715,
+        "sha256": "85257e6d50066349ca2f5d46d83e12eb99a016109a2dd1fc2fa62ccd5d2edb4a",
+        "pageCount": 80,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 80,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-assam-knowledge-paper-2026",
@@ -1673,9 +2677,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -1691,8 +2695,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-assam-knowledge-paper-2026",
+        "catalogueTitle": "Assam: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Assam.pdf",
+        "sizeBytes": 6404648,
+        "sha256": "8b5fdd477a9f350c4fbe876b3cdad3fac96179a9353d6b422291979beb01d63d",
+        "pageCount": 56,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 56,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-bihar-knowledge-paper-2026",
@@ -1707,9 +2722,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -1725,8 +2740,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-bihar-knowledge-paper-2026",
+        "catalogueTitle": "Bihar: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Bihar.pdf",
+        "sizeBytes": 7475840,
+        "sha256": "5b37dac3ac54a90b02a0e90fabce9a2064d58f048be0705479d23c15e4f0527d",
+        "pageCount": 104,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 104,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-chandigarh-knowledge-paper-2026",
@@ -1741,9 +2767,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -1759,8 +2785,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-chandigarh-knowledge-paper-2026",
+        "catalogueTitle": "Chandigarh: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Chandigarh.pdf",
+        "sizeBytes": 10058329,
+        "sha256": "65382dd3314944bed408e71ef449c632ea8b523f22c769a3adf383b5a51ff6bc",
+        "pageCount": 67,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 67,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-chhattisgarh-knowledge-paper-2026",
@@ -1775,9 +2812,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -1793,8 +2830,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-chhattisgarh-knowledge-paper-2026",
+        "catalogueTitle": "Chhattisgarh: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Chhattisgarh.pdf",
+        "sizeBytes": 7752024,
+        "sha256": "26c0d013a3b21bb439eeb37705c427accacb97830e8265c15e2e9b90c4d1b799",
+        "pageCount": 88,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 88,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-dadra-and-nagar-haveli-and-daman-and-diu-knowledge-paper-2026",
@@ -1809,9 +2857,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -1827,8 +2875,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-dadra-and-nagar-haveli-and-daman-and-diu-knowledge-paper-2026",
+        "catalogueTitle": "Dadra and Nagar Haveli and Daman and Diu: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Daman and diu.pdf",
+        "sizeBytes": 6716702,
+        "sha256": "b631486b519b60d0b80548d6b135b6aad29ad509e9a660b348e00864b24c8cc4",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-delhi-knowledge-paper-2026",
@@ -1843,9 +2902,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -1861,8 +2920,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-delhi-knowledge-paper-2026",
+        "catalogueTitle": "Delhi: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Delhi.pdf",
+        "sizeBytes": 8922916,
+        "sha256": "7a4e55258a2f08a5f4f97c01ad5963ced4353c0d0c3b7342e3f010793c35a840",
+        "pageCount": 56,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 56,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-goa-knowledge-paper-2026",
@@ -1877,9 +2947,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -1895,8 +2965,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-goa-knowledge-paper-2026",
+        "catalogueTitle": "Goa: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Goa.pdf",
+        "sizeBytes": 8810657,
+        "sha256": "02b873fedc5aae40044a0fe60e45aaea18aaaf229fc4b19241d4b12bc1ae00f4",
+        "pageCount": 120,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 120,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-gujarat-knowledge-paper-2026",
@@ -1911,9 +2992,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -1929,8 +3010,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-gujarat-knowledge-paper-2026",
+        "catalogueTitle": "Gujarat: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Gujarat.pdf",
+        "sizeBytes": 7277022,
+        "sha256": "f7a712e611e2556d4a3ed75f9ade45ba484bbd27d161ce1e1cb13ae0abc55ff8",
+        "pageCount": 68,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 68,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-haryana-knowledge-paper-2026",
@@ -1945,9 +3037,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -1963,8 +3055,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-haryana-knowledge-paper-2026",
+        "catalogueTitle": "Haryana: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Haryana.pdf",
+        "sizeBytes": 7764131,
+        "sha256": "8fa5526cb33a0fa91e04ab82fb2497f075591903afe4252aa7038f927e51418b",
+        "pageCount": 112,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 112,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-himachal-pradesh-knowledge-paper-2026",
@@ -1979,9 +3082,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -1997,8 +3100,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-himachal-pradesh-knowledge-paper-2026",
+        "catalogueTitle": "Himachal Pradesh: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Himachal Pradesh.pdf",
+        "sizeBytes": 7853152,
+        "sha256": "d811ddcf42b9ab13446673e0ae64eb66c0e579392e0bd9ea8934a959e15b666a",
+        "pageCount": 64,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 64,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-jammu-and-kashmir-knowledge-paper-2026",
@@ -2013,9 +3127,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2031,8 +3145,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-jammu-and-kashmir-knowledge-paper-2026",
+        "catalogueTitle": "Jammu and Kashmir: State Knowledge Paper",
+        "sourceFile": "Knowledege paper on J&K.pdf",
+        "sizeBytes": 7189040,
+        "sha256": "9d227710aa567ffd463fb217deff13cfb5c026af6f0971f21f5e2a46f17bda6d",
+        "pageCount": 92,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 92,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-jharkhand-knowledge-paper-2026",
@@ -2047,9 +3172,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2065,8 +3190,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-jharkhand-knowledge-paper-2026",
+        "catalogueTitle": "Jharkhand: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Jharkhand.pdf",
+        "sizeBytes": 7760927,
+        "sha256": "670472ec8741ee57b2c766f232600b235c881b6f2b25457342da71e120f3ea57",
+        "pageCount": 60,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 60,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-karnataka-knowledge-paper-2026",
@@ -2081,9 +3217,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2099,8 +3235,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-karnataka-knowledge-paper-2026",
+        "catalogueTitle": "Karnataka: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Karnataka.pdf",
+        "sizeBytes": 8723777,
+        "sha256": "081c5c6995d4c7a6352ef3830333547c96279432ad18ee039f67bad573c49a45",
+        "pageCount": 68,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 68,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-kerala-knowledge-paper-2026",
@@ -2115,9 +3262,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2133,8 +3280,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-kerala-knowledge-paper-2026",
+        "catalogueTitle": "Kerala: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Kerala.pdf",
+        "sizeBytes": 6980875,
+        "sha256": "2e0809639c308585f69655e9adbfd745583302b0163ae501fe97c876367154b9",
+        "pageCount": 76,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 76,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-ladakh-knowledge-paper-2026",
@@ -2149,9 +3307,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2167,8 +3325,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-ladakh-knowledge-paper-2026",
+        "catalogueTitle": "Ladakh: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Ladakh.pdf",
+        "sizeBytes": 10328625,
+        "sha256": "5b8060653f42e3d325006a61b24c7e08972c665ec1e2b06596f21bb91a09cc99",
+        "pageCount": 72,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 72,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-lakshadweep-knowledge-paper-2026",
@@ -2183,9 +3352,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2201,8 +3370,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-lakshadweep-knowledge-paper-2026",
+        "catalogueTitle": "Lakshadweep: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Lakshadweep.pdf",
+        "sizeBytes": 10363669,
+        "sha256": "13c740e20a71ea0ee4d235535a60519b4bf0cd7126a7a6f8b8ad33e4301408af",
+        "pageCount": 52,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-madhya-pradesh-knowledge-paper-2026",
@@ -2217,9 +3397,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2235,8 +3415,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-madhya-pradesh-knowledge-paper-2026",
+        "catalogueTitle": "Madhya Pradesh: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Madhya Pradesh.pdf",
+        "sizeBytes": 9044885,
+        "sha256": "8071c0caa2a6faf42192c889d507519ed32d39bca811a5ddc781f715ab663d8f",
+        "pageCount": 72,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 72,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-maharashtra-knowledge-paper-2026",
@@ -2251,9 +3442,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2269,8 +3460,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-maharashtra-knowledge-paper-2026",
+        "catalogueTitle": "Maharashtra: State Knowledge Paper",
+        "sourceFile": "Knowledge Paper on Maharashtra.pdf",
+        "sizeBytes": 5669126,
+        "sha256": "a108bf1d4e8b86b8785309a6026019c00bcadaa738e93bd647d936e672f25698",
+        "pageCount": 88,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 88,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-manipur-knowledge-paper-2026",
@@ -2285,9 +3487,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2303,8 +3505,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-manipur-knowledge-paper-2026",
+        "catalogueTitle": "Manipur: State Knowledge Paper",
+        "sourceFile": "Knowledge Paper on Manipur.pdf",
+        "sizeBytes": 4342626,
+        "sha256": "fba1c47d8e322b23e696788e1e791f88a23918293983477d6489a8107a15cb66",
+        "pageCount": 72,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 72,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-meghalaya-knowledge-paper-2026",
@@ -2319,9 +3532,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2337,8 +3550,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-meghalaya-knowledge-paper-2026",
+        "catalogueTitle": "Meghalaya: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Meghalaya.pdf",
+        "sizeBytes": 6992979,
+        "sha256": "2c5c82ab1153a70956f6043ab4950cd12356515f66c81d054faab4ed74abedef",
+        "pageCount": 80,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 80,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-mizoram-knowledge-paper-2026",
@@ -2353,9 +3577,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2371,8 +3595,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-mizoram-knowledge-paper-2026",
+        "catalogueTitle": "Mizoram: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Mizoram.pdf",
+        "sizeBytes": 6529603,
+        "sha256": "bc33aafc4f3dde37854b103fd3703b902a97e671647ee8b7e464653285b4b0a8",
+        "pageCount": 76,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 76,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-nagaland-knowledge-paper-2026",
@@ -2387,9 +3622,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2405,8 +3640,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-nagaland-knowledge-paper-2026",
+        "catalogueTitle": "Nagaland: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Nagaland.pdf",
+        "sizeBytes": 7349723,
+        "sha256": "2d2e07305f711a33b0413287c83a40ddf740274bb13a94aedd84b81c39057cce",
+        "pageCount": 56,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 56,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-odisha-knowledge-paper-2026",
@@ -2421,9 +3667,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2439,8 +3685,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-odisha-knowledge-paper-2026",
+        "catalogueTitle": "Odisha: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Odisha.pdf",
+        "sizeBytes": 12503189,
+        "sha256": "c3ed026838912f2353683962f89d226ec2fa11bd550e59b310fcfdde04782021",
+        "pageCount": 56,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 56,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-puducherry-knowledge-paper-2026",
@@ -2455,9 +3712,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2473,8 +3730,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-puducherry-knowledge-paper-2026",
+        "catalogueTitle": "Puducherry: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Puducherry.pdf",
+        "sizeBytes": 7709165,
+        "sha256": "a0f8522e7598cadc03e7b89394f7a7559381b80af7600375469182e961587870",
+        "pageCount": 100,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 100,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-punjab-knowledge-paper-2026",
@@ -2489,9 +3757,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2507,8 +3775,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-punjab-knowledge-paper-2026",
+        "catalogueTitle": "Punjab: State Knowledge Paper",
+        "sourceFile": "Knowledge Paper on Punjab.pdf",
+        "sizeBytes": 18671706,
+        "sha256": "17773e285500b16b014b7a3999e5587b3bb4f6441021692b5d8ffbc67fb70d3d",
+        "pageCount": 96,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 96,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-rajasthan-knowledge-paper-2026",
@@ -2523,9 +3802,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2541,8 +3820,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-rajasthan-knowledge-paper-2026",
+        "catalogueTitle": "Rajasthan: State Knowledge Paper",
+        "sourceFile": "Knowledge Paper on Rajasthan.pdf",
+        "sizeBytes": 7016568,
+        "sha256": "22af959b6586f68a5f3ee051dca88bd9a45482c39ff87b3af6f00802ed1375c9",
+        "pageCount": 68,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 68,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-sikkim-knowledge-paper-2026",
@@ -2557,9 +3847,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2575,8 +3865,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-sikkim-knowledge-paper-2026",
+        "catalogueTitle": "Sikkim: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Sikkim.pdf",
+        "sizeBytes": 6533503,
+        "sha256": "75ab1217a61c7a0f3a56a7f18715b9c788e1cb73a6268af862d46b55f32258a9",
+        "pageCount": 64,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 64,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-tamil-nadu-knowledge-paper-2026",
@@ -2591,9 +3892,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2609,8 +3910,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-tamil-nadu-knowledge-paper-2026",
+        "catalogueTitle": "Tamil Nadu: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on Tamil Nadu.pdf",
+        "sizeBytes": 6808300,
+        "sha256": "f966637b2a5766d683ece1aa117230f5aa5bd136eb2e17f70407bf17f37ecdee",
+        "pageCount": 88,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 88,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-telangana-knowledge-paper-2026",
@@ -2625,9 +3937,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2643,8 +3955,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-telangana-knowledge-paper-2026",
+        "catalogueTitle": "Telangana: State Knowledge Paper",
+        "sourceFile": "Knowledge Paper on Telangana.pdf",
+        "sizeBytes": 7546383,
+        "sha256": "077e60d5626a4ea9947840018b2f3571a1a78df60f0ced58aaabf82de655de39",
+        "pageCount": 92,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 92,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-tripura-knowledge-paper-2026",
@@ -2659,9 +3982,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2677,8 +4000,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-tripura-knowledge-paper-2026",
+        "catalogueTitle": "Tripura: State Knowledge Paper",
+        "sourceFile": "Knowledge Paper on Tripura.pdf",
+        "sizeBytes": 8008631,
+        "sha256": "2c6c256f070100462d43587c73d93ec97f32c5c14c204f7d3aaac8190d0e7671",
+        "pageCount": 104,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 104,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-uttar-pradesh-knowledge-paper-2026",
@@ -2693,9 +4027,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2711,8 +4045,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-uttar-pradesh-knowledge-paper-2026",
+        "catalogueTitle": "Uttar Pradesh: State Knowledge Paper",
+        "sourceFile": "Knowledge Paper on Uttar Pradesh.pdf",
+        "sizeBytes": 3422982,
+        "sha256": "ee02cc5d2b3b0f414c73ad15ce5258a64759d7915fc6c36d7d5d2c4a10aacf62",
+        "pageCount": 60,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 60,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-uttarakhand-knowledge-paper-2026",
@@ -2727,9 +4072,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2745,8 +4090,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-uttarakhand-knowledge-paper-2026",
+        "catalogueTitle": "Uttarakhand: State Knowledge Paper",
+        "sourceFile": "Knowledge Paper on Uttarakhand.pdf",
+        "sizeBytes": 6660884,
+        "sha256": "ff8055213dacecbac9abe13fcf84581a13d3764e1a5f5d013fff3fa031bcba98",
+        "pageCount": 80,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 80,
+      "localPreviewGenerated": true
     },
     {
       "id": "state-west-bengal-knowledge-paper-2026",
@@ -2761,9 +4117,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2779,8 +4135,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "state-west-bengal-knowledge-paper-2026",
+        "catalogueTitle": "West Bengal: State Knowledge Paper",
+        "sourceFile": "Knowledge paper on West Bengal.pdf",
+        "sizeBytes": 7955185,
+        "sha256": "ed50b0ccfb170b5b359901c8f5414d5f2985b66992408757d7131a2590df3ad2",
+        "pageCount": 124,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 124,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-agriculture-and-farmers-welfare-knowledge-paper-2026",
@@ -2795,9 +4162,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2813,8 +4180,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-agriculture-and-farmers-welfare-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Agriculture and Farmers Welfare: Knowledge Paper",
+        "sourceFile": "Copy of ministry of agriculture.pdf",
+        "sizeBytes": 4335500,
+        "sha256": "21fbe052c7fef88c50c68d2a017c11508459984ba3ab4fb0955e51980e1f62eb",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-ayush-knowledge-paper-2026",
@@ -2829,9 +4207,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2847,8 +4225,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-ayush-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of AYUSH: Knowledge Paper",
+        "sourceFile": "Copy of Ministry of AYUSH.pdf",
+        "sizeBytes": 5760827,
+        "sha256": "e479c5a633ce65abfe7d738a6a181b145120400e33a7d8e7acab54074e299623",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-chemicals-and-fertilizers-knowledge-paper-2026",
@@ -2863,9 +4252,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2881,8 +4270,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-chemicals-and-fertilizers-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Chemicals and Fertilizers: Knowledge Paper",
+        "sourceFile": "Copy of ministry of chemical and fertilisers.pdf",
+        "sizeBytes": 4916956,
+        "sha256": "217aa0b48aeb0cb88c3bf7e3981cb14ba85e155d4cc4aaa37f5000bd8cd8d1e3",
+        "pageCount": 32,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 32,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-civil-aviation-knowledge-paper-2026",
@@ -2897,9 +4297,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2915,8 +4315,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-civil-aviation-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Civil Aviation: Knowledge Paper",
+        "sourceFile": "Copy of ministry of civil aviation.pdf",
+        "sizeBytes": 5743432,
+        "sha256": "4761776c6336c16fc1bab6dce98fa5cc1a471a5c033f354c034233de471f0f2c",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-coal-knowledge-paper-2026",
@@ -2931,9 +4342,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2949,8 +4360,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-coal-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Coal: Knowledge Paper",
+        "sourceFile": "Copy of Ministry of Coal.pdf",
+        "sizeBytes": 5899207,
+        "sha256": "9e32f9adb8f5ab13f06b9e1efa89c50c767ff7a23da18a8bef56872135962374",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-commerce-and-industry-knowledge-paper-2026",
@@ -2965,9 +4387,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -2983,8 +4405,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-commerce-and-industry-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Commerce and Industry: Knowledge Paper",
+        "sourceFile": "Copy of ministry of commerce and industries.pdf",
+        "sizeBytes": 6511189,
+        "sha256": "efbbed8942ec41c60cc576e750bc0d4752773522a6b3dd91690b5f66e4280e7c",
+        "pageCount": 52,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-communications-knowledge-paper-2026",
@@ -2999,9 +4432,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3017,8 +4450,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-communications-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Communications: Knowledge Paper",
+        "sourceFile": "Copy of ministry of communication.pdf",
+        "sizeBytes": 7121487,
+        "sha256": "489556eb4a268b504f9e92718d159b29d6eec12944aa7b1de76bb7071e9655b1",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-consumer-affairs-food-and-public-distribution-knowledge-paper-2026",
@@ -3033,9 +4477,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3051,8 +4495,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-consumer-affairs-food-and-public-distribution-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Consumer Affairs, Food and Public Distribution: Knowledge Paper",
+        "sourceFile": "Copy of ministry of consumer affairs.pdf",
+        "sizeBytes": 6183189,
+        "sha256": "1a012fed7ac96882fcb10620c93b12c967218dcd193eeace28078c77e10aeed3",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-cooperation-knowledge-paper-2026",
@@ -3067,9 +4522,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3085,8 +4540,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-cooperation-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Cooperation: Knowledge Paper",
+        "sourceFile": "Copy of ministry of cooperation.pdf",
+        "sizeBytes": 6294018,
+        "sha256": "2a24e559b17d408ab9b1d711484a57e56858f0538fc58353b06506759a5e5629",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-corporate-affairs-knowledge-paper-2026",
@@ -3101,9 +4567,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3119,8 +4585,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-corporate-affairs-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Corporate Affairs: Knowledge Paper",
+        "sourceFile": "Copy of ministry of corporate affair.pdf",
+        "sizeBytes": 6200709,
+        "sha256": "3c8f8f82e27397b7fdecc10af11bd705392cd106ea57382484772f32c37a0ecc",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-culture-knowledge-paper-2026",
@@ -3135,9 +4612,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3153,8 +4630,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-culture-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Culture: Knowledge Paper",
+        "sourceFile": "Copy of Ministry of Culture.pdf",
+        "sizeBytes": 5595747,
+        "sha256": "50211e4689d5dd2dc5fd2fa8d5093d326a19f57faf207286c62dd82a51d0874c",
+        "pageCount": 32,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 32,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-defence-knowledge-paper-2026",
@@ -3169,9 +4657,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3187,8 +4675,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-defence-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Defence: Knowledge Paper",
+        "sourceFile": "Copy of ministry of defence.pdf",
+        "sizeBytes": 5268647,
+        "sha256": "3aaca0889eb040c2a9b530b7912705c34dda2c489bb96a6ceb21629aeeb6811e",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-development-of-north-eastern-region-knowledge-paper-2026",
@@ -3203,9 +4702,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3221,8 +4720,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-development-of-north-eastern-region-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Development of North Eastern Region: Knowledge Paper",
+        "sourceFile": "Copy of ministry of development of north eastern.pdf",
+        "sizeBytes": 6393770,
+        "sha256": "2bb5749154b4b6d71fe242554afc052c3c66fed8f417852734ca3450f701d366",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-earth-sciences-knowledge-paper-2026",
@@ -3237,9 +4747,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3255,8 +4765,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-earth-sciences-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Earth Sciences: Knowledge Paper",
+        "sourceFile": "Copy of ministry of earth science.pdf",
+        "sizeBytes": 6163965,
+        "sha256": "7160b6e745e363e1b5779f6ba2908dfeb30fd19183c7b63ff73020b759a710d7",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-education-knowledge-paper-2026",
@@ -3271,9 +4792,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3289,8 +4810,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-education-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Education: Knowledge Paper",
+        "sourceFile": "Copy of ministry of education_.pdf",
+        "sizeBytes": 6181003,
+        "sha256": "2e8e00fa73eb8a84a359a1bf31a8f51b3046b83c0290610667a2747abb69edb5",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-electronics-and-information-technology-knowledge-paper-2026",
@@ -3305,9 +4837,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3323,8 +4855,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-electronics-and-information-technology-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Electronics and Information Technology: Knowledge Paper",
+        "sourceFile": "Copy of ministry of electronics.pdf",
+        "sizeBytes": 6610677,
+        "sha256": "ab3e9a760db696b15dd88553ecb286c2349a3d3d79c6ecfec3e16c3a8af5da5c",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-environment-forest-and-climate-change-knowledge-paper-2026",
@@ -3339,9 +4882,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3357,8 +4900,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-environment-forest-and-climate-change-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Environment, Forest and Climate Change: Knowledge Paper",
+        "sourceFile": "Copy of ministry of environment.pdf",
+        "sizeBytes": 6900271,
+        "sha256": "f643240fc1ed71f52a70e53aedb2d09aac66233986cd1a8c005f7402bbd19244",
+        "pageCount": 52,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-external-affairs-knowledge-paper-2026",
@@ -3373,9 +4927,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3391,8 +4945,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-external-affairs-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of External Affairs: Knowledge Paper",
+        "sourceFile": "Copy of ministry of external affiars.pdf",
+        "sizeBytes": 6302514,
+        "sha256": "709ec515c31a74d8649d95ad7710422aecc32408d615ae4390a6f65a15f57d29",
+        "pageCount": 36,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 36,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-finance-knowledge-paper-2026",
@@ -3407,9 +4972,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3425,8 +4990,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-finance-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Finance: Knowledge Paper",
+        "sourceFile": "Copy of Ministry of Finance.pdf",
+        "sizeBytes": 6105590,
+        "sha256": "b057c0342f16268728aab9be9c13e7f1c67e982c4c6f14d5c6582f1e0723e137",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-fisheries-animal-husbandry-and-dairying-knowledge-paper-2026",
@@ -3441,9 +5017,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3459,8 +5035,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-fisheries-animal-husbandry-and-dairying-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Fisheries, Animal Husbandry and Dairying: Knowledge Paper",
+        "sourceFile": "Copy of ministry of fisheries.pdf",
+        "sizeBytes": 6690963,
+        "sha256": "27fb7e6c08770e0e3fe6c65b0d20161bedcce26781d6fab4808195d564e3ace2",
+        "pageCount": 60,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 60,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-food-processing-industries-knowledge-paper-2026",
@@ -3475,9 +5062,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3493,8 +5080,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-food-processing-industries-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Food Processing Industries: Knowledge Paper",
+        "sourceFile": "Copy of ministry of food processing.pdf",
+        "sizeBytes": 5674117,
+        "sha256": "57dc9359416c293f492b04c497bf6bddfa19bb2fc7aadbc1d36b31c8473cc3d4",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-health-and-family-welfare-knowledge-paper-2026",
@@ -3509,9 +5107,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3527,8 +5125,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-health-and-family-welfare-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Health and Family Welfare: Knowledge Paper",
+        "sourceFile": "Copy of ministry of health.pdf",
+        "sizeBytes": 5581938,
+        "sha256": "80fd3521ffbf56000a8df39c8f0ce6749632704dd25845a35cb57489e656d072",
+        "pageCount": 52,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-heavy-industries-knowledge-paper-2026",
@@ -3543,9 +5152,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3561,8 +5170,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-heavy-industries-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Heavy Industries: Knowledge Paper",
+        "sourceFile": "Copy of ministry of heavyy industries.pdf",
+        "sizeBytes": 5718732,
+        "sha256": "294f392b30996c1c3edaca503788bef2bb4e13cba7dae49986f96119b0108415",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-home-affairs-knowledge-paper-2026",
@@ -3577,9 +5197,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3595,8 +5215,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-home-affairs-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Home Affairs: Knowledge Paper",
+        "sourceFile": "Copy of ministry of home affiars.pdf",
+        "sizeBytes": 6026895,
+        "sha256": "19e725dce3d41dca2f0a48f4abedd1dd2efd7699eaaf029ace62b60993750560",
+        "pageCount": 60,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 60,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-housing-and-urban-affairs-knowledge-paper-2026",
@@ -3611,9 +5242,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3629,8 +5260,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-housing-and-urban-affairs-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Housing and Urban Affairs: Knowledge Paper",
+        "sourceFile": "Copy of ministry of housing affairs.pdf",
+        "sizeBytes": 5935837,
+        "sha256": "5fb4cc79ed9534a8501aff6c9acf1b6b09202162cb946df09711b5b6abfdb7b0",
+        "pageCount": 56,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 56,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-information-and-broadcasting-knowledge-paper-2026",
@@ -3645,9 +5287,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3663,8 +5305,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-information-and-broadcasting-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Information and Broadcasting: Knowledge Paper",
+        "sourceFile": "Copy of ministry of information.pdf",
+        "sizeBytes": 4663935,
+        "sha256": "387f1e5f74fd94c07421e3413443a60cf8cd4d6a451450c6cb90e53be4b43b3a",
+        "pageCount": 52,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-jal-shakti-knowledge-paper-2026",
@@ -3679,9 +5332,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3697,8 +5350,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-jal-shakti-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Jal Shakti: Knowledge Paper",
+        "sourceFile": "Copy of ministry of jal shakti.pdf",
+        "sizeBytes": 5736437,
+        "sha256": "6cbc941f7712eb04c987df112f5a889315c40e6901a98d89f42ae4e5cdfc6813",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-labour-and-employment-knowledge-paper-2026",
@@ -3713,9 +5377,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3731,8 +5395,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-labour-and-employment-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Labour and Employment: Knowledge Paper",
+        "sourceFile": "Copy of ministry of labour and employment.pdf",
+        "sizeBytes": 4865068,
+        "sha256": "b45a3cb54ed85e9d4cf74e4878eb9d11209805511dd7bb70d6105ab9b8d5e00c",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-law-and-justice-knowledge-paper-2026",
@@ -3747,9 +5422,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3765,8 +5440,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-law-and-justice-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Law and Justice: Knowledge Paper",
+        "sourceFile": "Copy of ministry of law and justice.pdf",
+        "sizeBytes": 5064509,
+        "sha256": "2d208810ac16c36947f4819bdd73d08c44e0435f0480757e4273716cc559cdab",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-micro-small-and-medium-enterprises-knowledge-paper-2026",
@@ -3781,9 +5467,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3799,8 +5485,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-micro-small-and-medium-enterprises-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Micro, Small and Medium Enterprises: Knowledge Paper",
+        "sourceFile": "Copy of ministry of msme.pdf",
+        "sizeBytes": 5106821,
+        "sha256": "c23ec0f585b7761aace1147d647ac19a8af5862b5f8ec44b578c25330a586a56",
+        "pageCount": 40,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 40,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-mines-knowledge-paper-2026",
@@ -3815,9 +5512,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3833,8 +5530,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-mines-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Mines: Knowledge Paper",
+        "sourceFile": "Copy of ministry of mines.pdf",
+        "sizeBytes": 5600263,
+        "sha256": "429746461beafce00badae35fc007d008e7d452e67a060976b1694871c5aaec6",
+        "pageCount": 56,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 56,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-minority-affairs-knowledge-paper-2026",
@@ -3849,9 +5557,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3867,8 +5575,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-minority-affairs-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Minority Affairs: Knowledge Paper",
+        "sourceFile": "Copy of ministry of minority affairs.pdf",
+        "sizeBytes": 2083808,
+        "sha256": "56de6728d76835376a842064f91ed2027593eda47bc99bd074d1df34c21425fc",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-new-and-renewable-energy-knowledge-paper-2026",
@@ -3883,9 +5602,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3901,8 +5620,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-new-and-renewable-energy-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of New and Renewable Energy: Knowledge Paper",
+        "sourceFile": "Copy of ministry of new & renewable energy.pdf",
+        "sizeBytes": 5262617,
+        "sha256": "5e45b6e64a7dc17a680d2723308710c04363fde652b49d692d9785ba8eff0417",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-panchayati-raj-knowledge-paper-2026",
@@ -3917,9 +5647,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3935,8 +5665,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-panchayati-raj-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Panchayati Raj: Knowledge Paper",
+        "sourceFile": "Copy of ministry of panchyati raj.pdf",
+        "sizeBytes": 5858438,
+        "sha256": "66239a682cded62adb53ab11210dc1e49224275a6476dea6eaa0851759d8aeaf",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-parliamentary-affairs-knowledge-paper-2026",
@@ -3951,9 +5692,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -3969,8 +5710,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-parliamentary-affairs-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Parliamentary Affairs: Knowledge Paper",
+        "sourceFile": "Copy of ministry of parliamentry affairs.pdf",
+        "sizeBytes": 5742731,
+        "sha256": "6b8ef9c2a645f0fa23c3404acf6efc60f7eab02098c2fb14ef9ed14f0ede808d",
+        "pageCount": 52,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-personnel-public-grievances-and-pensions-knowledge-paper-2026",
@@ -3985,9 +5737,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4003,8 +5755,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-personnel-public-grievances-and-pensions-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Personnel, Public Grievances and Pensions: Knowledge Paper",
+        "sourceFile": "Copy of ministry of personel.pdf",
+        "sizeBytes": 5212477,
+        "sha256": "59040bead5fb6f05cb43fa29ddfc61b2d19470740675b72cd233c4c184fdf8ad",
+        "pageCount": 52,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-petroleum-and-natural-gas-knowledge-paper-2026",
@@ -4019,9 +5782,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4037,8 +5800,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-petroleum-and-natural-gas-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Petroleum and Natural Gas: Knowledge Paper",
+        "sourceFile": "Copy of ministry of petroleum and gases.pdf",
+        "sizeBytes": 5922679,
+        "sha256": "c1e35cc5ee8e9a814e8c527eed2c86d7f4995c5a1ea9907d57abcccdda14d05e",
+        "pageCount": 52,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-ports-shipping-and-waterways-knowledge-paper-2026",
@@ -4053,9 +5827,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4071,8 +5845,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-ports-shipping-and-waterways-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Ports, Shipping and Waterways: Knowledge Paper",
+        "sourceFile": "Copy of ministry of ports and waterways.pdf",
+        "sizeBytes": 5511196,
+        "sha256": "1670ab9e3efc4cc8ffa26db61e3e7525cf9a5851a7c69823131df9169d758f55",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-power-knowledge-paper-2026",
@@ -4087,9 +5872,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4105,8 +5890,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-power-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Power: Knowledge Paper",
+        "sourceFile": "Copy of ministry of power.pdf",
+        "sizeBytes": 10277550,
+        "sha256": "1e3b44adc990fc95290fe73167c0d8464c5376fc91cb7d3c4dc73898a158c8c0",
+        "pageCount": 54,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 54,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-railways-knowledge-paper-2026",
@@ -4121,9 +5917,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4139,8 +5935,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-railways-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Railways: Knowledge Paper",
+        "sourceFile": "Copy of ministry of railways.pdf",
+        "sizeBytes": 6067699,
+        "sha256": "52b39a2275e531baa431166b8cff335bed6b3d6e02c4edf1c40f413fbf48206a",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-road-transport-and-highways-knowledge-paper-2026",
@@ -4155,9 +5962,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4173,8 +5980,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-road-transport-and-highways-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Road Transport and Highways: Knowledge Paper",
+        "sourceFile": "Copy of ministry of road transports.pdf",
+        "sizeBytes": 6217229,
+        "sha256": "336db9331f868b7fa50b55214e67584f3d1f18c1423a7c67a8e9b62484cc503c",
+        "pageCount": 52,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-rural-development-knowledge-paper-2026",
@@ -4189,9 +6007,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4207,8 +6025,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-rural-development-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Rural Development: Knowledge Paper",
+        "sourceFile": "Copy of ministry of rural development.pdf",
+        "sizeBytes": 5643391,
+        "sha256": "76fe18cc6c612b397077fbd0be9b796533f0334ef7432b1acc908b4325591030",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-science-and-technology-knowledge-paper-2026",
@@ -4223,9 +6052,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4241,8 +6070,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-science-and-technology-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Science and Technology: Knowledge Paper",
+        "sourceFile": "Copy of ministry of science and technology.pdf",
+        "sizeBytes": 5596785,
+        "sha256": "97b62e0035b527ae1b474762e85db1e6b0fc1cedd7e6b67ffbc86f0dc739aa11",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-skill-development-and-entrepreneurship-knowledge-paper-2026",
@@ -4257,9 +6097,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4275,8 +6115,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-skill-development-and-entrepreneurship-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Skill Development and Entrepreneurship: Knowledge Paper",
+        "sourceFile": "Copy of ministry of skill development.pdf",
+        "sizeBytes": 9669963,
+        "sha256": "6eeff0b436984cd5ca80d7d41a2d22f74484187e54223d5e0008f6b3d2262899",
+        "pageCount": 46,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 46,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-social-justice-and-empowerment-knowledge-paper-2026",
@@ -4291,9 +6142,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4309,8 +6160,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-social-justice-and-empowerment-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Social Justice and Empowerment: Knowledge Paper",
+        "sourceFile": "Copy of ministry of social justice.pdf",
+        "sizeBytes": 5916584,
+        "sha256": "a73016590e324b4f11328877ce0d20bf4bd8c5ac08b77a92c874357897d0657c",
+        "pageCount": 36,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 36,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-statistics-and-programme-implementation-knowledge-paper-2026",
@@ -4325,9 +6187,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4343,8 +6205,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-statistics-and-programme-implementation-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Statistics and Programme Implementation: Knowledge Paper",
+        "sourceFile": "Copy of ministry of statistics and programme.pdf",
+        "sizeBytes": 4707804,
+        "sha256": "c56a6c493ac5e084ff26a3f52a28b91b72daae410803a7fa18477cbff1e15360",
+        "pageCount": 52,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-steel-knowledge-paper-2026",
@@ -4359,9 +6232,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4377,8 +6250,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-steel-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Steel: Knowledge Paper",
+        "sourceFile": "Copy of ministry of steel.pdf",
+        "sizeBytes": 5621682,
+        "sha256": "97fd7ee77cb8611d44dcb28f7663f99610f7b97e4bf151d9cc09566e5c39966a",
+        "pageCount": 48,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 48,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-textiles-knowledge-paper-2026",
@@ -4393,9 +6277,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4411,8 +6295,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-textiles-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Textiles: Knowledge Paper",
+        "sourceFile": "Copy of ministry of textiles.pdf",
+        "sizeBytes": 5597648,
+        "sha256": "933b70ea0662173745da352993f6eb6a68858fd8384717614ccfda4cd40e8e63",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-tourism-knowledge-paper-2026",
@@ -4427,9 +6322,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4445,8 +6340,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-tourism-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Tourism: Knowledge Paper",
+        "sourceFile": "Copy of ministry of tourism.pdf",
+        "sizeBytes": 6086013,
+        "sha256": "97881d9fb842e064c25cf5ad8e3f73102655d6ca7731d4bd5683b28e1145c204",
+        "pageCount": 44,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 44,
+      "localPreviewGenerated": true
     },
     {
       "id": "ministry-tribal-affairs-knowledge-paper-2026",
@@ -4461,9 +6367,9 @@
         "fileSize": null,
         "coverImage": null
       },
-      "status": "source-pdf-found-match-needs-review",
-      "confidentlyMatchedLocalSource": false,
-      "previewGeneratorTested": false,
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
       "privateStoragePath": null,
       "actualApiPreviewVerified": false,
       "sourceCandidates": [
@@ -4479,8 +6385,19 @@
           "sha256": null
         }
       ],
-      "verifiedLocalSource": null,
-      "sourceSearchNote": null
+      "verifiedLocalSource": {
+        "catalogueId": "ministry-tribal-affairs-knowledge-paper-2026",
+        "catalogueTitle": "Ministry of Tribal Affairs: Knowledge Paper",
+        "sourceFile": "Copy of ministry of tribal affairs.pdf",
+        "sizeBytes": 6234543,
+        "sha256": "a49efab6ec511ce8a231bdbc7b68c3c8f89807ee57da39202a512db143f28dc2",
+        "pageCount": 52,
+        "matchConfidence": "visually-confirmed",
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null,
+      "sourcePageCount": 52,
+      "localPreviewGenerated": true
     }
   ]
 }

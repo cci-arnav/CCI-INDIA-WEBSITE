@@ -1,3 +1,5 @@
+import { KNOWLEDGE_PAPER_PREVIEW_PAGE_LIMIT } from './knowledgePaperPreviewLimits.js'
+
 const PDF_SIGNATURE = '%PDF-'
 
 export async function readKnowledgePaperPreview(response) {
@@ -26,7 +28,7 @@ export async function readKnowledgePaperPreview(response) {
   }
 
   const previewPages = Number(response.headers.get('X-Paper-Preview-Pages'))
-  if (!Number.isInteger(previewPages) || previewPages < 1 || previewPages > 5) {
+  if (!Number.isInteger(previewPages) || previewPages < 1 || previewPages > KNOWLEDGE_PAPER_PREVIEW_PAGE_LIMIT) {
     throw new Error('The preview service returned an invalid page limit. Please try again later.')
   }
 

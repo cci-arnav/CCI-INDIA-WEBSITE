@@ -15,6 +15,9 @@ dist-ssr
 .env.*
 !.env.example
 
+# Private Knowledge Papers source archives, extracted PDFs, reports, and previews
+private-knowledge-papers/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

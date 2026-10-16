@@ -46,7 +46,7 @@ test('published knowledge paper records are gated and any cover assets resolve l
   const content = JSON.parse(readFileSync(fileURLToPath(new URL('../content/knowledge-papers.json', import.meta.url)), 'utf8'))
   const published = getPublishedKnowledgePapers(content)
 
-  assert.equal(published.length, 109)
+  assert.equal(published.length, 128)
   assert.equal(new Set(published.map((paper) => paper.id)).size, published.length)
 
   for (const paper of published) {

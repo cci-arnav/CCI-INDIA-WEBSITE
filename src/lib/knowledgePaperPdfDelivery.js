@@ -1,6 +1,7 @@
 import { Worker } from 'node:worker_threads'
+import { KNOWLEDGE_PAPER_PREVIEW_PAGE_LIMIT } from './knowledgePaperPreviewLimits.js'
 
-export const PUBLIC_PREVIEW_PAGE_LIMIT = 5
+export const PUBLIC_PREVIEW_PAGE_LIMIT = KNOWLEDGE_PAPER_PREVIEW_PAGE_LIMIT
 export const isPublicPreviewMode = (mode) => !mode || mode === 'preview'
 const PREVIEW_PROCESS_TIMEOUT_MS = 30_000
 
@@ -11,7 +12,7 @@ const { PDFDocument } = require('pdf-lib')
   try {
     const original = await PDFDocument.load(new Uint8Array(workerData))
     const pageCount = original.getPageCount()
-    const deliveredPages = Math.min(5, pageCount)
+    const deliveredPages = Math.min(${PUBLIC_PREVIEW_PAGE_LIMIT}, pageCount)
     const output = await PDFDocument.create()
     const pages = await output.copyPages(original, Array.from({ length: deliveredPages }, (_, index) => index))
     pages.forEach((page) => output.addPage(page))
