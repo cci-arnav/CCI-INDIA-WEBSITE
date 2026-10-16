@@ -19,13 +19,13 @@ export default function About() {
           <Card accent="royal">
             <h2 className="mb-4 font-serif text-xl font-bold">{data.mission.heading}</h2>
             {data.mission.paragraphs.map((p, i) => (
-              <p key={i} className="mb-3 text-sm text-muted-fg last:mb-0">{p}</p>
+              <p key={i} className="prose-copy mb-3 text-sm text-muted-fg last:mb-0">{p}</p>
             ))}
           </Card>
           <Card accent="green">
             <h2 className="mb-4 font-serif text-xl font-bold">{data.vision.heading}</h2>
             {data.vision.paragraphs.map((p, i) => (
-              <p key={i} className="mb-3 text-sm text-muted-fg last:mb-0">{p}</p>
+              <p key={i} className="prose-copy mb-3 text-sm text-muted-fg last:mb-0">{p}</p>
             ))}
           </Card>
         </div>

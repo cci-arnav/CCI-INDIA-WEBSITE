@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import indiaMap from '../../data/india-state-paths.json'
 import { getOpportunityCount, mapLocationById } from '../../data/bharatInvestmentGrid'
 
-export default function BIGMap() {
+export default function BIGMap({ stateRouteBase = '/bharat-investment-grid/state', navigateOnTouch = false }) {
   const navigate = useNavigate()
   const firstMapped = mapLocationById.mh
   const [active, setActive] = useState(firstMapped)
@@ -20,7 +20,7 @@ export default function BIGMap() {
 
   const open = (shape) => {
     const location = mapLocationById[shape.id]
-    if (location) navigate(`/bharat-investment-grid/state/${location.slug}`)
+    if (location) navigate(`${stateRouteBase}/${location.slug}`)
   }
 
   return (
@@ -46,7 +46,7 @@ export default function BIGMap() {
                 className={`big-map-path ${selected ? 'is-active' : ''}`}
                 onPointerEnter={() => select(shape)}
                 onFocus={() => select(shape)}
-                onPointerUp={(event) => event.pointerType === 'mouse' ? open(shape) : select(shape)}
+                onPointerUp={(event) => event.pointerType === 'mouse' || navigateOnTouch ? open(shape) : select(shape)}
                 onKeyDown={(event) => {
                   if (event.key === 'Enter' || event.key === ' ') {
                     event.preventDefault()
@@ -76,7 +76,7 @@ export default function BIGMap() {
           <p className="text-xs font-bold uppercase tracking-wider text-white/60">Idea highlight</p>
           <p className="mt-1 text-sm text-white/85">{active.ideaHighlight}</p>
         </div>
-        <Link to={`/bharat-investment-grid/state/${active.slug}`} className="mt-5 inline-flex min-h-11 items-center gap-2 bg-white px-4 py-2 text-sm font-bold text-navy-deep hover:bg-off-white">
+        <Link to={`${stateRouteBase}/${active.slug}`} className="mt-5 inline-flex min-h-11 items-center gap-2 bg-white px-4 py-2 text-sm font-bold text-navy-deep hover:bg-off-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-saffron">
           Explore {active.name} <ArrowRight size={16} aria-hidden="true" />
         </Link>
       </aside>

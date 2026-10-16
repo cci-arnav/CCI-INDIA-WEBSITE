@@ -1,0 +1,4486 @@
+{
+  "generatedAt": "2026-10-15T08:02:49.366Z",
+  "catalogueCount": 109,
+  "statusCounts": {
+    "source-pdf-found-match-needs-review": 101,
+    "source-pdf-ready-private-storage-upload-mapping-pending": 7,
+    "source-pdf-not-found-in-accessible-sources": 1
+  },
+  "actualApiPreviewVerifiedCount": 0,
+  "privateMappingsConfiguredCount": 0,
+  "sourceFilesAuditedLocally": 23,
+  "previewGenerator": {
+    "testedPdfCount": 23,
+    "passedPdfCount": 23,
+    "failedPdfCount": 0,
+    "maximumPreviewPages": 5,
+    "note": "All currently available local source PDFs were loaded, passed through createPdfDelivery, and re-opened to verify the output page count and PDF signature."
+  },
+  "sourcePdfMetadata": {
+    "localVerifiedSources": [
+      {
+        "catalogueId": "india-cyprus-shared-growth-2026",
+        "catalogueTitle": "India & Cyprus: Strengthening Partnership, Shaping Shared Growth",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "CYPRUS.pdf",
+        "sizeBytes": 16110172,
+        "sha256": "ec636619ed57cb84f793a69f48fa0b4edcd6d60174d6afb992c88bcfa2123069",
+        "pageCount": 52,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": true,
+        "status": "verified-local-not-uploaded"
+      },
+      {
+        "catalogueId": "india-laos-shared-future-2026",
+        "catalogueTitle": "India & Laos: Building Bridges, Expanding Opportunities, Shaping a Shared Future",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "India-Laos ( knowledge Paper) (1).pdf",
+        "sizeBytes": 10339387,
+        "sha256": "43681b3c3b321e0064253ee7723ca95d04d8802e2647042614e7e70ea7daffc8",
+        "pageCount": 52,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": false,
+        "status": "verified-local-not-uploaded"
+      },
+      {
+        "catalogueId": "india-sudan-shared-future-2026",
+        "catalogueTitle": "India & Sudan: Building Bridges, Expanding Opportunities, Shaping a Shared Future",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "India-Sudan ( Knowledge Paper) (1).pdf",
+        "sizeBytes": 16095867,
+        "sha256": "27d82fdaf461f73f9b09651c2cf2a744674a4dc7ba72333aee11e2b9f74e092a",
+        "pageCount": 54,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": true,
+        "status": "verified-local-not-uploaded"
+      },
+      {
+        "catalogueId": "india-tajikistan-shared-growth-2026",
+        "catalogueTitle": "India & Tajikistan: Strengthening Partnership, Shaping Shared Growth",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "INDIA-TAJAKISTAN_.pdf",
+        "sizeBytes": 9994337,
+        "sha256": "13528f461567e60bbc5cbece202d0da4cd9c41ffda956092734f2941ce850918",
+        "pageCount": 60,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": true,
+        "status": "verified-local-not-uploaded"
+      },
+      {
+        "catalogueId": "india-indonesia-shared-prosperity-2026",
+        "catalogueTitle": "India & Indonesia: From Shared Heritage to Shared Prosperity",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "INDONESIA.pdf",
+        "sizeBytes": 14879016,
+        "sha256": "18578ef4df787c34f9847bdb667e542886db616413998278218991db178383c1",
+        "pageCount": 60,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": true,
+        "status": "verified-local-not-uploaded"
+      },
+      {
+        "catalogueId": "india-tunisia-shared-future-2026",
+        "catalogueTitle": "India & Tunisia: Building Bridges, Expanding Opportunities, Shaping a Shared Future",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "main body tunisia_merged (1) knowledge paper.pdf",
+        "sizeBytes": 16052815,
+        "sha256": "be7f3705e387ab74b66f7bd574cb75a64fee6d25c058ad0a58ef8350ad04e110",
+        "pageCount": 48,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": true,
+        "status": "verified-local-not-uploaded"
+      },
+      {
+        "catalogueId": "india-spain-shared-growth-2026",
+        "catalogueTitle": "India & Spain: Strengthening Partnership, Shaping Shared Growth",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "SPAIN.pdf",
+        "sizeBytes": 15947474,
+        "sha256": "8b94fc40f1a1bbf01e81500b4faab10907753978422a14d93ec2faaadc5bae58",
+        "pageCount": 48,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": true,
+        "status": "verified-local-not-uploaded"
+      }
+    ],
+    "additionalArchiveAudit": {
+      "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip",
+      "auditExtraction": "%TEMP%/cci-knowledge-paper-embassy-audit-20261015",
+      "matchingNote": "All listed files passed PDF parsing and five-page preview generation. Catalogue matches below are country/name candidates only; internal title-page text was not extracted, so all require content-level review before mapping.",
+      "files": [
+        {
+          "sourceFile": " Georgia.pdf",
+          "sizeBytes": 12084598,
+          "sha256": "49a97fb8b7433ab6ded7f70c7c268ebdda806f43a747847926a5178386d8721d",
+          "pageCount": 56,
+          "candidateCatalogueId": "india-georgia-opportunity-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": " Malawi.pdf",
+          "sizeBytes": 17226130,
+          "sha256": "35b948a7b71f16b84c08170ec9952564b0a6273a44a18a937326ac8bdcb6f2db",
+          "pageCount": 64,
+          "candidateCatalogueId": "india-malawi-sustainable-prosperity-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": "armenia_.pdf",
+          "sizeBytes": 21062342,
+          "sha256": "52bfc16cf6ec743a7300c20cbd013dfe0b43e2052bffb5d59f56f73ee2a64fef",
+          "pageCount": 64,
+          "candidateCatalogueId": "india-armenia-partnership-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": "cote de voire.pdf",
+          "sizeBytes": 7743150,
+          "sha256": "3fa79846491b0c90f0e4f50d9cc47c0508440af4d7a906e505f24039b51778c4",
+          "pageCount": 60,
+          "candidateCatalogueId": null,
+          "matchConfidence": "unmatched"
+        },
+        {
+          "sourceFile": "dominican republic_.pdf",
+          "sizeBytes": 18306172,
+          "sha256": "508ffd5c1a0e2eec9cb7694b3de8d898506ae424918ee072886014f38c5d6af4",
+          "pageCount": 64,
+          "candidateCatalogueId": "india-dominican-republic-prosperity-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": "equador.pdf",
+          "sizeBytes": 25355422,
+          "sha256": "c5cae802506b4e24ae49f42f54e4ce8017ba52acb59ae5744e1509eac5c60e6e",
+          "pageCount": 64,
+          "candidateCatalogueId": "india-ecuador-partnership-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": "india and belarus_.pdf",
+          "sizeBytes": 15861642,
+          "sha256": "00487b613a61555f5f9afcb614cc15717a83e2274c32916af4aa56dce3174437",
+          "pageCount": 56,
+          "candidateCatalogueId": "india-belarus-partnership-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": "iraq and india.pdf",
+          "sizeBytes": 16987043,
+          "sha256": "423d8aa5690d1c730a071af14b81ae2b48a0d72b92c96211fbd8f762ff8f83cc",
+          "pageCount": 60,
+          "candidateCatalogueId": "india-iraq-shared-prosperity-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": "kenya and india_.pdf",
+          "sizeBytes": 15528910,
+          "sha256": "6c21aaba9fd41b8a3a9fa2e8e58f195808a6852ebed0148bb3b2db8f75eeca83",
+          "pageCount": 64,
+          "candidateCatalogueId": "india-kenya-strengthening-ties-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": "Namibia.pdf",
+          "sizeBytes": 20833112,
+          "sha256": "4b65ad19caaf73676f8bca0997066ee20133703622cb3920371e75e444316ee6",
+          "pageCount": 72,
+          "candidateCatalogueId": "india-namibia-collaboration-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": "NICARAGUA AND INDIA.pdf",
+          "sizeBytes": 11763522,
+          "sha256": "2ede20b71a844b7387d40196a14cb5e3784864ed5012f487072b00ef51469caa",
+          "pageCount": 40,
+          "candidateCatalogueId": "india-nicaragua-shared-future-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": "russia and india_.pdf",
+          "sizeBytes": 13748563,
+          "sha256": "80cc5599e1e5f8ccf044b5b99e201e5fa67c99968f7a2fd4e30cf3b47f3d5a6d",
+          "pageCount": 60,
+          "candidateCatalogueId": "india-russia-bilateral-growth-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": "senegal nd india.pdf",
+          "sizeBytes": 10327685,
+          "sha256": "fddd8634cd439e63aa3df78b088cd43d9c009ef180aaa8bdc33d730924b5737b",
+          "pageCount": 48,
+          "candidateCatalogueId": "india-senegal-growth-opportunities-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": "SINGAPORE.pdf",
+          "sizeBytes": 14150398,
+          "sha256": "7cd27623ce72bee72c19947855011ffaa1a7454de2009b1aa5049eb753d5cf03",
+          "pageCount": 48,
+          "candidateCatalogueId": "india-singapore-shaping-tomorrow-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": "SURINAME AND INDIA.pdf",
+          "sizeBytes": 10948200,
+          "sha256": "67717f53d3c4c254590d2760abd4f647e4f96fba9b675783319a4b90e89511aa",
+          "pageCount": 48,
+          "candidateCatalogueId": "india-suriname-shared-future-2026",
+          "matchConfidence": "needs-review"
+        },
+        {
+          "sourceFile": "Tunisia.pdf",
+          "sizeBytes": 16009911,
+          "sha256": "dcc15db396ee0b5ceae9ef90d700d2e55236fae7f5841dc6ff7c15c43d125e0e",
+          "pageCount": 48,
+          "candidateCatalogueId": "india-tunisia-shared-future-2026",
+          "matchConfidence": "needs-review-alternative-to-local-source"
+        }
+      ]
+    },
+    "unmatchedLocalCandidates": [
+      {
+        "sourceDirectory": "Downloads",
+        "sourceFile": "CCI_India_AI_Productivity_Course.pdf",
+        "sizeBytes": 6365445,
+        "sha256": "794fe65e06eba938b9f09a99e1257f91ce417804e9c4c4284610c4c483cb9bb8",
+        "pageCount": 157,
+        "matchConfidence": "unmatched",
+        "status": "not-registered"
+      },
+      {
+        "sourceDirectory": "Downloads",
+        "sourceFile": "StartupVerse India.pdf",
+        "sizeBytes": 15274589,
+        "sha256": "b6c326c8673f4b5c3a5b68116dd51d8b8ff68a7392a90969234716d6f3a0d579",
+        "pageCount": 18,
+        "matchConfidence": "unmatched",
+        "status": "not-registered"
+      }
+    ],
+    "unmatchedArchivePdfs": [
+      {
+        "sourceFile": "cote de voire.pdf",
+        "sizeBytes": 7743150,
+        "sha256": "3fa79846491b0c90f0e4f50d9cc47c0508440af4d7a906e505f24039b51778c4",
+        "pageCount": 60,
+        "candidateCatalogueId": null,
+        "matchConfidence": "unmatched"
+      }
+    ],
+    "unmatchedDriveCandidates": [
+      "Angola",
+      "Cabo Verde",
+      "cote de voire.pdf",
+      "Cuba Knowledge paper.pdf",
+      "Djiobouti",
+      "Finland Knowledge paper.pdf",
+      "Ghana Knowledge paper.pdf",
+      "Maldives KP.pdf",
+      "mosambique xontnet_merged.pdf",
+      "Palestine",
+      "Romania kp.pdf",
+      "Uruguay",
+      "Uzbekistan"
+    ]
+  },
+  "duplicateReview": {
+    "exactHashDuplicatesAmongLocallyAuditedPdfs": 0,
+    "likelySameCountryCandidatesAcrossInternationalAndEmbassyFolders": 15,
+    "alternateTunisiaFileHasDifferentSha256": true,
+    "note": "Cross-folder Drive file bytes were unavailable, so filename/country overlap is not an exact duplicate determination."
+  },
+  "driveFolderListings": [
+    {
+      "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+      "name": "KNOWLEDGE PAPERS",
+      "listingPdfCount": 35,
+      "access": "listed in authenticated Drive UI; source bytes not downloaded",
+      "files": [
+        "Angola",
+        "armenia .pdf",
+        "belarus .pdf",
+        "Cabo Verde",
+        "Chad Knowledge Paper.pdf",
+        "cote de voire.pdf",
+        "Cuba Knowledge paper.pdf",
+        "CYPRUS.pdf",
+        "Djiobouti",
+        "dominican republic .pdf",
+        "equador.pdf",
+        "Finland Knowledge paper.pdf",
+        "Georgia.pdf",
+        "Ghana Knowledge paper.pdf",
+        "INDONESIA.pdf",
+        "iraq.pdf",
+        "kenya.pdf",
+        "Laos.pdf",
+        "Malawi.pdf",
+        "Maldives KP.pdf",
+        "mosambique xontnet_merged.pdf",
+        "Namibia.pdf",
+        "NICARAGUA.pdf",
+        "Palestine",
+        "Romania kp.pdf",
+        "russia.pdf",
+        "senegal nd india.pdf",
+        "SINGAPORE.pdf",
+        "SPAIN.pdf",
+        "sudan.pdf",
+        "SURINAME.pdf",
+        "TAJAKISTAN .pdf",
+        "Tunisia Knowledge Paper.pdf",
+        "Uruguay",
+        "Uzbekistan"
+      ]
+    },
+    {
+      "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+      "name": "knowledge paper- states (pdf)",
+      "listingPdfCount": 36,
+      "access": "listed in authenticated Drive UI; source bytes not downloaded",
+      "files": [
+        "Knowledege paper on J&K.pdf",
+        "Knowledge paper on Andaman and Nicobar Islands.pdf",
+        "Knowledge paper on Andhra Pradesh.pdf",
+        "Knowledge paper on Arunachal pradesh.pdf",
+        "Knowledge paper on Assam.pdf",
+        "Knowledge paper on Bihar.pdf",
+        "Knowledge paper on Chandigarh.pdf",
+        "Knowledge paper on Chhattisgarh.pdf",
+        "Knowledge paper on Daman and diu.pdf",
+        "Knowledge paper on Delhi.pdf",
+        "Knowledge paper on Goa.pdf",
+        "Knowledge paper on Gujarat.pdf",
+        "Knowledge paper on Haryana.pdf",
+        "Knowledge paper on Himachal Pradesh.pdf",
+        "Knowledge paper on Jharkhand.pdf",
+        "Knowledge paper on Karnataka.pdf",
+        "Knowledge paper on Kerala.pdf",
+        "Knowledge paper on Ladakh.pdf",
+        "Knowledge paper on Lakshadweep.pdf",
+        "Knowledge paper on Madhya Pradesh.pdf",
+        "Knowledge Paper on Maharashtra.pdf",
+        "Knowledge Paper on Manipur.pdf",
+        "Knowledge paper on Meghalaya.pdf",
+        "Knowledge paper on Mizoram.pdf",
+        "Knowledge paper on Nagaland.pdf",
+        "Knowledge paper on Odisha.pdf",
+        "Knowledge paper on Puducherry.pdf",
+        "Knowledge Paper on Punjab.pdf",
+        "Knowledge Paper on Rajasthan.pdf",
+        "Knowledge paper on Sikkim.pdf",
+        "Knowledge paper on Tamil Nadu.pdf",
+        "Knowledge Paper on Telangana.pdf",
+        "Knowledge Paper on Tripura.pdf",
+        "Knowledge Paper on Uttar Pradesh.pdf",
+        "Knowledge Paper on Uttarakhand.pdf",
+        "Knowledge paper on West Bengal.pdf"
+      ]
+    },
+    {
+      "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+      "name": "knowledge paper-ministries (pdf)",
+      "listingPdfCount": 50,
+      "access": "listed in authenticated Drive UI; source bytes not downloaded; Drive UI titles often omit the .pdf suffix",
+      "files": [
+        "Copy of ministry of agriculture",
+        "Copy of Ministry of AYUSH",
+        "Copy of ministry of chemical and fertilisers",
+        "Copy of ministry of civil aviation",
+        "Copy of Ministry of Coal",
+        "Copy of ministry of commerce and industries",
+        "Copy of ministry of communication",
+        "Copy of ministry of consumer affairs",
+        "Copy of ministry of cooperation",
+        "Copy of ministry of corporate affair",
+        "Copy of Ministry of Culture",
+        "Copy of ministry of defence",
+        "Copy of ministry of development of north eastern",
+        "Copy of ministry of earth science",
+        "Copy of ministry of education",
+        "Copy of ministry of electronics",
+        "Copy of ministry of environment",
+        "Copy of ministry of external affiars",
+        "Copy of Ministry of Finance",
+        "Copy of ministry of fisheries",
+        "Copy of ministry of food processing",
+        "Copy of ministry of health",
+        "Copy of ministry of heavyy industries",
+        "Copy of ministry of home affiars",
+        "Copy of ministry of housing affairs",
+        "Copy of ministry of information",
+        "Copy of ministry of jal shakti",
+        "Copy of ministry of labour and employment",
+        "Copy of ministry of law and justice",
+        "Copy of ministry of mines",
+        "Copy of ministry of minority affairs",
+        "Copy of ministry of msme",
+        "Copy of ministry of new & renewable energy",
+        "Copy of ministry of panchyati raj",
+        "Copy of ministry of parliamentry affairs",
+        "Copy of ministry of personel",
+        "Copy of ministry of petroleum and gases",
+        "Copy of ministry of ports and waterways",
+        "Copy of ministry of power",
+        "Copy of ministry of railways",
+        "Copy of ministry of road transports",
+        "Copy of ministry of rural development",
+        "Copy of ministry of science and technology",
+        "Copy of ministry of skill development",
+        "Copy of ministry of social justice",
+        "Copy of ministry of statistics and programme",
+        "Copy of ministry of steel",
+        "Copy of ministry of textiles",
+        "Copy of ministry of tourism",
+        "Copy of ministry of tribal affairs"
+      ],
+      "driveDisplayedSizes": [
+        "4.1 MB",
+        "5.5 MB",
+        "4.7 MB",
+        "5.5 MB",
+        "5.6 MB",
+        "6.2 MB",
+        "6.8 MB",
+        "5.9 MB",
+        "6 MB",
+        "5.9 MB",
+        "5.3 MB",
+        "5 MB",
+        "6.1 MB",
+        "5.9 MB",
+        "5.9 MB",
+        "6.3 MB",
+        "6.6 MB",
+        "6 MB",
+        "5.8 MB",
+        "6.4 MB",
+        "5.4 MB",
+        "5.3 MB",
+        "5.5 MB",
+        "5.7 MB",
+        "5.7 MB",
+        "4.4 MB",
+        "5.5 MB",
+        "4.6 MB",
+        "4.8 MB",
+        "5.3 MB",
+        "2 MB",
+        "4.9 MB",
+        "5 MB",
+        "5.6 MB",
+        "5.5 MB",
+        "5 MB",
+        "5.6 MB",
+        "5.3 MB",
+        "9.8 MB",
+        "5.8 MB",
+        "5.9 MB",
+        "5.4 MB",
+        "5.3 MB",
+        "9.2 MB",
+        "5.6 MB",
+        "4.5 MB",
+        "5.4 MB",
+        "5.3 MB",
+        "5.8 MB",
+        "5.9 MB"
+      ]
+    },
+    {
+      "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+      "name": "knowledge paper-embassy (pdf)",
+      "listingPdfCount": 16,
+      "listingGoogleDocsCount": 1,
+      "access": "listed in authenticated Drive UI; a previously downloaded folder archive is available locally and audited separately",
+      "files": [
+        "Georgia",
+        "Malawi",
+        "armenia",
+        "cote de voire",
+        "dominican republic",
+        "equador.pdf",
+        "india and belarus",
+        "iraq and india",
+        "kenya and india",
+        "Namibia",
+        "NICARAGUA AND INDIA",
+        "russia and india",
+        "senegal nd india.pdf",
+        "SINGAPORE",
+        "SURINAME AND INDIA",
+        "Tunisia"
+      ],
+      "googleDocs": [
+        "Tunisia"
+      ]
+    },
+    {
+      "folderId": "1G_IGRclfGTSFMxoLHoCUNLnNr0YPP0dH",
+      "name": "KNOWLEDGE PAPERS",
+      "listingPdfCount": null,
+      "access": "not inspectable in the authenticated browser during this audit; older manifest count is not treated as verified",
+      "files": []
+    }
+  ],
+  "caveats": [
+    "Drive UI file listings establish only filenames and PDF type labels; the State/UT and Ministry file bytes were not downloaded locally during this audit.",
+    "The Embassy archive PDFs passed parsing and the preview generator, but catalogue matches remain subject to content/title review.",
+    "The older fifth Drive folder could not be inspected; its historical count in the prior manifest is unverified.",
+    "No Supabase bucket, registry schema, object mapping, server credential, or live API preview was verified."
+  ],
+  "papers": [
+    {
+      "id": "india-chad-opportunities-2026",
+      "title": "India & Chad: Partnering for Opportunities, Building a Brighter Tomorrow",
+      "collection": "International & Sectoral",
+      "country": "Chad",
+      "countryCode": "TD",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "9.9 MB",
+        "coverImage": "/images/knowledge-papers/india-chad.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Chad Knowledge Paper.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-tajikistan-shared-growth-2026",
+      "title": "India & Tajikistan: Strengthening Partnership, Shaping Shared Growth",
+      "collection": "International & Sectoral",
+      "country": "Tajikistan",
+      "countryCode": "TJ",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "9.5 MB",
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "TAJAKISTAN .pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-tajikistan-shared-growth-2026",
+        "catalogueTitle": "India & Tajikistan: Strengthening Partnership, Shaping Shared Growth",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "INDIA-TAJAKISTAN_.pdf",
+        "sizeBytes": 9994337,
+        "sha256": "13528f461567e60bbc5cbece202d0da4cd9c41ffda956092734f2941ce850918",
+        "pageCount": 60,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": true,
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-spain-shared-growth-2026",
+      "title": "India & Spain: Strengthening Partnership, Shaping Shared Growth",
+      "collection": "International & Sectoral",
+      "country": "Spain",
+      "countryCode": "ES",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "15.2 MB",
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "SPAIN.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-spain-shared-growth-2026",
+        "catalogueTitle": "India & Spain: Strengthening Partnership, Shaping Shared Growth",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "SPAIN.pdf",
+        "sizeBytes": 15947474,
+        "sha256": "8b94fc40f1a1bbf01e81500b4faab10907753978422a14d93ec2faaadc5bae58",
+        "pageCount": 48,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": true,
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-cyprus-shared-growth-2026",
+      "title": "India & Cyprus: Strengthening Partnership, Shaping Shared Growth",
+      "collection": "International & Sectoral",
+      "country": "Cyprus",
+      "countryCode": "CY",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "15.4 MB",
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "CYPRUS.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-cyprus-shared-growth-2026",
+        "catalogueTitle": "India & Cyprus: Strengthening Partnership, Shaping Shared Growth",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "CYPRUS.pdf",
+        "sizeBytes": 16110172,
+        "sha256": "ec636619ed57cb84f793a69f48fa0b4edcd6d60174d6afb992c88bcfa2123069",
+        "pageCount": 52,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": true,
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-indonesia-shared-prosperity-2026",
+      "title": "India & Indonesia: From Shared Heritage to Shared Prosperity",
+      "collection": "International & Sectoral",
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "14.2 MB",
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "INDONESIA.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-indonesia-shared-prosperity-2026",
+        "catalogueTitle": "India & Indonesia: From Shared Heritage to Shared Prosperity",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "INDONESIA.pdf",
+        "sizeBytes": 14879016,
+        "sha256": "18578ef4df787c34f9847bdb667e542886db616413998278218991db178383c1",
+        "pageCount": 60,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": true,
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-laos-shared-future-2026",
+      "title": "India & Laos: Building Bridges, Expanding Opportunities, Shaping a Shared Future",
+      "collection": "International & Sectoral",
+      "country": "Laos",
+      "countryCode": "LA",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "9.9 MB",
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Laos.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-laos-shared-future-2026",
+        "catalogueTitle": "India & Laos: Building Bridges, Expanding Opportunities, Shaping a Shared Future",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "India-Laos ( knowledge Paper) (1).pdf",
+        "sizeBytes": 10339387,
+        "sha256": "43681b3c3b321e0064253ee7723ca95d04d8802e2647042614e7e70ea7daffc8",
+        "pageCount": 52,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": false,
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-tunisia-shared-future-2026",
+      "title": "India & Tunisia: Building Bridges, Expanding Opportunities, Shaping a Shared Future",
+      "collection": "International & Sectoral",
+      "country": "Tunisia",
+      "countryCode": "TN",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "15.3 MB",
+        "coverImage": "/images/knowledge-papers/india-tunisia.jpg"
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Tunisia Knowledge Paper.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": "Tunisia.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review-alternative-to-local-source",
+          "pageCount": 48,
+          "sizeBytes": 16009911,
+          "sha256": "dcc15db396ee0b5ceae9ef90d700d2e55236fae7f5841dc6ff7c15c43d125e0e",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-tunisia-shared-future-2026",
+        "catalogueTitle": "India & Tunisia: Building Bridges, Expanding Opportunities, Shaping a Shared Future",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "main body tunisia_merged (1) knowledge paper.pdf",
+        "sizeBytes": 16052815,
+        "sha256": "be7f3705e387ab74b66f7bd574cb75a64fee6d25c058ad0a58ef8350ad04e110",
+        "pageCount": 48,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": true,
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-sudan-shared-future-2026",
+      "title": "India & Sudan: Building Bridges, Expanding Opportunities, Shaping a Shared Future",
+      "collection": "International & Sectoral",
+      "country": "Sudan",
+      "countryCode": "SD",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "15.4 MB",
+        "coverImage": null
+      },
+      "status": "source-pdf-ready-private-storage-upload-mapping-pending",
+      "confidentlyMatchedLocalSource": true,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "sudan.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": {
+        "catalogueId": "india-sudan-shared-future-2026",
+        "catalogueTitle": "India & Sudan: Building Bridges, Expanding Opportunities, Shaping a Shared Future",
+        "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+        "sourceFile": "India-Sudan ( Knowledge Paper) (1).pdf",
+        "sizeBytes": 16095867,
+        "sha256": "27d82fdaf461f73f9b09651c2cf2a744674a4dc7ba72333aee11e2b9f74e092a",
+        "pageCount": 54,
+        "matchConfidence": "exact",
+        "titlePageConfidentialMark": true,
+        "status": "verified-local-not-uploaded"
+      },
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-georgia-opportunity-2026",
+      "title": "India & Georgia: Heritage, Trade and Opportunity",
+      "collection": "International & Sectoral",
+      "country": "Georgia",
+      "countryCode": "GE",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "11.5 MB",
+        "coverImage": "/images/knowledge-papers/india-georgia.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Georgia.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": " Georgia.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 56,
+          "sizeBytes": 12084598,
+          "sha256": "49a97fb8b7433ab6ded7f70c7c268ebdda806f43a747847926a5178386d8721d",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-malawi-sustainable-prosperity-2026",
+      "title": "India & Malawi: Partnerships for Sustainable Prosperity",
+      "collection": "International & Sectoral",
+      "country": "Malawi",
+      "countryCode": "MW",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "16.4 MB",
+        "coverImage": "/images/knowledge-papers/india-malawi.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Malawi.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": " Malawi.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 64,
+          "sizeBytes": 17226130,
+          "sha256": "35b948a7b71f16b84c08170ec9952564b0a6273a44a18a937326ac8bdcb6f2db",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-armenia-partnership-2026",
+      "title": "India & Armenia: Building Bridges of Partnership",
+      "collection": "International & Sectoral",
+      "country": "Armenia",
+      "countryCode": "AM",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "20.1 MB",
+        "coverImage": "/images/knowledge-papers/india-armenia.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "armenia .pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": "armenia_.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 64,
+          "sizeBytes": 21062342,
+          "sha256": "52bfc16cf6ec743a7300c20cbd013dfe0b43e2052bffb5d59f56f73ee2a64fef",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-tea-industry-growth-2026",
+      "title": "Growing Prosperity, One Cup at a Time",
+      "collection": "International & Sectoral",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "7.4 MB",
+        "coverImage": "/images/knowledge-papers/india-tea-industry.jpg"
+      },
+      "status": "source-pdf-not-found-in-accessible-sources",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": "No matching filename in the locally inspected files or accessible Drive listings. The fifth shared folder was not inspectable, so absence is not conclusive."
+    },
+    {
+      "id": "india-dominican-republic-prosperity-2026",
+      "title": "India & Dominican Republic: Bridging Continents for Shared Prosperity",
+      "collection": "International & Sectoral",
+      "country": "Dominican Republic",
+      "countryCode": "DO",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "17.5 MB",
+        "coverImage": "/images/knowledge-papers/india-dominican-republic.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "dominican republic .pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": "dominican republic_.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 64,
+          "sizeBytes": 18306172,
+          "sha256": "508ffd5c1a0e2eec9cb7694b3de8d898506ae424918ee072886014f38c5d6af4",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-ecuador-partnership-2026",
+      "title": "India & Ecuador: Bridging Continents Through Knowledge",
+      "collection": "International & Sectoral",
+      "country": "Ecuador",
+      "countryCode": "EC",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "24.4 MB",
+        "coverImage": "/images/knowledge-papers/india-ecuador.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "equador.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": "equador.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 64,
+          "sizeBytes": 25355422,
+          "sha256": "c5cae802506b4e24ae49f42f54e4ce8017ba52acb59ae5744e1509eac5c60e6e",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-belarus-partnership-2026",
+      "title": "India & Belarus: Building Bridges of Partnership",
+      "collection": "International & Sectoral",
+      "country": "Belarus",
+      "countryCode": "BY",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "15.1 MB",
+        "coverImage": "/images/knowledge-papers/india-belarus.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "belarus .pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": "india and belarus_.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 56,
+          "sizeBytes": 15861642,
+          "sha256": "00487b613a61555f5f9afcb614cc15717a83e2274c32916af4aa56dce3174437",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-iraq-shared-prosperity-2026",
+      "title": "India & Iraq: Trade, Innovation and Shared Prosperity",
+      "collection": "International & Sectoral",
+      "country": "Iraq",
+      "countryCode": "IQ",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "16.2 MB",
+        "coverImage": "/images/knowledge-papers/india-iraq.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "iraq.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": "iraq and india.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 60,
+          "sizeBytes": 16987043,
+          "sha256": "423d8aa5690d1c730a071af14b81ae2b48a0d72b92c96211fbd8f762ff8f83cc",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-kenya-strengthening-ties-2026",
+      "title": "India & Kenya: Strengthening Ties Today, Inspiring Tomorrow",
+      "collection": "International & Sectoral",
+      "country": "Kenya",
+      "countryCode": "KE",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "14.8 MB",
+        "coverImage": "/images/knowledge-papers/india-kenya.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "kenya.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": "kenya and india_.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 64,
+          "sizeBytes": 15528910,
+          "sha256": "6c21aaba9fd41b8a3a9fa2e8e58f195808a6852ebed0148bb3b2db8f75eeca83",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-namibia-collaboration-2026",
+      "title": "India & Namibia: Unlocking Potential Through Collaboration",
+      "collection": "International & Sectoral",
+      "country": "Namibia",
+      "countryCode": "NA",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "19.9 MB",
+        "coverImage": "/images/knowledge-papers/india-namibia.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "Namibia.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": "Namibia.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 72,
+          "sizeBytes": 20833112,
+          "sha256": "4b65ad19caaf73676f8bca0997066ee20133703622cb3920371e75e444316ee6",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-nicaragua-shared-future-2026",
+      "title": "India & Nicaragua: Building Bridges, Shaping a Shared Future",
+      "collection": "International & Sectoral",
+      "country": "Nicaragua",
+      "countryCode": "NI",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "11.2 MB",
+        "coverImage": "/images/knowledge-papers/india-nicaragua.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "NICARAGUA.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": "NICARAGUA AND INDIA.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 40,
+          "sizeBytes": 11763522,
+          "sha256": "2ede20b71a844b7387d40196a14cb5e3784864ed5012f487072b00ef51469caa",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-russia-bilateral-growth-2026",
+      "title": "India & Russia: Driving Bilateral Growth Through Commerce and Innovation",
+      "collection": "International & Sectoral",
+      "country": "Russia",
+      "countryCode": "RU",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "13.1 MB",
+        "coverImage": "/images/knowledge-papers/india-russia.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "russia.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": "russia and india_.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 60,
+          "sizeBytes": 13748563,
+          "sha256": "80cc5599e1e5f8ccf044b5b99e201e5fa67c99968f7a2fd4e30cf3b47f3d5a6d",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-senegal-growth-opportunities-2026",
+      "title": "India & Senegal: Partnership, Growth and Prosperity",
+      "collection": "International & Sectoral",
+      "country": "Senegal",
+      "countryCode": "SN",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "9.8 MB",
+        "coverImage": "/images/knowledge-papers/india-senegal.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "senegal nd india.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": "senegal nd india.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 48,
+          "sizeBytes": 10327685,
+          "sha256": "fddd8634cd439e63aa3df78b088cd43d9c009ef180aaa8bdc33d730924b5737b",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-singapore-shaping-tomorrow-2026",
+      "title": "India & Singapore: Building Bridges, Shaping Tomorrow",
+      "collection": "International & Sectoral",
+      "country": "Singapore",
+      "countryCode": "SG",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "13.5 MB",
+        "coverImage": "/images/knowledge-papers/india-singapore.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "SINGAPORE.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": "SINGAPORE.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 48,
+          "sizeBytes": 14150398,
+          "sha256": "7cd27623ce72bee72c19947855011ffaa1a7454de2009b1aa5049eb753d5cf03",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "india-suriname-shared-future-2026",
+      "title": "India & Suriname: Connecting Heritage, Expanding Opportunity",
+      "collection": "International & Sectoral",
+      "country": "Suriname",
+      "countryCode": "SR",
+      "subject": null,
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": "10.5 MB",
+        "coverImage": "/images/knowledge-papers/india-suriname.jpg"
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": true,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+          "folderName": "KNOWLEDGE PAPERS",
+          "driveName": "SURINAME.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        },
+        {
+          "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+          "folderName": "knowledge paper-embassy (pdf)",
+          "driveName": "SURINAME AND INDIA.pdf",
+          "fileType": "PDF",
+          "contentVerified": true,
+          "matchConfidence": "needs-review",
+          "pageCount": 48,
+          "sizeBytes": 10948200,
+          "sha256": "67717f53d3c4c254590d2760abd4f647e4f96fba9b675783319a4b90e89511aa",
+          "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip"
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-andaman-and-nicobar-islands-knowledge-paper-2026",
+      "title": "Andaman and Nicobar Islands: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Andaman and Nicobar Islands",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Andaman and Nicobar Islands.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-andhra-pradesh-knowledge-paper-2026",
+      "title": "Andhra Pradesh: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Andhra Pradesh",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Andhra Pradesh.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-arunachal-pradesh-knowledge-paper-2026",
+      "title": "Arunachal Pradesh: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Arunachal Pradesh",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Arunachal pradesh.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-assam-knowledge-paper-2026",
+      "title": "Assam: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Assam",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Assam.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-bihar-knowledge-paper-2026",
+      "title": "Bihar: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Bihar",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Bihar.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-chandigarh-knowledge-paper-2026",
+      "title": "Chandigarh: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Chandigarh",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Chandigarh.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-chhattisgarh-knowledge-paper-2026",
+      "title": "Chhattisgarh: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Chhattisgarh",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Chhattisgarh.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-dadra-and-nagar-haveli-and-daman-and-diu-knowledge-paper-2026",
+      "title": "Dadra and Nagar Haveli and Daman and Diu: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Dadra and Nagar Haveli and Daman and Diu",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Daman and diu.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-delhi-knowledge-paper-2026",
+      "title": "Delhi: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Delhi",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Delhi.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-goa-knowledge-paper-2026",
+      "title": "Goa: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Goa",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Goa.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-gujarat-knowledge-paper-2026",
+      "title": "Gujarat: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Gujarat",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Gujarat.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-haryana-knowledge-paper-2026",
+      "title": "Haryana: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Haryana",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Haryana.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-himachal-pradesh-knowledge-paper-2026",
+      "title": "Himachal Pradesh: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Himachal Pradesh",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Himachal Pradesh.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-jammu-and-kashmir-knowledge-paper-2026",
+      "title": "Jammu and Kashmir: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Jammu and Kashmir",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledege paper on J&K.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-jharkhand-knowledge-paper-2026",
+      "title": "Jharkhand: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Jharkhand",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Jharkhand.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-karnataka-knowledge-paper-2026",
+      "title": "Karnataka: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Karnataka",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Karnataka.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-kerala-knowledge-paper-2026",
+      "title": "Kerala: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Kerala",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Kerala.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-ladakh-knowledge-paper-2026",
+      "title": "Ladakh: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Ladakh",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Ladakh.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-lakshadweep-knowledge-paper-2026",
+      "title": "Lakshadweep: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Lakshadweep",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Lakshadweep.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-madhya-pradesh-knowledge-paper-2026",
+      "title": "Madhya Pradesh: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Madhya Pradesh",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Madhya Pradesh.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-maharashtra-knowledge-paper-2026",
+      "title": "Maharashtra: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Maharashtra",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge Paper on Maharashtra.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-manipur-knowledge-paper-2026",
+      "title": "Manipur: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Manipur",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge Paper on Manipur.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-meghalaya-knowledge-paper-2026",
+      "title": "Meghalaya: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Meghalaya",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Meghalaya.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-mizoram-knowledge-paper-2026",
+      "title": "Mizoram: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Mizoram",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Mizoram.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-nagaland-knowledge-paper-2026",
+      "title": "Nagaland: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Nagaland",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Nagaland.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-odisha-knowledge-paper-2026",
+      "title": "Odisha: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Odisha",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Odisha.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-puducherry-knowledge-paper-2026",
+      "title": "Puducherry: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Puducherry",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Puducherry.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-punjab-knowledge-paper-2026",
+      "title": "Punjab: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Punjab",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge Paper on Punjab.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-rajasthan-knowledge-paper-2026",
+      "title": "Rajasthan: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Rajasthan",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge Paper on Rajasthan.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-sikkim-knowledge-paper-2026",
+      "title": "Sikkim: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Sikkim",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Sikkim.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-tamil-nadu-knowledge-paper-2026",
+      "title": "Tamil Nadu: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Tamil Nadu",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on Tamil Nadu.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-telangana-knowledge-paper-2026",
+      "title": "Telangana: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Telangana",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge Paper on Telangana.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-tripura-knowledge-paper-2026",
+      "title": "Tripura: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Tripura",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge Paper on Tripura.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-uttar-pradesh-knowledge-paper-2026",
+      "title": "Uttar Pradesh: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Uttar Pradesh",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge Paper on Uttar Pradesh.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-uttarakhand-knowledge-paper-2026",
+      "title": "Uttarakhand: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Uttarakhand",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge Paper on Uttarakhand.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "state-west-bengal-knowledge-paper-2026",
+      "title": "West Bengal: State Knowledge Paper",
+      "collection": "State & UT",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "West Bengal",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+          "folderName": "knowledge paper- states (pdf)",
+          "driveName": "Knowledge paper on West Bengal.pdf",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-agriculture-and-farmers-welfare-knowledge-paper-2026",
+      "title": "Ministry of Agriculture and Farmers Welfare: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Agriculture and Farmers Welfare",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of agriculture",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-ayush-knowledge-paper-2026",
+      "title": "Ministry of AYUSH: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "AYUSH",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of Ministry of AYUSH",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-chemicals-and-fertilizers-knowledge-paper-2026",
+      "title": "Ministry of Chemicals and Fertilizers: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Chemicals and Fertilizers",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of chemical and fertilisers",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-civil-aviation-knowledge-paper-2026",
+      "title": "Ministry of Civil Aviation: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Civil Aviation",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of civil aviation",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-coal-knowledge-paper-2026",
+      "title": "Ministry of Coal: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Coal",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of Ministry of Coal",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-commerce-and-industry-knowledge-paper-2026",
+      "title": "Ministry of Commerce and Industry: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Commerce and Industry",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of commerce and industries",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-communications-knowledge-paper-2026",
+      "title": "Ministry of Communications: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Communications",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of communication",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-consumer-affairs-food-and-public-distribution-knowledge-paper-2026",
+      "title": "Ministry of Consumer Affairs, Food and Public Distribution: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Consumer Affairs, Food and Public Distribution",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of consumer affairs",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-cooperation-knowledge-paper-2026",
+      "title": "Ministry of Cooperation: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Cooperation",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of cooperation",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-corporate-affairs-knowledge-paper-2026",
+      "title": "Ministry of Corporate Affairs: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Corporate Affairs",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of corporate affair",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-culture-knowledge-paper-2026",
+      "title": "Ministry of Culture: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Culture",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of Ministry of Culture",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-defence-knowledge-paper-2026",
+      "title": "Ministry of Defence: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Defence",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of defence",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-development-of-north-eastern-region-knowledge-paper-2026",
+      "title": "Ministry of Development of North Eastern Region: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Development of North Eastern Region",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of development of north eastern",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-earth-sciences-knowledge-paper-2026",
+      "title": "Ministry of Earth Sciences: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Earth Sciences",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of earth science",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-education-knowledge-paper-2026",
+      "title": "Ministry of Education: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Education",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of education",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-electronics-and-information-technology-knowledge-paper-2026",
+      "title": "Ministry of Electronics and Information Technology: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Electronics and Information Technology",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of electronics",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-environment-forest-and-climate-change-knowledge-paper-2026",
+      "title": "Ministry of Environment, Forest and Climate Change: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Environment, Forest and Climate Change",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of environment",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-external-affairs-knowledge-paper-2026",
+      "title": "Ministry of External Affairs: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "External Affairs",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of external affiars",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-finance-knowledge-paper-2026",
+      "title": "Ministry of Finance: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Finance",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of Ministry of Finance",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-fisheries-animal-husbandry-and-dairying-knowledge-paper-2026",
+      "title": "Ministry of Fisheries, Animal Husbandry and Dairying: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Fisheries, Animal Husbandry and Dairying",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of fisheries",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-food-processing-industries-knowledge-paper-2026",
+      "title": "Ministry of Food Processing Industries: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Food Processing Industries",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of food processing",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-health-and-family-welfare-knowledge-paper-2026",
+      "title": "Ministry of Health and Family Welfare: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Health and Family Welfare",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of health",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-heavy-industries-knowledge-paper-2026",
+      "title": "Ministry of Heavy Industries: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Heavy Industries",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of heavyy industries",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-home-affairs-knowledge-paper-2026",
+      "title": "Ministry of Home Affairs: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Home Affairs",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of home affiars",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-housing-and-urban-affairs-knowledge-paper-2026",
+      "title": "Ministry of Housing and Urban Affairs: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Housing and Urban Affairs",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of housing affairs",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-information-and-broadcasting-knowledge-paper-2026",
+      "title": "Ministry of Information and Broadcasting: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Information and Broadcasting",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of information",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-jal-shakti-knowledge-paper-2026",
+      "title": "Ministry of Jal Shakti: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Jal Shakti",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of jal shakti",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-labour-and-employment-knowledge-paper-2026",
+      "title": "Ministry of Labour and Employment: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Labour and Employment",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of labour and employment",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-law-and-justice-knowledge-paper-2026",
+      "title": "Ministry of Law and Justice: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Law and Justice",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of law and justice",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-micro-small-and-medium-enterprises-knowledge-paper-2026",
+      "title": "Ministry of Micro, Small and Medium Enterprises: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Micro, Small and Medium Enterprises",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of msme",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-mines-knowledge-paper-2026",
+      "title": "Ministry of Mines: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Mines",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of mines",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-minority-affairs-knowledge-paper-2026",
+      "title": "Ministry of Minority Affairs: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Minority Affairs",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of minority affairs",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-new-and-renewable-energy-knowledge-paper-2026",
+      "title": "Ministry of New and Renewable Energy: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "New and Renewable Energy",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of new & renewable energy",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-panchayati-raj-knowledge-paper-2026",
+      "title": "Ministry of Panchayati Raj: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Panchayati Raj",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of panchyati raj",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-parliamentary-affairs-knowledge-paper-2026",
+      "title": "Ministry of Parliamentary Affairs: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Parliamentary Affairs",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of parliamentry affairs",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-personnel-public-grievances-and-pensions-knowledge-paper-2026",
+      "title": "Ministry of Personnel, Public Grievances and Pensions: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Personnel, Public Grievances and Pensions",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of personel",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-petroleum-and-natural-gas-knowledge-paper-2026",
+      "title": "Ministry of Petroleum and Natural Gas: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Petroleum and Natural Gas",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of petroleum and gases",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-ports-shipping-and-waterways-knowledge-paper-2026",
+      "title": "Ministry of Ports, Shipping and Waterways: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Ports, Shipping and Waterways",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of ports and waterways",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-power-knowledge-paper-2026",
+      "title": "Ministry of Power: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Power",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of power",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-railways-knowledge-paper-2026",
+      "title": "Ministry of Railways: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Railways",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of railways",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-road-transport-and-highways-knowledge-paper-2026",
+      "title": "Ministry of Road Transport and Highways: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Road Transport and Highways",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of road transports",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-rural-development-knowledge-paper-2026",
+      "title": "Ministry of Rural Development: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Rural Development",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of rural development",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-science-and-technology-knowledge-paper-2026",
+      "title": "Ministry of Science and Technology: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Science and Technology",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of science and technology",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-skill-development-and-entrepreneurship-knowledge-paper-2026",
+      "title": "Ministry of Skill Development and Entrepreneurship: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Skill Development and Entrepreneurship",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of skill development",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-social-justice-and-empowerment-knowledge-paper-2026",
+      "title": "Ministry of Social Justice and Empowerment: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Social Justice and Empowerment",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of social justice",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-statistics-and-programme-implementation-knowledge-paper-2026",
+      "title": "Ministry of Statistics and Programme Implementation: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Statistics and Programme Implementation",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of statistics and programme",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-steel-knowledge-paper-2026",
+      "title": "Ministry of Steel: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Steel",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of steel",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-textiles-knowledge-paper-2026",
+      "title": "Ministry of Textiles: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Textiles",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of textiles",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-tourism-knowledge-paper-2026",
+      "title": "Ministry of Tourism: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Tourism",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of tourism",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    },
+    {
+      "id": "ministry-tribal-affairs-knowledge-paper-2026",
+      "title": "Ministry of Tribal Affairs: Knowledge Paper",
+      "collection": "Ministry",
+      "country": "India",
+      "countryCode": "IN",
+      "subject": "Tribal Affairs",
+      "existingSourceMetadata": {
+        "pdfUrl": null,
+        "storagePath": null,
+        "fileSize": null,
+        "coverImage": null
+      },
+      "status": "source-pdf-found-match-needs-review",
+      "confidentlyMatchedLocalSource": false,
+      "previewGeneratorTested": false,
+      "privateStoragePath": null,
+      "actualApiPreviewVerified": false,
+      "sourceCandidates": [
+        {
+          "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+          "folderName": "knowledge paper-ministries (pdf)",
+          "driveName": "Copy of ministry of tribal affairs",
+          "fileType": "PDF (Drive listing)",
+          "contentVerified": false,
+          "matchConfidence": "needs-review",
+          "pageCount": null,
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "verifiedLocalSource": null,
+      "sourceSearchNote": null
+    }
+  ]
+}

@@ -6,10 +6,12 @@ import contact from '../../content/contact.json'
 import Carousel from '../components/ui/Carousel'
 import Button from '../components/ui/Button'
 import SectionHeading from '../components/ui/SectionHeading'
-import NewsFeed from '../components/news/NewsFeed'
+import HomeNewsSection from '../components/news/HomeNewsSection'
 import HelpVideo from '../components/media/HelpVideo'
 import DetailDialog from '../components/ui/DetailDialog'
 import DGNote from '../components/home/DGNote'
+import LifeAtCCI from '../components/home/LifeAtCCI'
+import MemberVoices from '../components/home/MemberVoices'
 import { allCouncils } from '../lib/councils'
 import editorial from '../../content/home-editorial.json'
 
@@ -47,7 +49,7 @@ export default function Home() {
             <h1 id="home-intro-title" className="max-w-2xl font-serif text-3xl font-bold leading-tight text-navy-deep md:text-4xl">
               Connecting Indian enterprise with <span className="text-royal">global opportunity</span>
             </h1>
-            <p className="mt-5 max-w-2xl text-base leading-8 text-muted-fg">{about.description}</p>
+            <p className="prose-copy mt-5 max-w-2xl text-base leading-8 text-muted-fg">{about.description}</p>
             <div className="mt-7">
               <Button to={about.cta.href} variant="secondary">{about.cta.label}</Button>
             </div>
@@ -57,7 +59,7 @@ export default function Home() {
             {about.items.map((item, index) => (
               <article key={item.tag} className="mission-panel grid gap-2 py-5 sm:grid-cols-[8rem_1fr] sm:gap-5 sm:px-4 sm:py-6">
                 <p className="mission-panel__label text-xs font-semibold text-royal">0{index + 1} / {item.tag}</p>
-                <p className="text-sm leading-7 text-navy-deep">{item.text}</p>
+                <p className="prose-copy text-sm leading-7 text-navy-deep">{item.text}</p>
               </article>
             ))}
           </div>
@@ -69,7 +71,7 @@ export default function Home() {
           <div className="mb-8 max-w-2xl">
             <p className="section-heading__eyebrow">{impact.eyebrow}</p>
             <h2 id="home-milestones-title" className="font-serif text-2xl font-bold text-navy-deep md:text-3xl">{impact.title}</h2>
-            <p className="mt-3 text-sm leading-7 text-muted-fg">{impact.description}</p>
+            <p className="prose-copy mt-3 text-sm leading-7 text-muted-fg">{impact.description}</p>
           </div>
           <div className="grid border-y border-border md:grid-cols-3 md:divide-x md:divide-border">
             <div className="py-5 md:px-6 md:py-6 md:first:pl-0">
@@ -115,7 +117,7 @@ export default function Home() {
               <h2 id="home-councils-title" className="font-serif text-2xl font-bold text-navy-deep md:text-3xl">
                 {councils.titleLead}<span className="text-royal">{councils.titleAccent}</span>
               </h2>
-              <p className="mt-3 text-sm leading-7 text-muted-fg">{councils.description}</p>
+              <p className="prose-copy mt-3 text-sm leading-7 text-muted-fg">{councils.description}</p>
             </div>
             <Link to={councils.cta.href} className="inline-flex w-fit items-center gap-2 border-b border-royal pb-1 text-sm font-semibold text-royal transition-colors hover:border-saffron hover:text-saffron focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-royal">
               {councils.cta.label}<ArrowUpRight size={16} aria-hidden="true" />
@@ -143,7 +145,7 @@ export default function Home() {
           <div className="mb-8 max-w-2xl">
             <p className="section-heading__eyebrow">Connected across markets</p>
             <h2 id="home-global-title" className="font-serif text-2xl font-bold text-navy-deep md:text-3xl">A presence in India and beyond</h2>
-            <p className="mt-3 text-sm leading-7 text-muted-fg">CCI India's listed offices and regional representation support business engagement across domestic and international markets.</p>
+            <p className="prose-copy mt-3 text-sm leading-7 text-muted-fg">CCI India's listed offices and regional representation support business engagement across domestic and international markets.</p>
           </div>
           <div className="grid gap-8 border-t border-border pt-6 md:grid-cols-2 md:gap-12">
             <div>
@@ -190,20 +192,16 @@ export default function Home() {
             titleAccent={whatWeDo.titleAccent}
             description={whatWeDo.description.replace(' Hover a node to trace a connection.', '')}
           />
-          <div className="mb-6 overflow-hidden rounded-lg border border-border bg-gradient-to-br from-navy-deep/5 to-royal/5 p-4 text-center sm:mb-8 sm:p-8">
-            <img
-              src="/images/network-visual.jpg"
-              alt="CCI India Network Visualization - Connected economy services and member organizations"
-              className="mx-auto max-w-full object-contain sm:max-w-2xl"
-            />
-          </div>
-          <div className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {whatWeDo.flows.map((flow, index) => (
-              <button key={flow.label} type="button" className="showcase-card group text-left" onClick={() => setSelectedDetail({ ...editorial.whatWeDo[flow.label], title: flow.label, intro: flow.text })}>
-                <span className="showcase-card__number">0{index + 1}</span>
-                <h3 className="mb-2 font-serif text-base font-bold text-navy-deep transition-colors group-hover:text-royal sm:text-lg">{flow.label}</h3>
-                <p className="text-sm leading-6 text-muted-fg">{flow.text}</p>
-                <span className="showcase-card__action">Explore <ArrowUpRight size={15} aria-hidden="true" /></span>
+              <button key={flow.label} type="button" className="showcase-card group text-left" onClick={() => setSelectedDetail({ ...editorial.whatWeDo[flow.label], title: flow.label, intro: flow.text, image: flow.image, imageAlt: flow.imageAlt, imageCreditLabel: flow.imageCreditLabel, imageCreditUrl: flow.imageCreditUrl })}>
+                <img src={flow.image} alt={flow.imageAlt} className="showcase-card__image" loading="lazy" />
+                <span className="showcase-card__content">
+                  <span className="showcase-card__number">0{index + 1}</span>
+                  <span className="showcase-card__title" role="heading" aria-level={3}>{flow.label}</span>
+                  <span className="prose-copy showcase-card__description">{flow.text}</span>
+                  <span className="showcase-card__action">Explore <ArrowUpRight size={15} aria-hidden="true" /></span>
+                </span>
               </button>
             ))}
           </div>
@@ -228,14 +226,20 @@ export default function Home() {
                       key={center.name}
                       type="button"
                       tabIndex={isDuplicate ? -1 : 0}
-                      className="initiative-card group"
+                      className={`initiative-card group ${index % 2 === 1 ? 'initiative-card--accent' : ''}`}
                       onPointerDown={(event) => { if (isDuplicate) event.preventDefault() }}
                       onClick={() => setSelectedDetail({ ...editorial.centers[center.name], title: center.name, intro: center.blurb })}
                     >
-                      <span className="initiative-card__index">{String(index + 1).padStart(2, '0')} <span>{center.focus}</span></span>
-                      <h3 className="font-serif text-lg font-bold leading-snug text-navy-deep transition-colors group-hover:text-royal">{center.name}</h3>
-                      <p className="mt-3 text-sm leading-6 text-muted-fg">{center.blurb}</p>
-                      <span className="showcase-card__action">View details <ArrowUpRight size={15} aria-hidden="true" /></span>
+                      <img src={center.image} alt={center.imageAlt} className="initiative-card__image" loading="lazy" />
+                      <span className="initiative-card__content">
+                        <span className="initiative-card__index">
+                          <span className="initiative-card__number">{String(index + 1).padStart(2, '0')}</span>
+                          <span className="initiative-card__focus">{center.focus}</span>
+                        </span>
+                        <span className={`initiative-card__title font-serif font-bold text-navy-deep transition-colors ${index % 2 === 1 ? '' : 'group-hover:text-royal'}`} role="heading" aria-level={3}>{center.name}</span>
+                        <span className="prose-copy initiative-card__description">{center.blurb}</span>
+                        <span className="showcase-card__action">View details <ArrowUpRight size={16} aria-hidden="true" /></span>
+                      </span>
                     </button>
                   ))}
                 </div>
@@ -245,22 +249,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* News & Events */}
-      <section className="section-padding border-b border-border bg-off-white">
-        <div className="container-main">
-          <SectionHeading
-            eyebrow={news.eyebrow}
-            titleLead={news.titleLead}
-            titleAccent={news.titleAccent}
-            description={news.description}
-          />
-          <div className="mb-4 sm:mb-6"><NewsFeed limit={3} /></div>
-          <Button to={news.cta.href} variant="secondary">{news.cta.label}</Button>
-        </div>
-      </section>
-
       <HelpVideo />
       <DGNote />
+
+      <HomeNewsSection moreNewsHref={news.cta.href} />
+
+      <LifeAtCCI />
+      <MemberVoices />
       <DetailDialog item={selectedDetail} onClose={() => setSelectedDetail(null)} />
     </>
   )

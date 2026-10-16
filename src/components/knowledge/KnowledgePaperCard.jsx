@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { CalendarDays, FileText, LockKeyhole, MapPin } from 'lucide-react'
-import { getKnowledgePaperRequestUrl, validDate } from '../../lib/knowledgePapers'
+import { CalendarDays, FileText, MapPin } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { validDate } from '../../lib/knowledgePapers'
 
 const formatDate = (value, fallbackYear) => {
   const date = validDate(value)
@@ -55,7 +56,7 @@ export default function KnowledgePaperCard({ paper, featured = false }) {
           {paper.region && <span className="inline-flex items-center gap-1"><MapPin size={13} aria-hidden="true" />{paper.region}</span>}
         </div>
         <h2 className={`${featured ? 'text-xl sm:text-2xl' : 'text-lg'} font-serif font-bold leading-snug text-navy-deep`}>{paper.title}</h2>
-        {paper.description && <p className="mt-3 line-clamp-2 text-sm text-muted-fg">{paper.description}</p>}
+        {paper.description && <p className="prose-copy mt-3 line-clamp-2 text-sm text-muted-fg">{paper.description}</p>}
         {(publicationDate || paper.fileSize) && (
           <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-fg">
             {publicationDate && <span className="inline-flex items-center gap-1.5"><CalendarDays size={14} aria-hidden="true" />{publicationDate}</span>}
@@ -64,9 +65,7 @@ export default function KnowledgePaperCard({ paper, featured = false }) {
         )}
         {paper.tags.length > 0 && <ul className="mt-4 flex flex-wrap gap-2" aria-label="Topics">{paper.tags.map((tag) => <li key={tag} className="border border-border bg-off-white px-2 py-1 text-[11px] font-medium text-navy-deep">{tag}</li>)}</ul>}
         <div className="mt-auto pt-6">
-          <a href={getKnowledgePaperRequestUrl(paper)} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center justify-center gap-2 bg-navy-deep px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-navy">
-            Request Access <LockKeyhole size={15} aria-hidden="true" />
-          </a>
+          <Link to={`/knowledge-papers/${encodeURIComponent(paper.id)}`} className="inline-flex min-h-11 items-center justify-center gap-2 bg-navy-deep px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-navy">Read Preview <FileText size={15} aria-hidden="true" /></Link>
         </div>
       </div>
     </article>

@@ -17,28 +17,55 @@
     "heading": "Watch our recent events",
     "items": [
       {
+        "id": "ethanol-biofuel-conference",
         "title": "Ethanol & Biofuel Conference",
         "youtubeId": "QCETr3G42eQ"
       },
       {
+        "id": "ethanol-biofuel-conference-session-2",
         "title": "Ethanol & Biofuel Conference — Session 2",
         "youtubeId": "fwfs697SetQ"
       },
       {
+        "id": "money-game-cci-india",
         "title": "\"Money Game\" — CCI India's special show",
         "youtubeId": "15AHHI4DUwo"
       },
       {
+        "id": "cci-india-video",
         "title": "CCI India Video",
         "url": "/videos/cci-india-video.mp4"
       },
       {
+        "id": "cci-india-agenda",
         "title": "CCI India Agenda",
         "url": "/videos/cci-india-agenda-video.mp4"
       },
       {
+        "id": "cci-new-video",
         "title": "CCI New Video",
         "url": "/videos/cci-new-video.mp4"
+      },
+      {
+        "id": "member-testimonial-1",
+        "title": "CCI India Member Testimonial 1",
+        "provider": "local",
+        "showInLifeAtCCI": true,
+        "url": "/videos/testimonials/member-testimonial-1.mp4"
+      },
+      {
+        "id": "member-testimonial-2",
+        "title": "CCI India Member Testimonial 2",
+        "provider": "local",
+        "showInLifeAtCCI": true,
+        "url": "/videos/testimonials/member-testimonial-2.mp4"
+      },
+      {
+        "id": "member-testimonial-3",
+        "title": "CCI India Member Testimonial 3",
+        "provider": "local",
+        "showInLifeAtCCI": true,
+        "url": "/videos/testimonials/member-testimonial-3.mp4"
       }
     ]
   },

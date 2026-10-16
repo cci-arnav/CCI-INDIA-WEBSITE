@@ -22,7 +22,7 @@ export default function Membership() {
             {data.eligibility.items.map((item, i) => (
               <p
                 key={i}
-                className={`border border-border bg-white p-4 text-sm ${item.emphasis ? 'border-l-4 border-l-saffron font-medium text-navy-deep' : 'text-muted-fg'}`}
+                className={`prose-copy border border-border bg-white p-4 text-sm ${item.emphasis ? 'border-l-4 border-l-saffron font-medium text-navy-deep' : 'text-muted-fg'}`}
               >
                 {item.text}
               </p>
@@ -49,7 +49,7 @@ export default function Membership() {
           <SectionHeading eyebrow={data.benefits.eyebrow} title={data.benefits.heading} />
           <ul className="grid gap-3 sm:grid-cols-2">
             {data.benefits.items.map((b) => (
-              <li key={b} className="flex gap-2 border border-border bg-white p-4 text-sm text-muted-fg">
+              <li key={b} className="prose-copy flex gap-2 border border-border bg-white p-4 text-sm text-muted-fg">
                 <span className="text-saffron">✓</span>{b}
               </li>
             ))}

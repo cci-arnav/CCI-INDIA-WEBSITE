@@ -1,0 +1,43 @@
+{
+  "purpose": "Read-only Drive UI listings. These names and Drive PDF type indicators do not prove the PDFs are readable or match the catalogue content; no object paths are inferred.",
+  "folders": [
+    {
+      "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_",
+      "name": "KNOWLEDGE PAPERS",
+      "listingPdfCount": 35,
+      "access": "listed in authenticated Drive UI; source bytes not downloaded",
+      "files": ["Angola", "armenia .pdf", "belarus .pdf", "Cabo Verde", "Chad Knowledge Paper.pdf", "cote de voire.pdf", "Cuba Knowledge paper.pdf", "CYPRUS.pdf", "Djiobouti", "dominican republic .pdf", "equador.pdf", "Finland Knowledge paper.pdf", "Georgia.pdf", "Ghana Knowledge paper.pdf", "INDONESIA.pdf", "iraq.pdf", "kenya.pdf", "Laos.pdf", "Malawi.pdf", "Maldives KP.pdf", "mosambique xontnet_merged.pdf", "Namibia.pdf", "NICARAGUA.pdf", "Palestine", "Romania kp.pdf", "russia.pdf", "senegal nd india.pdf", "SINGAPORE.pdf", "SPAIN.pdf", "sudan.pdf", "SURINAME.pdf", "TAJAKISTAN .pdf", "Tunisia Knowledge Paper.pdf", "Uruguay", "Uzbekistan"]
+    },
+    {
+      "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+      "name": "knowledge paper- states (pdf)",
+      "listingPdfCount": 36,
+      "access": "listed in authenticated Drive UI; source bytes not downloaded",
+      "files": ["Knowledege paper on J&K.pdf", "Knowledge paper on Andaman and Nicobar Islands.pdf", "Knowledge paper on Andhra Pradesh.pdf", "Knowledge paper on Arunachal pradesh.pdf", "Knowledge paper on Assam.pdf", "Knowledge paper on Bihar.pdf", "Knowledge paper on Chandigarh.pdf", "Knowledge paper on Chhattisgarh.pdf", "Knowledge paper on Daman and diu.pdf", "Knowledge paper on Delhi.pdf", "Knowledge paper on Goa.pdf", "Knowledge paper on Gujarat.pdf", "Knowledge paper on Haryana.pdf", "Knowledge paper on Himachal Pradesh.pdf", "Knowledge paper on Jharkhand.pdf", "Knowledge paper on Karnataka.pdf", "Knowledge paper on Kerala.pdf", "Knowledge paper on Ladakh.pdf", "Knowledge paper on Lakshadweep.pdf", "Knowledge paper on Madhya Pradesh.pdf", "Knowledge Paper on Maharashtra.pdf", "Knowledge Paper on Manipur.pdf", "Knowledge paper on Meghalaya.pdf", "Knowledge paper on Mizoram.pdf", "Knowledge paper on Nagaland.pdf", "Knowledge paper on Odisha.pdf", "Knowledge paper on Puducherry.pdf", "Knowledge Paper on Punjab.pdf", "Knowledge Paper on Rajasthan.pdf", "Knowledge paper on Sikkim.pdf", "Knowledge paper on Tamil Nadu.pdf", "Knowledge Paper on Telangana.pdf", "Knowledge Paper on Tripura.pdf", "Knowledge Paper on Uttar Pradesh.pdf", "Knowledge Paper on Uttarakhand.pdf", "Knowledge paper on West Bengal.pdf"]
+    },
+    {
+      "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek",
+      "name": "knowledge paper-ministries (pdf)",
+      "listingPdfCount": 50,
+      "access": "listed in authenticated Drive UI; source bytes not downloaded; Drive UI titles often omit the .pdf suffix",
+      "files": ["Copy of ministry of agriculture", "Copy of Ministry of AYUSH", "Copy of ministry of chemical and fertilisers", "Copy of ministry of civil aviation", "Copy of Ministry of Coal", "Copy of ministry of commerce and industries", "Copy of ministry of communication", "Copy of ministry of consumer affairs", "Copy of ministry of cooperation", "Copy of ministry of corporate affair", "Copy of Ministry of Culture", "Copy of ministry of defence", "Copy of ministry of development of north eastern", "Copy of ministry of earth science", "Copy of ministry of education", "Copy of ministry of electronics", "Copy of ministry of environment", "Copy of ministry of external affiars", "Copy of Ministry of Finance", "Copy of ministry of fisheries", "Copy of ministry of food processing", "Copy of ministry of health", "Copy of ministry of heavyy industries", "Copy of ministry of home affiars", "Copy of ministry of housing affairs", "Copy of ministry of information", "Copy of ministry of jal shakti", "Copy of ministry of labour and employment", "Copy of ministry of law and justice", "Copy of ministry of mines", "Copy of ministry of minority affairs", "Copy of ministry of msme", "Copy of ministry of new & renewable energy", "Copy of ministry of panchyati raj", "Copy of ministry of parliamentry affairs", "Copy of ministry of personel", "Copy of ministry of petroleum and gases", "Copy of ministry of ports and waterways", "Copy of ministry of power", "Copy of ministry of railways", "Copy of ministry of road transports", "Copy of ministry of rural development", "Copy of ministry of science and technology", "Copy of ministry of skill development", "Copy of ministry of social justice", "Copy of ministry of statistics and programme", "Copy of ministry of steel", "Copy of ministry of textiles", "Copy of ministry of tourism", "Copy of ministry of tribal affairs"],
+      "driveDisplayedSizes": ["4.1 MB", "5.5 MB", "4.7 MB", "5.5 MB", "5.6 MB", "6.2 MB", "6.8 MB", "5.9 MB", "6 MB", "5.9 MB", "5.3 MB", "5 MB", "6.1 MB", "5.9 MB", "5.9 MB", "6.3 MB", "6.6 MB", "6 MB", "5.8 MB", "6.4 MB", "5.4 MB", "5.3 MB", "5.5 MB", "5.7 MB", "5.7 MB", "4.4 MB", "5.5 MB", "4.6 MB", "4.8 MB", "5.3 MB", "2 MB", "4.9 MB", "5 MB", "5.6 MB", "5.5 MB", "5 MB", "5.6 MB", "5.3 MB", "9.8 MB", "5.8 MB", "5.9 MB", "5.4 MB", "5.3 MB", "9.2 MB", "5.6 MB", "4.5 MB", "5.4 MB", "5.3 MB", "5.8 MB", "5.9 MB"]
+    },
+    {
+      "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z",
+      "name": "knowledge paper-embassy (pdf)",
+      "listingPdfCount": 16,
+      "listingGoogleDocsCount": 1,
+      "access": "listed in authenticated Drive UI; a previously downloaded folder archive is available locally and audited separately",
+      "files": ["Georgia", "Malawi", "armenia", "cote de voire", "dominican republic", "equador.pdf", "india and belarus", "iraq and india", "kenya and india", "Namibia", "NICARAGUA AND INDIA", "russia and india", "senegal nd india.pdf", "SINGAPORE", "SURINAME AND INDIA", "Tunisia"],
+      "googleDocs": ["Tunisia"]
+    },
+    {
+      "folderId": "1G_IGRclfGTSFMxoLHoCUNLnNr0YPP0dH",
+      "name": "KNOWLEDGE PAPERS",
+      "listingPdfCount": null,
+      "access": "not inspectable in the authenticated browser during this audit; older manifest count is not treated as verified",
+      "files": []
+    }
+  ]
+}

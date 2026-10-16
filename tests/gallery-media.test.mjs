@@ -7,10 +7,10 @@ test('gallery local videos have unique records and playable local assets', () =>
   const content = JSON.parse(readFileSync(fileURLToPath(new URL('../content/gallery.json', import.meta.url)), 'utf8'))
   const videos = content.videos.items.filter((item) => item.url)
 
-  assert.equal(videos.length, 3)
+  assert.equal(videos.length, 6)
   assert.equal(new Set(videos.map((video) => video.url)).size, videos.length)
   for (const video of videos) {
-    assert.match(video.url, /^\/videos\/[a-z0-9-]+\.mp4$/)
+    assert.match(video.url, /^\/videos\/(?:[a-z0-9-]+\/)*[a-z0-9-]+\.mp4$/)
     const asset = fileURLToPath(new URL(`../public${video.url}`, import.meta.url))
     assert.ok(existsSync(asset), `${video.title} is missing its MP4 asset`)
   }

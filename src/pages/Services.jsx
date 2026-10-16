@@ -18,7 +18,7 @@ export default function Services() {
         <div className="container-main">
           <h2 className="mb-4 font-serif text-xl font-bold text-navy-deep">{data.jointVenture.heading}</h2>
           {data.jointVenture.paragraphs.map((p, i) => (
-            <p key={i} className="mb-4 text-muted-fg last:mb-0">{p}</p>
+            <p key={i} className="prose-copy mb-4 text-muted-fg last:mb-0">{p}</p>
           ))}
         </div>
       </section>
@@ -29,7 +29,7 @@ export default function Services() {
             {data.coreServices.items.map((s) => (
               <Card key={s.title} accent="royal">
                 <h3 className="mb-2 font-serif text-base font-bold text-navy-deep">{s.title}</h3>
-                <p className="text-sm text-muted-fg">{s.text}</p>
+                <p className="prose-copy text-sm text-muted-fg">{s.text}</p>
               </Card>
             ))}
           </div>

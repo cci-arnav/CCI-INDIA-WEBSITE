@@ -47,7 +47,7 @@ export default function Gallery() {
           <SectionHeading eyebrow={data.videos.eyebrow} title={data.videos.heading} />
           <div className="grid gap-6 md:grid-cols-3">
             {data.videos.items.map((v) => (
-              <div key={v.title} className="border border-border bg-white">
+              <div key={v.id || v.title} className="border border-border bg-white">
                 <div className="aspect-video">
                   {v.youtubeId ? (
                     <iframe
@@ -71,7 +71,7 @@ export default function Gallery() {
       </section>
       <section className="section-padding border-b border-border">
         <div className="container-main">
-          <p className="mb-2 text-sm text-muted-fg">{data.note}</p>
+          <p className="prose-copy mb-2 text-sm text-muted-fg">{data.note}</p>
           <p className="mb-6 text-xs text-muted-fg">{data.photos.caption}</p>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {data.photos.items.map((photo) => (

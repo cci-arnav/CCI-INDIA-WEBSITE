@@ -7,7 +7,7 @@ export default function PageHero({ eyebrow, title, breadcrumb, lead }) {
         <Breadcrumbs items={breadcrumb} />
         {eyebrow && <p className="section-heading__eyebrow">{eyebrow}</p>}
         <h1 className="max-w-4xl font-serif text-xl font-bold text-navy-deep sm:text-2xl md:text-4xl">{title || lead}</h1>
-        {lead && title && <p className="mt-3 max-w-3xl text-sm text-muted-fg sm:text-base">{lead}</p>}
+        {lead && title && <p className="prose-copy mt-3 max-w-3xl text-sm text-muted-fg sm:text-base">{lead}</p>}
       </div>
     </section>
   )

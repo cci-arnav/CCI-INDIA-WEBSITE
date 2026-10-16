@@ -1,0 +1,156 @@
+{
+  "purpose": "Read-only source inventory. This file does not register or upload papers.",
+  "generatedAt": "2026-10-14",
+  "uploadApproved": false,
+  "localVerifiedSources": [
+    {
+      "catalogueId": "india-cyprus-shared-growth-2026",
+      "catalogueTitle": "India & Cyprus: Strengthening Partnership, Shaping Shared Growth",
+      "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+      "sourceFile": "CYPRUS.pdf",
+      "sizeBytes": 16110172,
+      "sha256": "ec636619ed57cb84f793a69f48fa0b4edcd6d60174d6afb992c88bcfa2123069",
+      "pageCount": 52,
+      "matchConfidence": "exact",
+      "titlePageConfidentialMark": true,
+      "status": "verified-local-not-uploaded"
+    },
+    {
+      "catalogueId": "india-laos-shared-future-2026",
+      "catalogueTitle": "India & Laos: Building Bridges, Expanding Opportunities, Shaping a Shared Future",
+      "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+      "sourceFile": "India-Laos ( knowledge Paper) (1).pdf",
+      "sizeBytes": 10339387,
+      "sha256": "43681b3c3b321e0064253ee7723ca95d04d8802e2647042614e7e70ea7daffc8",
+      "pageCount": 52,
+      "matchConfidence": "exact",
+      "titlePageConfidentialMark": false,
+      "status": "verified-local-not-uploaded"
+    },
+    {
+      "catalogueId": "india-sudan-shared-future-2026",
+      "catalogueTitle": "India & Sudan: Building Bridges, Expanding Opportunities, Shaping a Shared Future",
+      "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+      "sourceFile": "India-Sudan ( Knowledge Paper) (1).pdf",
+      "sizeBytes": 16095867,
+      "sha256": "27d82fdaf461f73f9b09651c2cf2a744674a4dc7ba72333aee11e2b9f74e092a",
+      "pageCount": 54,
+      "matchConfidence": "exact",
+      "titlePageConfidentialMark": true,
+      "status": "verified-local-not-uploaded"
+    },
+    {
+      "catalogueId": "india-tajikistan-shared-growth-2026",
+      "catalogueTitle": "India & Tajikistan: Strengthening Partnership, Shaping Shared Growth",
+      "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+      "sourceFile": "INDIA-TAJAKISTAN_.pdf",
+      "sizeBytes": 9994337,
+      "sha256": "13528f461567e60bbc5cbece202d0da4cd9c41ffda956092734f2941ce850918",
+      "pageCount": 60,
+      "matchConfidence": "exact",
+      "titlePageConfidentialMark": true,
+      "status": "verified-local-not-uploaded"
+    },
+    {
+      "catalogueId": "india-indonesia-shared-prosperity-2026",
+      "catalogueTitle": "India & Indonesia: From Shared Heritage to Shared Prosperity",
+      "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+      "sourceFile": "INDONESIA.pdf",
+      "sizeBytes": 14879016,
+      "sha256": "18578ef4df787c34f9847bdb667e542886db616413998278218991db178383c1",
+      "pageCount": 60,
+      "matchConfidence": "exact",
+      "titlePageConfidentialMark": true,
+      "status": "verified-local-not-uploaded"
+    },
+    {
+      "catalogueId": "india-tunisia-shared-future-2026",
+      "catalogueTitle": "India & Tunisia: Building Bridges, Expanding Opportunities, Shaping a Shared Future",
+      "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+      "sourceFile": "main body tunisia_merged (1) knowledge paper.pdf",
+      "sizeBytes": 16052815,
+      "sha256": "be7f3705e387ab74b66f7bd574cb75a64fee6d25c058ad0a58ef8350ad04e110",
+      "pageCount": 48,
+      "matchConfidence": "exact",
+      "titlePageConfidentialMark": true,
+      "status": "verified-local-not-uploaded"
+    },
+    {
+      "catalogueId": "india-spain-shared-growth-2026",
+      "catalogueTitle": "India & Spain: Strengthening Partnership, Shaping Shared Growth",
+      "sourceDirectory": "Downloads/KNOWLEDGE PAPERS",
+      "sourceFile": "SPAIN.pdf",
+      "sizeBytes": 15947474,
+      "sha256": "8b94fc40f1a1bbf01e81500b4faab10907753978422a14d93ec2faaadc5bae58",
+      "pageCount": 48,
+      "matchConfidence": "exact",
+      "titlePageConfidentialMark": true,
+      "status": "verified-local-not-uploaded"
+    }
+  ],
+  "unmatchedLocalCandidates": [
+    {
+      "sourceDirectory": "Downloads",
+      "sourceFile": "CCI_India_AI_Productivity_Course.pdf",
+      "sizeBytes": 6365445,
+      "sha256": "794fe65e06eba938b9f09a99e1257f91ce417804e9c4c4284610c4c483cb9bb8",
+      "pageCount": 157,
+      "matchConfidence": "unmatched",
+      "status": "not-registered"
+    },
+    {
+      "sourceDirectory": "Downloads",
+      "sourceFile": "StartupVerse India.pdf",
+      "sizeBytes": 15274589,
+      "sha256": "b6c326c8673f4b5c3a5b68116dd51d8b8ff68a7392a90969234716d6f3a0d579",
+      "pageCount": 18,
+      "matchConfidence": "unmatched",
+      "status": "not-registered"
+    }
+  ],
+  "reviewDriveCandidates": [
+    {
+      "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+      "sourceFile": "Knowledege paper on J&K.pdf",
+      "catalogueId": "state-jammu-and-kashmir-knowledge-paper-2026",
+      "matchConfidence": "strong",
+      "status": "verify-before-registration"
+    },
+    {
+      "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS",
+      "sourceFile": "Knowledge paper on Daman and diu.pdf",
+      "catalogueId": "state-dadra-and-nagar-haveli-and-daman-and-diu-knowledge-paper-2026",
+      "matchConfidence": "ambiguous",
+      "status": "human-review-required"
+    }
+  ],
+  "driveInventory": [
+    { "folderId": "1jgedKEDRTzbugfT8Svn_aBK1uWVB_4vS", "folder": "knowledge paper- states (pdf)", "pdfCount": 36, "pageCountsInspected": false },
+    { "folderId": "1AHFjNwIofVZgEDv-M5uEtWViM1aktYek", "folder": "knowledge paper-ministries (pdf)", "pdfCount": 50, "pageCountsInspected": false },
+    { "folderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_", "folder": "KNOWLEDGE PAPERS", "pdfCount": 35, "pageCountsInspected": false },
+    { "folderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z", "folder": "knowledge paper-embassy (pdf)", "pdfCount": 16, "googleDocsCount": 1, "pageCountsInspected": true },
+    { "folderId": "1G_IGRclfGTSFMxoLHoCUNLnNr0YPP0dH", "folder": "KNOWLEDGE PAPERS", "pdfCount": null, "pageCountsInspected": false, "access": "not inspectable during current audit; historical count unverified" }
+  ],
+  "unmatchedDriveCountries": [
+    "Angola",
+    "Cabo Verde",
+    "cote de voire.pdf",
+    "Cuba Knowledge paper.pdf",
+    "Djiobouti",
+    "Finland Knowledge paper.pdf",
+    "Ghana Knowledge paper.pdf",
+    "Maldives KP.pdf",
+    "mosambique xontnet_merged.pdf",
+    "Palestine",
+    "Romania kp.pdf",
+    "Uruguay",
+    "Uzbekistan"
+  ],
+  "missingCatalogueSource": [
+    { "catalogueId": "india-tea-industry-growth-2026", "catalogueTitle": "Growing Prosperity, One Cup at a Time" }
+  ],
+  "duplicateCandidates": [
+    { "sourceFolderId": "1U3oNea8KuLnEId4GZiyEL_8H2TTkSz-z", "likelyDuplicateOfFolderId": "1tj4Yy700YRNv9R6R4UKuTb4nuag5FEu_", "count": 15, "evidence": "country/title filenames overlap; Drive source bytes were unavailable for cross-folder SHA-256 comparison" },
+    { "sourceFile": "Tunisia.pdf", "likelyDuplicateOfSourceFile": "main body tunisia_merged (1) knowledge paper.pdf", "catalogueId": "india-tunisia-shared-future-2026", "evidence": "same-country alternative; SHA-256 values differ, so not an exact duplicate and content review is needed" }
+  ]
+}

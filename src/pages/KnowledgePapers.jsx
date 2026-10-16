@@ -31,7 +31,7 @@ export default function KnowledgePapers() {
       <PageHero
         eyebrow="Research & Insights"
         title="Knowledge Papers"
-        lead="Country, State, Union Territory and Ministry-focused research from CCI India, available through controlled access for verified enquiries."
+        lead="Explore country, State, Union Territory and Ministry-focused research from CCI India. Read up to five pages free, then request the complete paper through the enquiry form."
         breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Knowledge Papers' }]}
       />
       <section className="section-padding bg-white">
@@ -39,8 +39,8 @@ export default function KnowledgePapers() {
           <div className="mb-6 grid gap-4 border border-royal/20 bg-[linear-gradient(120deg,rgba(30,76,160,.07),rgba(255,126,29,.08))] p-5 sm:grid-cols-[auto_1fr] sm:p-6">
             <div className="grid h-12 w-12 place-items-center rounded-full bg-navy-deep text-white"><ShieldCheck size={23} aria-hidden="true" /></div>
             <div>
-              <h2 className="font-serif text-lg font-bold text-navy-deep">Controlled knowledge access</h2>
-              <p className="mt-1 max-w-3xl text-sm text-muted-fg">Knowledge papers are not hosted for public viewing or download. Select a paper and submit your professional details; the CCI India team will review the enquiry and contact you directly.</p>
+              <h2 className="font-serif text-lg font-bold text-navy-deep">Free previews, direct paper requests</h2>
+              <p className="prose-copy mt-1 max-w-3xl text-sm text-muted-fg">Read up to the first five pages of an onboarded paper free, without signing in. To request the complete document, submit the paper enquiry form; CCI India will review and respond outside the website.</p>
             </div>
           </div>
           <section aria-labelledby="paper-discovery-heading">
@@ -88,7 +88,7 @@ export default function KnowledgePapers() {
             <section className="mt-8 border border-border bg-off-white px-5 py-12 text-center sm:py-16" aria-labelledby="empty-papers-heading">
               <FileSearch className="mx-auto mb-4 text-royal" size={44} strokeWidth={1.5} aria-hidden="true" />
               <h2 id="empty-papers-heading" className="font-serif text-xl font-bold text-navy-deep sm:text-2xl">Knowledge papers will be published here soon.</h2>
-              <p className="mx-auto mt-3 max-w-xl text-sm text-muted-fg">This library is ready for verified CCI India research and country-focused resources as they become available.</p>
+              <p className="prose-copy mx-auto mt-3 max-w-xl text-sm text-muted-fg">This library is ready for verified CCI India research and country-focused resources as they become available.</p>
             </section>
           ) : filtered.length === 0 ? (
             <section className="mt-8 border border-border px-5 py-12 text-center" aria-labelledby="no-results-heading">

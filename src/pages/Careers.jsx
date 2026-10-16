@@ -31,7 +31,7 @@ export default function Careers() {
             {data.overview.items.map((item) => (
               <div key={item.label} className="border border-border bg-white p-4">
                 <dt className="mb-1 text-xs font-semibold uppercase tracking-wider text-saffron">{item.label}</dt>
-                <dd className="text-sm text-muted-fg">{item.value}</dd>
+                <dd className="prose-copy text-sm text-muted-fg">{item.value}</dd>
               </div>
             ))}
           </dl>
@@ -44,7 +44,7 @@ export default function Careers() {
             {data.whyApply.items.map((item) => (
               <Card key={item.title}>
                 <h3 className="mb-2 font-serif text-base font-bold text-navy-deep">{item.title}</h3>
-                <p className="text-sm text-muted-fg">{item.text}</p>
+                <p className="prose-copy text-sm text-muted-fg">{item.text}</p>
               </Card>
             ))}
           </div>
@@ -90,7 +90,7 @@ export default function Careers() {
           </form>
           <div className="mt-8 border border-border bg-off-white p-5">
             <h3 className="mb-1 font-serif font-bold text-navy-deep">{data.contactNote.heading}</h3>
-            <p className="text-sm text-muted-fg">{data.contactNote.text}</p>
+            <p className="prose-copy text-sm text-muted-fg">{data.contactNote.text}</p>
             <p className="mt-2 text-sm font-medium text-royal">{data.contactNote.phone}</p>
           </div>
         </div>

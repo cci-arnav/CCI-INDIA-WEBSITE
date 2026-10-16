@@ -18,7 +18,7 @@ export default function MarketEntry() {
           <h1 className="mb-3 max-w-3xl font-serif text-3xl font-bold text-white md:text-4xl">
             {hero.lead}<span className="text-saffron">{hero.accent}</span>
           </h1>
-          <p className="mb-2 max-w-2xl text-sm text-white/80">{hero.subheading}</p>
+          <p className="prose-copy mb-2 max-w-2xl text-sm text-white/80">{hero.subheading}</p>
           <p className="mb-6 text-xs uppercase tracking-wider text-white/50">{hero.tag}</p>
           <div className="flex flex-wrap gap-3">
             <Button to={hero.primaryCta.href} variant="accent">{hero.primaryCta.label}</Button>
@@ -38,7 +38,7 @@ export default function MarketEntry() {
             {data.focusAreas.items.map((item) => (
               <Card key={item.title} accent="royal">
                 <h3 className="mb-2 font-serif text-base font-bold text-navy-deep">{item.title}</h3>
-                <p className="text-sm text-muted-fg">{item.text}</p>
+                <p className="prose-copy text-sm text-muted-fg">{item.text}</p>
               </Card>
             ))}
           </div>
@@ -52,7 +52,7 @@ export default function MarketEntry() {
               <div key={step.title} className="border border-border border-t-4 border-t-saffron p-5">
                 <div className="mb-2 text-xs font-semibold text-muted-fg">Step {i + 1}</div>
                 <h3 className="mb-2 font-serif text-base font-bold text-navy-deep">{step.title}</h3>
-                <p className="text-sm text-muted-fg">{step.text}</p>
+                <p className="prose-copy text-sm text-muted-fg">{step.text}</p>
               </div>
             ))}
           </div>

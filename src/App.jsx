@@ -12,6 +12,7 @@ import StatesInvestment from './pages/StatesInvestment'
 import MarketEntry from './pages/MarketEntry'
 import Careers from './pages/Careers'
 import KnowledgePapers from './pages/KnowledgePapers'
+import KnowledgePaperReader from './pages/KnowledgePaperReader'
 import Events from './pages/Events'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
@@ -24,6 +25,7 @@ import AdminNewsForm from './pages/admin/AdminNewsForm'
 
 const BharatInvestmentGrid = lazy(() => import('./pages/BharatInvestmentGrid'))
 const BIGStateDetail = lazy(() => import('./pages/BIGStateDetail'))
+const StateInvestmentDetail = lazy(() => import('./pages/StateInvestmentDetail'))
 const BIGOpportunityDetail = lazy(() => import('./pages/BIGOpportunityDetail'))
 const bigRouteFallback = <div className="container-main section-padding" role="status">Loading Bharat Investment Grid…</div>
 
@@ -42,12 +44,14 @@ const App = () => {
           <Route path="/councils/:slug" element={<CouncilDetail />} />
           <Route path="/membership" element={<Membership />} />
           <Route path="/states-investment" element={<StatesInvestment />} />
+          <Route path="/state-investment/:stateSlug" element={<Suspense fallback={bigRouteFallback}><StateInvestmentDetail /></Suspense>} />
           <Route path="/bharat-investment-grid" element={<Suspense fallback={bigRouteFallback}><BharatInvestmentGrid /></Suspense>} />
           <Route path="/bharat-investment-grid/state/:stateSlug" element={<Suspense fallback={bigRouteFallback}><BIGStateDetail /></Suspense>} />
           <Route path="/bharat-investment-grid/opportunity/:opportunitySlug" element={<Suspense fallback={bigRouteFallback}><BIGOpportunityDetail /></Suspense>} />
           <Route path="/market-entry" element={<MarketEntry />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/knowledge-papers" element={<KnowledgePapers />} />
+          <Route path="/knowledge-papers/:paperId" element={<KnowledgePaperReader />} />
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />

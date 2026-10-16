@@ -1,0 +1,23 @@
+{
+  "sourceArchive": "Downloads/knowledge paper-embassy (pdf)-20260925T061358Z-1-001.zip",
+  "auditExtraction": "%TEMP%/cci-knowledge-paper-embassy-audit-20261015",
+  "matchingNote": "All listed files passed PDF parsing and five-page preview generation. Catalogue matches below are country/name candidates only; internal title-page text was not extracted, so all require content-level review before mapping.",
+  "files": [
+    { "sourceFile": " Georgia.pdf", "sizeBytes": 12084598, "sha256": "49a97fb8b7433ab6ded7f70c7c268ebdda806f43a747847926a5178386d8721d", "pageCount": 56, "candidateCatalogueId": "india-georgia-opportunity-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": " Malawi.pdf", "sizeBytes": 17226130, "sha256": "35b948a7b71f16b84c08170ec9952564b0a6273a44a18a937326ac8bdcb6f2db", "pageCount": 64, "candidateCatalogueId": "india-malawi-sustainable-prosperity-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": "armenia_.pdf", "sizeBytes": 21062342, "sha256": "52bfc16cf6ec743a7300c20cbd013dfe0b43e2052bffb5d59f56f73ee2a64fef", "pageCount": 64, "candidateCatalogueId": "india-armenia-partnership-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": "cote de voire.pdf", "sizeBytes": 7743150, "sha256": "3fa79846491b0c90f0e4f50d9cc47c0508440af4d7a906e505f24039b51778c4", "pageCount": 60, "candidateCatalogueId": null, "matchConfidence": "unmatched" },
+    { "sourceFile": "dominican republic_.pdf", "sizeBytes": 18306172, "sha256": "508ffd5c1a0e2eec9cb7694b3de8d898506ae424918ee072886014f38c5d6af4", "pageCount": 64, "candidateCatalogueId": "india-dominican-republic-prosperity-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": "equador.pdf", "sizeBytes": 25355422, "sha256": "c5cae802506b4e24ae49f42f54e4ce8017ba52acb59ae5744e1509eac5c60e6e", "pageCount": 64, "candidateCatalogueId": "india-ecuador-partnership-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": "india and belarus_.pdf", "sizeBytes": 15861642, "sha256": "00487b613a61555f5f9afcb614cc15717a83e2274c32916af4aa56dce3174437", "pageCount": 56, "candidateCatalogueId": "india-belarus-partnership-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": "iraq and india.pdf", "sizeBytes": 16987043, "sha256": "423d8aa5690d1c730a071af14b81ae2b48a0d72b92c96211fbd8f762ff8f83cc", "pageCount": 60, "candidateCatalogueId": "india-iraq-shared-prosperity-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": "kenya and india_.pdf", "sizeBytes": 15528910, "sha256": "6c21aaba9fd41b8a3a9fa2e8e58f195808a6852ebed0148bb3b2db8f75eeca83", "pageCount": 64, "candidateCatalogueId": "india-kenya-strengthening-ties-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": "Namibia.pdf", "sizeBytes": 20833112, "sha256": "4b65ad19caaf73676f8bca0997066ee20133703622cb3920371e75e444316ee6", "pageCount": 72, "candidateCatalogueId": "india-namibia-collaboration-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": "NICARAGUA AND INDIA.pdf", "sizeBytes": 11763522, "sha256": "2ede20b71a844b7387d40196a14cb5e3784864ed5012f487072b00ef51469caa", "pageCount": 40, "candidateCatalogueId": "india-nicaragua-shared-future-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": "russia and india_.pdf", "sizeBytes": 13748563, "sha256": "80cc5599e1e5f8ccf044b5b99e201e5fa67c99968f7a2fd4e30cf3b47f3d5a6d", "pageCount": 60, "candidateCatalogueId": "india-russia-bilateral-growth-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": "senegal nd india.pdf", "sizeBytes": 10327685, "sha256": "fddd8634cd439e63aa3df78b088cd43d9c009ef180aaa8bdc33d730924b5737b", "pageCount": 48, "candidateCatalogueId": "india-senegal-growth-opportunities-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": "SINGAPORE.pdf", "sizeBytes": 14150398, "sha256": "7cd27623ce72bee72c19947855011ffaa1a7454de2009b1aa5049eb753d5cf03", "pageCount": 48, "candidateCatalogueId": "india-singapore-shaping-tomorrow-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": "SURINAME AND INDIA.pdf", "sizeBytes": 10948200, "sha256": "67717f53d3c4c254590d2760abd4f647e4f96fba9b675783319a4b90e89511aa", "pageCount": 48, "candidateCatalogueId": "india-suriname-shared-future-2026", "matchConfidence": "needs-review" },
+    { "sourceFile": "Tunisia.pdf", "sizeBytes": 16009911, "sha256": "dcc15db396ee0b5ceae9ef90d700d2e55236fae7f5841dc6ff7c15c43d125e0e", "pageCount": 48, "candidateCatalogueId": "india-tunisia-shared-future-2026", "matchConfidence": "needs-review-alternative-to-local-source" }
+  ]
+}

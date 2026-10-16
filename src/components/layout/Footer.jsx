@@ -11,9 +11,9 @@ export default function Footer() {
     <footer className="border-t border-border bg-navy-deep text-white">
       <div className="border-b border-white/10">
         <div className="container-main section-padding">
-          <p className="mb-1 text-xs uppercase tracking-wider text-white/60">{footer.ctaEyebrow}</p>
+          <p className="footer-cta__eyebrow">{footer.ctaEyebrow}</p>
           <h2 className="mb-3 max-w-xl font-serif text-xl font-bold text-white sm:text-2xl md:text-3xl">{footer.ctaTitle}</h2>
-          <p className="mb-6 max-w-2xl text-sm text-white/75">{footer.ctaDescription}</p>
+          <p className="prose-copy mb-6 max-w-2xl text-sm text-white/75">{footer.ctaDescription}</p>
           <div className="flex flex-wrap gap-3">
             <Button to={footer.ctaPrimary.href} variant="accent">{footer.ctaPrimary.label}</Button>
             <Button to={footer.ctaSecondary.href} variant="outline-light">{footer.ctaSecondary.label}</Button>
@@ -24,7 +24,7 @@ export default function Footer() {
       <div className="container-main section-padding">
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-4">
           <div>
-            <div className="mb-4 flex flex-col items-start gap-3">
+            <div className="footer-brand-lockup mb-4">
               <span className="footer-brand-mark">
                 <img
                   src="/brand/cci-logo.png"
@@ -34,9 +34,9 @@ export default function Footer() {
                   className="h-10 w-auto sm:h-11"
                 />
               </span>
-              <p className="text-[10px] text-white/60 sm:text-xs">Chamber of Commerce &amp; Industry of India</p>
+              <p>Chamber of Commerce &amp; Industry of India</p>
             </div>
-            <p className="text-xs text-white/70 sm:text-sm">{footer.description}</p>
+            <p className="prose-copy text-xs text-white/70 sm:text-sm">{footer.description}</p>
             <p className="mt-4 text-xs text-white/60 sm:text-sm">Toll Free: {footer.tollFree}</p>
             <div className="mt-5 border-l-2 border-saffron/70 pl-3">
               <p className="text-[10px] font-semibold uppercase tracking-wider text-white/55">CCI India mobile</p>

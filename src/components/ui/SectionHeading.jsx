@@ -9,7 +9,7 @@ export default function SectionHeading({ eyebrow, title, titleLead, titleAccent,
         {titleAccent && <span className="text-royal">{titleAccent}</span>}
         {title}
       </h2>
-      {description && <p className="mt-4 max-w-2xl text-sm leading-7 text-muted-fg sm:text-base">{description}</p>}
+      {description && <p className="prose-copy mt-4 max-w-2xl text-sm leading-7 text-muted-fg sm:text-base">{description}</p>}
     </div>
   )
 }

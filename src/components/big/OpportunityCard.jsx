@@ -15,7 +15,7 @@ export default function OpportunityCard({ opportunity }) {
         <div className="col-span-2"><dt className="text-muted-fg">Investment requirement</dt><dd className="font-semibold text-navy-deep">{opportunity.investmentRequirement}</dd></div>
         <div className="col-span-2"><dt className="text-muted-fg">Opportunity type</dt><dd className="font-semibold text-navy-deep">{opportunity.opportunityType}</dd></div>
       </dl>
-      <p className="mt-4 line-clamp-2 text-sm text-muted-fg">{opportunity.description}</p>
+      <p className="prose-copy mt-4 line-clamp-2 text-sm text-muted-fg">{opportunity.description}</p>
       <Link to={`/bharat-investment-grid/opportunity/${opportunity.slug}`} className="mt-auto inline-flex min-h-11 items-center gap-2 pt-5 text-sm font-bold text-royal hover:underline">
         View Details <ArrowRight size={15} aria-hidden="true" />
       </Link>

@@ -13,10 +13,16 @@ export default function DetailDialog({ item, onClose }) {
     const dialog = dialogRef.current
     if (!dialog || !item) return
     returnFocusRef.current = document.activeElement
+    const previousDocumentOverflow = document.documentElement.style.overflow
+    const previousBodyOverflow = document.body.style.overflow
+    document.documentElement.style.overflow = 'hidden'
+    document.body.style.overflow = 'hidden'
     dialog.showModal()
     return () => {
       window.clearTimeout(closeTimerRef.current)
       if (dialog.open) dialog.close()
+      document.documentElement.style.overflow = previousDocumentOverflow
+      document.body.style.overflow = previousBodyOverflow
       if (returnFocusRef.current?.isConnected) returnFocusRef.current.focus()
     }
   }, [item])
@@ -52,12 +58,20 @@ export default function DetailDialog({ item, onClose }) {
                 <strong>{item.placeholderLabel || item.title}</strong>
               </div>
             )}
-            <figcaption>CCI India · {item.image ? 'Institutional feature' : 'Image placeholder'}</figcaption>
+            <figcaption>
+              {item.imageCreditUrl ? (
+                <a href={item.imageCreditUrl} target="_blank" rel="noreferrer">
+                  {item.imageCreditLabel || 'Image source'}
+                </a>
+              ) : (
+                <>CCI India · {item.image ? 'Institutional feature' : 'Image placeholder'}</>
+              )}
+            </figcaption>
           </figure>
+          <button type="button" className="detail-dialog__close" onClick={close} aria-label="Close details">
+            <X size={20} aria-hidden="true" />
+          </button>
           <article className="detail-dialog__content">
-            <button type="button" className="detail-dialog__close" onClick={close} aria-label="Close details">
-              <X size={20} aria-hidden="true" />
-            </button>
             <header className="detail-dialog__header">
               <p className="detail-dialog__eyebrow">{item.eyebrow}</p>
               <h2 id="detail-dialog-title" className="font-serif text-2xl font-bold leading-tight text-navy-deep sm:text-3xl">{item.title}</h2>

@@ -31,7 +31,7 @@ export default function Events() {
                 </div>
                 <div className="p-5">
                   <h3 className="mb-2 font-serif text-lg font-bold text-navy-deep">{event.title}</h3>
-                  <p className="text-sm text-muted-fg">{event.description}</p>
+                  <p className="prose-copy text-sm text-muted-fg">{event.description}</p>
                 </div>
               </div>
             ))}

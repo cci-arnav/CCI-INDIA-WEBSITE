@@ -13,23 +13,23 @@
     ],
     "heroSlides": [
       {
-        "image": "/assets/councils/foreign-trade.webp",
-        "alt": "Visitors and exhibitors on a trade fair floor",
+        "image": "/images/hero/brics-leaders.jpg",
+        "alt": "World leaders gathered outside Bharat Mandapam for the BRICS 2026 summit",
         "objectPosition": "center 52%"
       },
       {
-        "image": "/assets/councils/infrastructure.webp",
-        "alt": "Metro train at an urban station, representing public transport infrastructure",
+        "image": "/images/hero/bharat-startup-speaker.jpg",
+        "alt": "Speaker at the CCI India Bharat Startup Summit",
         "objectPosition": "center 50%"
       },
       {
-        "image": "/assets/councils/new-and-renewable-energy.webp",
-        "alt": "Aerial view of a large solar energy installation",
+        "image": "/images/hero/bharat-startup-stage.jpg",
+        "alt": "Stage set for the CCI India Bharat Startup Summit",
         "objectPosition": "center 52%"
       },
       {
-        "image": "/assets/councils/port.webp",
-        "alt": "Freight containers and a gantry crane at a port",
+        "image": "/images/hero/india-russia-leaders.jpg",
+        "alt": "Indian Prime Minister Narendra Modi greeting Russian President Vladimir Putin",
         "objectPosition": "center 55%"
       },
       {
@@ -123,10 +123,36 @@
     "titleAccent": "connected economy",
     "description": "CCI India offers a bouquet of value-added services to its members and industry as a whole — building platforms for exchange, networking and new business generation. Hover a node to trace a connection.",
     "flows": [
-      { "label": "Policy Advocacy", "text": "Carrying industry's voice into the halls of policy." },
-      { "label": "Trade Facilitation", "text": "A single window for business matchmaking, in India and abroad." },
-      { "label": "Investment Matchmaking", "text": "Connecting capital with promising enterprise." },
-      { "label": "Global Networking", "text": "Channels with regulators, governments and international agencies." }
+      {
+        "label": "Policy Advocacy",
+        "text": "Carrying industry's voice into the halls of policy.",
+        "image": "/images/what-we-do/policy-advocacy.jpg",
+        "imageAlt": "Advocacy key on a keyboard, illustrating policy advocacy",
+        "imageCreditLabel": "Image source: LexQuest",
+        "imageCreditUrl": "https://www.lexquest.in/policy-advocacy-a-collaborative-and-democratic-approach-to-solving-societal-issues-in-india/"
+      },
+      {
+        "label": "Trade Facilitation",
+        "text": "A single window for business matchmaking, in India and abroad.",
+        "image": "/images/what-we-do/trade-facilitation.jpg",
+        "imageAlt": "Trade Experettes global trade feature image",
+        "imageCreditLabel": "Image source: Trade Experettes",
+        "imageCreditUrl": "https://www.tradeexperettes.org/blog/articles/trade-facilitation-and-the-response-to-covid-19-an-update-on-the-wto-trade-facilitation-agreement"
+      },
+      {
+        "label": "Investment Matchmaking",
+        "text": "Connecting capital with promising enterprise.",
+        "image": "/images/what-we-do/investment-matchmaking.jpg",
+        "imageAlt": "Investment and business strategy graphic",
+        "imageCreditLabel": "Image source",
+        "imageCreditUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW-8GWFymWskrhb2AMKit1b1qZljBzIc6yrndVFvNc0n20RTxzzFWN08Bj&s=10"
+      },
+      {
+        "label": "Global Networking",
+        "text": "Channels with regulators, governments and international agencies.",
+        "image": "/assets/councils/brics-business-council.webp",
+        "imageAlt": "International business leaders at a BRICS meeting"
+      }
     ]
   },
   "centers": {
@@ -135,16 +161,76 @@
     "titleAccent": "one mission",
     "description": "Specialized centers that focus CCI India's advocacy, investment and growth work on the areas that matter most to Indian enterprise.",
     "items": [
-      { "name": "Center for Market Entry & Business Expansion", "focus": "Business Expansion", "blurb": "Guiding companies into the Indian market and helping them scale operations." },
-      { "name": "Center for Democracy, Political & Economy", "focus": "Governance", "blurb": "Tracking the political and economic forces shaping policy in India." },
-      { "name": "Center for Investor & Portfolios Growth", "focus": "Investment", "blurb": "Supporting investors in growing and diversifying their portfolios." },
-      { "name": "Center for State Investment", "focus": "States", "blurb": "Making the investment environment in the states more conducive to growth." },
-      { "name": "Center for Policy Advocacy", "focus": "Policy", "blurb": "Carrying industry's concerns directly to policymakers." },
-      { "name": "Center for Startups", "focus": "Startups", "blurb": "Backing India's founders from first idea to scale." },
-      { "name": "Center for Impact Investment", "focus": "Impact Investing", "blurb": "Aligning capital with positive social and environmental outcomes." },
-      { "name": "Center for SDG", "focus": "Sustainability", "blurb": "Advancing the UN Sustainable Development Goals through industry action." },
-      { "name": "Center for Family Office", "focus": "Family Office", "blurb": "Serving the investment and governance needs of family enterprises." },
-      { "name": "Center for Founder", "focus": "Founders", "blurb": "A dedicated network and resource base for company founders." }
+      {
+        "name": "Center for Market Entry & Business Expansion",
+        "focus": "Business Expansion",
+        "blurb": "Guiding companies into the Indian market and helping them scale operations.",
+        "image": "/assets/councils/foreign-trade.webp",
+        "imageAlt": "International trade activity representing business expansion"
+      },
+      {
+        "name": "Center for Democracy, Political & Economy",
+        "focus": "Governance",
+        "blurb": "Tracking the political and economic forces shaping policy in India.",
+        "image": "/assets/councils/economic-affairs.webp",
+        "imageAlt": "Economic affairs and governance"
+      },
+      {
+        "name": "Center for Investor & Portfolios Growth",
+        "focus": "Investment",
+        "blurb": "Supporting investors in growing and diversifying their portfolios.",
+        "image": "/assets/councils/capital-markets.webp",
+        "imageAlt": "Capital markets representing investment and portfolio growth"
+      },
+      {
+        "name": "Center for State Investment",
+        "focus": "States",
+        "blurb": "Making the investment environment in the states more conducive to growth.",
+        "image": "/assets/councils/infrastructure.webp",
+        "imageAlt": "Transport infrastructure representing state investment opportunities"
+      },
+      {
+        "name": "Center for Policy Advocacy",
+        "focus": "Policy",
+        "blurb": "Carrying industry's concerns directly to policymakers.",
+        "image": "/assets/councils/company-law-and-corporate-affairs.webp",
+        "imageAlt": "Corporate affairs leaders meeting, representing policy advocacy"
+      },
+      {
+        "name": "Center for Startups",
+        "focus": "Startups",
+        "blurb": "Backing India's founders from first idea to scale.",
+        "image": "/assets/councils/entrepreneurship-development.webp",
+        "imageAlt": "Entrepreneurship development and startup growth"
+      },
+      {
+        "name": "Center for Impact Investment",
+        "focus": "Impact Investing",
+        "blurb": "Aligning capital with positive social and environmental outcomes.",
+        "image": "/assets/councils/venture-capital-and-private-equity.webp",
+        "imageAlt": "Venture capital and private equity representing impact investment"
+      },
+      {
+        "name": "Center for SDG",
+        "focus": "Sustainability",
+        "blurb": "Advancing the UN Sustainable Development Goals through industry action.",
+        "image": "/assets/councils/environment-and-climate-change.webp",
+        "imageAlt": "Environment and climate action representing sustainable development"
+      },
+      {
+        "name": "Center for Family Office",
+        "focus": "Family Office",
+        "blurb": "Serving the investment and governance needs of family enterprises.",
+        "image": "/assets/councils/banking-and-finance.webp",
+        "imageAlt": "Banking and finance representing family office services"
+      },
+      {
+        "name": "Center for Founder",
+        "focus": "Founders",
+        "blurb": "A dedicated network and resource base for company founders.",
+        "image": "/assets/councils/leadership-development-council.webp",
+        "imageAlt": "Leadership development representing founder support"
+      }
     ]
   },
   "news": {
