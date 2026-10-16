@@ -1,5 +1,9 @@
 import { createCanvas } from '@napi-rs/canvas'
 import { PDFDataRangeTransport, getDocument } from 'pdfjs-dist/legacy/build/pdf.mjs'
+// Ensure Vercel's function file tracer includes PDF.js's Node fake-worker
+// module. PDF.js otherwise loads this worker through a runtime-computed import
+// path, which can be omitted from a serverless function bundle.
+import 'pdfjs-dist/legacy/build/pdf.worker.mjs'
 import { PDFDocument } from 'pdf-lib'
 
 export const PREVIEW_PAGE_LIMIT = 5

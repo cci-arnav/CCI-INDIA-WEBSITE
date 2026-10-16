@@ -97,6 +97,39 @@ test('private range transport emits a five-page PDF and limits each origin read 
   assert.ok(rangeCalls.every(([begin, end]) => end - begin + 1 <= 64 * 1024))
 })
 
+test('PDF.js Node worker is a statically loaded dependency for serverless packaging', () => {
+  assert.equal(typeof globalThis.pdfjsWorker?.WorkerMessageHandler, 'function')
+  assert.match(repoFile('../src/lib/knowledgePaperRangePreview.js'), /import ['"]pdfjs-dist\/legacy\/build\/pdf\.worker\.mjs['"]\s*;?/)
+})
+
+test('private range preview distinguishes a byte-zero signature failure', async () => {
+  const source = new TextEncoder().encode('NOT-A-PDF document bytes')
+  await assert.rejects(
+    createPrivatePdfPreview({
+      supabaseUrl: 'https://example.supabase.co',
+      serviceRoleKey: 'server-only-test-key',
+      bucket: 'knowledge-papers-private',
+      storagePath: 'papers/test/original.pdf',
+      fetchImpl: rangeFetcher(source),
+    }),
+    (error) => error.code === 'INVALID_PDF_SOURCE' && error.stage === 'pdf_signature' && error.status === 206,
+  )
+})
+
+test('private range preview distinguishes PDF.js parsing failure after a valid signature', async () => {
+  const source = new TextEncoder().encode('%PDF-1.7\nThis is not a structurally valid PDF document.')
+  await assert.rejects(
+    createPrivatePdfPreview({
+      supabaseUrl: 'https://example.supabase.co',
+      serviceRoleKey: 'server-only-test-key',
+      bucket: 'knowledge-papers-private',
+      storagePath: 'papers/test/original.pdf',
+      fetchImpl: rangeFetcher(source),
+    }),
+    (error) => error.code === 'INVALID_PDF_SOURCE' && error.stage === 'pdfjs_parse',
+  )
+})
+
 test('private ranged preview includes all pages for papers shorter than five pages', async () => {
   const source = await makePdf(3)
   const result = await createPrivatePdfPreview({
