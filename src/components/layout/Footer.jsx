@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Download, MapPin, Phone, Smartphone, ArrowUpRight, Linkedin, Twitter, Youtube } from 'lucide-react'
+import { Download, MapPin, Phone, Smartphone, BriefcaseBusiness, Share2, Play } from 'lucide-react'
 import home from '../../../content/home.json'
 import contact from '../../../content/contact.json'
 import Button from '../ui/Button'
@@ -49,13 +49,13 @@ export default function Footer() {
               {/* Social links */}
               <div className="footer-social">
                 <a href="https://www.linkedin.com/company/cci-india" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="footer-social__link">
-                  <Linkedin size={15} aria-hidden="true" />
+                  <BriefcaseBusiness size={15} aria-hidden="true" />
                 </a>
                 <a href="https://twitter.com/CCI_India" target="_blank" rel="noreferrer" aria-label="Twitter / X" className="footer-social__link">
-                  <Twitter size={15} aria-hidden="true" />
+                  <Share2 size={15} aria-hidden="true" />
                 </a>
                 <a href="https://www.youtube.com/@CCIIndia" target="_blank" rel="noreferrer" aria-label="YouTube" className="footer-social__link">
-                  <Youtube size={15} aria-hidden="true" />
+                  <Play size={15} aria-hidden="true" />
                 </a>
               </div>
             </div>
