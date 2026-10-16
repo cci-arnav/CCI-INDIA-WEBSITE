@@ -7,7 +7,7 @@ import { isMissingRegistrySchema, isMissingStorageObject, isRegistryPermissionEr
 import { createPdfDelivery, isPublicPreviewMode } from '../src/lib/knowledgePaperPdfDelivery.js'
 import { getKnowledgePaperRequestUrl } from '../src/lib/knowledgePapers.js'
 import { readKnowledgePaperPreview } from '../src/lib/knowledgePaperPreview.js'
-import { createPrivatePdfPreview } from '../src/lib/knowledgePaperRangePreview.js'
+import { createPrivatePdfPreview, getPreviewFailureDiagnostic } from '../src/lib/knowledgePaperRangePreview.js'
 
 const repoFile = (path) => readFileSync(fileURLToPath(new URL(path, import.meta.url)), 'utf8')
 
@@ -149,7 +149,9 @@ test('private API diagnostics distinguish missing server configuration and regis
     'PRIVATE_OBJECT_MISSING',
     'INVALID_PDF_SOURCE',
   ]) assert.ok(endpoint.includes(`'${code}'`), `expected safe diagnostic ${code}`)
-  assert.doesNotMatch(endpoint, /paperError\.message|fileError\.message|console\.(?:log|error)/)
+  assert.doesNotMatch(endpoint, /paperError\.message|fileError\.message/)
+  assert.match(endpoint, /getPreviewFailureDiagnostic\(deliveryError/)
+  assert.match(endpoint, /console\.error\(JSON\.stringify\(/)
   assert.equal(isMissingStorageObject({ statusCode: '404', message: 'private internal detail' }), true)
   assert.equal(isMissingStorageObject({ status: 503, message: 'private internal detail' }), false)
   assert.equal(isStoragePermissionError({ statusCode: '403' }), true)
@@ -162,6 +164,50 @@ test('private API diagnostics distinguish missing server configuration and regis
   assert.equal(isMissingRegistrySchema({ code: '42501' }), false)
   assert.equal(isRegistryPermissionError({ code: '42501' }), true)
   assert.equal(isRegistryPermissionError({ code: '42P01' }), false)
+})
+
+test('private Storage diagnostics identify a failed operation without logging secrets or error messages', async () => {
+  const failure = Object.assign(new TypeError('request failed at https://private.example/object using do-not-log-key'), { code: 'ECONNRESET' })
+  await assert.rejects(
+    createPrivatePdfPreview({
+      supabaseUrl: 'https://example.supabase.co',
+      serviceRoleKey: 'do-not-log-key',
+      bucket: 'knowledge-papers-private',
+      storagePath: 'papers/private/original.pdf',
+      fetchImpl: async () => { throw failure },
+    }),
+    (error) => {
+      const diagnostic = getPreviewFailureDiagnostic(error, {
+        supabaseUrl: 'https://example.supabase.co',
+        serviceRoleKey: 'do-not-log-key',
+      })
+      assert.equal(error.code, 'PRIVATE_STORAGE_UNAVAILABLE')
+      assert.deepEqual(diagnostic, {
+        stage: 'storage_head_request',
+        errorClass: 'TypeError',
+        errorCode: 'ECONNRESET',
+        status: null,
+        hasSupabaseUrl: true,
+        hasServiceRoleKey: true,
+      })
+      assert.doesNotMatch(JSON.stringify(diagnostic), /do-not-log-key|private\.example|original\.pdf|request failed/)
+      return true
+    },
+  )
+  const unsafeFailure = Object.assign(new Error('secret detail'), {
+    stage: 'https://private.example/path',
+    name: 'Error\nsecret',
+    code: 'secret-key-value',
+    status: 900,
+  })
+  assert.deepEqual(getPreviewFailureDiagnostic(unsafeFailure), {
+    stage: 'preview_pipeline',
+    errorClass: 'Error',
+    errorCode: null,
+    status: null,
+    hasSupabaseUrl: false,
+    hasServiceRoleKey: false,
+  })
 })
 
 test('local server environment uses server-only variable names in an ignored file', () => {
