@@ -18,6 +18,7 @@ export default function KnowledgePaperReader() {
   const [pdfDocument, setPdfDocument] = useState(null)
   const canvasRef = useRef(null)
   const viewerRef = useRef(null)
+  const renderTaskRef = useRef(null)
   const [pageCount, setPageCount] = useState(0)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
@@ -30,7 +31,7 @@ export default function KnowledgePaperReader() {
     if (!paper) return undefined
     let active = true
     let loadingTask
-    let loadedDocument
+    const abortController = new AbortController()
     const loadPreview = async () => {
       await Promise.resolve()
       if (!active) return
@@ -44,7 +45,7 @@ export default function KnowledgePaperReader() {
         return
       }
       try {
-        const response = await fetch(preview.url)
+        const response = await fetch(preview.url, { signal: abortController.signal })
         if (!response.ok) throw new Error('The static preview file could not be loaded.')
         const contentType = (response.headers.get('content-type') || '').split(';', 1)[0].trim().toLowerCase()
         if (contentType !== 'application/pdf') throw new Error('The static preview is not a PDF.')
@@ -56,19 +57,22 @@ export default function KnowledgePaperReader() {
           import('pdfjs-dist'),
           import('pdfjs-dist/build/pdf.worker.min.mjs?url'),
         ])
+        if (!active) return
         GlobalWorkerOptions.workerSrc = worker.default
         loadingTask = getDocument({ data: bytes })
-        loadedDocument = await loadingTask.promise
+        const loadedDocument = await loadingTask.promise
         if (loadedDocument.numPages !== preview.previewPages
           || loadedDocument.numPages > PUBLIC_PREVIEW_PAGES
           || preview.previewPages !== Math.min(PUBLIC_PREVIEW_PAGES, preview.pageCount)) {
           throw new Error('The static preview does not match its recorded page limit.')
         }
-        if (!active) { await loadedDocument.destroy(); return }
+        if (!active) return
         setPageCount(preview.pageCount)
         setPdfDocument(loadedDocument)
-      } catch {
-        if (active) setError(PREVIEW_UNAVAILABLE_MESSAGE)
+      } catch (loadError) {
+        if (active && loadError?.name !== 'AbortException' && loadError?.name !== 'RenderingCancelledException') {
+          setError(PREVIEW_UNAVAILABLE_MESSAGE)
+        }
       } finally {
         if (active) setLoading(false)
       }
@@ -76,8 +80,15 @@ export default function KnowledgePaperReader() {
     loadPreview()
     return () => {
       active = false
-      if (loadedDocument) void loadedDocument.destroy()
-      else if (loadingTask) void loadingTask.destroy()
+      abortController.abort()
+      renderTaskRef.current?.cancel()
+      if (loadingTask) {
+        void loadingTask.destroy().catch((destroyError) => {
+          if (destroyError?.name !== 'AbortException' && destroyError?.name !== 'RenderingCancelledException') {
+            console.error('Failed to clean up the Knowledge Paper PDF task.', destroyError)
+          }
+        })
+      }
     }
   }, [paper, preview])
 
@@ -105,6 +116,7 @@ export default function KnowledgePaperReader() {
           viewport,
           transform: outputScale === 1 ? null : [outputScale, 0, 0, outputScale, 0, 0],
         })
+        renderTaskRef.current = renderTask
         await renderTask.promise
       } catch (renderError) {
         if (!cancelled && renderError?.name !== 'RenderingCancelledException') setError(PREVIEW_UNAVAILABLE_MESSAGE)
@@ -114,6 +126,7 @@ export default function KnowledgePaperReader() {
     return () => {
       cancelled = true
       renderTask?.cancel()
+      if (renderTaskRef.current === renderTask) renderTaskRef.current = null
     }
   }, [pdfDocument, wantedPage])
 
