@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { FileSearch, RotateCcw, Search, ShieldCheck, X } from 'lucide-react'
+import { FileSearch, RotateCcw, Search, X } from 'lucide-react'
 import data from '../../content/knowledge-papers.json'
 import PageHero from '../components/blocks/PageHero'
 import KnowledgePaperCard from '../components/knowledge/KnowledgePaperCard'
@@ -36,13 +36,6 @@ export default function KnowledgePapers() {
       />
       <section className="section-padding bg-white">
         <div className="container-main">
-          <div className="mb-6 grid gap-4 border border-royal/20 bg-[linear-gradient(120deg,rgba(30,76,160,.07),rgba(255,126,29,.08))] p-5 sm:grid-cols-[auto_1fr] sm:p-6">
-            <div className="grid h-12 w-12 place-items-center rounded-full bg-navy-deep text-white"><ShieldCheck size={23} aria-hidden="true" /></div>
-            <div>
-              <h2 className="font-serif text-lg font-bold text-navy-deep">Free previews, direct paper requests</h2>
-              <p className="prose-copy mt-1 max-w-3xl text-sm text-muted-fg">Read up to the first five pages of an onboarded paper free, without signing in. To request the complete document, submit the paper enquiry form; CCI India will review and respond outside the website.</p>
-            </div>
-          </div>
           <section aria-labelledby="paper-discovery-heading">
             <h2 id="paper-discovery-heading" className="sr-only">Find knowledge papers</h2>
             <div className="border border-border bg-off-white p-4 sm:p-5">

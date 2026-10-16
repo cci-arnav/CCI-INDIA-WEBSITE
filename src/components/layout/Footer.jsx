@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Download, MapPin, Smartphone } from 'lucide-react'
+import { Download, MapPin, Phone, Smartphone, ArrowUpRight, Linkedin, Twitter, Youtube } from 'lucide-react'
 import home from '../../../content/home.json'
 import contact from '../../../content/contact.json'
 import Button from '../ui/Button'
@@ -8,84 +8,137 @@ export default function Footer() {
   const { footer } = home
 
   return (
-    <footer className="border-t border-border bg-navy-deep text-white">
-      <div className="border-b border-white/10">
-        <div className="container-main section-padding">
-          <p className="footer-cta__eyebrow">{footer.ctaEyebrow}</p>
-          <h2 className="mb-3 max-w-xl font-serif text-xl font-bold text-white sm:text-2xl md:text-3xl">{footer.ctaTitle}</h2>
-          <p className="prose-copy mb-6 max-w-2xl text-sm text-white/75">{footer.ctaDescription}</p>
-          <div className="flex flex-wrap gap-3">
-            <Button to={footer.ctaPrimary.href} variant="accent">{footer.ctaPrimary.label}</Button>
-            <Button to={footer.ctaSecondary.href} variant="outline-light">{footer.ctaSecondary.label}</Button>
+    <footer className="footer-root">
+
+      {/* ── CTA Band ── */}
+      <div className="footer-cta">
+        <div className="container-main">
+          <div className="footer-cta__inner">
+            <div className="footer-cta__text">
+              <p className="footer-cta__eyebrow">{footer.ctaEyebrow}</p>
+              <h2 className="footer-cta__title font-serif">{footer.ctaTitle}</h2>
+              <p className="footer-cta__desc">{footer.ctaDescription}</p>
+            </div>
+            <div className="footer-cta__actions">
+              <Button to={footer.ctaPrimary.href} variant="accent">{footer.ctaPrimary.label}</Button>
+              <Button to={footer.ctaSecondary.href} variant="outline-light">{footer.ctaSecondary.label}</Button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="container-main section-padding">
-        <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-4">
-          <div>
-            <div className="footer-brand-lockup mb-4">
-              <span className="footer-brand-mark">
+      {/* ── Main body ── */}
+      <div className="footer-body">
+        <div className="container-main">
+          <div className="footer-grid">
+
+            {/* Col 1 — Brand */}
+            <div className="footer-brand">
+              <Link to="/" className="footer-brand__logo-wrap" aria-label="CCI India — home">
                 <img
                   src="/brand/cci-logo.png"
                   alt="CCI India"
                   width={961}
                   height={442}
-                  className="h-10 w-auto sm:h-11"
+                  className="footer-brand__logo"
                 />
-              </span>
-              <p>Chamber of Commerce &amp; Industry of India</p>
-            </div>
-            <p className="prose-copy text-xs text-white/70 sm:text-sm">{footer.description}</p>
-            <p className="mt-4 text-xs text-white/60 sm:text-sm">Toll Free: {footer.tollFree}</p>
-            <div className="mt-5 border-l-2 border-saffron/70 pl-3">
-              <p className="text-[10px] font-semibold uppercase tracking-wider text-white/55">CCI India mobile</p>
-              <a
-                href="/downloads/cci-india.apk"
-                download="CCI-India.apk"
-                className="mt-2 inline-flex min-h-11 items-center gap-2 border border-white/25 px-3 py-2 text-xs font-semibold text-white/85 transition-colors hover:border-white/50 hover:bg-white/10 hover:text-white"
-              >
-                <Smartphone size={15} aria-hidden="true" />
-                Android app
-                <Download size={14} className="text-saffron" aria-hidden="true" />
-              </a>
-            </div>
-          </div>
-          {footer.linkColumns.map((col) => (
-            <div key={col.heading}>
-              <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-saffron">{col.heading}</h3>
-              <ul className="space-y-2">
-                {col.links.map((link) => (
-                  <li key={link.label}>
-                    <Link to={link.href} className="text-xs text-white/70 transition-colors duration-200 hover:text-white sm:text-sm">
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-          <div>
-            <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-saffron">Office Address</h3>
-            <div className="flex items-start gap-3">
-              <MapPin className="mt-0.5 shrink-0 text-saffron" size={18} aria-hidden="true" />
-              <address className="max-w-xs text-xs not-italic leading-relaxed text-white/70 sm:text-sm">
-                <span className="block font-medium text-white/90">{contact.headquarters.name}</span>
-                <span className="mt-1 block">{contact.headquarters.address}</span>
-                <a className="mt-2 inline-flex min-h-11 items-center text-white/70 underline decoration-white/30 underline-offset-4 transition-colors hover:text-white" href={`tel:${contact.headquarters.phone.replace(/[^\d+]/g, '')}`}>
-                  {contact.headquarters.phone}
+              </Link>
+              <p className="footer-brand__tagline">Chamber of Commerce &amp; Industry of India</p>
+              <p className="footer-brand__desc">{footer.description}</p>
+
+              {/* Social links */}
+              <div className="footer-social">
+                <a href="https://www.linkedin.com/company/cci-india" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="footer-social__link">
+                  <Linkedin size={15} aria-hidden="true" />
                 </a>
-              </address>
+                <a href="https://twitter.com/CCI_India" target="_blank" rel="noreferrer" aria-label="Twitter / X" className="footer-social__link">
+                  <Twitter size={15} aria-hidden="true" />
+                </a>
+                <a href="https://www.youtube.com/@CCIIndia" target="_blank" rel="noreferrer" aria-label="YouTube" className="footer-social__link">
+                  <Youtube size={15} aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+
+            {/* Col 2–3 — Nav columns */}
+            {footer.linkColumns.map((col) => (
+              <div key={col.heading} className="footer-nav-col">
+                <h3 className="footer-nav-col__heading">{col.heading}</h3>
+                <ul className="footer-nav-col__list">
+                  {col.links.map((link) => (
+                    <li key={link.label}>
+                      <Link to={link.href} className="footer-nav-col__link">
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+
+            {/* Col 4 — Contact */}
+            <div className="footer-contact-col">
+              <h3 className="footer-nav-col__heading">Get In Touch</h3>
+
+              <div className="footer-contact-col__block">
+                <MapPin size={14} className="footer-contact-col__icon" aria-hidden="true" />
+                <div>
+                  <p className="footer-contact-col__label">{contact.headquarters.name}</p>
+                  <p className="footer-contact-col__text">{contact.headquarters.address}</p>
+                </div>
+              </div>
+
+              <div className="footer-contact-col__block">
+                <Phone size={14} className="footer-contact-col__icon" aria-hidden="true" />
+                <div>
+                  <p className="footer-contact-col__label">Phone</p>
+                  <a
+                    href={`tel:${contact.headquarters.phone.replace(/[^\d+]/g, '')}`}
+                    className="footer-contact-col__text footer-contact-col__tel"
+                  >
+                    {contact.headquarters.phone}
+                  </a>
+                  <p className="footer-contact-col__text">Toll Free: {footer.tollFree}</p>
+                </div>
+              </div>
+
+              {/* App download */}
+              <div className="footer-app">
+                <p className="footer-app__label">CCI India Mobile</p>
+                <a
+                  href="/downloads/cci-india.apk"
+                  download="CCI-India.apk"
+                  className="footer-app__btn"
+                >
+                  <Smartphone size={14} aria-hidden="true" />
+                  <span>Android App</span>
+                  <Download size={12} className="footer-app__dl-icon" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      {/* ── Bottom bar ── */}
+      <div className="footer-bottom">
+        <div className="container-main">
+          <div className="footer-bottom__inner">
+            <p className="footer-bottom__copy">
+              © {new Date().getFullYear()} {footer.copyright}
+            </p>
+            <div className="footer-bottom__links">
+              <Link to="/about" className="footer-bottom__link">Privacy Policy</Link>
+              <span aria-hidden="true" className="footer-bottom__sep">·</span>
+              <Link to="/about" className="footer-bottom__link">Terms of Use</Link>
+              <span aria-hidden="true" className="footer-bottom__sep">·</span>
+              <Link to="/sitemap" className="footer-bottom__link">Sitemap</Link>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-white/10">
-        <div className="container-main py-4 text-center text-[10px] text-white/50 sm:text-xs">
-          © {new Date().getFullYear()} {footer.copyright}
-        </div>
-      </div>
     </footer>
   )
 }

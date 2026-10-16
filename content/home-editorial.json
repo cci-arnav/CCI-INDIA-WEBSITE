@@ -110,8 +110,8 @@
   "centers": {
     "Center for Market Entry & Business Expansion": {
       "eyebrow": "Business Expansion · CCI India Centre",
-      "image": null,
-      "placeholderLabel": "Market entry & business expansion",
+      "image": "https://infomineo.com/wp-content/uploads/2024/10/pictures-filter-1-671781c0d05f4-1024x616.webp",
+      "imageAlt": "Market entry and business expansion strategy",
       "intro": "Guiding companies into the Indian market and helping them scale operations.",
       "sections": [
         { "heading": "Overview", "paragraphs": ["The current centre description focuses on helping companies enter the Indian market and scale their operations."] },
@@ -121,7 +121,7 @@
       "linkLabel": "Visit Market Entry & Business Expansion"
     },
     "Center for Democracy, Political & Economy": {
-      "eyebrow": "Governance · CCI India Centre", "image": null, "placeholderLabel": "Governance & economic context",
+      "eyebrow": "Governance · CCI India Centre", "image": "https://media.geeksforgeeks.org/wp-content/uploads/20220922094216/DemocracyandEconomicGrowth.png", "imageAlt": "Democracy and economic growth",
       "intro": "Tracking the political and economic forces shaping policy in India.",
       "sections": [
         { "heading": "Overview", "paragraphs": ["The current centre description identifies policy-shaping political and economic developments as its area of attention."] },
@@ -129,7 +129,7 @@
       ]
     },
     "Center for Investor & Portfolios Growth": {
-      "eyebrow": "Investment · CCI India Centre", "image": null, "placeholderLabel": "Investor & portfolio growth",
+      "eyebrow": "Investment · CCI India Centre", "image": "https://d6xcmfyh68wv8.cloudfront.net/learn-content/uploads/2020/06/Angel-Investor.png", "imageAlt": "Angel investor representing portfolio growth",
       "intro": "Supporting investors in growing and diversifying their portfolios.",
       "sections": [
         { "heading": "Overview", "paragraphs": ["The current centre description focuses on investor support for portfolio growth and diversification."] },
@@ -137,7 +137,7 @@
       ]
     },
     "Center for State Investment": {
-      "eyebrow": "States · CCI India Centre", "image": null, "placeholderLabel": "State investment",
+      "eyebrow": "States · CCI India Centre", "image": "https://img.magnific.com/free-vector/investor-with-laptop-monitoring-growth-dividends-trader-sitting-stack-money-investing-capital-analyzing-profit-graphs-vector-illustration-finance-stock-trading-investment_74855-8432.jpg?semt=ais_hybrid&w=740&q=80", "imageAlt": "Investor monitoring growth representing state investment",
       "intro": "Making the investment environment in the states more conducive to growth.",
       "sections": [
         { "heading": "Overview", "paragraphs": ["The current centre description identifies state investment environments and growth as its focus."] },
@@ -145,7 +145,7 @@
       ]
     },
     "Center for Policy Advocacy": {
-      "eyebrow": "Policy · CCI India Centre", "image": null, "placeholderLabel": "Policy advocacy",
+      "eyebrow": "Policy · CCI India Centre", "image": "https://www.aba.org.tw/wp-content/uploads/2025/03/Public-policy-advocacy-01z.jpg", "imageAlt": "Public policy advocacy",
       "intro": "Carrying industry's concerns directly to policymakers.",
       "sections": [
         { "heading": "Overview", "paragraphs": ["The current centre description focuses on bringing industry concerns to policymakers."] },
@@ -153,7 +153,7 @@
       ]
     },
     "Center for Startups": {
-      "eyebrow": "Startups · CCI India Centre", "image": null, "placeholderLabel": "Startup ecosystem",
+      "eyebrow": "Startups · CCI India Centre", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsAyyM6FtV6a2_8_WPvpGDdoXBv4vjttltBxlyv4pAmkKL9lCpJ8yOxpw&s=10", "imageAlt": "Startup ecosystem and founders",
       "intro": "Backing India's founders from first idea to scale.",
       "sections": [
         { "heading": "Overview", "paragraphs": ["The current centre description identifies support for founders from early-stage ideas through business growth."] },
@@ -161,7 +161,7 @@
       ]
     },
     "Center for Impact Investment": {
-      "eyebrow": "Impact Investing · CCI India Centre", "image": null, "placeholderLabel": "Impact investment",
+      "eyebrow": "Impact Investing · CCI India Centre", "image": "https://ssir.org/images/blog/Lamy-Leijonhufvud-ODonohoe-next-decade-impact-invest-592x444.jpg", "imageAlt": "Impact investment aligning capital with social outcomes",
       "intro": "Aligning capital with positive social and environmental outcomes.",
       "sections": [
         { "heading": "Overview", "paragraphs": ["The current centre description focuses on investment approaches intended to align capital with social and environmental outcomes."] },
@@ -169,7 +169,7 @@
       ]
     },
     "Center for SDG": {
-      "eyebrow": "Sustainability · CCI India Centre", "image": null, "placeholderLabel": "Sustainable development",
+      "eyebrow": "Sustainability · CCI India Centre", "image": "https://www.sdgcentre.net/uploads/4/1/4/5/41459567/sdg-poster-for-website_orig.png", "imageAlt": "UN Sustainable Development Goals poster",
       "intro": "Advancing the UN Sustainable Development Goals through industry action.",
       "sections": [
         { "heading": "Overview", "paragraphs": ["The current centre description connects industry action with the UN Sustainable Development Goals."] },
@@ -177,7 +177,7 @@
       ]
     },
     "Center for Family Office": {
-      "eyebrow": "Family Office · CCI India Centre", "image": null, "placeholderLabel": "Family enterprise",
+      "eyebrow": "Family Office · CCI India Centre", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGzcj9xP-JwuPLvJAyg98Ju3z9UpEoainxsYVu0aZ448lyJr-K8N39tQQ&s=10", "imageAlt": "Family office investment and governance",
       "intro": "Serving the investment and governance needs of family enterprises.",
       "sections": [
         { "heading": "Overview", "paragraphs": ["The current centre description identifies investment and governance needs of family enterprises as its focus."] },
@@ -185,7 +185,7 @@
       ]
     },
     "Center for Founder": {
-      "eyebrow": "Founders · CCI India Centre", "image": null, "placeholderLabel": "Founder network",
+      "eyebrow": "Founders · CCI India Centre", "image": "https://img.magnific.com/free-photo/businessman-big-office_53876-144319.jpg?semt=ais_hybrid&w=740&q=80", "imageAlt": "Businessman in office representing founder support network",
       "intro": "A dedicated network and resource base for company founders.",
       "sections": [
         { "heading": "Overview", "paragraphs": ["The current centre description focuses on a network and resource base for company founders."] },

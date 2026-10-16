@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import data from '../../content/careers.json'
 import PageHero from '../components/blocks/PageHero'
 import SectionIntro from '../components/blocks/SectionIntro'
@@ -8,14 +7,6 @@ import SectionHeading from '../components/ui/SectionHeading'
 import Button from '../components/ui/Button'
 
 export default function Careers() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', role: '', message: '' })
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    alert('Thank you for your application. Our HR team will be in touch.')
-    setForm({ name: '', email: '', phone: '', role: '', message: '' })
-  }
-
   return (
     <>
       <PageHero {...data.hero} />
@@ -75,19 +66,14 @@ export default function Careers() {
       <section className="section-padding border-b border-border">
         <div className="container-main max-w-2xl">
           <SectionHeading eyebrow={data.form.eyebrow} title={data.form.heading} description={data.form.description} />
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid gap-4 sm:grid-cols-2">
-              <input required type="text" placeholder="Full name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full border border-border px-4 py-2.5 text-sm outline-none focus:border-royal" />
-              <input required type="email" placeholder="Email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="w-full border border-border px-4 py-2.5 text-sm outline-none focus:border-royal" />
-            </div>
-            <input type="tel" placeholder="Phone" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className="w-full border border-border px-4 py-2.5 text-sm outline-none focus:border-royal" />
-            <select required value={form.role} onChange={(e) => setForm({ ...form, role: e.target.value })} className="w-full border border-border px-4 py-2.5 text-sm outline-none focus:border-royal">
-              <option value="">Select track</option>
-              {data.formRoles.map((r) => <option key={r} value={r}>{r}</option>)}
-            </select>
-            <textarea rows={4} placeholder="Tell us about yourself" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="w-full border border-border px-4 py-2.5 text-sm outline-none focus:border-royal" />
-            <Button type="submit" variant="primary">Submit Application</Button>
-          </form>
+          <Button
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd4cGXqSb1eHlWpQEcR_took7_dHaN4sTt_846aaAc4KgY_rQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="primary"
+          >
+            Open Hiring Form
+          </Button>
           <div className="mt-8 border border-border bg-off-white p-5">
             <h3 className="mb-1 font-serif font-bold text-navy-deep">{data.contactNote.heading}</h3>
             <p className="prose-copy text-sm text-muted-fg">{data.contactNote.text}</p>

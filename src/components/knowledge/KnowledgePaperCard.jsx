@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { CalendarDays, FileText, MapPin } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { validDate } from '../../lib/knowledgePapers'
+import { getKnowledgePaperImage, imageRegistry } from '../../data/imageRegistry'
 
 const formatDate = (value, fallbackYear) => {
   const date = validDate(value)
@@ -21,15 +22,37 @@ const fallbackGradient = {
 
 export default function KnowledgePaperCard({ paper, featured = false }) {
   const [coverFailed, setCoverFailed] = useState(false)
+  const [failedFlags, setFailedFlags] = useState([])
   const publicationDate = formatDate(paper.publishedAt, paper.year)
   const flag = countryFlag(paper.countryCode)
-  const hasCover = paper.coverImage && !coverFailed
+  const artwork = getKnowledgePaperImage(paper.id)
+  const fallbackImage = imageRegistry.fallbacks[paper.collection === 'Ministry' ? 'ministry' : 'knowledgePaper']
+  const hasCover = artwork?.image && !coverFailed
+  const availableFlags = artwork?.flags?.filter((item) => !failedFlags.includes(item.src)) || []
 
   return (
     <article className={`flex h-full flex-col overflow-hidden border border-border bg-white shadow-sm transition-shadow duration-200 hover:shadow-md ${featured ? 'md:grid md:grid-cols-[minmax(240px,0.8fr)_1.2fr]' : ''}`}>
       <div className={`${featured ? 'min-h-64 md:min-h-full' : 'aspect-[4/3]'} flex items-center justify-center overflow-hidden bg-[linear-gradient(145deg,var(--color-navy-deep),var(--color-royal))]`}>
         {hasCover ? (
-          <img src={paper.coverImage} alt="" width="640" height="480" loading="lazy" className="h-full w-full object-cover" onError={() => setCoverFailed(true)} />
+          <img src={artwork.image} alt={artwork.alt} width="640" height="480" loading="lazy" className="h-full w-full object-cover" onError={() => setCoverFailed(true)} />
+        ) : availableFlags.length ? (
+          <div className="relative flex h-full w-full flex-col justify-between overflow-hidden bg-gradient-to-br from-[#102c49] via-[#17466b] to-[#216d87] p-5 text-white sm:p-6">
+            <div className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full border-[24px] border-white/10" aria-hidden="true" />
+            <div className="relative flex items-center justify-between gap-3">
+              <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-white/80">CCI India · Bilateral research</span>
+              <FileText size={25} strokeWidth={1.5} className="shrink-0 text-white/70" aria-hidden="true" />
+            </div>
+            <div className="relative my-5 flex items-center justify-center gap-4 sm:gap-6" aria-label={availableFlags.map((item) => item.alt).join(' and ')}>
+              {availableFlags.map((item, index) => <div key={item.src} className="flex items-center gap-4 sm:gap-6">
+                {index > 0 && <span aria-hidden="true" className="text-xl font-light text-saffron">×</span>}
+                <img src={item.src} alt={item.alt} width="96" height="64" loading="lazy" className="h-12 w-[4.5rem] rounded-sm border border-white/30 bg-white object-cover shadow-lg sm:h-16 sm:w-24" onError={() => setFailedFlags((current) => [...current, item.src])} />
+              </div>)}
+            </div>
+            <div className="relative border-t border-white/25 pt-3">
+              <h3 className="line-clamp-2 font-serif text-lg font-bold leading-snug text-white sm:text-xl">India &amp; {paper.country}</h3>
+              <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/75">Trade · Investment · Cooperation</p>
+            </div>
+          </div>
         ) : (
           <div className={`relative flex h-full w-full flex-col justify-between overflow-hidden bg-gradient-to-br ${fallbackGradient[paper.collection] || 'from-navy-deep via-royal to-[#3d83c8]'} p-5 text-white sm:p-6`}>
             <div className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full border-[24px] border-white/10" aria-hidden="true" />
@@ -41,7 +64,7 @@ export default function KnowledgePaperCard({ paper, featured = false }) {
             <h3 className="relative my-5 line-clamp-4 font-serif text-xl font-bold leading-snug text-white sm:text-2xl">{paper.title}</h3>
             <div className="relative flex items-end justify-between gap-4 border-t border-white/25 pt-3">
               <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-white/80">{paper.collection || 'Research'}</span>
-              <img src="/brand/cci-logo.png" alt="" width="96" height="42" className="h-8 w-auto rounded-sm bg-white/95 px-2 py-1 object-contain" />
+              <img src={fallbackImage} alt="" width="96" height="42" className="h-8 w-auto rounded-sm bg-white/95 px-2 py-1 object-contain" />
             </div>
           </div>
         )}

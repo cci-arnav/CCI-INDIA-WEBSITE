@@ -1,4 +1,4 @@
-const imagePath = (slug) => `/images/bharat-investment-grid/states/${slug}.jpg`
+import { getStateImage } from './imageRegistry.js'
 
 const heroContent = {
   'andhra-pradesh': {
@@ -158,7 +158,7 @@ const location = (slug, name, type, region, capital, keySectors, ideaHighlight, 
   ideaHighlight,
   mapIds,
   ...heroContent[slug],
-  heroImage: imagePath(slug),
+  heroImage: getStateImage(slug),
   summary: heroContent[slug].shortWriteup,
 })
 

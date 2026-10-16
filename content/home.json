@@ -165,71 +165,71 @@
         "name": "Center for Market Entry & Business Expansion",
         "focus": "Business Expansion",
         "blurb": "Guiding companies into the Indian market and helping them scale operations.",
-        "image": "/assets/councils/foreign-trade.webp",
-        "imageAlt": "International trade activity representing business expansion"
+        "image": "https://infomineo.com/wp-content/uploads/2024/10/pictures-filter-1-671781c0d05f4-1024x616.webp",
+        "imageAlt": "Market entry and business expansion strategy"
       },
       {
         "name": "Center for Democracy, Political & Economy",
         "focus": "Governance",
         "blurb": "Tracking the political and economic forces shaping policy in India.",
-        "image": "/assets/councils/economic-affairs.webp",
-        "imageAlt": "Economic affairs and governance"
+        "image": "https://media.geeksforgeeks.org/wp-content/uploads/20220922094216/DemocracyandEconomicGrowth.png",
+        "imageAlt": "Democracy and economic growth"
       },
       {
         "name": "Center for Investor & Portfolios Growth",
         "focus": "Investment",
         "blurb": "Supporting investors in growing and diversifying their portfolios.",
-        "image": "/assets/councils/capital-markets.webp",
-        "imageAlt": "Capital markets representing investment and portfolio growth"
+        "image": "https://d6xcmfyh68wv8.cloudfront.net/learn-content/uploads/2020/06/Angel-Investor.png",
+        "imageAlt": "Angel investor representing portfolio growth"
       },
       {
         "name": "Center for State Investment",
         "focus": "States",
         "blurb": "Making the investment environment in the states more conducive to growth.",
-        "image": "/assets/councils/infrastructure.webp",
-        "imageAlt": "Transport infrastructure representing state investment opportunities"
+        "image": "https://img.magnific.com/free-vector/investor-with-laptop-monitoring-growth-dividends-trader-sitting-stack-money-investing-capital-analyzing-profit-graphs-vector-illustration-finance-stock-trading-investment_74855-8432.jpg?semt=ais_hybrid&w=740&q=80",
+        "imageAlt": "Investor monitoring growth and dividends representing state investment"
       },
       {
         "name": "Center for Policy Advocacy",
         "focus": "Policy",
         "blurb": "Carrying industry's concerns directly to policymakers.",
-        "image": "/assets/councils/company-law-and-corporate-affairs.webp",
-        "imageAlt": "Corporate affairs leaders meeting, representing policy advocacy"
+        "image": "https://www.aba.org.tw/wp-content/uploads/2025/03/Public-policy-advocacy-01z.jpg",
+        "imageAlt": "Public policy advocacy"
       },
       {
         "name": "Center for Startups",
         "focus": "Startups",
         "blurb": "Backing India's founders from first idea to scale.",
-        "image": "/assets/councils/entrepreneurship-development.webp",
-        "imageAlt": "Entrepreneurship development and startup growth"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsAyyM6FtV6a2_8_WPvpGDdoXBv4vjttltBxlyv4pAmkKL9lCpJ8yOxpw&s=10",
+        "imageAlt": "Startup ecosystem and founders"
       },
       {
         "name": "Center for Impact Investment",
         "focus": "Impact Investing",
         "blurb": "Aligning capital with positive social and environmental outcomes.",
-        "image": "/assets/councils/venture-capital-and-private-equity.webp",
-        "imageAlt": "Venture capital and private equity representing impact investment"
+        "image": "https://ssir.org/images/blog/Lamy-Leijonhufvud-ODonohoe-next-decade-impact-invest-592x444.jpg",
+        "imageAlt": "Impact investment aligning capital with social outcomes"
       },
       {
         "name": "Center for SDG",
         "focus": "Sustainability",
         "blurb": "Advancing the UN Sustainable Development Goals through industry action.",
-        "image": "/assets/councils/environment-and-climate-change.webp",
-        "imageAlt": "Environment and climate action representing sustainable development"
+        "image": "https://www.sdgcentre.net/uploads/4/1/4/5/41459567/sdg-poster-for-website_orig.png",
+        "imageAlt": "UN Sustainable Development Goals poster"
       },
       {
         "name": "Center for Family Office",
         "focus": "Family Office",
         "blurb": "Serving the investment and governance needs of family enterprises.",
-        "image": "/assets/councils/banking-and-finance.webp",
-        "imageAlt": "Banking and finance representing family office services"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGzcj9xP-JwuPLvJAyg98Ju3z9UpEoainxsYVu0aZ448lyJr-K8N39tQQ&s=10",
+        "imageAlt": "Family office investment and governance"
       },
       {
         "name": "Center for Founder",
         "focus": "Founders",
         "blurb": "A dedicated network and resource base for company founders.",
-        "image": "/assets/councils/leadership-development-council.webp",
-        "imageAlt": "Leadership development representing founder support"
+        "image": "https://img.magnific.com/free-photo/businessman-big-office_53876-144319.jpg?semt=ais_hybrid&w=740&q=80",
+        "imageAlt": "Businessman in office representing founder support network"
       }
     ]
   },

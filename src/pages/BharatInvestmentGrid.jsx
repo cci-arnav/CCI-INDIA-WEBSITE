@@ -104,7 +104,8 @@ export default function BharatInvestmentGrid() {
           </div>
           <p className="mt-4 text-sm text-muted-fg" role="status">Showing {filteredLocations.length} of {locations.length} locations, sorted alphabetically.</p>
           {filteredLocations.length ? <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">{filteredLocations.map((item) => (
-            <article key={item.slug} className="flex h-full flex-col border border-border bg-white p-5">
+            <article key={item.slug} className="flex h-full flex-col overflow-hidden border border-border bg-white p-5">
+              <img src={item.heroImage} alt={item.heroImageAlt} width="640" height="360" loading="lazy" className="-mx-5 -mt-5 mb-4 aspect-[16/9] w-[calc(100%+2.5rem)] object-cover" />
               <p className="text-[10px] font-bold uppercase tracking-wider text-saffron">{item.type === 'state' ? 'State' : 'Union Territory'} · {item.region}</p>
               <h3 className="mt-1 text-xl font-bold">{item.name}</h3>
               <p className="mt-3 text-xs font-bold uppercase tracking-wider text-muted-fg">Key sectors</p><p className="mt-1 text-sm text-navy-deep">{item.keySectors.join(' · ')}</p>
