@@ -18,6 +18,7 @@ export default function KnowledgePaperReader() {
   const [pdfDocument, setPdfDocument] = useState(null)
   const canvasRef = useRef(null)
   const viewerRef = useRef(null)
+  const loadingTaskRef = useRef(null)
   const renderTaskRef = useRef(null)
   const [pageCount, setPageCount] = useState(0)
   const [loading, setLoading] = useState(true)
@@ -30,7 +31,6 @@ export default function KnowledgePaperReader() {
   useEffect(() => {
     if (!paper) return undefined
     let active = true
-    let loadingTask
     const abortController = new AbortController()
     const loadPreview = async () => {
       await Promise.resolve()
@@ -59,7 +59,8 @@ export default function KnowledgePaperReader() {
         ])
         if (!active) return
         GlobalWorkerOptions.workerSrc = worker.default
-        loadingTask = getDocument({ data: bytes })
+        const loadingTask = getDocument({ data: bytes })
+        loadingTaskRef.current = loadingTask
         const loadedDocument = await loadingTask.promise
         if (loadedDocument.numPages !== preview.previewPages
           || loadedDocument.numPages > PUBLIC_PREVIEW_PAGES
@@ -82,6 +83,8 @@ export default function KnowledgePaperReader() {
       active = false
       abortController.abort()
       renderTaskRef.current?.cancel()
+      const loadingTask = loadingTaskRef.current
+      loadingTaskRef.current = null
       if (loadingTask) {
         void loadingTask.destroy().catch((destroyError) => {
           if (destroyError?.name !== 'AbortException' && destroyError?.name !== 'RenderingCancelledException') {
